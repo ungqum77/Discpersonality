@@ -49,49 +49,67 @@ const Result: React.FC<ResultProps> = ({ scores, result, onReset, ageGroup }) =>
     { subject: 'C', value: scores.C },
   ], [scores]);
 
+  // 카카오 SDK를 동적으로 로드하는 헬퍼 함수
+  const loadKakaoSDK = () => {
+    return new Promise<void>((resolve, reject) => {
+      if ((window as any).Kakao) {
+        resolve();
+        return;
+      }
+      const script = document.createElement('script');
+      script.src = 'https://t1.kakaocdn.net/kakao_js_sdk/2.7.0/kakao.min.js';
+      script.onload = () => resolve();
+      script.onerror = () => reject();
+      document.head.appendChild(script);
+    });
+  };
+
+  const initKakao = () => {
+    const kakao = (window as any).Kakao;
+    if (kakao && !kakao.isInitialized()) {
+      try {
+        kakao.init(KAKAO_KEY);
+      } catch (e) {
+        console.error('Kakao Init Error:', e);
+      }
+    }
+  };
+
   useEffect(() => {
     gsap.from('.fade-in', { y: 20, opacity: 0, stagger: 0.1, duration: 0.6, ease: 'power2.out' });
-
-    // Kakao SDK Initialization with better check
-    const initKakao = () => {
-      const kakao = (window as any).Kakao;
-      if (kakao && !kakao.isInitialized()) {
-        try {
-          kakao.init(KAKAO_KEY);
-          console.log('Kakao SDK Initialized Success');
-        } catch (e) {
-          console.error('Kakao Init Error:', e);
-        }
-      }
-    };
-
-    if (document.readyState === 'complete') {
-      initKakao();
-    } else {
-      window.addEventListener('load', initKakao);
-      return () => window.removeEventListener('load', initKakao);
-    }
+    
+    loadKakaoSDK()
+      .then(() => initKakao())
+      .catch(() => console.warn('Initial Kakao load blocked. Might be an ad-blocker.'));
   }, []);
 
-  const handleKakaoShare = () => {
-    const kakao = (window as any).Kakao;
+  const handleKakaoShare = async () => {
+    let kakao = (window as any).Kakao;
     
+    // 클릭 시점에 라이브러리가 없다면 한 번 더 로드 시도
     if (!kakao) {
-      alert('카카오톡 라이브러리를 로드할 수 없습니다. 페이지를 새로고침해 주세요.');
-      return;
+      try {
+        await loadKakaoSDK();
+        kakao = (window as any).Kakao;
+        initKakao();
+      } catch (e) {
+        alert('카카오 공유 라이브러리를 불러올 수 없습니다.\n광고 차단기(Ad-blocker)가 켜져 있다면 해제 후 다시 시도해 주세요.');
+        return;
+      }
     }
+
+    if (!kakao) return;
 
     if (!kakao.isInitialized()) {
       kakao.init(KAKAO_KEY);
     }
 
     const shareTitle = `나의 DISC 성격 유형은? [${result.titles[0]}]`;
-    const shareDesc = result.summaries[0].length > 40 
-      ? result.summaries[0].substring(0, 40) + '...' 
+    const shareDesc = result.summaries[0].length > 45 
+      ? result.summaries[0].substring(0, 45) + '...' 
       : result.summaries[0];
 
     try {
-      // 최신 공식 문서 가이드에 따른 파라미터 구성
       kakao.Share.sendDefault({
         objectType: 'feed',
         content: {
@@ -104,23 +122,22 @@ const Result: React.FC<ResultProps> = ({ scores, result, onReset, ageGroup }) =>
           },
         },
         social: {
-          likeCount: Math.floor(Math.random() * 500) + 100, // 상징적 수치
+          likeCount: Math.floor(Math.random() * 500) + 100,
           sharedCount: Math.floor(Math.random() * 1000) + 200,
         },
         buttons: [
           {
-            title: '테스트 결과 확인',
+            title: '무료 테스트 하러가기',
             link: {
               mobileWebUrl: 'https://disc.woongth.com',
               webUrl: 'https://disc.woongth.com',
             },
           },
         ],
-        installTalk: true, // 카카오톡 미설치 시 마켓으로 이동
       });
     } catch (e) {
       console.error('Kakao Share Execute Error:', e);
-      alert('카카오톡 공유를 실행할 수 없습니다.');
+      alert('카카오톡 실행 중 오류가 발생했습니다.');
     }
   };
 
@@ -237,9 +254,9 @@ const Result: React.FC<ResultProps> = ({ scores, result, onReset, ageGroup }) =>
       <div className="w-full max-w-[440px] space-y-4 mt-12 fade-in">
         <button 
           onClick={handleKakaoShare} 
-          className="w-full flex items-center justify-center gap-3 py-6 bg-[#FEE500] text-black font-black rounded-[30px] hover:scale-[1.02] active:scale-95 transition-all shadow-xl text-lg"
+          className="w-full flex items-center justify-center gap-3 py-6 bg-[#FEE500] text-black font-black rounded-[30px] hover:scale-[1.02] active:scale-95 transition-all shadow-xl text-lg group"
         >
-          <MessageCircle size={24} className="fill-black" /> 카카오톡 공유하기
+          <MessageCircle size={24} className="fill-black group-active:scale-110 transition-transform" /> 카카오톡 공유하기
         </button>
         
         <div className="grid grid-cols-2 gap-4">

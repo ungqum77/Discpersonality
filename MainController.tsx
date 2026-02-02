@@ -82,6 +82,10 @@ const MainController: React.FC = () => {
   };
 
   const handleReset = () => {
+    // 다시 시작 시 URL hash 제거 (애드센스 전환 추적 초기화 도움)
+    if (window.location.hash) {
+      history.replaceState(null, "", window.location.pathname);
+    }
     setView('HOME');
     setSelectedAge(null);
     setSelectedMode(null);

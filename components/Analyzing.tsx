@@ -100,9 +100,15 @@ const Analyzing: React.FC<AnalyzingProps> = ({ onFinished }) => {
               <h2 className="text-3xl font-display font-black text-white mb-2 tracking-tighter">분석이 완료되었습니다!</h2>
               <p className="text-gray-500 text-sm mb-12">당신의 행동 DNA 데이터가 완벽하게 해독되었습니다.</p>
 
-              <button
-                onClick={onFinished}
-                className="w-full py-6 bg-neon-cyan text-black font-black rounded-2xl text-xl shadow-[0_0_40px_rgba(0,243,255,0.4)] hover:scale-105 active:scale-95 transition-all flex items-center justify-center gap-3 group"
+              {/* a 태그로 변경하여 애드센스 전면광고 트리거 확률 극대화 */}
+              <a
+                href="#result"
+                onClick={(e) => {
+                  e.preventDefault();
+                  window.location.hash = "result";
+                  onFinished();
+                }}
+                className="w-full py-6 bg-neon-cyan text-black font-black rounded-2xl text-xl shadow-[0_0_40px_rgba(0,243,255,0.4)] hover:scale-105 active:scale-95 transition-all flex items-center justify-center gap-3 group no-underline"
               >
                 <span>📋 결과 리포트 확인하기</span>
                 <motion.div
@@ -111,7 +117,7 @@ const Analyzing: React.FC<AnalyzingProps> = ({ onFinished }) => {
                 >
                   <Cpu size={24} className="group-hover:rotate-12 transition-transform" />
                 </motion.div>
-              </button>
+              </a>
               
               <p className="mt-6 text-[10px] text-gray-700 font-bold uppercase tracking-widest animate-pulse">
                 Click the button to reveal your profile
