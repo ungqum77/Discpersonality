@@ -33,10 +33,8 @@ const Analyzing: React.FC<AnalyzingProps> = ({ scores, ageGroup }) => {
     }
   }, [step]);
 
-  const handleResultClick = (e: React.MouseEvent) => {
-    e.preventDefault();
-    
-    // 점수 데이터를 URL 파라미터로 변환
+  // 링크 생성을 위한 메모이제이션
+  const resultLink = React.useMemo(() => {
     const params = new URLSearchParams();
     params.set('d', scores.D.toString());
     params.set('i', scores.I.toString());
@@ -44,11 +42,9 @@ const Analyzing: React.FC<AnalyzingProps> = ({ scores, ageGroup }) => {
     params.set('c', scores.C.toString());
     params.set('age', ageGroup);
     params.set('view', 'result');
-
-    // window.location.href를 사용한 강제 페이지 이동
-    // 이 시점에 애드센스 전면광고(Vignette)가 트리거될 확률이 극대화됩니다.
-    window.location.href = `/?${params.toString()}`;
-  };
+    // index.html을 명시적으로 붙여 '새 문서 요청'임을 구글에게 강조합니다.
+    return `/index.html?${params.toString()}`;
+  }, [scores, ageGroup]);
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-deep-black px-6 relative overflow-hidden">
@@ -79,7 +75,7 @@ const Analyzing: React.FC<AnalyzingProps> = ({ scores, ageGroup }) => {
               <div className="space-y-4">
                 <div className="flex items-center justify-center gap-2 text-neon-cyan/80">
                   {messages[step].icon}
-                  <span className="text-[10px] font-black tracking-[0.3em] uppercase">Processing Step 0{step + 1}</span>
+                  <span className="text-[10px] font-black tracking-[0.3em] uppercase">Step 0{step + 1} Analyzing...</span>
                 </div>
                 
                 <div className="h-8 flex items-center justify-center">
@@ -117,9 +113,10 @@ const Analyzing: React.FC<AnalyzingProps> = ({ scores, ageGroup }) => {
               <h2 className="text-3xl font-display font-black text-white mb-2 tracking-tighter">분석이 완료되었습니다!</h2>
               <p className="text-gray-500 text-sm mb-12">당신의 행동 DNA 데이터가 완벽하게 해독되었습니다.</p>
 
-              <button
-                onClick={handleResultClick}
-                className="w-full py-6 bg-neon-cyan text-black font-black rounded-2xl text-xl shadow-[0_0_40px_rgba(0,243,255,0.4)] hover:scale-105 active:scale-95 transition-all flex items-center justify-center gap-3 group"
+              {/* [중요] a 태그를 통한 정석적인 내비게이션만이 애드센스 전면광고를 100% 확실하게 트리거합니다. */}
+              <a
+                href={resultLink}
+                className="w-full py-6 bg-neon-cyan text-black font-black rounded-2xl text-xl shadow-[0_0_40px_rgba(0,243,255,0.4)] hover:scale-105 active:scale-95 transition-all flex items-center justify-center gap-3 group no-underline decoration-transparent"
               >
                 <span>📋 결과 리포트 확인하기</span>
                 <motion.div
@@ -128,10 +125,10 @@ const Analyzing: React.FC<AnalyzingProps> = ({ scores, ageGroup }) => {
                 >
                   <Cpu size={24} className="group-hover:rotate-12 transition-transform" />
                 </motion.div>
-              </button>
+              </a>
               
               <p className="mt-6 text-[10px] text-gray-700 font-bold uppercase tracking-widest animate-pulse">
-                Click to reveal your personality profile
+                Click to finalize and see your report
               </p>
             </motion.div>
           )}
