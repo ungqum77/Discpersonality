@@ -5,9 +5,9 @@ import AgeFilter from './ui/AgeFilter.tsx';
 import DepthSelector from './ui/DepthSelector.tsx';
 import Questionnaire from './ui/Questionnaire.tsx';
 import Result from './components/Result.tsx';
+import Analyzing from './components/Analyzing.tsx';
 import ScienceOverlay from './ui/ScienceOverlay.tsx';
 import { AppState, DISCType, Question, ResultContent, AgeGroup, TestMode } from './SchemaDefinitions.ts';
-import { Loader2 } from 'lucide-react';
 
 import { surveyData } from './content/survey-provider.ts';
 import { analysisData } from './content/analysis-provider.ts';
@@ -77,14 +77,9 @@ const MainController: React.FC = () => {
     setView('ANALYZING');
   };
 
-  useEffect(() => {
-    if (view === 'ANALYZING') {
-      const timer = setTimeout(() => {
-        setView('RESULT');
-      }, 2200);
-      return () => clearTimeout(timer);
-    }
-  }, [view]);
+  const handleAnalysisFinished = () => {
+    setView('RESULT');
+  };
 
   const handleReset = () => {
     setView('HOME');
@@ -98,7 +93,7 @@ const MainController: React.FC = () => {
     const scoresArray = Object.entries(finalScores) as [DISCType, number][];
     const sorted = [...scoresArray].sort((a, b) => b[1] - a[1]);
     const first = sorted[0][0];
-    const second = sorted[1][0];
+    const second = sorted.length > 1 ? sorted[1][0] : first;
     
     const totalAnswered = Object.values(finalScores).reduce((a, b) => a + b, 0) || 1;
     const firstRatio = finalScores[first] / totalAnswered;
@@ -152,20 +147,7 @@ const MainController: React.FC = () => {
             {view === 'AGE_SELECT' && <AgeFilter onSelect={handleAgeSelect} />}
             {view === 'MODE_SELECT' && <DepthSelector onSelect={handleModeSelect} onBack={() => setView('AGE_SELECT')} />}
             {view === 'QUIZ' && <Questionnaire questions={finalQuestions} onFinish={handleQuizFinish} onBackToMode={() => setView('MODE_SELECT')} />}
-            {view === 'ANALYZING' && (
-              <div className="min-h-screen flex flex-col items-center justify-center gap-6 bg-deep-black px-6">
-                <div className="relative">
-                   <Loader2 size={48} className="text-neon-cyan animate-spin opacity-30" />
-                   <div className="absolute inset-0 flex items-center justify-center">
-                      <div className="w-5 h-5 bg-neon-cyan rounded-full animate-pulse"></div>
-                   </div>
-                </div>
-                <div className="text-center space-y-2">
-                   <h2 className="text-xl font-display font-bold tracking-widest text-white">ANALYZING DNA...</h2>
-                   <p className="text-gray-500 text-[10px] font-bold uppercase tracking-widest">결과를 도출하고 있습니다</p>
-                </div>
-              </div>
-            )}
+            {view === 'ANALYZING' && <Analyzing onFinished={handleAnalysisFinished} />}
             {view === 'RESULT' && <Result scores={finalScores} result={matchedResult} onReset={handleReset} ageGroup={selectedAge || '20s'} />}
           </motion.div>
         </AnimatePresence>
