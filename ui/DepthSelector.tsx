@@ -10,9 +10,9 @@ interface Props {
 
 const DepthSelector: React.FC<Props> = ({ onSelect, onBack }) => {
   const modes: (TestMode & { icon: React.ReactNode })[] = [
-    { id: 'CORE', count: 50, label: "빠르고 효율적", branding: "Core Scan", time: "5m", icon: <Zap size={32} /> },
-    { id: 'DEEP', count: 70, label: "높은 정확도", branding: "Deep Analysis", time: "10m", recommended: true, icon: <Activity size={32} /> },
-    { id: 'FULL', count: 90, label: "완벽한 해독", branding: "Full Profiling", time: "15m", icon: <ShieldCheck size={32} /> }
+    { id: 'CORE', count: 50, label: "빠르고 효율적", branding: "핵심 스캔", time: "5분", icon: <Zap size={32} /> },
+    { id: 'DEEP', count: 70, label: "높은 정확도", branding: "정밀 분석", time: "10분", recommended: true, icon: <Activity size={32} /> },
+    { id: 'FULL', count: 90, label: "완벽한 해독", branding: "종합 프로파일링", time: "15분", icon: <ShieldCheck size={32} /> }
   ];
 
   return (
@@ -34,8 +34,8 @@ const DepthSelector: React.FC<Props> = ({ onSelect, onBack }) => {
             className={`group relative p-10 rounded-[40px] bg-white/5 border transition-all text-center flex flex-col items-center ${m.recommended ? 'border-neon-cyan shadow-[0_0_30px_rgba(0,243,255,0.15)]' : 'border-white/10 hover:border-white/20'}`}
           >
             {m.recommended && (
-              <div className="absolute top-6 right-6 bg-neon-cyan text-black font-black text-[9px] px-3 py-1 rounded-full uppercase tracking-tighter shadow-lg">
-                Recommended
+              <div className="absolute top-6 right-6 bg-neon-cyan text-black font-black text-[11px] px-3 py-1 rounded-full uppercase tracking-tighter shadow-lg">
+                추천
               </div>
             )}
             <div className={`w-16 h-16 rounded-2xl flex items-center justify-center mb-8 ${m.recommended ? 'bg-neon-cyan/10 text-neon-cyan' : 'bg-white/5 text-gray-400'} group-hover:scale-110 transition-transform`}>
@@ -43,8 +43,8 @@ const DepthSelector: React.FC<Props> = ({ onSelect, onBack }) => {
             </div>
             <div className="text-2xl font-display font-black text-white mb-2">{m.branding}</div>
             <div className="text-gray-400 text-sm font-bold mb-6">{m.label}</div>
-            <div className="mt-auto pt-6 border-t border-white/5 w-full text-[10px] text-gray-500 font-bold uppercase tracking-widest">
-              {m.count} Questions / {m.time}
+            <div className="mt-auto pt-6 border-t border-white/5 w-full text-[12px] text-gray-500 font-bold uppercase tracking-widest">
+              {m.count}문항 / {m.time}
             </div>
           </motion.button>
         ))}
