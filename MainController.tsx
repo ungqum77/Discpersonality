@@ -1,12 +1,13 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import LandingSection from './ui/LandingSection.tsx';
 import AgeFilter from './ui/AgeFilter.tsx';
 import DepthSelector from './ui/DepthSelector.tsx';
 import Questionnaire from './ui/Questionnaire.tsx';
-import InsightReport from './ui/InsightReport.tsx';
+import Result from './components/Result.tsx';
 import ScienceOverlay from './ui/ScienceOverlay.tsx';
 import { AppState, DISCType, Question, ResultContent, AgeGroup, TestMode } from './SchemaDefinitions.ts';
+import { Loader2 } from 'lucide-react';
 
 import { surveyData } from './content/survey-provider.ts';
 import { analysisData } from './content/analysis-provider.ts';
@@ -21,8 +22,9 @@ function shuffleArray<T>(array: T[]): T[] {
 }
 
 const MainController: React.FC = () => {
-  const [view, setView] = useState<AppState>('HOME');
+  const [view, setView] = useState<AppState | 'ANALYZING'>('HOME');
   const [selectedAge, setSelectedAge] = useState<AgeGroup | null>(null);
+  const [selectedMode, setSelectedMode] = useState<TestMode | null>(null);
   const [isMethodologyOpen, setIsMethodologyOpen] = useState(false);
   const [finalQuestions, setFinalQuestions] = useState<Question[]>([]);
   const [finalScores, setFinalScores] = useState<Record<DISCType, number>>({
@@ -38,6 +40,7 @@ const MainController: React.FC = () => {
 
   const handleModeSelect = (mode: TestMode) => {
     if (!selectedAge) return;
+    setSelectedMode(mode);
     const ageMap: Record<AgeGroup, number> = { 
       '10s': 15, '20s': 25, '30s': 35, '40s': 45, '50s': 55, '60s': 70 
     };
@@ -52,7 +55,6 @@ const MainController: React.FC = () => {
       return;
     }
 
-    // Shuffle questions and options
     const shuffledPool = shuffleArray(pool);
     const sliced = shuffledPool.slice(0, Math.min(mode.count, shuffledPool.length));
     const fullyShuffled = sliced.map(q => ({
@@ -66,12 +68,22 @@ const MainController: React.FC = () => {
 
   const handleQuizFinish = (scores: Record<DISCType, number>) => {
     setFinalScores(scores);
-    setView('RESULT');
+    setView('ANALYZING');
   };
+
+  useEffect(() => {
+    if (view === 'ANALYZING') {
+      const timer = setTimeout(() => {
+        setView('RESULT');
+      }, 2200);
+      return () => clearTimeout(timer);
+    }
+  }, [view]);
 
   const handleReset = () => {
     setView('HOME');
     setSelectedAge(null);
+    setSelectedMode(null);
     setFinalScores({ D: 0, I: 0, S: 0, C: 0 });
     setFinalQuestions([]);
   };
@@ -95,7 +107,7 @@ const MainController: React.FC = () => {
   }, [finalScores]);
 
   return (
-    <div className="min-h-screen bg-deep-black flex flex-col font-sans text-white">
+    <div className="min-h-screen bg-deep-black flex flex-col font-sans text-white overflow-x-hidden">
       <ScienceOverlay isOpen={isMethodologyOpen} onClose={() => setIsMethodologyOpen(false)} />
       
       <nav className="fixed top-0 left-0 w-full z-[60] px-8 py-5 flex justify-between items-center bg-black/50 backdrop-blur-xl border-b border-white/5">
@@ -115,7 +127,7 @@ const MainController: React.FC = () => {
             onClick={handleStartClick} 
             className="px-7 py-2.5 rounded-xl bg-neon-cyan text-black font-black text-xs uppercase tracking-wider shadow-[0_0_20px_rgba(0,243,255,0.4)] hover:shadow-[0_0_35px_rgba(0,243,255,0.7)] transition-all active:scale-95"
           >
-            Get Started
+            다시하기
           </button>
         </div>
       </nav>
@@ -127,34 +139,31 @@ const MainController: React.FC = () => {
             initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -15 }}
-            transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
+            transition={{ duration: 0.4 }}
             className="h-full w-full"
           >
             {view === 'HOME' && <LandingSection onStart={handleStartClick} />}
             {view === 'AGE_SELECT' && <AgeFilter onSelect={handleAgeSelect} />}
-            {view === 'MODE_SELECT' && <DepthSelector onSelect={handleModeSelect} />}
-            {view === 'QUIZ' && <Questionnaire questions={finalQuestions} onFinish={handleQuizFinish} />}
-            {view === 'RESULT' && <InsightReport scores={finalScores} result={matchedResult} onReset={handleReset} />}
+            {view === 'MODE_SELECT' && <DepthSelector onSelect={handleModeSelect} onBack={() => setView('AGE_SELECT')} />}
+            {view === 'QUIZ' && <Questionnaire questions={finalQuestions} onFinish={handleQuizFinish} onBackToMode={() => setView('MODE_SELECT')} />}
+            {view === 'ANALYZING' && (
+              <div className="min-h-screen flex flex-col items-center justify-center gap-8 bg-deep-black">
+                <div className="relative">
+                   <Loader2 size={64} className="text-neon-cyan animate-spin opacity-20" />
+                   <div className="absolute inset-0 flex items-center justify-center">
+                      <div className="w-8 h-8 bg-neon-cyan rounded-full animate-pulse shadow-[0_0_30px_#00f3ff]"></div>
+                   </div>
+                </div>
+                <div className="text-center space-y-3">
+                   <h2 className="text-2xl font-display font-bold tracking-widest text-white animate-pulse">DNA COMBINING...</h2>
+                   <p className="text-gray-500 text-xs font-bold uppercase tracking-[0.3em]">분석 결과를 조합하고 있습니다</p>
+                </div>
+              </div>
+            )}
+            {view === 'RESULT' && <Result scores={finalScores} result={matchedResult} onReset={handleReset} ageGroup={selectedAge || '20s'} />}
           </motion.div>
         </AnimatePresence>
       </main>
-
-      <footer className="bg-black py-10 px-8 border-t border-white/5 relative z-50">
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
-          <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-[11px] text-gray-500 font-medium tracking-tight">
-            <span>상호: 웰나스코어</span>
-            <span className="hidden md:block w-px h-3 bg-gray-800"></span>
-            <span>문의: ungqum77@gmail.com</span>
-            <span className="hidden md:block w-px h-3 bg-gray-800"></span>
-            <span>사업자등록번호: 801-15-02098</span>
-            <span className="hidden md:block w-px h-3 bg-gray-800"></span>
-            <span>통신판매업신고: 2023-창원성산-0414호</span>
-          </div>
-          <div className="text-[11px] text-gray-600">
-            © 2024 웰나스코어. All rights reserved.
-          </div>
-        </div>
-      </footer>
     </div>
   );
 };

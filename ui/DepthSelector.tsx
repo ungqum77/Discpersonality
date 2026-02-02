@@ -1,25 +1,29 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { TestMode } from '../SchemaDefinitions';
-import { Zap, Activity, ShieldCheck } from 'lucide-react';
+import { Zap, Activity, ShieldCheck, ChevronLeft } from 'lucide-react';
 
-interface Props { onSelect: (mode: TestMode) => void; }
+interface Props { 
+  onSelect: (mode: TestMode) => void; 
+  onBack: () => void;
+}
 
-const DepthSelector: React.FC<Props> = ({ onSelect }) => {
+const DepthSelector: React.FC<Props> = ({ onSelect, onBack }) => {
   const modes: (TestMode & { icon: React.ReactNode })[] = [
-    { id: 'CORE', count: 50, label: "빠르고 핵심적인 진단", branding: "Core Scan", time: "5m", icon: <Zap size={32} /> },
-    { id: 'DEEP', count: 70, label: "정밀한 심층 분석", branding: "Deep Analysis", time: "10m", recommended: true, icon: <Activity size={32} /> },
-    { id: 'FULL', count: 90, label: "완벽한 종합 프로파일링", branding: "Full Profiling", time: "15m", icon: <ShieldCheck size={32} /> }
+    { id: 'CORE', count: 50, label: "빠르고 효율적", branding: "Core Scan", time: "5m", icon: <Zap size={32} /> },
+    { id: 'DEEP', count: 70, label: "높은 정확도", branding: "Deep Analysis", time: "10m", recommended: true, icon: <Activity size={32} /> },
+    { id: 'FULL', count: 90, label: "완벽한 해독", branding: "Full Profiling", time: "15m", icon: <ShieldCheck size={32} /> }
   ];
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center p-6 bg-deep-black">
+    <div className="min-h-screen flex flex-col items-center justify-center p-6 bg-deep-black relative">
       <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="text-center mb-16">
         <span className="text-neon-purple font-bold tracking-[0.4em] uppercase text-xs mb-4 block">Selection</span>
-        <h2 className="text-4xl md:text-5xl font-display font-bold text-white">진단의 종류를 <br className="md:hidden"/>선택해주세요</h2>
+        <h2 className="text-4xl md:text-5xl font-display font-bold text-white mb-4">진단의 깊이를 <br className="md:hidden"/>선택해주세요</h2>
+        <p className="text-gray-500 text-sm">문항수가 많을수록 더욱 정밀한 분석 결과가 제공됩니다.</p>
       </motion.div>
 
-      <div className="grid md:grid-cols-3 gap-6 max-w-5xl w-full">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl w-full mb-16">
         {modes.map((m, idx) => (
           <motion.button 
             key={m.id} 
@@ -45,6 +49,17 @@ const DepthSelector: React.FC<Props> = ({ onSelect }) => {
           </motion.button>
         ))}
       </div>
+
+      {/* 하단 중앙 고정 뒤로가기 버튼 */}
+      <motion.button 
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 0.5 }}
+        onClick={onBack}
+        className="flex items-center gap-2 px-8 py-4 rounded-2xl bg-white/5 border border-white/10 text-neon-cyan text-sm font-black hover:bg-white/10 transition-all shadow-xl hover:scale-105 active:scale-95"
+      >
+        <ChevronLeft size={20} /> 연령 선택으로 돌아가기
+      </motion.button>
     </div>
   );
 };
