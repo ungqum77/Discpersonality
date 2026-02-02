@@ -31,6 +31,21 @@ const MainController: React.FC = () => {
     D: 0, I: 0, S: 0, C: 0
   });
 
+  // 브라우저 주소창 변경 감지 (애드센스 전면광고 트리거 및 뒤로가기 대응)
+  useEffect(() => {
+    const handleHashChange = () => {
+      if (window.location.hash === '#result' && view === 'ANALYZING') {
+        setView('RESULT');
+      } else if (!window.location.hash && view === 'RESULT') {
+        // 결과창에서 뒤로가기를 누르면 홈으로
+        handleReset();
+      }
+    };
+
+    window.addEventListener('hashchange', handleHashChange);
+    return () => window.removeEventListener('hashchange', handleHashChange);
+  }, [view]);
+
   const handleStartClick = () => setView('AGE_SELECT');
 
   const handleAgeSelect = (age: AgeGroup) => {
@@ -46,7 +61,6 @@ const MainController: React.FC = () => {
     };
     const targetAgeValue = ageMap[selectedAge];
     
-    // 연령대 필터링
     const pool = (surveyData || []).filter(q => 
       targetAgeValue >= q.target_age_min && targetAgeValue <= q.target_age_max
     );
@@ -56,7 +70,6 @@ const MainController: React.FC = () => {
       return;
     }
 
-    // 실제 가용 가능한 문항 수 결정 (요청 수보다 적으면 풀 전체 사용)
     const actualCount = Math.min(mode.count, pool.length);
     const updatedMode = { ...mode, count: actualCount };
     setSelectedMode(updatedMode);
@@ -78,11 +91,15 @@ const MainController: React.FC = () => {
   };
 
   const handleAnalysisFinished = () => {
+    // 탭 이동 없이 수동으로 넘길 때를 위해 hash를 체크하거나 직접 view 변경
+    if (window.location.hash !== '#result') {
+      window.location.hash = 'result';
+    }
     setView('RESULT');
   };
 
   const handleReset = () => {
-    // 다시 시작 시 URL hash 제거 (애드센스 전환 추적 초기화 도움)
+    // 다시 하기 시 해시 제거
     if (window.location.hash) {
       history.replaceState(null, "", window.location.pathname);
     }

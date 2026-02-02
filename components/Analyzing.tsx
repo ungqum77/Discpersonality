@@ -31,9 +31,17 @@ const Analyzing: React.FC<AnalyzingProps> = ({ onFinished }) => {
     }
   }, [step]);
 
+  const handleResultClick = (e: React.MouseEvent) => {
+    // 1. 주소창 뒤에 #result 라고 붙여서 브라우저가 "페이지 이동"을 한 것으로 인지하게 함
+    // 이 시점에 애드센스 전면광고가 트리거될 확률이 가장 높습니다.
+    window.location.hash = "result";
+    
+    // 2. 부모 컴포넌트의 상태 변경 함수 호출 (실제 화면 전환)
+    onFinished();
+  };
+
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-deep-black px-6 relative overflow-hidden">
-      {/* Background Effect */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] bg-neon-cyan/5 blur-[100px] rounded-full pointer-events-none"></div>
 
       <div className="w-full max-w-md flex flex-col items-center text-center z-10">
@@ -76,7 +84,6 @@ const Analyzing: React.FC<AnalyzingProps> = ({ onFinished }) => {
                 </div>
               </div>
 
-              {/* Progress Bar */}
               <div className="w-64 h-1 bg-white/5 rounded-full mt-4 overflow-hidden">
                 <motion.div
                   className="h-full bg-neon-cyan"
@@ -100,14 +107,10 @@ const Analyzing: React.FC<AnalyzingProps> = ({ onFinished }) => {
               <h2 className="text-3xl font-display font-black text-white mb-2 tracking-tighter">분석이 완료되었습니다!</h2>
               <p className="text-gray-500 text-sm mb-12">당신의 행동 DNA 데이터가 완벽하게 해독되었습니다.</p>
 
-              {/* a 태그로 변경하여 애드센스 전면광고 트리거 확률 극대화 */}
+              {/* href를 #result로 지정하여 실제 앵커 이동 효과를 줌 */}
               <a
                 href="#result"
-                onClick={(e) => {
-                  e.preventDefault();
-                  window.location.hash = "result";
-                  onFinished();
-                }}
+                onClick={handleResultClick}
                 className="w-full py-6 bg-neon-cyan text-black font-black rounded-2xl text-xl shadow-[0_0_40px_rgba(0,243,255,0.4)] hover:scale-105 active:scale-95 transition-all flex items-center justify-center gap-3 group no-underline"
               >
                 <span>📋 결과 리포트 확인하기</span>
@@ -120,7 +123,7 @@ const Analyzing: React.FC<AnalyzingProps> = ({ onFinished }) => {
               </a>
               
               <p className="mt-6 text-[10px] text-gray-700 font-bold uppercase tracking-widest animate-pulse">
-                Click the button to reveal your profile
+                Click to reveal your personality profile
               </p>
             </motion.div>
           )}

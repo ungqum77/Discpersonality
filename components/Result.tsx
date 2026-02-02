@@ -49,7 +49,6 @@ const Result: React.FC<ResultProps> = ({ scores, result, onReset, ageGroup }) =>
     { subject: 'C', value: scores.C },
   ], [scores]);
 
-  // 카카오 SDK를 동적으로 로드하는 헬퍼 함수
   const loadKakaoSDK = () => {
     return new Promise<void>((resolve, reject) => {
       if ((window as any).Kakao) {
@@ -80,28 +79,25 @@ const Result: React.FC<ResultProps> = ({ scores, result, onReset, ageGroup }) =>
     
     loadKakaoSDK()
       .then(() => initKakao())
-      .catch(() => console.warn('Initial Kakao load blocked. Might be an ad-blocker.'));
+      .catch(() => console.warn('Kakao load blocked. Check ad-blocker.'));
   }, []);
 
   const handleKakaoShare = async () => {
     let kakao = (window as any).Kakao;
-    
-    // 클릭 시점에 라이브러리가 없다면 한 번 더 로드 시도
     if (!kakao) {
       try {
         await loadKakaoSDK();
         kakao = (window as any).Kakao;
         initKakao();
       } catch (e) {
-        alert('카카오 공유 라이브러리를 불러올 수 없습니다.\n광고 차단기(Ad-blocker)가 켜져 있다면 해제 후 다시 시도해 주세요.');
+        alert('공유 기능을 실행할 수 없습니다. 광고 차단기 해제 후 새로고침 해주세요.');
         return;
       }
     }
 
-    if (!kakao) return;
-
-    if (!kakao.isInitialized()) {
-      kakao.init(KAKAO_KEY);
+    if (!kakao || !kakao.isInitialized()) {
+      alert('카카오 SDK 초기화에 실패했습니다. 자바스크립트 키를 확인해주세요.');
+      return;
     }
 
     const shareTitle = `나의 DISC 성격 유형은? [${result.titles[0]}]`;
@@ -109,35 +105,35 @@ const Result: React.FC<ResultProps> = ({ scores, result, onReset, ageGroup }) =>
       ? result.summaries[0].substring(0, 45) + '...' 
       : result.summaries[0];
 
+    // 카카오 개발자 센터에 등록된 '정확한' 도메인을 사용해야 4019 에러가 안 납니다.
+    // window.location.origin은 현재 접속한 주소를 자동으로 가져옵니다.
+    const currentUrl = window.location.origin;
+
     try {
       kakao.Share.sendDefault({
         objectType: 'feed',
         content: {
           title: shareTitle,
           description: shareDesc,
-          imageUrl: 'https://disc.woongth.com/og-image.png',
+          imageUrl: `${currentUrl}/og-image.png`,
           link: {
-            mobileWebUrl: 'https://disc.woongth.com',
-            webUrl: 'https://disc.woongth.com',
+            mobileWebUrl: currentUrl,
+            webUrl: currentUrl,
           },
-        },
-        social: {
-          likeCount: Math.floor(Math.random() * 500) + 100,
-          sharedCount: Math.floor(Math.random() * 1000) + 200,
         },
         buttons: [
           {
-            title: '무료 테스트 하러가기',
+            title: '나도 테스트 해보기',
             link: {
-              mobileWebUrl: 'https://disc.woongth.com',
-              webUrl: 'https://disc.woongth.com',
+              mobileWebUrl: currentUrl,
+              webUrl: currentUrl,
             },
           },
         ],
       });
     } catch (e) {
       console.error('Kakao Share Execute Error:', e);
-      alert('카카오톡 실행 중 오류가 발생했습니다.');
+      alert('카카오톡 공유 중 오류가 발생했습니다. 사이트 도메인 설정을 확인해주세요.');
     }
   };
 
