@@ -52,37 +52,64 @@ const Result: React.FC<ResultProps> = ({ scores, result, onReset, ageGroup }) =>
     gsap.from('.fade-in', { y: 20, opacity: 0, stagger: 0.1, duration: 0.6, ease: 'power2.out' });
 
     // Initialize Kakao SDK
-    if ((window as any).Kakao && !(window as any).Kakao.isInitialized()) {
-      (window as any).Kakao.init('1cb0577483045110241831ff7beefaca');
+    const initKakao = () => {
+      const kakao = (window as any).Kakao;
+      if (kakao) {
+        if (!kakao.isInitialized()) {
+          kakao.init('1cb0577483045110241831ff7beefaca');
+          console.log('Kakao SDK Initialized');
+        }
+      }
+    };
+
+    // 스크립트가 늦게 로드될 경우를 대비해 약간의 지연 후 실행 또는 체크
+    if ((window as any).Kakao) {
+      initKakao();
+    } else {
+      const script = document.querySelector('script[src*="kakao.min.js"]');
+      script?.addEventListener('load', initKakao);
     }
   }, []);
 
   const handleKakaoShare = () => {
-    if (!(window as any).Kakao) return;
+    const kakao = (window as any).Kakao;
+    if (!kakao) {
+      alert('카카오톡 SDK를 불러오는 중입니다. 잠시 후 다시 시도해주세요.');
+      return;
+    }
+
+    if (!kakao.isInitialized()) {
+      kakao.init('1cb0577483045110241831ff7beefaca');
+    }
 
     const firstSentence = result.summaries[0].split('.')[0] + '.';
 
-    (window as any).Kakao.Share.sendDefault({
-      objectType: 'feed',
-      content: {
-        title: `나의 성격 유형은? - ${result.titles[0]}`,
-        description: firstSentence,
-        imageUrl: 'https://disc.woongth.com/og-image.png',
-        link: {
-          mobileWebUrl: 'https://disc.woongth.com',
-          webUrl: 'https://disc.woongth.com',
-        },
-      },
-      buttons: [
-        {
-          title: '테스트 하러가기',
+    try {
+      kakao.Share.sendDefault({
+        objectType: 'feed',
+        content: {
+          title: `나의 성격 유형은? - ${result.titles[0]}`,
+          description: firstSentence,
+          imageUrl: 'https://disc.woongth.com/og-image.png',
           link: {
             mobileWebUrl: 'https://disc.woongth.com',
             webUrl: 'https://disc.woongth.com',
           },
         },
-      ],
-    });
+        buttons: [
+          {
+            title: '테스트 하러가기',
+            link: {
+              mobileWebUrl: 'https://disc.woongth.com',
+              webUrl: 'https://disc.woongth.com',
+            },
+          },
+        ],
+      });
+    } catch (e) {
+      console.error('Kakao Share Error:', e);
+      alert('카카오톡 공유 중 오류가 발생했습니다.');
+    }
   };
 
   const handleSaveAsImage = async () => {
