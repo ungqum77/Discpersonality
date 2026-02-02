@@ -1,12 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Loader2, CheckCircle2, Cpu, Database, Binary, FileSearch } from 'lucide-react';
+import { DISCType, AgeGroup } from '../SchemaDefinitions';
 
 interface AnalyzingProps {
-  onFinished: () => void;
+  scores: Record<DISCType, number>;
+  ageGroup: AgeGroup;
 }
 
-const Analyzing: React.FC<AnalyzingProps> = ({ onFinished }) => {
+const Analyzing: React.FC<AnalyzingProps> = ({ scores, ageGroup }) => {
   const [step, setStep] = useState(0);
   const [isCompleted, setIsCompleted] = useState(false);
 
@@ -32,12 +34,20 @@ const Analyzing: React.FC<AnalyzingProps> = ({ onFinished }) => {
   }, [step]);
 
   const handleResultClick = (e: React.MouseEvent) => {
-    // 1. 주소창 뒤에 #result 라고 붙여서 브라우저가 "페이지 이동"을 한 것으로 인지하게 함
-    // 이 시점에 애드센스 전면광고가 트리거될 확률이 가장 높습니다.
-    window.location.hash = "result";
+    e.preventDefault();
     
-    // 2. 부모 컴포넌트의 상태 변경 함수 호출 (실제 화면 전환)
-    onFinished();
+    // 점수 데이터를 URL 파라미터로 변환
+    const params = new URLSearchParams();
+    params.set('d', scores.D.toString());
+    params.set('i', scores.I.toString());
+    params.set('s', scores.S.toString());
+    params.set('c', scores.C.toString());
+    params.set('age', ageGroup);
+    params.set('view', 'result');
+
+    // window.location.href를 사용한 강제 페이지 이동
+    // 이 시점에 애드센스 전면광고(Vignette)가 트리거될 확률이 극대화됩니다.
+    window.location.href = `/?${params.toString()}`;
   };
 
   return (
@@ -107,11 +117,9 @@ const Analyzing: React.FC<AnalyzingProps> = ({ onFinished }) => {
               <h2 className="text-3xl font-display font-black text-white mb-2 tracking-tighter">분석이 완료되었습니다!</h2>
               <p className="text-gray-500 text-sm mb-12">당신의 행동 DNA 데이터가 완벽하게 해독되었습니다.</p>
 
-              {/* href를 #result로 지정하여 실제 앵커 이동 효과를 줌 */}
-              <a
-                href="#result"
+              <button
                 onClick={handleResultClick}
-                className="w-full py-6 bg-neon-cyan text-black font-black rounded-2xl text-xl shadow-[0_0_40px_rgba(0,243,255,0.4)] hover:scale-105 active:scale-95 transition-all flex items-center justify-center gap-3 group no-underline"
+                className="w-full py-6 bg-neon-cyan text-black font-black rounded-2xl text-xl shadow-[0_0_40px_rgba(0,243,255,0.4)] hover:scale-105 active:scale-95 transition-all flex items-center justify-center gap-3 group"
               >
                 <span>📋 결과 리포트 확인하기</span>
                 <motion.div
@@ -120,7 +128,7 @@ const Analyzing: React.FC<AnalyzingProps> = ({ onFinished }) => {
                 >
                   <Cpu size={24} className="group-hover:rotate-12 transition-transform" />
                 </motion.div>
-              </a>
+              </button>
               
               <p className="mt-6 text-[10px] text-gray-700 font-bold uppercase tracking-widest animate-pulse">
                 Click to reveal your personality profile

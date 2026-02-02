@@ -31,20 +31,27 @@ const MainController: React.FC = () => {
     D: 0, I: 0, S: 0, C: 0
   });
 
-  // 브라우저 주소창 변경 감지 (애드센스 전면광고 트리거 및 뒤로가기 대응)
+  // URL 파라미터 감지 및 초기 상태 설정
   useEffect(() => {
-    const handleHashChange = () => {
-      if (window.location.hash === '#result' && view === 'ANALYZING') {
-        setView('RESULT');
-      } else if (!window.location.hash && view === 'RESULT') {
-        // 결과창에서 뒤로가기를 누르면 홈으로
-        handleReset();
-      }
-    };
+    const params = new URLSearchParams(window.location.search);
+    const d = params.get('d');
+    const i = params.get('i');
+    const s = params.get('s');
+    const c = params.get('c');
+    const age = params.get('age') as AgeGroup;
+    const isResultView = params.get('view') === 'result';
 
-    window.addEventListener('hashchange', handleHashChange);
-    return () => window.removeEventListener('hashchange', handleHashChange);
-  }, [view]);
+    if (isResultView && d && i && s && c && age) {
+      setFinalScores({
+        D: parseInt(d),
+        I: parseInt(i),
+        S: parseInt(s),
+        C: parseInt(c)
+      });
+      setSelectedAge(age);
+      setView('RESULT');
+    }
+  }, []);
 
   const handleStartClick = () => setView('AGE_SELECT');
 
@@ -90,24 +97,17 @@ const MainController: React.FC = () => {
     setView('ANALYZING');
   };
 
-  const handleAnalysisFinished = () => {
-    // 탭 이동 없이 수동으로 넘길 때를 위해 hash를 체크하거나 직접 view 변경
-    if (window.location.hash !== '#result') {
-      window.location.hash = 'result';
-    }
-    setView('RESULT');
-  };
-
   const handleReset = () => {
-    // 다시 하기 시 해시 제거
-    if (window.location.hash) {
-      history.replaceState(null, "", window.location.pathname);
+    // 다시 하기 시 URL 파라미터 제거하고 홈으로
+    if (window.location.search) {
+      window.location.href = '/';
+    } else {
+      setView('HOME');
+      setSelectedAge(null);
+      setSelectedMode(null);
+      setFinalScores({ D: 0, I: 0, S: 0, C: 0 });
+      setFinalQuestions([]);
     }
-    setView('HOME');
-    setSelectedAge(null);
-    setSelectedMode(null);
-    setFinalScores({ D: 0, I: 0, S: 0, C: 0 });
-    setFinalQuestions([]);
   };
 
   const matchedResult = useMemo((): ResultContent => {
@@ -168,7 +168,7 @@ const MainController: React.FC = () => {
             {view === 'AGE_SELECT' && <AgeFilter onSelect={handleAgeSelect} />}
             {view === 'MODE_SELECT' && <DepthSelector onSelect={handleModeSelect} onBack={() => setView('AGE_SELECT')} />}
             {view === 'QUIZ' && <Questionnaire questions={finalQuestions} onFinish={handleQuizFinish} onBackToMode={() => setView('MODE_SELECT')} />}
-            {view === 'ANALYZING' && <Analyzing onFinished={handleAnalysisFinished} />}
+            {view === 'ANALYZING' && <Analyzing scores={finalScores} ageGroup={selectedAge || '20s'} />}
             {view === 'RESULT' && <Result scores={finalScores} result={matchedResult} onReset={handleReset} ageGroup={selectedAge || '20s'} />}
           </motion.div>
         </AnimatePresence>

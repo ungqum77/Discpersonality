@@ -105,9 +105,9 @@ const Result: React.FC<ResultProps> = ({ scores, result, onReset, ageGroup }) =>
       ? result.summaries[0].substring(0, 45) + '...' 
       : result.summaries[0];
 
-    // 카카오 개발자 센터에 등록된 '정확한' 도메인을 사용해야 4019 에러가 안 납니다.
-    // window.location.origin은 현재 접속한 주소를 자동으로 가져옵니다.
-    const currentUrl = window.location.origin;
+    // 결과 데이터가 포함된 나만의 고유 URL 생성
+    const baseUrl = window.location.origin.replace(/\/$/, "");
+    const resultUrl = `${baseUrl}/?d=${scores.D}&i=${scores.I}&s=${scores.S}&c=${scores.C}&age=${ageGroup}&view=result`;
 
     try {
       kakao.Share.sendDefault({
@@ -115,25 +115,32 @@ const Result: React.FC<ResultProps> = ({ scores, result, onReset, ageGroup }) =>
         content: {
           title: shareTitle,
           description: shareDesc,
-          imageUrl: `${currentUrl}/og-image.png`,
+          imageUrl: `${baseUrl}/og-image.png`,
           link: {
-            mobileWebUrl: currentUrl,
-            webUrl: currentUrl,
+            mobileWebUrl: resultUrl,
+            webUrl: resultUrl,
           },
         },
         buttons: [
           {
+            title: '내 결과 확인하기',
+            link: {
+              mobileWebUrl: resultUrl,
+              webUrl: resultUrl,
+            },
+          },
+          {
             title: '나도 테스트 해보기',
             link: {
-              mobileWebUrl: currentUrl,
-              webUrl: currentUrl,
+              mobileWebUrl: baseUrl,
+              webUrl: baseUrl,
             },
           },
         ],
       });
     } catch (e) {
       console.error('Kakao Share Execute Error:', e);
-      alert('카카오톡 공유 중 오류가 발생했습니다. 사이트 도메인 설정을 확인해주세요.');
+      alert('카카오톡 공유 중 오류가 발생했습니다.');
     }
   };
 
