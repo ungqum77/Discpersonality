@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useMemo } from 'react';
 import { DISCType, ResultContent, AgeGroup } from '../SchemaDefinitions';
 import { Radar, RadarChart, PolarGrid, PolarAngleAxis, ResponsiveContainer } from 'recharts';
-import { RefreshCw, Zap, Image as ImageIcon, Calendar, User, CheckCircle2, UserCircle2 } from 'lucide-react';
+import { RefreshCw, Zap, Image as ImageIcon, Calendar, User, CheckCircle2, UserCircle2, MessageCircle } from 'lucide-react';
 import { gsap } from 'gsap';
 import html2canvas from 'html2canvas';
 
@@ -50,7 +50,40 @@ const Result: React.FC<ResultProps> = ({ scores, result, onReset, ageGroup }) =>
 
   useEffect(() => {
     gsap.from('.fade-in', { y: 20, opacity: 0, stagger: 0.1, duration: 0.6, ease: 'power2.out' });
+
+    // Initialize Kakao SDK
+    if ((window as any).Kakao && !(window as any).Kakao.isInitialized()) {
+      (window as any).Kakao.init('1cb0577483045110241831ff7beefaca');
+    }
   }, []);
+
+  const handleKakaoShare = () => {
+    if (!(window as any).Kakao) return;
+
+    const firstSentence = result.summaries[0].split('.')[0] + '.';
+
+    (window as any).Kakao.Share.sendDefault({
+      objectType: 'feed',
+      content: {
+        title: `나의 성격 유형은? - ${result.titles[0]}`,
+        description: firstSentence,
+        imageUrl: 'https://disc.woongth.com/og-image.png',
+        link: {
+          mobileWebUrl: 'https://disc.woongth.com',
+          webUrl: 'https://disc.woongth.com',
+        },
+      },
+      buttons: [
+        {
+          title: '테스트 하러가기',
+          link: {
+            mobileWebUrl: 'https://disc.woongth.com',
+            webUrl: 'https://disc.woongth.com',
+          },
+        },
+      ],
+    });
+  };
 
   const handleSaveAsImage = async () => {
     if (!printRef.current) return;
@@ -162,13 +195,20 @@ const Result: React.FC<ResultProps> = ({ scores, result, onReset, ageGroup }) =>
         </div>
       </div>
 
-      <div className="w-full max-w-[440px] space-y-6 mt-12 fade-in">
-        <div className="grid grid-cols-2 gap-5">
-          <button onClick={handleSaveAsImage} className="flex items-center justify-center gap-3 py-6 bg-white text-black font-black rounded-[30px] hover:scale-105 active:scale-95 transition-all shadow-[0_20px_50px_rgba(255,255,255,0.2)] text-lg">
-            <ImageIcon size={24} /> 결과 저장
+      <div className="w-full max-w-[440px] space-y-4 mt-12 fade-in">
+        <button 
+          onClick={handleKakaoShare} 
+          className="w-full flex items-center justify-center gap-3 py-6 bg-[#FEE500] text-black font-black rounded-[30px] hover:scale-[1.02] active:scale-95 transition-all shadow-xl text-lg"
+        >
+          <MessageCircle size={24} className="fill-black" /> 카카오톡 공유하기
+        </button>
+        
+        <div className="grid grid-cols-2 gap-4">
+          <button onClick={handleSaveAsImage} className="flex items-center justify-center gap-3 py-5 bg-white text-black font-black rounded-[25px] hover:scale-105 active:scale-95 transition-all shadow-lg text-base">
+            <ImageIcon size={20} /> 결과 저장
           </button>
-          <button onClick={onReset} className="flex items-center justify-center gap-3 py-6 bg-white/5 border border-white/10 text-white font-black rounded-[30px] hover:bg-white/10 active:scale-95 transition-all text-lg shadow-xl">
-            <RefreshCw size={24} /> 다시 하기
+          <button onClick={onReset} className="flex items-center justify-center gap-3 py-5 bg-white/5 border border-white/10 text-white font-black rounded-[25px] hover:bg-white/10 active:scale-95 transition-all text-base shadow-xl">
+            <RefreshCw size={20} /> 다시 하기
           </button>
         </div>
       </div>
