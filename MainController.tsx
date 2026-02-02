@@ -164,6 +164,25 @@ const MainController: React.FC = () => {
           </motion.div>
         </AnimatePresence>
       </main>
+
+      <footer className="w-full py-12 px-8 bg-deep-black border-t border-white/5 mt-auto">
+        <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
+          <div className="flex flex-col gap-2.5">
+            <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-[11px] text-gray-500 font-medium">
+              <span>상호: 웰나스코어</span>
+              <span className="hidden md:inline text-white/10">|</span>
+              <span>문의: ungqum77@gmail.com</span>
+              <span className="hidden md:inline text-white/10">|</span>
+              <span>사업자등록번호: 801-15-02098</span>
+              <span className="hidden md:inline text-white/10">|</span>
+              <span>통신판매업신고: 2023-창원성산-0414호</span>
+            </div>
+          </div>
+          <div className="text-[11px] text-gray-600 font-bold tracking-tight">
+            © 2024 웰나스코어. All rights reserved.
+          </div>
+        </div>
+      </footer>
     </div>
   );
 };

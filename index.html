@@ -3,11 +3,33 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DISC 마인드 그래프 - 행동 DNA 분석</title>
+    
+    <!-- Basic SEO -->
+    <title>DISC 행동 유형 검사 - The Insight</title>
+    <meta name="description" content="내 성격은 어떤 유형일까? 무료 DISC 행동 유형 검사로 당신의 진짜 모습을 발견하세요." />
+    <meta name="keywords" content="DISC검사, 성격유형, 심리테스트, 무료검사" />
+    <link rel="canonical" href="https://disc.woongth.com" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph / Facebook / Naver / Daum -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://disc.woongth.com" />
+    <meta property="og:site_name" content="The Insight" />
+    <meta property="og:locale" content="ko_KR" />
+    <meta property="og:title" content="DISC 행동 유형 검사 - 3분 만에 알아보는 나의 성격" />
+    <meta property="og:description" content="12문항으로 알아보는 정밀 행동 분석. 당신은 주도형(D), 사교형(I), 안정형(S), 신중형(C) 중 어디에 속할까요?" />
+    <meta property="og:image" content="https://disc.woongth.com/og-image.png" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://disc.woongth.com" />
+    <meta name="twitter:title" content="DISC 행동 유형 검사 - 3분 만에 알아보는 나의 성격" />
+    <meta name="twitter:description" content="12문항으로 알아보는 정밀 행동 분석. 당신은 주도형(D), 사교형(I), 안정형(S), 신중형(C) 중 어디에 속할까요?" />
+    <meta name="twitter:image" content="https://disc.woongth.com/og-image.png" />
+
+    <!-- Style & Fonts -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
-    <!-- Kakao SDK -->
-    <script src="https://t1.kakaocdn.net/kakao_js_sdk/2.7.0/kakao.min.js" integrity="sha384-lTLG7v9m688SgtZ8S7TpL6Ssn6T7yWfOInIn+uS95A97/LltJ59uWwD2fSyrGfW0" crossorigin="anonymous"></script>
     <script>
       tailwind.config = {
         theme: {
@@ -32,28 +54,33 @@
       ::-webkit-scrollbar-track { background: #0a0a0a; }
       ::-webkit-scrollbar-thumb { background: #333; border-radius: 10px; }
       .neon-glow-cyan { text-shadow: 0 0 10px rgba(0, 243, 255, 0.5); }
-      /* PDF 인쇄 시 폰트 깨짐 방지 및 다크 모드 유지 */
-      #print-target {
-        background-color: #0a0a0a;
-      }
+      #print-target { background-color: #0a0a0a; }
     </style>
+
+    <!-- Kakao SDK -->
+    <script src="https://t1.kakaocdn.net/kakao_js_sdk/2.7.0/kakao.min.js" integrity="sha384-lTLG7v9m688SgtZ8S7TpL6Ssn6T7yWfOInIn+uS95A97/LltJ59uWwD2fSyrGfW0" crossorigin="anonymous"></script>
+    
     <script type="importmap">
-{
-  "imports": {
-    "gsap": "https://esm.sh/gsap@3.12.5",
-    "react": "https://esm.sh/react@19.0.0",
-    "react-dom": "https://esm.sh/react-dom@19.0.0",
-    "react-dom/client": "https://esm.sh/react-dom@19.0.0/client",
-    "lucide-react": "https://esm.sh/lucide-react@0.460.0?external=react",
-    "framer-motion": "https://esm.sh/framer-motion@11.11.11?external=react,react-dom",
-    "recharts": "https://esm.sh/recharts@2.13.3?external=react,react-dom",
-    "html2canvas": "https://esm.sh/html2canvas@1.4.1",
-    "jspdf": "https://esm.sh/jspdf@2.5.1",
-    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
-    "react/": "https://esm.sh/react@^19.2.4/"
-  }
-}
-</script>
+    {
+      "imports": {
+        "gsap": "https://esm.sh/gsap@3.12.5",
+        "react": "https://esm.sh/react@19.0.0",
+        "react-dom": "https://esm.sh/react-dom@19.0.0",
+        "react-dom/client": "https://esm.sh/react-dom@19.0.0/client",
+        "lucide-react": "https://esm.sh/lucide-react@0.460.0?external=react",
+        "framer-motion": "https://esm.sh/framer-motion@11.11.11?external=react,react-dom",
+        "recharts": "https://esm.sh/recharts@2.13.3?external=react,react-dom",
+        "html2canvas": "https://esm.sh/html2canvas@1.4.1",
+        "jspdf": "https://esm.sh/jspdf@2.5.1",
+        "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+        "react/": "https://esm.sh/react@^19.2.4/"
+      }
+    }
+    </script>
+
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2183928824144010"
+     crossorigin="anonymous"></script>
   <link rel="stylesheet" href="/index.css">
 </head>
   <body>
