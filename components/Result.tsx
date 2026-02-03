@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useMemo } from 'react';
 import { DISCType, ResultContent, AgeGroup } from '../SchemaDefinitions';
 import { Radar, RadarChart, PolarGrid, PolarAngleAxis, ResponsiveContainer } from 'recharts';
-import { RefreshCw, Zap, Image as ImageIcon, Calendar, User, CheckCircle2, UserCircle2, MessageCircle } from 'lucide-react';
+import { RefreshCw, Zap, Image as ImageIcon, Calendar, User, CheckCircle2, UserCircle2, Link } from 'lucide-react';
 import { gsap } from 'gsap';
 import html2canvas from 'html2canvas';
 
@@ -25,9 +25,8 @@ interface ResultProps {
 
 const Result: React.FC<ResultProps> = ({ scores, result, onReset, ageGroup }) => {
   const printRef = useRef<HTMLDivElement>(null);
-  const KAKAO_KEY = '1cb0577483045110241831ff7beefaca';
 
-  const totalAnswered = useMemo(() => Object.values(scores).reduce((a, b) => a + b, 0), [scores]);
+  const totalAnswered = useMemo(() => Object.values(scores).reduce((a: number, b: number) => a + b, 0), [scores]);
 
   const highestType = useMemo(() => {
     return (Object.entries(scores) as [DISCType, number][]).reduce((a, b) => a[1] > b[1] ? a : b)[0];
@@ -49,98 +48,29 @@ const Result: React.FC<ResultProps> = ({ scores, result, onReset, ageGroup }) =>
     { subject: 'C', value: scores.C },
   ], [scores]);
 
-  const loadKakaoSDK = () => {
-    return new Promise<void>((resolve, reject) => {
-      if ((window as any).Kakao) {
-        resolve();
-        return;
-      }
-      const script = document.createElement('script');
-      script.src = 'https://t1.kakaocdn.net/kakao_js_sdk/2.7.0/kakao.min.js';
-      script.onload = () => resolve();
-      script.onerror = () => reject();
-      document.head.appendChild(script);
-    });
-  };
-
-  const initKakao = () => {
-    const kakao = (window as any).Kakao;
-    if (kakao && !kakao.isInitialized()) {
-      try {
-        kakao.init(KAKAO_KEY);
-      } catch (e) {
-        console.error('Kakao Init Error:', e);
-      }
-    }
-  };
-
   useEffect(() => {
     gsap.from('.fade-in', { y: 20, opacity: 0, stagger: 0.1, duration: 0.6, ease: 'power2.out' });
-    
-    loadKakaoSDK()
-      .then(() => initKakao())
-      .catch(() => console.warn('Kakao load blocked. Check ad-blocker.'));
   }, []);
 
-  const handleKakaoShare = async () => {
-    let kakao = (window as any).Kakao;
-    if (!kakao) {
-      try {
-        await loadKakaoSDK();
-        kakao = (window as any).Kakao;
-        initKakao();
-      } catch (e) {
-        alert('공유 기능을 실행할 수 없습니다. 광고 차단기 해제 후 새로고침 해주세요.');
-        return;
-      }
-    }
-
-    if (!kakao || !kakao.isInitialized()) {
-      alert('카카오 SDK 초기화에 실패했습니다. 자바스크립트 키를 확인해주세요.');
-      return;
-    }
-
-    const shareTitle = `나의 DISC 성격 유형은? [${result.titles[0]}]`;
-    const shareDesc = result.summaries[0].length > 45 
-      ? result.summaries[0].substring(0, 45) + '...' 
-      : result.summaries[0];
-
-    // 결과 데이터가 포함된 나만의 고유 URL 생성
-    const baseUrl = window.location.origin.replace(/\/$/, "");
-    const resultUrl = `${baseUrl}/?d=${scores.D}&i=${scores.I}&s=${scores.S}&c=${scores.C}&age=${ageGroup}&view=result`;
-
+  const handleCopyLink = async () => {
+    const SHARE_URL = 'https://disc.woongth.com';
     try {
-      kakao.Share.sendDefault({
-        objectType: 'feed',
-        content: {
-          title: shareTitle,
-          description: shareDesc,
-          imageUrl: `${baseUrl}/og-image.png`,
-          link: {
-            mobileWebUrl: resultUrl,
-            webUrl: resultUrl,
-          },
-        },
-        buttons: [
-          {
-            title: '내 결과 확인하기',
-            link: {
-              mobileWebUrl: resultUrl,
-              webUrl: resultUrl,
-            },
-          },
-          {
-            title: '나도 테스트 해보기',
-            link: {
-              mobileWebUrl: baseUrl,
-              webUrl: baseUrl,
-            },
-          },
-        ],
-      });
-    } catch (e) {
-      console.error('Kakao Share Execute Error:', e);
-      alert('카카오톡 공유 중 오류가 발생했습니다.');
+      await navigator.clipboard.writeText(SHARE_URL);
+      alert("테스트 주소가 복사되었습니다! 친구들에게 공유해보세요.");
+    } catch (err) {
+      console.error('Clipboard write failed:', err);
+      // Fallback for some environments
+      const textArea = document.createElement("textarea");
+      textArea.value = SHARE_URL;
+      document.body.appendChild(textArea);
+      textArea.select();
+      try {
+        document.execCommand('copy');
+        alert("테스트 주소가 복사되었습니다! 친구들에게 공유해보세요.");
+      } catch (e) {
+        alert("주소 복사에 실패했습니다. URL을 직접 복사해주세요.");
+      }
+      document.body.removeChild(textArea);
     }
   };
 
@@ -149,7 +79,12 @@ const Result: React.FC<ResultProps> = ({ scores, result, onReset, ageGroup }) =>
     const originalStyle = printRef.current.style.cssText;
     printRef.current.style.width = '440px';
     printRef.current.style.height = 'auto';
-    const canvas = await html2canvas(printRef.current, { scale: 3, backgroundColor: '#0a0a0a', useCORS: true, logging: false });
+    const canvas = await html2canvas(printRef.current, { 
+      scale: 3, 
+      backgroundColor: '#0a0a0a', 
+      useCORS: true, 
+      logging: false 
+    });
     printRef.current.style.cssText = originalStyle;
     const link = document.createElement('a');
     link.download = `THE_INSIGHT_${result.titles[0]}.png`;
@@ -256,10 +191,10 @@ const Result: React.FC<ResultProps> = ({ scores, result, onReset, ageGroup }) =>
 
       <div className="w-full max-w-[440px] space-y-4 mt-12 fade-in">
         <button 
-          onClick={handleKakaoShare} 
-          className="w-full flex items-center justify-center gap-3 py-6 bg-[#FEE500] text-black font-black rounded-[30px] hover:scale-[1.02] active:scale-95 transition-all shadow-xl text-lg group"
+          onClick={handleCopyLink} 
+          className="w-full flex items-center justify-center gap-3 py-6 bg-blue-600 text-white font-black rounded-[30px] hover:scale-[1.02] active:scale-95 transition-all shadow-xl text-lg group"
         >
-          <MessageCircle size={24} className="fill-black group-active:scale-110 transition-transform" /> 카카오톡 공유하기
+          <Link size={24} className="group-active:scale-110 transition-transform" /> 🔗 친구에게 테스트 공유하기
         </button>
         
         <div className="grid grid-cols-2 gap-4">

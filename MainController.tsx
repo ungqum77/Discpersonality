@@ -112,12 +112,14 @@ const MainController: React.FC = () => {
 
   const matchedResult = useMemo((): ResultContent => {
     const scoresArray = Object.entries(finalScores) as [DISCType, number][];
-    const sorted = [...scoresArray].sort((a, b) => b[1] - a[1]);
+    // Fix: Explicitly cast operands to number to resolve right-hand side of arithmetic operation error
+    const sorted = [...scoresArray].sort((a, b) => Number(b[1]) - Number(a[1]));
     const first = sorted[0][0];
     const second = sorted.length > 1 ? sorted[1][0] : first;
     
-    const totalAnswered = Object.values(finalScores).reduce((a, b) => a + b, 0) || 1;
-    const firstRatio = finalScores[first] / totalAnswered;
+    // Fix: Explicitly type acc and val to ensure totalAnswered is treated as a number for subsequent division
+    const totalAnswered = Object.values(finalScores).reduce((acc: number, val: number) => acc + val, 0) || 1;
+    const firstRatio = Number(finalScores[first]) / totalAnswered;
     
     let key = (firstRatio >= 0.6) ? `High ${first}` : `${first}${second}`;
     
