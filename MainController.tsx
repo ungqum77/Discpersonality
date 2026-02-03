@@ -12,11 +12,11 @@ import ScienceOverlay from './ui/ScienceOverlay';
 import VisitorCounter from './components/VisitorCounter';
 import { AppState, DISCType, Question, ResultContent, AgeGroup, TestMode, Gender } from './SchemaDefinitions';
 
-// Fix: Import surveyData from the fixed survey-provider module.
+// Import surveyData and analysisData
 import { surveyData } from './content/survey-provider';
 import { analysisData } from './content/analysis-provider';
 
-// Fisher-Yates Shuffle
+// Fisher-Yates Shuffle helper
 function shuffleArray<T>(array: T[]): T[] {
   const result = [...array];
   for (let i = result.length - 1; i > 0; i--) {
@@ -76,7 +76,6 @@ const MainController: React.FC = () => {
   const handleModeSelect = (mode: TestMode) => {
     if (!selectedAge || !selectedGender) return;
     
-    // 1. Define the selected decade range
     const userAgeRanges: Record<AgeGroup, { min: number; max: number }> = {
       '10s': { min: 10, max: 19 },
       '20s': { min: 20, max: 29 },
@@ -88,25 +87,33 @@ const MainController: React.FC = () => {
     
     const userRange = userAgeRanges[selectedAge];
     
-    // 2. Filter Pool based on Gender and Age Range Overlap
-    const pool: Question[] = (surveyData as Question[] || []).filter((q: Question) => {
-      // Gender Filtering Logic
+    // 1. Ensure absolute uniqueness by ID from the source data
+    const uniqueSource = Array.from(new Map(surveyData.map(q => [q.id, q])).values());
+
+    // 2. Filter Pool based on Gender and Age
+    // Female (F): 866 ~ 1715
+    // Male (M) / Other (O): 1 ~ 865
+    const pool = uniqueSource.filter((q: Question) => {
       const isGenderMatch = selectedGender === 'F' 
         ? (q.id >= 866 && q.id <= 1715)
         : (q.id >= 1 && q.id <= 865);
       
       if (!isGenderMatch) return false;
 
-      // Age Range Overlap Logic
+      // Age Range Overlap Check
       const hasAgeOverlap = q.target_age_min <= userRange.max && q.target_age_max >= userRange.min;
-      
       return hasAgeOverlap;
     });
 
-    // 3. Fallback logic if pool is empty
-    let validPool: Question[] = pool.length > 0 ? pool : (surveyData as Question[] || []);
+    // 3. Fallback logic: if filtered pool is too small, use gender-matched pool without age restriction
+    let validPool = pool;
+    if (pool.length < mode.count) {
+      validPool = uniqueSource.filter((q: Question) => 
+        selectedGender === 'F' ? (q.id >= 866 && q.id <= 1715) : (q.id >= 1 && q.id <= 865)
+      );
+    }
 
-    // 4. Randomize and slice based on selected depth
+    // 4. Randomize and slice
     const shuffledPool = shuffleArray(validPool);
     const countToTake = Math.min(mode.count, shuffledPool.length);
     const selectedQuestions = shuffledPool.slice(0, countToTake);
@@ -225,7 +232,5 @@ const MainController: React.FC = () => {
     </div>
   );
 };
-
-
 
 export default MainController;
