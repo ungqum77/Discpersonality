@@ -1,3 +1,4 @@
+
 import React, { useState, useMemo, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import LandingSection from './ui/LandingSection.tsx';
@@ -7,6 +8,7 @@ import Questionnaire from './ui/Questionnaire.tsx';
 import Result from './components/Result.tsx';
 import Analyzing from './components/Analyzing.tsx';
 import ScienceOverlay from './ui/ScienceOverlay.tsx';
+import VisitorCounter from './components/VisitorCounter.tsx';
 import { AppState, DISCType, Question, ResultContent, AgeGroup, TestMode } from './SchemaDefinitions.ts';
 
 import { surveyData } from './content/survey-provider.ts';
@@ -118,7 +120,7 @@ const MainController: React.FC = () => {
     const second = sorted.length > 1 ? sorted[1][0] : first;
     
     // Fix: Explicitly type acc and val to ensure totalAnswered is treated as a number for subsequent division
-    const totalAnswered = Object.values(finalScores).reduce((acc: number, val: number) => acc + val, 0) || 1;
+    const totalAnswered = (Object.values(finalScores) as number[]).reduce((acc: number, val: number) => acc + val, 0) || 1;
     const firstRatio = Number(finalScores[first]) / totalAnswered;
     
     let key = (firstRatio >= 0.6) ? `High ${first}` : `${first}${second}`;
@@ -133,6 +135,7 @@ const MainController: React.FC = () => {
   return (
     <div className="min-h-screen bg-deep-black flex flex-col font-sans text-white overflow-x-hidden">
       <ScienceOverlay isOpen={isMethodologyOpen} onClose={() => setIsMethodologyOpen(false)} />
+      <VisitorCounter />
       
       <nav className="fixed top-0 left-0 w-full z-[60] px-4 md:px-8 py-3.5 md:py-5 flex justify-between items-center bg-black/60 backdrop-blur-xl border-b border-white/5">
         <div className="flex items-center gap-2 cursor-pointer group" onClick={handleReset}>
