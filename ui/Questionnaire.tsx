@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+
+import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Question, DISCType } from '../SchemaDefinitions';
 import { ChevronLeft, ChevronRight, ChevronsRight, Check, Undo2 } from 'lucide-react';
@@ -13,35 +14,34 @@ const Questionnaire: React.FC<Props> = ({ questions, onFinish, onBackToMode }) =
   const [idx, setIdx] = useState(0);
   const [maxIdx, setMaxIdx] = useState(0);
   const [answers, setAnswers] = useState<Record<number, DISCType>>({});
-  const [isBusy, setIsBusy] = useState(false); // 빠른 클릭 방지 잠금
+  const [isBusy, setIsBusy] = useState(false);
+
+  // [중요] 질문 데이터가 바뀌면 인덱스 초기화 (모드 변경 대응)
+  useEffect(() => {
+    setIdx(0);
+    setMaxIdx(0);
+    setAnswers({});
+  }, [questions]);
 
   const handleSelect = (type: DISCType) => {
     if (isBusy) return;
     setIsBusy(true);
 
-    // 함수형 업데이트를 사용하여 최신 상태 보장
-    setAnswers(prev => {
-      const updated = { ...prev, [idx]: type };
+    const updatedAnswers = { ...answers, [idx]: type };
+    setAnswers(updatedAnswers);
 
-      // 마지막 문항인 경우 결과 계산 및 종료
-      if (idx === questions.length - 1) {
-        const finalScores: Record<DISCType, number> = { D: 0, I: 0, S: 0, C: 0 };
-        for (let i = 0; i < questions.length; i++) {
-          const ans = updated[i];
-          if (ans) finalScores[ans]++;
-        }
-        // 상태가 완전히 반영된 후 결과를 넘기기 위해 짧은 지연시간 부여
-        setTimeout(() => onFinish(finalScores), 50);
-      }
-      return updated;
-    });
-
-    if (idx < questions.length - 1) {
-      setIdx(prev => prev + 1);
-      if (idx === maxIdx) setMaxIdx(idx + 1);
-      // 0.25초 동안 추가 클릭 방지 (애니메이션 싱크 및 상태 안정화)
-      setTimeout(() => setIsBusy(false), 250);
+    if (idx === questions.length - 1) {
+      const finalScores: Record<DISCType, number> = { D: 0, I: 0, S: 0, C: 0 };
+      Object.values(updatedAnswers).forEach(ans => {
+        if (ans) finalScores[ans]++;
+      });
+      setTimeout(() => onFinish(finalScores), 50);
+      return;
     }
+
+    setIdx(prev => prev + 1);
+    if (idx === maxIdx) setMaxIdx(idx + 1);
+    setTimeout(() => setIsBusy(false), 200);
   };
 
   const q = questions[idx];
@@ -63,7 +63,7 @@ const Questionnaire: React.FC<Props> = ({ questions, onFinish, onBackToMode }) =
                </div>
              </div>
              {idx < maxIdx && (
-               <button onClick={() => setIdx(maxIdx)} className="flex items-center gap-1 px-3 py-2 rounded-xl bg-neon-cyan/10 text-neon-cyan text-[10px] font-black">
+               <button onClick={() => setIdx(maxIdx)} className="flex items-center gap-1 px-3 py-2 rounded-xl bg-neon-cyan/10 text-neon-cyan text-[10px] font-black hover:bg-neon-cyan/20 transition-all">
                  현재 문항 <ChevronsRight size={12} />
                </button>
              )}
@@ -71,7 +71,9 @@ const Questionnaire: React.FC<Props> = ({ questions, onFinish, onBackToMode }) =
           <div className="h-1.5 w-full bg-white/5 rounded-full overflow-hidden">
             <motion.div 
               className="h-full bg-gradient-to-r from-neon-cyan to-neon-purple shadow-[0_0_10px_#00f3ff]" 
+              initial={{ width: 0 }}
               animate={{ width: `${progress}%` }}
+              transition={{ type: 'spring', damping: 20, stiffness: 100 }}
             />
           </div>
         </div>
@@ -83,9 +85,9 @@ const Questionnaire: React.FC<Props> = ({ questions, onFinish, onBackToMode }) =
             animate={{ opacity: 1, x: 0 }} 
             exit={{ opacity: 0, x: -20 }}
             transition={{ duration: 0.2 }}
-            className="min-h-[380px]"
+            className="min-h-[400px]"
           >
-            <h2 className="text-xl md:text-3xl font-display font-bold mb-8 text-white leading-snug break-keep" style={{ wordBreak: 'keep-all' }}>{q.question}</h2>
+            <h2 className="text-xl md:text-3xl font-display font-bold mb-10 text-white leading-snug break-keep" style={{ wordBreak: 'keep-all' }}>{q.question}</h2>
             <div className="grid gap-3">
               {q.options.map((opt, i) => {
                 const isSelected = answers[idx] === opt.type;
@@ -94,18 +96,18 @@ const Questionnaire: React.FC<Props> = ({ questions, onFinish, onBackToMode }) =
                     key={i} 
                     disabled={isBusy}
                     onClick={() => handleSelect(opt.type)} 
-                    className={`group p-4 text-left rounded-2xl border transition-all duration-300 flex items-center gap-4 ${
+                    className={`group p-5 text-left rounded-2xl border transition-all duration-300 flex items-center gap-4 ${
                       isSelected 
                       ? 'bg-neon-cyan/10 border-neon-cyan shadow-[0_0_15px_rgba(0,243,255,0.1)]' 
                       : 'bg-white/5 border-white/5 hover:border-white/20'
-                    } ${isBusy ? 'cursor-wait opacity-80' : 'cursor-pointer'}`}
+                    } ${isBusy ? 'cursor-wait' : 'cursor-pointer'}`}
                   >
                     <div className={`w-8 h-8 rounded-lg border flex items-center justify-center text-xs font-black shrink-0 ${
                       isSelected ? 'bg-neon-cyan text-black border-neon-cyan' : 'bg-white/5 border-white/10 text-gray-500'
                     }`}>
                       {isSelected ? <Check size={16} /> : String.fromCharCode(65 + i)}
                     </div>
-                    <span className={`text-[15px] md:text-lg leading-tight transition-colors ${isSelected ? 'text-white font-bold' : 'text-gray-400'}`}>
+                    <span className={`text-[15px] md:text-lg leading-tight transition-colors ${isSelected ? 'text-white font-bold' : 'text-gray-400 group-hover:text-gray-200'}`}>
                       {opt.text}
                     </span>
                   </button>
@@ -120,25 +122,23 @@ const Questionnaire: React.FC<Props> = ({ questions, onFinish, onBackToMode }) =
             disabled={!canGoPrev || isBusy}
             onClick={() => setIdx(prev => prev - 1)}
             className={`flex items-center gap-1.5 px-4 py-3 rounded-xl font-black text-sm transition-all ${
-              canGoPrev ? 'text-white bg-white/5' : 'text-gray-700 opacity-20'
+              canGoPrev ? 'text-white bg-white/5 hover:bg-white/10' : 'text-gray-700 opacity-20'
             }`}
           >
             <ChevronLeft size={18} /> 이전
           </button>
 
-          <div className="flex flex-col items-center">
-             {idx === 0 && (
-               <button onClick={onBackToMode} className="flex items-center gap-1.5 px-4 py-2 rounded-xl bg-white/5 text-neon-purple text-[10px] font-black border border-white/10 hover:bg-white/10 transition-colors">
-                 <Undo2 size={12} /> 진단 모드 변경
-               </button>
-             )}
-          </div>
+          {idx === 0 && (
+            <button onClick={onBackToMode} className="flex items-center gap-1.5 px-4 py-2 rounded-xl bg-white/5 text-neon-purple text-[10px] font-black border border-white/10 hover:bg-white/10 transition-all active:scale-95">
+              <Undo2 size={12} /> 진단 모드 변경
+            </button>
+          )}
 
           <button
             disabled={idx >= maxIdx || isBusy}
             onClick={() => setIdx(prev => prev + 1)}
             className={`flex items-center gap-1.5 px-4 py-3 rounded-xl font-black text-sm transition-all ${
-              idx < maxIdx ? 'text-white bg-white/5' : 'text-gray-700 opacity-20'
+              idx < maxIdx ? 'text-white bg-white/5 hover:bg-white/10' : 'text-gray-700 opacity-20'
             }`}
           >
             다음 <ChevronRight size={18} />

@@ -1,14 +1,16 @@
+
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Loader2, CheckCircle2, Cpu, Database, Binary, FileSearch } from 'lucide-react';
-import { DISCType, AgeGroup } from '../SchemaDefinitions';
+import { DISCType, AgeGroup, Gender } from '../SchemaDefinitions';
 
 interface AnalyzingProps {
   scores: Record<DISCType, number>;
   ageGroup: AgeGroup;
+  gender: Gender;
 }
 
-const Analyzing: React.FC<AnalyzingProps> = ({ scores, ageGroup }) => {
+const Analyzing: React.FC<AnalyzingProps> = ({ scores, ageGroup, gender }) => {
   const [step, setStep] = useState(0);
   const [isCompleted, setIsCompleted] = useState(false);
 
@@ -33,7 +35,6 @@ const Analyzing: React.FC<AnalyzingProps> = ({ scores, ageGroup }) => {
     }
   }, [step]);
 
-  // 링크 생성을 위한 메모이제이션
   const resultLink = React.useMemo(() => {
     const params = new URLSearchParams();
     params.set('d', scores.D.toString());
@@ -41,10 +42,10 @@ const Analyzing: React.FC<AnalyzingProps> = ({ scores, ageGroup }) => {
     params.set('s', scores.S.toString());
     params.set('c', scores.C.toString());
     params.set('age', ageGroup);
+    params.set('gender', gender);
     params.set('view', 'result');
-    // index.html을 명시적으로 붙여 '새 문서 요청'임을 구글에게 강조합니다.
     return `/index.html?${params.toString()}`;
-  }, [scores, ageGroup]);
+  }, [scores, ageGroup, gender]);
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-deep-black px-6 relative overflow-hidden">
@@ -113,7 +114,6 @@ const Analyzing: React.FC<AnalyzingProps> = ({ scores, ageGroup }) => {
               <h2 className="text-3xl font-display font-black text-white mb-2 tracking-tighter">분석이 완료되었습니다!</h2>
               <p className="text-gray-500 text-sm mb-12">당신의 행동 DNA 데이터가 완벽하게 해독되었습니다.</p>
 
-              {/* [중요] a 태그를 통한 정석적인 내비게이션만이 애드센스 전면광고를 100% 확실하게 트리거합니다. */}
               <a
                 href={resultLink}
                 className="w-full py-6 bg-neon-cyan text-black font-black rounded-2xl text-xl shadow-[0_0_40px_rgba(0,243,255,0.4)] hover:scale-105 active:scale-95 transition-all flex items-center justify-center gap-3 group no-underline decoration-transparent"

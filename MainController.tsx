@@ -1,19 +1,22 @@
 
 import React, { useState, useMemo, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import LandingSection from './ui/LandingSection.tsx';
-import AgeFilter from './ui/AgeFilter.tsx';
-import DepthSelector from './ui/DepthSelector.tsx';
-import Questionnaire from './ui/Questionnaire.tsx';
-import Result from './components/Result.tsx';
-import Analyzing from './components/Analyzing.tsx';
-import ScienceOverlay from './ui/ScienceOverlay.tsx';
-import VisitorCounter from './components/VisitorCounter.tsx';
-import { AppState, DISCType, Question, ResultContent, AgeGroup, TestMode } from './SchemaDefinitions.ts';
+import LandingSection from './ui/LandingSection';
+import GenderSelection from './ui/GenderSelection';
+import AgeFilter from './ui/AgeFilter';
+import DepthSelector from './ui/DepthSelector';
+import Questionnaire from './ui/Questionnaire';
+import Result from './components/Result';
+import Analyzing from './components/Analyzing';
+import ScienceOverlay from './ui/ScienceOverlay';
+import VisitorCounter from './components/VisitorCounter';
+import { AppState, DISCType, Question, ResultContent, AgeGroup, TestMode, Gender } from './SchemaDefinitions';
 
-import { surveyData } from './content/survey-provider.ts';
-import { analysisData } from './content/analysis-provider.ts';
+// Fix: Import surveyData from the fixed survey-provider module.
+import { surveyData } from './content/survey-provider';
+import { analysisData } from './content/analysis-provider';
 
+// Fisher-Yates Shuffle
 function shuffleArray<T>(array: T[]): T[] {
   const result = [...array];
   for (let i = result.length - 1; i > 0; i--) {
@@ -25,6 +28,7 @@ function shuffleArray<T>(array: T[]): T[] {
 
 const MainController: React.FC = () => {
   const [view, setView] = useState<AppState | 'ANALYZING'>('HOME');
+  const [selectedGender, setSelectedGender] = useState<Gender | null>(null);
   const [selectedAge, setSelectedAge] = useState<AgeGroup | null>(null);
   const [selectedMode, setSelectedMode] = useState<TestMode | null>(null);
   const [isMethodologyOpen, setIsMethodologyOpen] = useState(false);
@@ -33,7 +37,7 @@ const MainController: React.FC = () => {
     D: 0, I: 0, S: 0, C: 0
   });
 
-  // URL 파라미터 감지 및 초기 상태 설정
+  // Handle direct result links (Share functionality)
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
     const d = params.get('d');
@@ -41,21 +45,28 @@ const MainController: React.FC = () => {
     const s = params.get('s');
     const c = params.get('c');
     const age = params.get('age') as AgeGroup;
+    const gender = params.get('gender') as Gender;
     const isResultView = params.get('view') === 'result';
 
     if (isResultView && d && i && s && c && age) {
       setFinalScores({
-        D: parseInt(d),
-        I: parseInt(i),
-        S: parseInt(s),
-        C: parseInt(c)
+        D: parseInt(d, 10) || 0,
+        I: parseInt(i, 10) || 0,
+        S: parseInt(s, 10) || 0,
+        C: parseInt(c, 10) || 0
       });
       setSelectedAge(age);
+      if (gender) setSelectedGender(gender);
       setView('RESULT');
     }
   }, []);
 
-  const handleStartClick = () => setView('AGE_SELECT');
+  const handleStartClick = () => setView('GENDER_SELECT');
+
+  const handleGenderSelect = (gender: Gender) => {
+    setSelectedGender(gender);
+    setView('AGE_SELECT');
+  };
 
   const handleAgeSelect = (age: AgeGroup) => {
     setSelectedAge(age);
@@ -63,34 +74,51 @@ const MainController: React.FC = () => {
   };
 
   const handleModeSelect = (mode: TestMode) => {
-    if (!selectedAge) return;
+    if (!selectedAge || !selectedGender) return;
     
-    const ageMap: Record<AgeGroup, number> = { 
-      '10s': 15, '20s': 25, '30s': 35, '40s': 45, '50s': 55, '60s': 70 
+    // 1. Define the selected decade range
+    const userAgeRanges: Record<AgeGroup, { min: number; max: number }> = {
+      '10s': { min: 10, max: 19 },
+      '20s': { min: 20, max: 29 },
+      '30s': { min: 30, max: 39 },
+      '40s': { min: 40, max: 49 },
+      '50s': { min: 50, max: 59 },
+      '60s': { min: 60, max: 99 }
     };
-    const targetAgeValue = ageMap[selectedAge];
     
-    const pool = (surveyData || []).filter(q => 
-      targetAgeValue >= q.target_age_min && targetAgeValue <= q.target_age_max
-    );
+    const userRange = userAgeRanges[selectedAge];
+    
+    // 2. Filter Pool based on Gender and Age Range Overlap
+    const pool: Question[] = (surveyData as Question[] || []).filter((q: Question) => {
+      // Gender Filtering Logic
+      const isGenderMatch = selectedGender === 'F' 
+        ? (q.id >= 866 && q.id <= 1715)
+        : (q.id >= 1 && q.id <= 865);
+      
+      if (!isGenderMatch) return false;
 
-    if (pool.length === 0) {
-      alert("해당 연령대의 질문 데이터를 찾을 수 없습니다.");
-      return;
-    }
+      // Age Range Overlap Logic
+      const hasAgeOverlap = q.target_age_min <= userRange.max && q.target_age_max >= userRange.min;
+      
+      return hasAgeOverlap;
+    });
 
-    const actualCount = Math.min(mode.count, pool.length);
-    const updatedMode = { ...mode, count: actualCount };
-    setSelectedMode(updatedMode);
+    // 3. Fallback logic if pool is empty
+    let validPool: Question[] = pool.length > 0 ? pool : (surveyData as Question[] || []);
 
-    const shuffledPool = shuffleArray(pool);
-    const sliced = shuffledPool.slice(0, actualCount);
-    const fullyShuffled = sliced.map(q => ({
+    // 4. Randomize and slice based on selected depth
+    const shuffledPool = shuffleArray(validPool);
+    const countToTake = Math.min(mode.count, shuffledPool.length);
+    const selectedQuestions = shuffledPool.slice(0, countToTake);
+    
+    setSelectedMode({ ...mode, count: countToTake });
+    
+    const questionsWithShuffledOptions = selectedQuestions.map((q: Question) => ({
       ...q,
       options: shuffleArray([...q.options])
     }));
 
-    setFinalQuestions(fullyShuffled);
+    setFinalQuestions(questionsWithShuffledOptions);
     setView('QUIZ');
   };
 
@@ -100,11 +128,11 @@ const MainController: React.FC = () => {
   };
 
   const handleReset = () => {
-    // 다시 하기 시 URL 파라미터 제거하고 홈으로
     if (window.location.search) {
       window.location.href = '/';
     } else {
       setView('HOME');
+      setSelectedGender(null);
       setSelectedAge(null);
       setSelectedMode(null);
       setFinalScores({ D: 0, I: 0, S: 0, C: 0 });
@@ -114,20 +142,18 @@ const MainController: React.FC = () => {
 
   const matchedResult = useMemo((): ResultContent => {
     const scoresArray = Object.entries(finalScores) as [DISCType, number][];
-    // Fix: Explicitly cast operands to number to resolve right-hand side of arithmetic operation error
     const sorted = [...scoresArray].sort((a, b) => Number(b[1]) - Number(a[1]));
     const first = sorted[0][0];
     const second = sorted.length > 1 ? sorted[1][0] : first;
     
-    // Fix: Explicitly type acc and val to ensure totalAnswered is treated as a number for subsequent division
     const totalAnswered = (Object.values(finalScores) as number[]).reduce((acc: number, val: number) => acc + val, 0) || 1;
     const firstRatio = Number(finalScores[first]) / totalAnswered;
     
     let key = (firstRatio >= 0.6) ? `High ${first}` : `${first}${second}`;
     
-    const found = analysisData.find(r => r.type === key) || 
-                  analysisData.find(r => r.type === first) || 
-                  analysisData[0];
+    const found = (analysisData || []).find(r => r.type === key) || 
+                  (analysisData || []).find(r => r.type === first) || 
+                  (analysisData && analysisData[0]);
                   
     return found;
   }, [finalScores]);
@@ -170,11 +196,12 @@ const MainController: React.FC = () => {
             className="h-full w-full"
           >
             {view === 'HOME' && <LandingSection onStart={handleStartClick} />}
-            {view === 'AGE_SELECT' && <AgeFilter onSelect={handleAgeSelect} />}
+            {view === 'GENDER_SELECT' && <GenderSelection onSelect={handleGenderSelect} />}
+            {view === 'AGE_SELECT' && <AgeFilter onSelect={handleAgeSelect} onBack={() => setView('GENDER_SELECT')} />}
             {view === 'MODE_SELECT' && <DepthSelector onSelect={handleModeSelect} onBack={() => setView('AGE_SELECT')} />}
             {view === 'QUIZ' && <Questionnaire questions={finalQuestions} onFinish={handleQuizFinish} onBackToMode={() => setView('MODE_SELECT')} />}
-            {view === 'ANALYZING' && <Analyzing scores={finalScores} ageGroup={selectedAge || '20s'} />}
-            {view === 'RESULT' && <Result scores={finalScores} result={matchedResult} onReset={handleReset} ageGroup={selectedAge || '20s'} />}
+            {view === 'ANALYZING' && <Analyzing scores={finalScores} ageGroup={selectedAge || '20s'} gender={selectedGender || 'O'} />}
+            {view === 'RESULT' && <Result scores={finalScores} result={matchedResult} onReset={handleReset} ageGroup={selectedAge || '20s'} gender={selectedGender || 'O'} />}
           </motion.div>
         </AnimatePresence>
       </main>

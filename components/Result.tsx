@@ -1,9 +1,11 @@
-import React, { useEffect, useRef, useMemo } from 'react';
-import { DISCType, ResultContent, AgeGroup } from '../SchemaDefinitions';
+
+import React, { useEffect, useRef, useMemo, useState } from 'react';
+import { DISCType, ResultContent, AgeGroup, Gender } from '../SchemaDefinitions';
 import { Radar, RadarChart, PolarGrid, PolarAngleAxis, ResponsiveContainer } from 'recharts';
-import { RefreshCw, Zap, Image as ImageIcon, Calendar, User, CheckCircle2, UserCircle2, Link } from 'lucide-react';
+import { RefreshCw, Zap, Image as ImageIcon, Calendar, User, CheckCircle2, UserCircle2, Link, Sparkles, BrainCircuit } from 'lucide-react';
 import { gsap } from 'gsap';
 import html2canvas from 'html2canvas';
+import { GoogleGenAI } from "@google/genai";
 
 const TYPE_COLORS: Record<DISCType, string> = {
   D: '#FF2E88', // Neon Pink
@@ -16,15 +18,22 @@ const AGE_LABELS: Record<AgeGroup, string> = {
   '10s': '10대', '20s': '20대', '30s': '30대', '40s': '40대', '50s': '50대', '60s': '60대+',
 };
 
+const GENDER_LABELS: Record<Gender, string> = {
+  'F': '여성', 'M': '남성', 'O': '선택 안 함'
+};
+
 interface ResultProps {
   scores: Record<DISCType, number>;
   result: ResultContent;
   onReset: () => void;
   ageGroup: AgeGroup;
+  gender: Gender;
 }
 
-const Result: React.FC<ResultProps> = ({ scores, result, onReset, ageGroup }) => {
+const Result: React.FC<ResultProps> = ({ scores, result, onReset, ageGroup, gender }) => {
   const printRef = useRef<HTMLDivElement>(null);
+  const [aiInsight, setAiInsight] = useState<string>("");
+  const [isAiLoading, setIsAiLoading] = useState<boolean>(true);
 
   const totalAnswered = useMemo(() => Object.values(scores).reduce((a: number, b: number) => a + b, 0), [scores]);
 
@@ -50,7 +59,40 @@ const Result: React.FC<ResultProps> = ({ scores, result, onReset, ageGroup }) =>
 
   useEffect(() => {
     gsap.from('.fade-in', { y: 20, opacity: 0, stagger: 0.1, duration: 0.6, ease: 'power2.out' });
-  }, []);
+    
+    // Fetch AI Insight
+    const fetchAiInsight = async () => {
+      try {
+        const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+        const prompt = `너는 전문 DISC 컨설턴트이자 심리 분석가야.
+        사용자의 DISC 점수: D:${scores.D}, I:${scores.I}, S:${scores.S}, C:${scores.C} (총 문항: ${totalAnswered})
+        사용자 정보: 연령대 ${AGE_LABELS[ageGroup]}, 성별 ${GENDER_LABELS[gender]}
+        
+        이 데이터를 바탕으로 이 사람의 라이프스타일과 성향을 분석하고, 현재 연령대와 상황에 딱 맞는 '성공과 행복을 위한 커스터마이징 전략'을 한국어로 작성해줘. 
+        매우 날카로우면서도 따뜻한 통찰력을 담아 약 250자 내외로 작성해줘. 제목이나 인사말 없이 본론만 바로 시작해.`;
+
+        const response = await ai.models.generateContent({
+          model: 'gemini-3-flash-preview',
+          contents: prompt,
+          config: {
+            temperature: 0.8,
+            topP: 0.9,
+          }
+        });
+
+        if (response.text) {
+          setAiInsight(response.text.trim());
+        }
+      } catch (error) {
+        console.error("AI Insight Error:", error);
+        setAiInsight("데이터 분석 중 미세한 오류가 발생했습니다. 하지만 당신의 핵심 성향은 이미 충분히 빛나고 있습니다.");
+      } finally {
+        setIsAiLoading(false);
+      }
+    };
+
+    fetchAiInsight();
+  }, [scores, ageGroup, gender, totalAnswered]);
 
   const handleCopyLink = async () => {
     const SHARE_URL = 'https://disc.woongth.com';
@@ -58,8 +100,6 @@ const Result: React.FC<ResultProps> = ({ scores, result, onReset, ageGroup }) =>
       await navigator.clipboard.writeText(SHARE_URL);
       alert("테스트 주소가 복사되었습니다! 친구들에게 공유해보세요.");
     } catch (err) {
-      console.error('Clipboard write failed:', err);
-      // Fallback for some environments
       const textArea = document.createElement("textarea");
       textArea.value = SHARE_URL;
       document.body.appendChild(textArea);
@@ -76,16 +116,12 @@ const Result: React.FC<ResultProps> = ({ scores, result, onReset, ageGroup }) =>
 
   const handleSaveAsImage = async () => {
     if (!printRef.current) return;
-    const originalStyle = printRef.current.style.cssText;
-    printRef.current.style.width = '440px';
-    printRef.current.style.height = 'auto';
     const canvas = await html2canvas(printRef.current, { 
-      scale: 3, 
+      scale: 2, 
       backgroundColor: '#0a0a0a', 
       useCORS: true, 
       logging: false 
     });
-    printRef.current.style.cssText = originalStyle;
     const link = document.createElement('a');
     link.download = `THE_INSIGHT_${result.titles[0]}.png`;
     link.href = canvas.toDataURL('image/png');
@@ -98,7 +134,7 @@ const Result: React.FC<ResultProps> = ({ scores, result, onReset, ageGroup }) =>
         id="capture-card"
         ref={printRef}
         className="relative bg-deep-black border border-white/10 rounded-[50px] shadow-[0_0_80px_rgba(0,0,0,0.9)] overflow-hidden flex flex-col"
-        style={{ width: '440px', minHeight: '840px', flexShrink: 0 }}
+        style={{ width: '440px', minHeight: '1000px', flexShrink: 0 }}
       >
         <div className="absolute top-0 left-0 w-full h-3" style={{ backgroundColor: themeColor }}></div>
         <div className="absolute -bottom-40 -right-40 w-[500px] h-[500px] blur-[150px] opacity-[0.2] rounded-full" style={{ backgroundColor: themeColor }}></div>
@@ -110,7 +146,7 @@ const Result: React.FC<ResultProps> = ({ scores, result, onReset, ageGroup }) =>
                 <Calendar size={10} style={{ color: themeColor }} /> <span>{currentDate}</span>
               </div>
               <div className="flex items-center gap-2 text-[10px] font-black tracking-widest text-white leading-none uppercase">
-                <User size={10} style={{ color: themeColor }} /> <span>연령 : {AGE_LABELS[ageGroup]}</span>
+                <User size={10} style={{ color: themeColor }} /> <span>{AGE_LABELS[ageGroup]} / {GENDER_LABELS[gender]}</span>
               </div>
             </div>
             <span className="text-[12px] font-black tracking-[0.3em] uppercase italic text-neon-cyan">INSIGHT LAB</span>
@@ -154,6 +190,23 @@ const Result: React.FC<ResultProps> = ({ scores, result, onReset, ageGroup }) =>
             <p className="text-[15px] text-gray-200 leading-relaxed italic break-keep font-medium" style={{ wordBreak: 'keep-all' }}>
               "{result.summaries[0]}"
             </p>
+          </div>
+
+          {/* AI Insight Section */}
+          <div className="p-7 rounded-[35px] bg-gradient-to-br from-neon-cyan/5 to-neon-purple/5 border border-white/5 mb-8">
+            <h3 className="text-[10px] font-black text-neon-cyan tracking-[0.4em] uppercase mb-4 flex items-center gap-2">
+              <Sparkles size={12} className="animate-pulse" /> Deep AI Insight
+            </h3>
+            {isAiLoading ? (
+              <div className="flex flex-col items-center py-4 gap-3">
+                <BrainCircuit size={24} className="text-gray-600 animate-spin" />
+                <span className="text-[10px] text-gray-600 font-bold uppercase tracking-widest">Brain mapping in progress...</span>
+              </div>
+            ) : (
+              <p className="text-[13px] text-gray-300 leading-relaxed break-keep">
+                {aiInsight}
+              </p>
+            )}
           </div>
 
           <div className="space-y-6 mt-auto">

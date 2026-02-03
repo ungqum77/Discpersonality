@@ -1,5 +1,7 @@
+
 export type DISCType = 'D' | 'I' | 'S' | 'C';
 export type AgeGroup = '10s' | '20s' | '30s' | '40s' | '50s' | '60s';
+export type Gender = 'F' | 'M' | 'O'; // Female, Male, Other/None
 
 export interface Answer {
   text: string;
@@ -35,4 +37,4 @@ export type TestMode = {
   recommended?: boolean;
 };
 
-export type AppState = 'HOME' | 'AGE_SELECT' | 'MODE_SELECT' | 'QUIZ' | 'RESULT';
+export type AppState = 'HOME' | 'GENDER_SELECT' | 'AGE_SELECT' | 'MODE_SELECT' | 'QUIZ' | 'RESULT';

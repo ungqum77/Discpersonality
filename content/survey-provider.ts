@@ -1,7 +1,7 @@
 import { Question } from '../SchemaDefinitions';
 
 /**
- * [가이드] 아래 surveyData 배열의 대괄호 [] 사이에 가지고 계신 865개의 질문 데이터를 붙여넣으세요.
+ * [가이드] 아래 surveyData 배열의 대괄호 [] 사이에 가지고 계신 1715개의 질문 데이터를 붙여넣으세요.
  * 데이터 형식이 [ { "id": 1, ... }, { "id": 2, ... } ] 와 같은 배열 형태여야 합니다.
  */
 export const surveyData: Question[] =
@@ -11249,6 +11249,11062 @@ export const surveyData: Question[] =
       { "text": "노래 틀어놓고 춤추면서 청소한다.", "type": "I" },
       { "text": "시키시는 구역을 묵묵히 닦는다.", "type": "S" },
       { "text": "창틀 먼지나 구석진 곳까지 꼼꼼하게 닦는다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 866,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_friendship",
+    "question": "친한 친구 무리에서 소외감을 느낄 때, 나는 어떻게 행동할까?",
+    "options": [
+      { "text": "\"나한테 무슨 문제 있어?\"라고 친구들에게 직접 물어본다.", "type": "D" },
+      { "text": "다른 친구에게 상황을 이야기하며 위로를 받고 관심을 끈다.", "type": "I" },
+      { "text": "혹시 내가 실수한 게 있나 혼자 걱정하며 눈치를 살핀다.", "type": "S" },
+      { "text": "왜 소외감을 느끼는지 상황을 객관적으로 분석해 본다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 867,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_lifestyle",
+    "question": "다이어트를 결심했다. 나의 계획은?",
+    "options": [
+      { "text": "오늘부터 굶기! 목표 체중이 될 때까지 무조건 참는다.", "type": "D" },
+      { "text": "친구랑 같이 댄스 학원을 등록하거나 다이어트 챌린지를 한다.", "type": "I" },
+      { "text": "건강을 해치지 않도록 천천히 식사량을 줄여나간다.", "type": "S" },
+      { "text": "칼로리와 영양 성분을 계산하여 체계적인 식단을 짠다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 868,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_school",
+    "question": "수행평가 조별 과제에서 아무도 나서지 않을 때?",
+    "options": [
+      { "text": "\"내가 할게. 너희는 이거 해.\" 역할을 정해주고 이끈다.", "type": "D" },
+      { "text": "\"우리 가위바위보 할까?\" 분위기를 띄우며 자연스럽게 유도한다.", "type": "I" },
+      { "text": "누군가 할 때까지 조용히 기다리거나 남는 역할을 맡는다.", "type": "S" },
+      { "text": "해야 할 일의 목록을 작성해서 효율적으로 분담하자고 제안한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 869,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_interest",
+    "question": "좋아하는 아이돌의 굿즈(Goods)가 새로 나왔다.",
+    "options": [
+      { "text": "품절되기 전에 무조건 산다. 고민은 배송만 늦출 뿐!", "type": "D" },
+      { "text": "친구들에게 \"이거 진짜 예쁘지?\"라며 사진을 공유하고 같이 산다.", "type": "I" },
+      { "text": "용돈이 부족해서 살까 말까 오랫동안 망설인다.", "type": "S" },
+      { "text": "가격 대비 구성이 좋은지 후기를 꼼꼼히 찾아보고 결정한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 870,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_friendship",
+    "question": "친구가 내 옷 스타일이 별로라고 지적했다.",
+    "options": [
+      { "text": "\"내 마음이야. 신경 꺼.\"라고 쏘아붙인다.", "type": "D" },
+      { "text": "\"진짜? 이상해?\"라고 웃으며 넘기거나 농담으로 받아친다.", "type": "I" },
+      { "text": "상처받아서 하루 종일 기분이 우울하고 신경 쓰인다.", "type": "S" },
+      { "text": "어떤 점이 별로인지 물어보고 객관적으로 판단한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 871,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_family",
+    "question": "엄마랑 사소한 일로 말다툼을 했다.",
+    "options": [
+      { "text": "내 주장이 맞다고 끝까지 목소리를 높인다.", "type": "D" },
+      { "text": "방에 들어가서 친구랑 통화하며 화를 푼다.", "type": "I" },
+      { "text": "죄송한 마음이 들어서 슬쩍 눈치를 보며 화해를 시도한다.", "type": "S" },
+      { "text": "엄마가 왜 화났는지 논리적으로 생각해 보고 대화한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 872,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_school",
+    "question": "체육 시간에 피구(공 피하기) 게임을 한다.",
+    "options": [
+      { "text": "공을 잡아서 상대편을 다 아웃시키려고 공격적으로 던진다.", "type": "D" },
+      { "text": "응원도 하고 소리도 지르며 친구들과 즐겁게 뛰어다닌다.", "type": "I" },
+      { "text": "공에 맞지 않게 친구 뒤에 숨거나 조용히 피해 다닌다.", "type": "S" },
+      { "text": "라인을 밟지 않게 규칙을 잘 지키며 게임에 집중한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 873,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_interest",
+    "question": "SNS(인스타, 틱톡 등)에 사진을 올릴 때 나는?",
+    "options": [
+      { "text": "내가 제일 잘 나오고 멋져 보이는 독사진을 올린다.", "type": "D" },
+      { "text": "친구들과 찍은 재밌는 사진이나 유행하는 챌린지 영상을 올린다.", "type": "I" },
+      { "text": "다른 사람들이 어떻게 볼까 걱정돼서 잘 안 올리거나 비공개로 한다.", "type": "S" },
+      { "text": "사진 구도와 보정이 완벽한지 확인하고 피드 분위기를 맞춘다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 874,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_friendship",
+    "question": "친구 생일 파티를 준비해야 한다.",
+    "options": [
+      { "text": "\"내가 케이크 살게, 넌 풍선 불어.\" 주도적으로 역할을 나눈다.", "type": "D" },
+      { "text": "깜짝 파티나 재미있는 이벤트를 기획해서 분위기를 띄운다.", "type": "I" },
+      { "text": "친구가 평소 갖고 싶어 했던 선물을 세심하게 챙긴다.", "type": "S" },
+      { "text": "회비를 걷고 예산에 맞춰서 간식과 선물을 준비한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 875,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_lifestyle",
+    "question": "화장품 가게에서 마음에 드는 립스틱을 발견했다.",
+    "options": [
+      { "text": "발색해 보고 마음에 들면 바로 산다.", "type": "D" },
+      { "text": "점원 언니한테 \"이거 요즘 유행해요?\"라고 물어본다.", "type": "I" },
+      { "text": "집에 비슷한 색깔이 있는지 생각해 보고 참는다.", "type": "S" },
+      { "text": "성분이나 지속력 테스트 후기를 검색해 보고 결정한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 876,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_school",
+    "question": "시험 기간 공부 계획을 세울 때?",
+    "options": [
+      { "text": "목표 점수만 딱 정해두고, 벼락치기로 집중해서 끝낸다.", "type": "D" },
+      { "text": "친구들과 독서실이나 카페에 모여서 서로 물어보며 공부한다.", "type": "I" },
+      { "text": "매일매일 꾸준히 교과서와 문제집을 복습한다.", "type": "S" },
+      { "text": "시간 단위로 쪼개진 플래너를 작성하고 실천 여부를 체크한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 877,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_friendship",
+    "question": "친구가 고민 상담을 해왔다.",
+    "options": [
+      { "text": "\"이렇게 해봐.\" 바로 해결책을 제시해 준다.", "type": "D" },
+      { "text": "\"헐 대박... 진짜 힘들었겠다 ㅠㅠ\" 같이 화내주고 공감한다.", "type": "I" },
+      { "text": "아무 말 없이 끝까지 들어주고 안아준다.", "type": "S" },
+      { "text": "문제의 원인이 무엇인지 차근차근 따져본다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 878,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_lifestyle",
+    "question": "방 꾸미기를 하려고 한다. 어떤 스타일?",
+    "options": [
+      { "text": "내가 좋아하는 포스터나 아이템으로 꽉 채운 힙한 스타일.", "type": "D" },
+      { "text": "친구들이 놀러 오면 편하게 놀 수 있는 아기자기한 스타일.", "type": "I" },
+      { "text": "따뜻하고 포근한 느낌의 조명과 침구류 위주.", "type": "S" },
+      { "text": "책상과 책장이 깔끔하게 정리된 모던한 스타일.", "type": "C" }
+    ]
+  },
+  {
+    "id": 879,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_school",
+    "question": "새 학기 첫날, 짝꿍에게 말을 걸 때?",
+    "options": [
+      { "text": "\"안녕? 이름이 뭐야?\" 먼저 당당하게 물어본다.", "type": "D" },
+      { "text": "\"와, 너 필통 진짜 예쁘다! 어디서 샀어?\" 칭찬하며 다가간다.", "type": "I" },
+      { "text": "짝꿍이 말 걸어줄 때까지 기다리거나 눈인사만 한다.", "type": "S" },
+      { "text": "시간표나 준비물 같은 필요한 정보를 물어본다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 880,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_friendship",
+    "question": "친구가 약속 시간에 늦었다.",
+    "options": [
+      { "text": "\"지금 몇 시야? 빨리 와.\" 화를 낸다.", "type": "D" },
+      { "text": "\"괜찮아~ 천천히 와! 나 구경하고 있을게.\" 밝게 말한다.", "type": "I" },
+      { "text": "무슨 일이 생겼나 걱정하며 기다린다.", "type": "S" },
+      { "text": "얼마나 늦을지 정확한 시간을 알려달라고 한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 881,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_interest",
+    "question": "좋아하는 남학생에게 고백하고 싶다.",
+    "options": [
+      { "text": "\"나 너 좋아해.\" 직접 가서 말하거나 톡을 보낸다.", "type": "D" },
+      { "text": "주변 친구들에게 도와달라고 해서 자연스러운 자리를 만든다.", "type": "I" },
+      { "text": "거절당할까 봐 무서워서 짝사랑만 한다.", "type": "S" },
+      { "text": "성공 확률이 얼마나 될지 그 아이의 행동을 분석한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 882,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_school",
+    "question": "선생님이 발표자를 찾으신다.",
+    "options": [
+      { "text": "번쩍 손을 들고 나가서 자신 있게 발표한다.", "type": "D" },
+      { "text": "친구들이 시키면 못 이기는 척 나가서 재미있게 한다.", "type": "I" },
+      { "text": "선생님과 눈을 마주치지 않으려고 고개를 숙인다.", "type": "S" },
+      { "text": "발표 자료가 완벽하게 준비되었는지 확인하고 손을 든다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 883,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_friendship",
+    "question": "친구가 빌려 간 돈(또는 물건)을 안 돌려줄 때?",
+    "options": [
+      { "text": "\"야, 내 거 언제 줄 거야?\" 당장 달라고 말한다.", "type": "D" },
+      { "text": "까먹었나? 장난스럽게 돌려서 이야기한다.", "type": "I" },
+      { "text": "달라고 하기 미안해서 줄 때까지 기다린다.", "type": "S" },
+      { "text": "언제 빌려 갔는지 날짜를 확인하고 정확하게 이야기한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 884,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_lifestyle",
+    "question": "주말에 아무 계획이 없을 때?",
+    "options": [
+      { "text": "집에 있기 답답해서 무작정 밖으로 나간다.", "type": "D" },
+      { "text": "친구들에게 연락해서 \"놀자!\"고 불러낸다.", "type": "I" },
+      { "text": "집에서 뒹굴뒹굴하며 유튜브나 웹툰을 본다.", "type": "S" },
+      { "text": "밀린 숙제를 하거나 다이어리 정리를 한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 885,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_interest",
+    "question": "유튜브 알고리즘이 추천해 준 영상은 주로?",
+    "options": [
+      { "text": "걸크러쉬 댄스 영상이나 쎈 언니들의 토크쇼.", "type": "D" },
+      { "text": "유행하는 챌린지, 브이로그, 연예인 덕질 영상.", "type": "I" },
+      { "text": "ASMR, 힐링 영상, 귀여운 동물 영상.", "type": "S" },
+      { "text": "공부법, 다이어리 꾸미기 팁, 정보성 영상.", "type": "C" }
+    ]
+  },
+  {
+    "id": 886,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_school",
+    "question": "급식 메뉴가 내가 제일 싫어하는 것들만 나왔다.",
+    "options": [
+      { "text": "매점으로 달려가서 빵이나 맛있는 걸 사 먹는다.", "type": "D" },
+      { "text": "친구들과 \"오늘 메뉴 실화냐?\" 하며 떠들면서 대충 먹는다.", "type": "I" },
+      { "text": "배고프니까 그냥 주는 대로 조용히 먹는다.", "type": "S" },
+      { "text": "좋아하는 반찬만 골라 먹거나 영양 성분을 따져본다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 887,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_friendship",
+    "question": "단톡방(카톡방)에서 읽씹(읽고 답장 안 함)을 당했다.",
+    "options": [
+      { "text": "\"야 왜 대답 안 해?\" 바로 톡을 또 보낸다.", "type": "D" },
+      { "text": "내가 재미없는 말을 했나? 다른 재밌는 짤을 보낸다.", "type": "I" },
+      { "text": "바쁜가 보다... 하고 답장이 올 때까지 기다린다.", "type": "S" },
+      { "text": "내가 질문을 했는지 혼잣말을 했는지 대화 내용을 확인한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 888,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_family",
+    "question": "부모님이 학원에 가라고 강요하신다.",
+    "options": [
+      { "text": "가기 싫으면 절대 안 간다고 버틴다.", "type": "D" },
+      { "text": "가서 친구들이랑 놀 생각에 일단 간다.", "type": "I" },
+      { "text": "부모님이 원하시니까 군말 없이 다닌다.", "type": "S" },
+      { "text": "그 학원의 커리큘럼이 나에게 도움이 되는지 따져본다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 889,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_interest",
+    "question": "노래방에 갔을 때 나는?",
+    "options": [
+      { "text": "마이크를 놓지 않고 고음 노래를 지른다.", "type": "D" },
+      { "text": "탬버린 흔들고 춤추며 분위기 메이커 역할을 한다.", "type": "I" },
+      { "text": "친구들이 부르는 노래를 듣고 박수 쳐주는 게 편하다.", "type": "S" },
+      { "text": "내가 부를 노래 번호를 미리 검색해서 예약해 둔다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 890,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_friendship",
+    "question": "친구가 뒷담화를 하는 걸 들었다.",
+    "options": [
+      { "text": "\"그런 얘기 하지 마.\"라고 딱 자르거나 화제를 바꾼다.", "type": "D" },
+      { "text": "\"진짜? 걔가 그랬어?\" 맞장구치며 듣는다.", "type": "I" },
+      { "text": "끼어들기 불편해서 그냥 가만히 듣고만 있는다.", "type": "S" },
+      { "text": "그 말이 사실인지 아닌지 속으로 판단한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 891,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_lifestyle",
+    "question": "옷을 고를 때 가장 중요하게 생각하는 것은?",
+    "options": [
+      { "text": "남들보다 돋보이고 힙한 스타일.", "type": "D" },
+      { "text": "요즘 유행하는 인싸템이나 브랜드.", "type": "I" },
+      { "text": "편안하고 무난해서 어디든 잘 어울리는 옷.", "type": "S" },
+      { "text": "소재가 좋고 가격이 합리적인지.", "type": "C" }
+    ]
+  },
+  {
+    "id": 892,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_school",
+    "question": "시험 점수가 생각보다 안 나왔다.",
+    "options": [
+      { "text": "열받아서 문제집을 찢거나 다음엔 무조건 1등 한다고 다짐한다.", "type": "D" },
+      { "text": "\"망했다 ㅠㅠ\" 친구들에게 하소연하고 떡볶이 먹으러 간다.", "type": "I" },
+      { "text": "부모님께 죄송해서 혼자 우울해진다.", "type": "S" },
+      { "text": "어떤 문제에서 틀렸는지 오답 노트를 작성한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 893,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_friendship",
+    "question": "친구들과 여행을 가기로 했는데 계획을 짜야 한다.",
+    "options": [
+      { "text": "\"일단 표부터 끊자!\" 결정부터 내리고 본다.", "type": "D" },
+      { "text": "\"거기 맛집이랑 사진 찍을 곳 찾아보자!\" 놀거리 위주로 찾는다.", "type": "I" },
+      { "text": "다들 가고 싶어 하는 곳이 어디인지 의견을 먼저 물어본다.", "type": "S" },
+      { "text": "교통편과 동선을 엑셀이나 메모장에 정리해서 공유한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 894,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_family",
+    "question": "동생이 내 물건을 허락 없이 썼다.",
+    "options": [
+      { "text": "\"야! 죽을래?\" 소리 지르고 당장 뺏는다.", "type": "D" },
+      { "text": "\"다음엔 말하고 써~\" 하고 쿨하게 넘긴다.", "type": "I" },
+      { "text": "화는 나지만 동생이니까 한 번 봐준다.", "type": "S" },
+      { "text": "내 방에 들어오지 말라는 규칙을 방문 앞에 붙여둔다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 895,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_interest",
+    "question": "새로운 취미를 시작한다면?",
+    "options": [
+      { "text": "방송 댄스나 운동처럼 활동적인 것.", "type": "D" },
+      { "text": "친구들과 함께할 수 있는 보드게임이나 카페 투어.", "type": "I" },
+      { "text": "혼자 조용히 할 수 있는 독서나 영화 감상.", "type": "S" },
+      { "text": "비즈 공예나 그림 그리기처럼 집중하는 것.", "type": "C" }
+    ]
+  },
+  {
+    "id": 896,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_school",
+    "question": "선생님이 칭찬해 주셨을 때 나의 반응은?",
+    "options": [
+      { "text": "당연한 결과라고 생각하며 으쓱해한다.", "type": "D" },
+      { "text": "기분 좋아서 하루 종일 싱글벙글하고 자랑한다.", "type": "I" },
+      { "text": "부끄러워서 얼굴이 빨개지고 아니라고 손사래 친다.", "type": "S" },
+      { "text": "어떤 부분 때문에 칭찬받았는지 기억해둔다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 897,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_friendship",
+    "question": "친구들과 찍은 사진을 SNS에 올릴 때?",
+    "options": [
+      { "text": "내가 제일 잘 나온 사진을 골라서 올린다.", "type": "D" },
+      { "text": "다 같이 엽기 표정을 지은 재미있는 사진을 올린다.", "type": "I" },
+      { "text": "친구들에게 이 사진 올려도 되냐고 먼저 물어본다.", "type": "S" },
+      { "text": "사진이 흔들리지 않았는지, 배경은 괜찮은지 확인하고 올린다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 898,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_lifestyle",
+    "question": "용돈이 다 떨어졌는데 사고 싶은 게 생겼다.",
+    "options": [
+      { "text": "부모님께 당당하게 더 달라고 요구한다.", "type": "D" },
+      { "text": "친구에게 조금만 빌려달라고 애교 부린다.", "type": "I" },
+      { "text": "다음 달 용돈 받을 때까지 꾹 참는다.", "type": "S" },
+      { "text": "집안일을 돕거나 아르바이트를 해서 돈을 모은다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 899,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_school",
+    "question": "수업 시간에 졸음이 쏟아진다.",
+    "options": [
+      { "text": "선생님 눈치 안 보고 그냥 엎드려 잔다.", "type": "D" },
+      { "text": "짝꿍이랑 쪽지를 주고받거나 장난치며 잠을 깬다.", "type": "I" },
+      { "text": "허벅지를 꼬집으며 필사적으로 참는다.", "type": "S" },
+      { "text": "뒤에 나가서 서서 수업을 듣겠다고 허락을 받는다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 900,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_friendship",
+    "question": "친구가 약속을 갑자기 취소했다.",
+    "options": [
+      { "text": "\"장난해?\" 화를 내고 다음엔 약속을 안 잡는다.", "type": "D" },
+      { "text": "\"아쉽다 ㅠㅠ 다음에 꼭 보자!\" 하고 다른 친구를 부른다.", "type": "I" },
+      { "text": "무슨 급한 일이 있겠지... 하고 이해해 준다.", "type": "S" },
+      { "text": "왜 취소했는지 이유를 물어보고 다음 약속을 잡는다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 901,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_lifestyle",
+    "question": "친구들과 카페에 갔다. 메뉴를 고를 때?",
+    "options": [
+      { "text": "\"나 이거 먹을래.\" 제일 먼저 고른다.", "type": "D" },
+      { "text": "\"우리 이거 같이 시켜서 나눠 먹자!\" 제안한다.", "type": "I" },
+      { "text": "친구들이 시키는 거 따라서 시킨다.", "type": "S" },
+      { "text": "칼로리가 낮거나 가성비 좋은 음료를 찾는다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 902,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_interest",
+    "question": "좋아하는 연예인이 생겼다. 나는 어떤 팬?",
+    "options": [
+      { "text": "팬클럽 임원을 맡거나 스밍(스트리밍) 총공을 주도한다.", "type": "D" },
+      { "text": "친구들에게 영업(홍보)하고 같이 덕질한다.", "type": "I" },
+      { "text": "조용히 앨범을 사고 혼자서 좋아한다.", "type": "S" },
+      { "text": "그 연예인의 스케줄과 정보를 꼼꼼하게 수집한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 903,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_school",
+    "question": "동아리(클럽)를 선택할 때 기준은?",
+    "options": [
+      { "text": "내가 주도할 수 있거나 폼 나는 곳.", "type": "D" },
+      { "text": "친한 친구들이 많이 가는 곳.", "type": "I" },
+      { "text": "봉사 동아리나 도서부처럼 조용하고 편안한 곳.", "type": "S" },
+      { "text": "내 진로와 관련된 도움이 되는 곳.", "type": "C" }
+    ]
+  },
+  {
+    "id": 904,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_family",
+    "question": "부모님 생신 선물을 준비해야 한다.",
+    "options": [
+      { "text": "부모님이 딱 필요하다고 했던 걸 기억해서 바로 산다.", "type": "D" },
+      { "text": "용돈을 털어 화려한 이벤트나 파티를 준비한다.", "type": "I" },
+      { "text": "직접 쓴 손편지와 정성이 담긴 작은 선물을 드린다.", "type": "S" },
+      { "text": "가격 비교 사이트에서 검색해서 실용적인 걸 산다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 905,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_friendship",
+    "question": "전학 온 친구가 낯을 가리고 있다.",
+    "options": [
+      { "text": "\"너 어디서 왔어?\" 대뜸 가서 질문한다.", "type": "D" },
+      { "text": "\"우리 같이 매점 갈래?\" 팔짱 끼고 데려간다.", "type": "I" },
+      { "text": "부담스러워할까 봐 멀리서 지켜보다가 챙겨준다.", "type": "S" },
+      { "text": "준비물이 없는 것 같으면 조용히 빌려준다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 906,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_lifestyle",
+    "question": "방학 계획표를 짤 때 나는?",
+    "options": [
+      { "text": "큰 목표 하나만 정한다. (예: 살 빼기, 성적 올리기)", "type": "D" },
+      { "text": "놀러 갈 계획과 약속만 잔뜩 적는다.", "type": "I" },
+      { "text": "지킬 수 있는 만큼만 적당히 짠다.", "type": "S" },
+      { "text": "기상 시간부터 취침 시간까지 촘촘하게 짠다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 907,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_school",
+    "question": "모르는 문제를 선생님께 질문하러 갈 때?",
+    "options": [
+      { "text": "선생님 자리로 직진해서 바로 물어본다.", "type": "D" },
+      { "text": "다른 선생님들께도 인사하며 넉살 좋게 들어간다.", "type": "I" },
+      { "text": "선생님이 바쁘신 것 같으면 문 앞에서 기다린다.", "type": "S" },
+      { "text": "질문할 내용을 미리 포스트잇에 적어서 정리해 간다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 908,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_friendship",
+    "question": "친한 친구와 싸우고 화해하고 싶다.",
+    "options": [
+      { "text": "내가 먼저 가서 \"풀자\"고 말하고 깔끔하게 끝낸다.", "type": "D" },
+      { "text": "편지나 작은 선물을 주면서 자연스럽게 말을 건다.", "type": "I" },
+      { "text": "친구가 화 풀릴 때까지 기다리거나 미안하다고 문자 보낸다.", "type": "S" },
+      { "text": "싸운 원인을 생각해 보고 대화를 요청한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 909,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_interest",
+    "question": "친구들과 스티커 사진(인생네컷 등)을 찍으러 갔다.",
+    "options": [
+      { "text": "\"이 포즈 하자!\" 포즈를 정해주고 리드한다.", "type": "D" },
+      { "text": "가발 쓰고 선글라스 끼고 엽기적인 표정을 짓는다.", "type": "I" },
+      { "text": "친구들이 하자는 대로 맞춰서 찍는다.", "type": "S" },
+      { "text": "사진이 잘 나오는 조명 각도와 위치를 잡는다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 910,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_lifestyle",
+    "question": "아침에 일어났는데 학교 가기 너무 싫다.",
+    "options": [
+      { "text": "\"아파서 못 가요.\"라고 부모님께 거짓말하고 쉰다.", "type": "D" },
+      { "text": "학교 가서 친구들이랑 놀 생각하며 억지로 일어난다.", "type": "I" },
+      { "text": "가기 싫지만 안 가면 큰일 날 것 같아서 간다.", "type": "S" },
+      { "text": "오늘 시간표와 중요 일정을 확인하고 일어난다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 911,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_friendship",
+    "question": "비밀 이야기를 하던 중 친구가 내 말을 끊었다.",
+    "options": [
+      { "text": "\"내 말 안 끝났어. 들어봐.\"라고 제지한다.", "type": "D" },
+      { "text": "\"아 맞다! 너 그 얘기 들었어?\" 친구 이야기에 맞장구친다.", "type": "I" },
+      { "text": "서운하지만 친구 이야기가 끝날 때까지 기다린다.", "type": "S" },
+      { "text": "친구가 왜 말을 끊었는지 생각하며 표정이 굳는다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 912,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_school",
+    "question": "숙제를 안 해왔는데 선생님이 검사하신다.",
+    "options": [
+      { "text": "\"깜빡했습니다. 내일 가져오겠습니다.\" 당당하게 말한다.", "type": "D" },
+      { "text": "\"쌤~ 한 번만 봐주세요 ㅠㅠ\" 애교로 넘기려 한다.", "type": "I" },
+      { "text": "혼날까 봐 심장이 쿵쾅거리고 고개를 못 든다.", "type": "S" },
+      { "text": "집에 두고 왔다고 하거나 사실대로 말하고 언제까지 할지 약속한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 913,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_interest",
+    "question": "친구들과 파자마 파티를 하기로 했다.",
+    "options": [
+      { "text": "밤새 놀 계획을 세우고 절대 못 자게 한다.", "type": "D" },
+      { "text": "진실 게임, 패션쇼 등 재밌는 놀이를 주도한다.", "type": "I" },
+      { "text": "친구들이 편하게 잘 수 있게 이불을 챙겨준다.", "type": "S" },
+      { "text": "필요한 간식과 물품 리스트를 체크한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 914,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_lifestyle",
+    "question": "버스나 지하철에서 모르는 사람이 말을 걸었다.",
+    "options": [
+      { "text": "\"저기요, 이상한 말 하지 마세요.\" 단호하게 끊는다.", "type": "D" },
+      { "text": "웃으면서 대충 대답해 주다가 자리를 피한다.", "type": "I" },
+      { "text": "거절을 못 해서 우물쭈물하며 듣고 있는다.", "type": "S" },
+      { "text": "이어폰을 꽂고 못 들은 척 무시하거나 핸드폰만 본다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 915,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_family",
+    "question": "언니(또는 여동생)가 내 옷을 몰래 입고 나갔다.",
+    "options": [
+      { "text": "전화해서 당장 벗어서 가져오라고 소리친다.", "type": "D" },
+      { "text": "\"헐? 그거 내가 입으려고 했는데!\" 투덜거리다 만다.", "type": "I" },
+      { "text": "화나지만 싸우기 싫어서 그냥 둔다.", "type": "S" },
+      { "text": "다음에 입을 땐 허락받고 입으라고 규칙을 정한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 916,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_lifestyle",
+    "question": "미용실에서 머리를 잘랐는데 마음에 안 든다.",
+    "options": [
+      { "text": "\"여기 좀 이상한데요?\"라고 바로 말하고 수정을 요구한다.", "type": "D" },
+      { "text": "속상해서 친구들에게 셀카를 보내며 하소연한다.", "type": "I" },
+      { "text": "디자이너 선생님이 민망할까 봐 \"괜찮아요\" 하고 나온다.", "type": "S" },
+      { "text": "집에 와서 머리를 다시 감아보고 어떻게 수습할지 검색한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 917,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_friendship",
+    "question": "친구들이 다 같이 마라탕을 먹으러 가자고 한다.",
+    "options": [
+      { "text": "\"난 3단계 매운맛!\" 내가 먹고 싶은 재료를 빠르게 담는다.", "type": "D" },
+      { "text": "\"꿔바로우도 시키자!\" 음식 사진 찍느라 바쁘다.", "type": "I" },
+      { "text": "친구들이 담는 걸 보고 비슷하게 담거나 따라 먹는다.", "type": "S" },
+      { "text": "가격 무게를 맞추기 위해 저울에 올려보며 담는다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 918,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_school",
+    "question": "체육 대회 반티(단체복)를 정해야 한다.",
+    "options": [
+      { "text": "제일 튀고 멋있는 걸로 하자고 강력하게 주장한다.", "type": "D" },
+      { "text": "동물 잠옷이나 코스프레처럼 재밌고 귀여운 걸 추천한다.", "type": "I" },
+      { "text": "다수결로 결정된 옷을 군말 없이 입는다.", "type": "S" },
+      { "text": "예산 안에서 살 수 있는지, 배송은 제때 오는지 확인한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 919,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_interest",
+    "question": "좋아하는 연예인이 열애설이 났다.",
+    "options": [
+      { "text": "\"내 가수 건드리지 마!\" 악플러들과 싸운다.", "type": "D" },
+      { "text": "친구들과 \"어떡해 ㅠㅠ\" 하며 카톡방에서 난리 난다.", "type": "I" },
+      { "text": "마음이 아프지만 행복하길 바라며 조용히 응원한다.", "type": "S" },
+      { "text": "기사가 사실인지 소속사 공식 입장을 기다린다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 920,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_lifestyle",
+    "question": "다이어리(플래너)를 꾸밀 때 나는?",
+    "options": [
+      { "text": "중요한 일정만 크게 딱딱 적는다.", "type": "D" },
+      { "text": "스티커, 마스킹 테이프로 화려하고 예쁘게 꾸민다.", "type": "I" },
+      { "text": "일기를 쓰거나 감성적인 글귀를 적는다.", "type": "S" },
+      { "text": "공부 시간, 할 일 목록을 깔끔하게 정리한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 921,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_friendship",
+    "question": "친구가 내 물건을 따라 샀다. (손민수 했다)",
+    "options": [
+      { "text": "\"왜 따라 사?\" 기분 나쁜 티를 팍팍 낸다.", "type": "D" },
+      { "text": "\"우리 커플템이네?\" 하고 같이 사진 찍는다.", "type": "I" },
+      { "text": "속으로는 좀 그렇지만 겉으로는 웃어넘긴다.", "type": "S" },
+      { "text": "어디서 샀는지, 얼마에 샀는지 물어본다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 922,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_school",
+    "question": "시험 끝난 날, 친구들과 노래방에 갔다.",
+    "options": [
+      { "text": "첫 곡부터 지르는 노래로 분위기를 잡는다.", "type": "D" },
+      { "text": "걸그룹 댄스 메들리를 추며 논다.", "type": "I" },
+      { "text": "친구들이 부르라고 할 때까지 탬버린만 친다.", "type": "S" },
+      { "text": "남은 시간을 확인하며 부르고 싶은 노래를 예약한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 923,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_family",
+    "question": "아빠가 용돈을 주셨다.",
+    "options": [
+      { "text": "\"더 주세요!\" 애교 섞인 협상을 시도한다.", "type": "D" },
+      { "text": "\"아빠 최고! 사랑해!\" 하트 뿅뿅 리액션을 한다.", "type": "I" },
+      { "text": "\"감사합니다.\" 공손하게 받고 아껴 쓴다.", "type": "S" },
+      { "text": "얼마는 저축하고 얼마는 쓸지 계획을 세운다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 924,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_lifestyle",
+    "question": "길에서 예쁜 옷을 입은 사람을 봤다.",
+    "options": [
+      { "text": "당당하게 가서 어디서 샀냐고 물어본다.", "type": "D" },
+      { "text": "친구한테 \"저 옷 봐! 진짜 예쁘지?\"라고 호들갑 떤다.", "type": "I" },
+      { "text": "힐끔힐끔 쳐다보며 속으로만 '예쁘다'고 생각한다.", "type": "S" },
+      { "text": "브랜드 로고나 디자인을 기억해 뒀다가 인터넷에 검색한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 925,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_school",
+    "question": "자리 바꾸기를 했는데 싫어하는 애랑 짝이 됐다.",
+    "options": [
+      { "text": "선생님께 가서 눈이 안 보인다고 자리 바꿔 달라고 한다.", "type": "D" },
+      { "text": "쉬는 시간마다 다른 친구 자리로 놀러 간다.", "type": "I" },
+      { "text": "불편하지만 한 달만 참자고 생각한다.", "type": "S" },
+      { "text": "필요한 말 외에는 하지 않고 공부에만 집중한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 926,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_friendship",
+    "question": "친구가 남자친구 생겼다고 나랑 안 놀아준다.",
+    "options": [
+      { "text": "\"야, 남자 생기니까 친구는 필요 없냐?\" 따진다.", "type": "D" },
+      { "text": "서운하다고 징징거리며 끼워달라고 한다.", "type": "I" },
+      { "text": "친구가 행복하면 됐지... 혼자 시간을 보낸다.", "type": "S" },
+      { "text": "언젠가 헤어지고 돌아올 거라고 생각하며 내 할 일 한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 927,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_interest",
+    "question": "유튜브 브이로그(Vlog)를 찍어보고 싶다.",
+    "options": [
+      { "text": "일단 폰 켜서 찍고 바로 업로드한다.", "type": "D" },
+      { "text": "친구들과 맛집 가고 노는 모습을 찍는다.", "type": "I" },
+      { "text": "얼굴 나오는 건 부끄러워서 공부하거나 요리하는 손만 찍는다.", "type": "S" },
+      { "text": "편집 어플 사용법부터 배우고 콘티를 짠다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 928,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_school",
+    "question": "수학여행 장기자랑에 나가게 되었다.",
+    "options": [
+      { "text": "센터에 서서 스포트라이트를 받는다.", "type": "D" },
+      { "text": "무대 위에서 끼를 부리고 친구들의 환호를 즐긴다.", "type": "I" },
+      { "text": "친구들 뒤에서 열심히 안무를 맞춘다.", "type": "S" },
+      { "text": "동선이 틀리지 않게 카운트를 세며 연습한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 929,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_lifestyle",
+    "question": "편의점에 갔는데 1+1 행사를 한다.",
+    "options": [
+      { "text": "좋아하는 거면 고민 없이 다 집어온다.", "type": "D" },
+      { "text": "친구한테 전화해서 \"나랑 반띵 할래?\" 물어본다.", "type": "I" },
+      { "text": "다 못 먹을 것 같아서 하나만 산다.", "type": "S" },
+      { "text": "개당 가격이 싼지 계산해 보고 산다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 930,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_friendship",
+    "question": "친구가 밤늦게 울면서 전화를 했다.",
+    "options": [
+      { "text": "\"누구야? 누가 그랬어?\" 당장 해결해 주려 한다.", "type": "D" },
+      { "text": "\"무슨 일이야 ㅠㅠ\" 같이 울어준다.", "type": "I" },
+      { "text": "밤새도록 친구 이야기를 들어준다.", "type": "S" },
+      { "text": "상황을 파악하고 현실적인 조언을 해준다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 931,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_school",
+    "question": "쉬는 시간에 화장실에 가려는데 줄이 길다.",
+    "options": [
+      { "text": "다른 층 화장실로 뛰어간다.", "type": "D" },
+      { "text": "줄 서 있는 친구들과 수다 떨며 기다린다.", "type": "I" },
+      { "text": "종 칠까 봐 조마조마하며 기다린다.", "type": "S" },
+      { "text": "다음 쉬는 시간에 가기로 하고 교실로 돌아간다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 932,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_lifestyle",
+    "question": "방학 때 알바를 하려고 한다.",
+    "options": [
+      { "text": "돈 많이 주는 힘든 일도 상관없다.", "type": "D" },
+      { "text": "놀이공원이나 카페처럼 사람 많이 만나는 곳.", "type": "I" },
+      { "text": "단순 포장이나 편의점처럼 혼자 하는 일.", "type": "S" },
+      { "text": "시급 계산이 정확하고 근로계약서를 써주는 곳.", "type": "C" }
+    ]
+  },
+  {
+    "id": 933,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_friendship",
+    "question": "친구들과 스터디 카페(스카)에 갔다.",
+    "options": [
+      { "text": "목표량 다 끝낼 때까지 친구들도 못 나가게 한다.", "type": "D" },
+      { "text": "공부하다가 쪽지 돌리고 킬킬거린다.", "type": "I" },
+      { "text": "친구들이 공부하면 나도 조용히 공부한다.", "type": "S" },
+      { "text": "칸막이 있는 1인석에 앉아 집중한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 934,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_family",
+    "question": "엄마가 내 카톡을 몰래 본 것 같다.",
+    "options": [
+      { "text": "\"왜 남의 걸 훔쳐봐요?\" 화를 내고 비번을 바꾼다.", "type": "D" },
+      { "text": "\"엄마 미워!\" 울고불고 방문 잠근다.", "type": "I" },
+      { "text": "기분 나쁘지만 엄마가 걱정해서 그런가 보다 생각한다.", "type": "S" },
+      { "text": "사생활 침해라고 논리적으로 따진다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 935,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_interest",
+    "question": "좋아하는 웹툰이 드라마로 만들어진다고 한다.",
+    "options": [
+      { "text": "가상 캐스팅을 내가 직접 짜서 커뮤니티에 올린다.", "type": "D" },
+      { "text": "\"대박! 남주 누구래?\" 친구들이랑 들떠서 이야기한다.", "type": "I" },
+      { "text": "원작 느낌이 안 날까 봐 걱정된다.", "type": "S" },
+      { "text": "제작사가 어디인지, 작가가 누구인지 찾아본다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 936,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_friendship",
+    "question": "생리통이 너무 심해서 체육 수업을 못 할 것 같다.",
+    "options": [
+      { "text": "선생님께 가서 당당하게 쉬겠다고 말한다.", "type": "D" },
+      { "text": "친구들에게 \"나 배 아파 죽을 거 같아\"라고 징징댄다.", "type": "I" },
+      { "text": "참고 하려고 하다가 친구가 말해줘서 쉰다.", "type": "S" },
+      { "text": "보건실에 가서 약을 먹고 상태를 본다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 937,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_lifestyle",
+    "question": "지하철에서 모르는 사람이 내 발을 밟았다.",
+    "options": [
+      { "text": "\"아!\" 하고 크게 소리 내서 눈치를 준다.", "type": "D" },
+      { "text": "친구한테 톡으로 \"어떤 사람이 발 밟음 ㅡㅡ\" 욕한다.", "type": "I" },
+      { "text": "아프지만 아무 말 못 하고 참는다.", "type": "S" },
+      { "text": "사과를 하는지 안 하는지 쳐다본다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 938,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_school",
+    "question": "수업 시간에 쪽지 시험을 본다고 한다.",
+    "options": [
+      { "text": "\"아 쌤~ 다음에 봐요!\" 반항하며 협상을 시도한다.", "type": "D" },
+      { "text": "\"망했다\"를 연발하며 친구들과 소란스럽게 군다.", "type": "I" },
+      { "text": "조용히 책을 펴서 벼락치기를 한다.", "type": "S" },
+      { "text": "시험 범위가 어디까지인지 질문한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 939,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_interest",
+    "question": "새로운 틴트(화장품)를 사고 싶다. 고르는 기준은?",
+    "options": [
+      { "text": "발색 짱짱하고 잘 안 지워지는 것.", "type": "D" },
+      { "text": "케이스가 예쁘거나 아이돌이 광고하는 것.", "type": "I" },
+      { "text": "입술이 건조해지지 않는 촉촉한 것.", "type": "S" },
+      { "text": "퍼스널 컬러(웜톤/쿨톤)에 딱 맞는 색깔.", "type": "C" }
+    ]
+  },
+  {
+    "id": 940,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_friendship",
+    "question": "단짝 친구가 다른 친구랑 더 친하게 지내는 것 같다.",
+    "options": [
+      { "text": "\"너 나보다 걔가 더 좋아?\" 대놓고 물어본다.", "type": "D" },
+      { "text": "질투 나서 일부러 다른 친구들이랑 더 재밌게 논다.", "type": "I" },
+      { "text": "나를 싫어하게 된 건가 싶어서 혼자 상처받는다.", "type": "S" },
+      { "text": "왜 그렇게 느끼는지 내 감정을 분석해 본다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 941,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_family",
+    "question": "아침 등교 시간에 늦잠을 잤다.",
+    "options": [
+      { "text": "엄마한테 왜 안 깨웠냐고 짜증 내며 빨리 준비한다.", "type": "D" },
+      { "text": "\"학교 데려다줘잉~\" 아빠한테 부탁한다.", "type": "I" },
+      { "text": "조용히 씻고 최대한 빨리 나간다.", "type": "S" },
+      { "text": "지각을 면할 수 있는 최단 경로를 생각한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 942,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_school",
+    "question": "친구들과 급식을 먹는데 자리가 없다.",
+    "options": [
+      { "text": "다 먹어가는 애들 옆에 서서 눈치를 준다.", "type": "D" },
+      { "text": "아는 친구를 찾아서 합석하자고 한다.", "type": "I" },
+      { "text": "자리가 날 때까지 구석에서 기다린다.", "type": "S" },
+      { "text": "빈자리가 생길 확률이 높은 곳을 스캔한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 943,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_lifestyle",
+    "question": "비 오는 날, 어떤 우산을 쓸까?",
+    "options": [
+      { "text": "튼튼한 장우산. 비바람에도 끄떡없어야 한다.", "type": "D" },
+      { "text": "투명 우산이나 예쁜 캐릭터 우산.", "type": "I" },
+      { "text": "집에 있는 아무 우산이나 쓰고 나간다.", "type": "S" },
+      { "text": "가방에 쏙 들어가는 가벼운 3단 우산.", "type": "C" }
+    ]
+  },
+  {
+    "id": 944,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_friendship",
+    "question": "친구가 엽기적인 표정의 내 사진을 단톡방에 올렸다.",
+    "options": [
+      { "text": "\"야 지워라. 진심이다.\" 정색하고 경고한다.", "type": "D" },
+      { "text": "나도 친구의 흑역사 사진을 올려서 복수한다.", "type": "I" },
+      { "text": "부끄럽지만 애들이 웃으니까 그냥 둔다.", "type": "S" },
+      { "text": "나중에 삭제해달라고 개인 톡을 보낸다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 945,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_interest",
+    "question": "좋아하는 유튜버가 공구(공동구매)를 한다.",
+    "options": [
+      { "text": "믿고 산다! 바로 결제 버튼을 누른다.", "type": "D" },
+      { "text": "댓글 반응을 보고 친구들한테도 알려준다.", "type": "I" },
+      { "text": "사고 싶지만 돈이 없어서 구경만 한다.", "type": "S" },
+      { "text": "인터넷 최저가보다 싼지 확인해 본다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 946,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_school",
+    "question": "학교 축제 때 부스 운영을 해야 한다.",
+    "options": [
+      { "text": "\"귀신의 집 하자!\" 의견을 내고 총괄한다.", "type": "D" },
+      { "text": "호객 행위를 하며 손님들을 끌어모은다.", "type": "I" },
+      { "text": "부스 안에서 묵묵히 소품을 만들거나 정리한다.", "type": "S" },
+      { "text": "수입과 지출 장부를 관리하고 정산한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 947,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_lifestyle",
+    "question": "다이어트 중에 친구가 떡볶이 먹자고 꼬신다.",
+    "options": [
+      { "text": "\"나 다이어트 중이야. 안 먹어.\" 단호하게 거절한다.", "type": "D" },
+      { "text": "\"오늘만 먹고 내일부터 하자!\" 바로 넘어간다.", "type": "I" },
+      { "text": "거절하기 힘들어서 조금만 먹는다.", "type": "S" },
+      { "text": "곤약 떡볶이나 칼로리 낮은 대체품을 제안한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 948,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_friendship",
+    "question": "선생님 몰래 화장하다가 걸렸다.",
+    "options": [
+      { "text": "뺏긴 화장품을 다시 달라고 당돌하게 말한다.", "type": "D" },
+      { "text": "\"쌤~ 오늘 한 번만 봐주세요~\" 애교 작전.", "type": "I" },
+      { "text": "고개를 푹 숙이고 죄송하다고 한다.", "type": "S" },
+      { "text": "다음부터는 안 걸리게 더 조심해야겠다고 다짐한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 949,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_family",
+    "question": "친척들이 모인 명절, 어른들이 \"공부 잘하니?\"라고 묻는다.",
+    "options": [
+      { "text": "\"알아서 잘해요.\"라고 퉁명스럽게 대답한다.", "type": "D" },
+      { "text": "\"에이~ 저 춤 잘 춰요!\" 화제를 돌리며 재롱을 부린다.", "type": "I" },
+      { "text": "어색하게 웃으며 대답을 피한다.", "type": "S" },
+      { "text": "몇 등 했는지 묻는 건가 싶어 구체적으로 말해야 하나 고민한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 950,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_interest",
+    "question": "친구들과 놀러 가서 찍은 동영상을 편집하려고 한다.",
+    "options": [
+      { "text": "하이라이트만 딱딱 잘라서 빠르게 만든다.", "type": "D" },
+      { "text": "웃긴 효과음이랑 자막을 잔뜩 넣는다.", "type": "I" },
+      { "text": "친구들이 예쁘게 나온 부분 위주로 골라준다.", "type": "S" },
+      { "text": "배경음악 박자에 맞춰 컷 편집을 정교하게 한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 951,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_lifestyle",
+    "question": "새 신발을 신었는데 뒤꿈치가 까져서 너무 아프다.",
+    "options": [
+      { "text": "신발을 꺾어 신거나 편의점에서 슬리퍼를 산다.", "type": "D" },
+      { "text": "친구한테 부축해달라고 엄살을 부린다.", "type": "I" },
+      { "text": "아픈 티 안 내고 꾹 참고 걷는다.", "type": "S" },
+      { "text": "가방에 챙겨둔 밴드를 붙인다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 952,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_school",
+    "question": "교복 치마(또는 바지)를 줄이고 싶다.",
+    "options": [
+      { "text": "수선집 가서 확 줄여버린다. 선생님한테 걸려도 상관없다.", "type": "D" },
+      { "text": "친구들이랑 다 같이 가서 유행하는 핏으로 줄인다.", "type": "I" },
+      { "text": "걸릴까 봐 무서워서 그냥 입거나 단만 살짝 박는다.", "type": "S" },
+      { "text": "학교 규정을 확인하고 허용 범위 내에서 수선한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 953,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_friendship",
+    "question": "생일 선물로 받은 게 마음에 안 든다.",
+    "options": [
+      { "text": "영수증 있냐고 물어보고 교환한다.", "type": "D" },
+      { "text": "\"우와 고마워!\"라고 하지만 실제로는 안 쓴다.", "type": "I" },
+      { "text": "준 친구의 정성을 생각해서 고맙게 쓴다.", "type": "S" },
+      { "text": "중고 거래 앱에 시세를 검색해 본다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 954,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_lifestyle",
+    "question": "시험 기간인데 잠이 너무 온다. 깨는 방법은?",
+    "options": [
+      { "text": "찬물로 세수하고 뺨을 때린다.", "type": "D" },
+      { "text": "친구랑 전화하면서 잠을 깬다.", "type": "I" },
+      { "text": "조금만 자야지 하고 엎드렸다가 아침까지 잔다.", "type": "S" },
+      { "text": "타이머를 15분 맞춰놓고 쪽잠을 잔다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 955,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_interest",
+    "question": "좋아하는 웹소설이나 팬픽을 읽다가 밤을 샜다.",
+    "options": [
+      { "text": "학교 가서 자면 된다. 결말을 보는 게 중요하다.", "type": "D" },
+      { "text": "친구들한테 \"나 이거 읽느라 밤샜어 ㅋㅋ\" 자랑한다.", "type": "I" },
+      { "text": "수업 시간에 졸까 봐 걱정하면서 등교한다.", "type": "S" },
+      { "text": "다음부턴 몇 시까지만 읽겠다고 알람을 맞춘다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 956,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_school",
+    "question": "체육 시간에 짝피구(남녀 짝지어 하는 피구)를 한다.",
+    "options": [
+      { "text": "남자애를 방패로 삼고 내가 공을 던진다.", "type": "D" },
+      { "text": "썸남이랑 짝이 되고 싶어서 눈치를 본다.", "type": "I" },
+      { "text": "제발 공이 우리 쪽으로 안 오길 빈다.", "type": "S" },
+      { "text": "남자애 옷자락을 잡고 보폭을 맞춰 움직인다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 957,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_lifestyle",
+    "question": "버스 카드를 찍었는데 '잔액이 부족합니다'가 나왔다.",
+    "options": [
+      { "text": "기사님께 \"계좌이체 해드릴게요!\"라고 당당히 말한다.", "type": "D" },
+      { "text": "뒤에 있는 친구한테 \"나 좀 찍어줘!\"라고 다급하게 외친다.", "type": "I" },
+      { "text": "얼굴이 빨개져서 죄송하다고 하고 급하게 내린다.", "type": "S" },
+      { "text": "주머니에 현금이 있는지 침착하게 확인한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 958,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_friendship",
+    "question": "친구들과 우정링(반지)을 맞추기로 했다.",
+    "options": [
+      { "text": "심플하고 굵은 디자인으로 내가 고른다.", "type": "D" },
+      { "text": "보석 박히고 반짝거리는 화려한 걸 고른다.", "type": "I" },
+      { "text": "애들이 좋다는 디자인으로 따라간다.", "type": "S" },
+      { "text": "변색 안 되는 재질인지, 호수는 맞는지 확인한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 959,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_family",
+    "question": "아빠가 옛날 개그(아재 개그)를 하신다.",
+    "options": [
+      { "text": "\"아, 재미없어.\" 정색한다.", "type": "D" },
+      { "text": "\"깔깔깔! 아빠 센스 짱!\" 과장되게 웃어준다.", "type": "I" },
+      { "text": "민망하지만 억지로 미소 짓는다.", "type": "S" },
+      { "text": "그 개그의 유래가 무엇인지 설명해 드린다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 960,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_interest",
+    "question": "MBTI 검사 결과가 내가 생각한 거랑 다르게 나왔다.",
+    "options": [
+      { "text": "\"이거 안 맞아.\" 결과를 무시한다.", "type": "D" },
+      { "text": "친구들한테 \"나 이거 나왔어! 의외지?\"라고 물어본다.", "type": "I" },
+      { "text": "내가 변했나? 싶어서 곰곰이 생각한다.", "type": "S" },
+      { "text": "질문에 제대로 답했는지 다시 검사를 해본다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 961,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_school",
+    "question": "학교 방송반(또는 학생회) 면접을 보러 갔다.",
+    "options": [
+      { "text": "내가 왜 뽑혀야 하는지 강하게 어필한다.", "type": "D" },
+      { "text": "밝은 미소와 인사성으로 선배들의 마음을 사로잡는다.", "type": "I" },
+      { "text": "떨리지만 열심히 하겠다는 진심을 보인다.", "type": "S" },
+      { "text": "예상 질문에 대한 답변을 완벽하게 외워 간다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 962,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_lifestyle",
+    "question": "거울을 봤는데 뾰루지(여드름)가 났다.",
+    "options": [
+      { "text": "짜증 나서 바로 손으로 짜버린다.", "type": "D" },
+      { "text": "여드름 패치 붙이고 친구들한테 \"나 이거 났어 ㅠㅠ\" 징징댄다.", "type": "I" },
+      { "text": "앞머리로 가리거나 마스크를 쓴다.", "type": "S" },
+      { "text": "진정 효과가 있는 연고나 스팟 케어 제품을 바른다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 963,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_friendship",
+    "question": "친구가 내 험담을 했다는 걸 알게 됐다.",
+    "options": [
+      { "text": "당장 전화해서 욕하거나 찾아간다.", "type": "D" },
+      { "text": "SNS 저격글을 올리거나 상태 메시지를 바꾼다.", "type": "I" },
+      { "text": "배신감에 집에서 혼자 운다.", "type": "S" },
+      { "text": "증거(카톡 캡처 등)를 확보하고 사실 관계를 확인한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 964,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_family",
+    "question": "엄마가 내 방 청소를 대신 해주셨는데 물건 위치가 바뀌었다.",
+    "options": [
+      { "text": "\"내 방 건드리지 말라고 했잖아!\" 화낸다.", "type": "D" },
+      { "text": "\"엄마, 내 립스틱 어디 갔어?\" 물어보며 찾는다.", "type": "I" },
+      { "text": "청소해주신 건 고맙지만 찾느라 고생한다.", "type": "S" },
+      { "text": "원래 있던 자리로 다시 꼼꼼하게 정리한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 965,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_interest",
+    "question": "좋아하는 아이돌 콘서트 티켓팅 날이다.",
+    "options": [
+      { "text": "PC방 가서 가장 좋은 컴퓨터로 무조건 잡는다.", "type": "D" },
+      { "text": "친구들이랑 같이 도전해서 성공한 사람이 쏘기로 한다.", "type": "I" },
+      { "text": "실패할까 봐 너무 떨려서 손이 덜덜 떨린다.", "type": "S" },
+      { "text": "서버 시간을 확인하고 네이비즘 시계를 켜둔다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 966,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_lifestyle",
+    "question": "휴대폰을 잃어버린 것 같다. 가장 먼저 하는 행동은?",
+    "options": [
+      { "text": "\"아 짜증 나! 누가 가져갔어?\" 소리치며 주변을 뒤진다.", "type": "D" },
+      { "text": "친구에게 울면서 전화해서 \"나 어떡해 ㅠㅠ\" 하소연한다.", "type": "I" },
+      { "text": "가슴이 철렁하지만 왔던 길을 천천히 되돌아가 본다.", "type": "S" },
+      { "text": "마지막으로 폰을 쓴 시간과 장소를 기억해 내려고 애쓴다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 967,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_school",
+    "question": "시험 기간에 카페에서 공부하기로 했다.",
+    "options": [
+      { "text": "콘센트 있고 넓은 자리를 내가 먼저 차지한다.", "type": "D" },
+      { "text": "공부는 조금 하고 친구랑 셀카 찍고 수다 떤다.", "type": "I" },
+      { "text": "친구가 가자는 카페로 군말 없이 따라간다.", "type": "S" },
+      { "text": "조용하고 집중 잘 되는 구석 자리에 앉는다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 968,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_interest",
+    "question": "틱톡(TikTok)이나 릴스 댄스 챌린지를 찍을 때?",
+    "options": [
+      { "text": "내가 센터에서 가장 돋보이게 춤춘다.", "type": "D" },
+      { "text": "틀려도 웃으면서 재밌게 찍고 NG 장면도 올린다.", "type": "I" },
+      { "text": "친구들 뒤에서 동작을 작게 따라 한다.", "type": "S" },
+      { "text": "거울 모드로 영상을 보며 동작을 완벽하게 외운다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 969,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_friendship",
+    "question": "친구들과 '마니또(비밀 친구)' 게임을 한다.",
+    "options": [
+      { "text": "누가 내 마니또인지 빨리 밝히라고 추궁한다.", "type": "D" },
+      { "text": "들키는 줄도 모르고 여기저기 티 내고 다닌다.", "type": "I" },
+      { "text": "내 마니또인 친구를 몰래 묵묵히 챙겨준다.", "type": "S" },
+      { "text": "누가 누구를 뽑았는지 추리하고 분석한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 970,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_lifestyle",
+    "question": "네일아트(손톱)를 받으러 갔다.",
+    "options": [
+      { "text": "가장 화려하고 센 언니 스타일의 파츠를 붙인다.", "type": "D" },
+      { "text": "요즘 유행하는 캐릭터나 알록달록한 디자인을 고른다.", "type": "I" },
+      { "text": "튀지 않는 누드톤이나 연한 핑크색을 바른다.", "type": "S" },
+      { "text": "손톱이 상하지 않게 영양 케어를 먼저 받는다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 971,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_school",
+    "question": "선생님이 수업 내용을 필기하라고 하셨다.",
+    "options": [
+      { "text": "중요한 것만 대충 적고 빨리 끝낸다.", "type": "D" },
+      { "text": "친구한테 필기 보여달라고 하고 베낀다.", "type": "I" },
+      { "text": "선생님 말씀을 놓치지 않고 꼼꼼히 받아적는다.", "type": "S" },
+      { "text": "색깔 펜을 사용해서 깔끔하고 체계적으로 정리한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 972,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_family",
+    "question": "엄마가 \"너 방 꼴이 이게 뭐야?\"라고 잔소리하셨다.",
+    "options": [
+      { "text": "\"내가 알아서 치운다고요!\" 문을 쾅 닫는다.", "type": "D" },
+      { "text": "\"이것만 하고 치울게~ 사랑해 엄마!\" 애교로 넘긴다.", "type": "I" },
+      { "text": "엄마 화 풀리게 하려고 조용히 주섬주섬 치운다.", "type": "S" },
+      { "text": "어디부터 치울지 순서를 정하고 정리한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 973,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_interest",
+    "question": "친구랑 노래방에서 듀엣곡을 부르기로 했다.",
+    "options": [
+      { "text": "내가 고음 파트나 하이라이트를 부르겠다고 한다.", "type": "D" },
+      { "text": "서로 마주 보고 율동하며 신나게 부른다.", "type": "I" },
+      { "text": "친구가 부르고 싶어 하는 파트를 양보한다.", "type": "S" },
+      { "text": "가사나 박자를 틀리지 않게 화면을 집중해서 본다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 974,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_friendship",
+    "question": "친구가 내 험담을 했다는 증거(카톡 캡처)를 봤다.",
+    "options": [
+      { "text": "바로 단톡방에 올리고 \"해명해\"라고 저격한다.", "type": "D" },
+      { "text": "너무 충격받아서 다른 친구들한테 울면서 전화한다.", "type": "I" },
+      { "text": "모르는 척하고 싶어서 덮어두고 피한다.", "type": "S" },
+      { "text": "앞뒤 상황을 파악하고 증거를 저장해 둔다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 975,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_lifestyle",
+    "question": "다이어트 보조제 광고를 봤다.",
+    "options": [
+      { "text": "\"일주일 만에 -5kg?\" 효과 빠르다는 말에 혹해서 산다.", "type": "D" },
+      { "text": "유명한 인플루언서가 공구하는 거면 따라 산다.", "type": "I" },
+      { "text": "부작용이 있을까 봐 무서워서 안 산다.", "type": "S" },
+      { "text": "식약처 인증을 받았는지 성분을 검색해 본다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 976,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_school",
+    "question": "급식실에서 새치기하는 애를 봤다.",
+    "options": [
+      { "text": "\"야! 뒤로 가서 줄 서.\" 큰 소리로 지적한다.", "type": "D" },
+      { "text": "친구한테 \"쟤 봐, 진짜 양심 없다\"라고 귓속말한다.", "type": "I" },
+      { "text": "싸움 날까 봐 모른 척하고 고개 돌린다.", "type": "S" },
+      { "text": "선생님이나 영양사 선생님께 조용히 말씀드린다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 977,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_friendship",
+    "question": "친구가 빌려준 옷을 더럽혀서 돌려줬다.",
+    "options": [
+      { "text": "\"이거 뭐야? 세탁비 내놔.\" 당장 따진다.", "type": "D" },
+      { "text": "\"헐... 이거 내가 제일 아끼는 건데...\" 속상한 티를 낸다.", "type": "I" },
+      { "text": "친구가 미안해할까 봐 \"괜찮아 빨면 돼\"라고 한다.", "type": "S" },
+      { "text": "얼룩이 지워지는지 확인하고 세탁소에 맡긴다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 978,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_interest",
+    "question": "좋아하는 아이돌의 포토카드(포카)를 교환해야 한다.",
+    "options": [
+      { "text": "\"시세 맞춰서 교환해요. 찔러보기 차단.\" 단호하게 글 쓴다.", "type": "D" },
+      { "text": "\"덤 많이 드릴게요! 제 최애 구해요 ㅠㅠ\" 간절하게 쓴다.", "type": "I" },
+      { "text": "사기당할까 봐 직거래 아니면 안 한다.", "type": "S" },
+      { "text": "하자가 있는지 빛 비춤 영상을 꼼꼼히 요구한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 979,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_lifestyle",
+    "question": "용돈을 모아 명품 지갑(또는 비싼 물건)을 샀다.",
+    "options": [
+      { "text": "학교에 가져가서 책상 위에 올려두고 티 낸다.", "type": "D" },
+      { "text": "언박싱 영상을 찍어서 인스타 스토리에 올린다.", "type": "I" },
+      { "text": "잃어버릴까 봐 가방 깊숙이 넣어 다닌다.", "type": "S" },
+      { "text": "정품 보증서와 박스를 잘 챙겨둔다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 980,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_school",
+    "question": "수행평가 점수에 이의가 있다.",
+    "options": [
+      { "text": "교무실로 바로 찾아가서 \"왜 감점이에요?\" 묻는다.", "type": "D" },
+      { "text": "친구들 점수랑 비교해 보고 억울해한다.", "type": "I" },
+      { "text": "선생님이 무서워서 그냥 점수를 받아들인다.", "type": "S" },
+      { "text": "채점 기준표를 확인하고 논리적으로 이의 제기한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 981,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_friendship",
+    "question": "절교했던 친구가 다시 친하게 지내자고 연락 왔다.",
+    "options": [
+      { "text": "\"이제 와서? 됐어.\" 읽씹하거나 차단한다.", "type": "D" },
+      { "text": "\"진짜? 나도 보고 싶었어!\" 바로 받아준다.", "type": "I" },
+      { "text": "받아주고 싶지만 또 상처받을까 봐 망설인다.", "type": "S" },
+      { "text": "왜 다시 연락했는지 의도를 생각해 본다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 982,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_family",
+    "question": "가족 여행지에서 사진을 찍어달라고 부탁할 때?",
+    "options": [
+      { "text": "\"다리 길어 보이게 밑에서 찍어!\" 계속 요구한다.", "type": "D" },
+      { "text": "가족들이랑 다 같이 웃긴 포즈로 셀카를 찍는다.", "type": "I" },
+      { "text": "엄마 아빠 먼저 찍어드리고 내 사진은 나중에 찍는다.", "type": "S" },
+      { "text": "수평이랑 구도를 맞춰서 찍어달라고 설명한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 983,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_interest",
+    "question": "새로운 드라마(또는 넷플릭스 시리즈)를 시작했다.",
+    "options": [
+      { "text": "지루한 부분은 스킵하고 결말부터 확인한다.", "type": "D" },
+      { "text": "친구들에게 \"이거 존잼!\"이라고 추천하며 같이 본다.", "type": "I" },
+      { "text": "주인공이 불쌍한 상황이면 감정 이입해서 운다.", "type": "S" },
+      { "text": "복선이나 해석 영상을 찾아보며 분석한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 984,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_school",
+    "question": "전교 회장(또는 반장) 선거에 나갈까 고민 중이다.",
+    "options": [
+      { "text": "\"내가 해야지 누가 해?\" 당선될 자신감으로 나간다.", "type": "D" },
+      { "text": "인기 많은 친구들에게 도와달라고 해서 나간다.", "type": "I" },
+      { "text": "남들 앞에 서는 게 부끄러워서 안 나간다.", "type": "S" },
+      { "text": "공약 실천 가능성을 따져보고 결정한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 985,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_lifestyle",
+    "question": "편의점에서 신상 젤리/과자를 발견했다.",
+    "options": [
+      { "text": "궁금한 건 못 참아. 바로 사서 먹어본다.", "type": "D" },
+      { "text": "인증샷 찍어서 스토리에 올리고 먹는다.", "type": "I" },
+      { "text": "맛없을 수도 있으니 평소 먹던 걸 산다.", "type": "S" },
+      { "text": "가격과 양을 비교해 보고 가성비를 따진다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 986,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_friendship",
+    "question": "친구가 짝남(좋아하는 남자애) 앞에서 실수했다.",
+    "options": [
+      { "text": "\"야 정신 차려!\" 등짝을 때리며 수습해 준다.", "type": "D" },
+      { "text": "깔깔 웃으면서 분위기를 유쾌하게 넘긴다.", "type": "I" },
+      { "text": "친구 멘탈 나갈까 봐 조용히 위로해 준다.", "type": "S" },
+      { "text": "아무 일 없었던 것처럼 자연스럽게 화제를 돌린다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 987,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_school",
+    "question": "교복 셔츠가 작아져서 불편하다.",
+    "options": [
+      { "text": "체육복으로 갈아입고 선생님께는 배 째라 한다.", "type": "D" },
+      { "text": "친구들한테 \"나 살쪘어 ㅠㅠ\" 징징댄다.", "type": "I" },
+      { "text": "불편해도 참고 그냥 입고 다닌다.", "type": "S" },
+      { "text": "수선집에 가서 늘릴 수 있는지 알아본다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 988,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_interest",
+    "question": "MBTI 성격 유형 궁합표를 봤다.",
+    "options": [
+      { "text": "\"안 맞는 사람은 거른다.\" 바로 손절 리스트를 만든다.", "type": "D" },
+      { "text": "\"우리 천생연분이래!\" 친구들한테 공유한다.", "type": "I" },
+      { "text": "안 맞는다고 나와도 노력하면 된다고 생각한다.", "type": "S" },
+      { "text": "왜 안 맞는지 성향 분석 글을 정독한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 989,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_lifestyle",
+    "question": "방학 때 염색을 하고 싶다.",
+    "options": [
+      { "text": "탈색하고 쨍한 색으로 확 바꿔버린다.", "type": "D" },
+      { "text": "요즘 유행하는 아이돌 머리색을 따라 한다.", "type": "I" },
+      { "text": "학교 개학하면 걸릴까 봐 갈색 정도로만 한다.", "type": "S" },
+      { "text": "머릿결 손상도와 비용을 따져보고 결정한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 990,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_friendship",
+    "question": "친구 생일 선물을 고르는데 돈이 부족하다.",
+    "options": [
+      { "text": "다른 친구들한테 돈을 걷어서 큰 거 하나 사준다.", "type": "D" },
+      { "text": "정성 가득한 편지와 저렴하고 예쁜 소품을 준다.", "type": "I" },
+      { "text": "미안해서 솔직하게 말하고 다음에 맛있는 거 사준다.", "type": "S" },
+      { "text": "예산 안에서 살 수 있는 가장 효율적인 선물을 찾는다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 991,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_family",
+    "question": "아빠가 내 패션(옷 스타일)을 지적하신다.",
+    "options": [
+      { "text": "\"아빠가 뭘 알아요!\" 짜증 내며 무시한다.", "type": "D" },
+      { "text": "\"이게 요즘 힙한 거야~\"라며 설득한다.", "type": "I" },
+      { "text": "옷을 갈아입거나 겉옷으로 가리고 나간다.", "type": "S" },
+      { "text": "이 옷이 왜 예쁜지 코디 사진을 보여드린다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 992,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_school",
+    "question": "온라인 수업(줌/Zoom) 중에 카메라를 켜라고 한다.",
+    "options": [
+      { "text": "당당하게 켜거나 귀찮으면 그냥 꺼둔다.", "type": "D" },
+      { "text": "필터나 배경 화면을 웃긴 걸로 바꿔서 켠다.", "type": "I" },
+      { "text": "얼굴 나오기 싫어서 마스크 쓰고 켠다.", "type": "S" },
+      { "text": "캠 각도를 조정하고 뒷배경을 정리한 뒤 켠다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 993,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_interest",
+    "question": "좋아하는 아이돌 멤버가 탈퇴한다고 한다.",
+    "options": [
+      { "text": "소속사 앞에서 시위하거나 항의 메일을 보낸다.", "type": "D" },
+      { "text": "팬 친구들이랑 모여서 밤새 슬퍼한다.", "type": "I" },
+      { "text": "그동안 행복했어... 하며 조용히 마음을 정리한다.", "type": "S" },
+      { "text": "탈퇴 이유와 향후 활동 계획을 찾아본다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 994,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_lifestyle",
+    "question": "길거리에서 설문조사를 해달라고 붙잡는다.",
+    "options": [
+      { "text": "\"됐어요.\" 손사래 치고 지나간다.", "type": "D" },
+      { "text": "\"바빠서 죄송해요~\" 웃으며 거절한다.", "type": "I" },
+      { "text": "거절 못 하고 붙잡혀서 다 해준다.", "type": "S" },
+      { "text": "개인정보 요구하는지 확인하고 피한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 995,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_friendship",
+    "question": "단톡방에서 친구들이 싸우기 시작했다.",
+    "options": [
+      { "text": "\"그만 좀 해라.\" 딱 잘라 말하고 중재한다.", "type": "D" },
+      { "text": "\"우리 딴 얘기 하자!\" 이모티콘 보내며 화제 전환.", "type": "I" },
+      { "text": "무서워서 읽기만 하고 아무 말 안 한다.", "type": "S" },
+      { "text": "누가 잘못했는지 대화 내용을 다시 읽어본다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 996,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_school",
+    "question": "학교 축제 때 무대에 올라갈 기회가 생겼다.",
+    "options": [
+      { "text": "무조건 센터! 내가 주인공이 되고 싶다.", "type": "D" },
+      { "text": "친구들이랑 추억 쌓는 게 재밌어서 나간다.", "type": "I" },
+      { "text": "나가는 건 싫고 무대 아래서 응원만 하고 싶다.", "type": "S" },
+      { "text": "조명이나 음향 스태프를 맡아 돕는다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 997,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_lifestyle",
+    "question": "향수를 고를 때 나는?",
+    "options": [
+      { "text": "한 번 맡으면 기억에 남는 강렬하고 독특한 향.", "type": "D" },
+      { "text": "친구가 좋다고 추천해 준 인기 많은 향.", "type": "I" },
+      { "text": "은은한 비누 향이나 섬유유연제 향.", "type": "S" },
+      { "text": "성분표를 보고 지속력이 좋은지 확인한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 998,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_family",
+    "question": "언니(동생)랑 방을 같이 써서 불편하다.",
+    "options": [
+      { "text": "내 구역 넘어오지 말라고 선을 긋고 경고한다.", "type": "D" },
+      { "text": "밤마다 같이 수다 떨 수 있어서 오히려 좋다.", "type": "I" },
+      { "text": "불편해도 가족이니까 참고 쓴다.", "type": "S" },
+      { "text": "청소 당번과 소등 시간을 규칙으로 정한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 999,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_interest",
+    "question": "좋아하는 웹소설 주인공이 답답하게 행동한다.",
+    "options": [
+      { "text": "댓글로 \"아 고구마 ㅡㅡ\"라고 욕을 쓴다.", "type": "D" },
+      { "text": "친구랑 \"걔 왜 그래?\" 하면서 욕하며 본다.", "type": "I" },
+      { "text": "작가님의 뜻이 있겠지 하고 참고 본다.", "type": "S" },
+      { "text": "개연성이 부족하다고 느끼며 하차를 고민한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1000,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_friendship",
+    "question": "친구가 내 비밀번호(패턴)를 알려 달라고 한다.",
+    "options": [
+      { "text": "\"싫어.\" 단칼에 거절한다.", "type": "D" },
+      { "text": "알려주고 나도 걔 거 알려달라고 한다.", "type": "I" },
+      { "text": "알려주기 싫지만 거절 못 해서 알려준다.", "type": "S" },
+      { "text": "프라이버시는 지켜야 한다고 설명한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1001,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_lifestyle",
+    "question": "다이어리 꾸미기(다꾸) 용품을 사러 갔다.",
+    "options": [
+      { "text": "눈에 띄는 큰 스티커 위주로 팍팍 담는다.", "type": "D" },
+      { "text": "귀여운 캐릭터 스티커를 종류별로 다 산다.", "type": "I" },
+      { "text": "쓰던 거랑 비슷한 무난한 걸로 산다.", "type": "S" },
+      { "text": "활용도 높은 마스킹 테이프나 떡메를 고른다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1002,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_school",
+    "question": "조별 과제 조장을 뽑아야 한다.",
+    "options": [
+      { "text": "답답해서 그냥 내가 하겠다고 손든다.", "type": "D" },
+      { "text": "가위바위보 진 사람이 하자고 분위기를 몬다.", "type": "I" },
+      { "text": "아무도 안 하면 어쩔 수 없이 내가 맡는다.", "type": "S" },
+      { "text": "가장 능력 있는 친구를 추천한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1003,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_friendship",
+    "question": "친구가 내 폰으로 셀카를 잔뜩 찍어놨다.",
+    "options": [
+      { "text": "\"용량 차지해!\" 하며 바로 삭제해 버린다.", "type": "D" },
+      { "text": "\"잘 나왔네 ㅋㅋ\" 하며 친구한테 보내준다.", "type": "I" },
+      { "text": "지우고 싶지만 친구가 섭섭해할까 봐 둔다.", "type": "S" },
+      { "text": "잘 나온 것만 남기고 흔들린 건 정리한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1004,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_family",
+    "question": "가족 외식 메뉴를 정하는데 의견이 갈린다.",
+    "options": [
+      { "text": "\"오늘은 파스타야!\" 내 의견을 관철시킨다.", "type": "D" },
+      { "text": "\"뷔페 가면 다 있잖아!\" 즐거운 곳으로 유도한다.", "type": "I" },
+      { "text": "부모님이 드시고 싶은 걸로 따른다.", "type": "S" },
+      { "text": "거리와 가격, 평점을 비교해서 합리적인 곳을 찾는다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1005,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_interest",
+    "question": "노래방에서 친구가 발라드만 계속 부른다.",
+    "options": [
+      { "text": "\"야 신나는 거 좀 해!\" 취소 버튼을 누른다.", "type": "D" },
+      { "text": "옆에서 휴대폰 하거나 딴짓한다.", "type": "I" },
+      { "text": "친구 기분 맞춰주려고 탬버린 흔들어준다.", "type": "S" },
+      { "text": "친구가 몇 곡째 부르는지 세어본다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1006,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_lifestyle",
+    "question": "버스에서 내리려는데 문이 빨리 닫힐 것 같다.",
+    "options": [
+      { "text": "\"기사님 내려요!!\" 큰 소리로 외친다.", "type": "D" },
+      { "text": "안절부절못하다가 벨을 연타한다.", "type": "I" },
+      { "text": "말 못 하고 다음 정거장에 내린다.", "type": "S" },
+      { "text": "미리 문 앞에 서서 내릴 준비를 한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1007,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_friendship",
+    "question": "친구가 다른 친구의 비밀을 나에게 말해줬다.",
+    "options": [
+      { "text": "\"그래서? 걔 진짜 별로네.\" 같이 욕한다.", "type": "D" },
+      { "text": "\"대박! 진짜?\" 리액션하며 더 캐묻는다.", "type": "I" },
+      { "text": "듣기 불편해서 \"비밀인데 이래도 돼?\" 걱정한다.", "type": "S" },
+      { "text": "이 친구가 내 비밀도 말하고 다닐까 봐 경계한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1008,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_school",
+    "question": "책상 서랍 정리를 할 때?",
+    "options": [
+      { "text": "쓰레기는 한 번에 몰아서 다 버린다.", "type": "D" },
+      { "text": "정리하다가 옛날 쪽지 발견하고 추억에 잠긴다.", "type": "I" },
+      { "text": "버리기 아까워서 차곡차곡 쌓아둔다.", "type": "S" },
+      { "text": "과목별, 용도별로 파일에 분류해 둔다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1009,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_interest",
+    "question": "유튜브 숏츠(Shorts)를 보다가 시간 가는 줄 몰랐다.",
+    "options": [
+      { "text": "\"아 시간 낭비했네.\" 폰 던지고 할 일 한다.", "type": "D" },
+      { "text": "재밌는 영상 링크 복사해서 단톡방에 뿌린다.", "type": "I" },
+      { "text": "조금만 더 봐야지 하다가 계속 본다.", "type": "S" },
+      { "text": "스크린 타임을 확인하고 사용 시간을 제한한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1010,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_friendship",
+    "question": "친구가 빌려 간 체육복을 안 가져왔다.",
+    "options": [
+      { "text": "\"책임져!\" 친구 거라도 뺏어 입는다.", "type": "D" },
+      { "text": "어떡하냐고 발 동동 구르며 선생님께 애교 부린다.", "type": "I" },
+      { "text": "친구 미안해할까 봐 \"괜찮아\" 하고 벌점 받는다.", "type": "S" },
+      { "text": "다음부턴 절대 빌려주지 않겠다고 다짐한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1011,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_lifestyle",
+    "question": "스터디 카페 기간권이 얼마 안 남았다.",
+    "options": [
+      { "text": "뽕 뽑아야 한다며 벼락치기로 몰아서 간다.", "type": "D" },
+      { "text": "친구랑 같이 다니려고 연장할까 고민한다.", "type": "I" },
+      { "text": "아깝지만 남은 시간은 포기한다.", "type": "S" },
+      { "text": "남은 시간과 날짜를 계산해서 스케줄을 짠다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1012,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_family",
+    "question": "부모님이 성적표를 보여달라고 하신다.",
+    "options": [
+      { "text": "\"이번엔 망했어요. 다음엔 잘할게요.\" 쿨하게 보여준다.", "type": "D" },
+      { "text": "\"엄마 사랑해~\" 딴소리하며 숨긴다.", "type": "I" },
+      { "text": "혼날까 봐 눈치 보며 슬그머니 내민다.", "type": "S" },
+      { "text": "성적 추이와 분석표를 함께 보여드린다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1013,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_interest",
+    "question": "좋아하는 유튜버가 악플에 시달린다.",
+    "options": [
+      { "text": "악플러 계정 신고하고 대댓글로 싸운다.", "type": "D" },
+      { "text": "선플(좋은 댓글) 달기 운동을 주도한다.", "type": "I" },
+      { "text": "마음 아파하며 '좋아요'만 누른다.", "type": "S" },
+      { "text": "법적 대응 공지가 올라오는지 확인한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1014,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_friendship",
+    "question": "친구가 내 틴트를 빌려달라고 한다.",
+    "options": [
+      { "text": "\"안 돼. 나 결벽증 있어.\" 거절한다.", "type": "D" },
+      { "text": "\"이거 색깔 진짜 예쁘지?\" 하며 빌려준다.", "type": "I" },
+      { "text": "찜찜하지만 거절 못 해서 빌려준다.", "type": "S" },
+      { "text": "팁(바르는 부분)을 닦아서 주거나 손등에 덜어준다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1015,
+    "target_age_min": 10,
+    "target_age_max": 19,
+    "category": "teens_school",
+    "question": "선생님이 수업 중에 딴짓하는 나를 지적하셨다.",
+    "options": [
+      { "text": "\"아니거든요?\" 반사적으로 대든다.", "type": "D" },
+      { "text": "\"죄송해요 쌤~\" 웃음으로 무마한다.", "type": "I" },
+      { "text": "얼굴이 빨개져서 고개를 푹 숙인다.", "type": "S" },
+      { "text": "변명하지 않고 바로 책을 편다.", "type": "C" }
+    ]
+  },
+
+  {
+    "id": 1016,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "career_entry",
+    "question": "첫 직장 출근 일주일 차, 모르는 업무를 맡게 되었다.",
+    "options": [
+      { "text": "\"이거 어떻게 하는 건가요?\" 사수에게 바로 찾아가 당당하게 묻는다.", "type": "D" },
+      { "text": "옆자리 동료에게 \"저 이거 처음인데 도와주세요~\" 하며 친화력을 발휘한다.", "type": "I" },
+      { "text": "사수가 바빠 보이니 일단 눈치를 보며 매뉴얼을 찾아본다.", "type": "S" },
+      { "text": "과거 자료나 폴더를 검색해서 혼자서 해결 방법을 분석한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1017,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "dating_romance",
+    "question": "소개팅에서 마음에 드는 상대를 만났다.",
+    "options": [
+      { "text": "애프터 신청은 내가 먼저! 직진한다.", "type": "D" },
+      { "text": "대화 내내 리액션 부자가 되어 상대방을 즐겁게 해 준다.", "type": "I" },
+      { "text": "상대방이 나를 어떻게 생각할지 고민하며 조심스럽게 행동한다.", "type": "S" },
+      { "text": "상대방의 직업, 가치관 등이 나와 맞는지 대화를 통해 파악한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1018,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "friendship_social",
+    "question": "친구들과 해외여행 계획을 짜는데 의견이 안 모인다.",
+    "options": [
+      { "text": "\"그냥 여기로 가자.\" 답답해서 내가 결정하고 예약해 버린다.", "type": "D" },
+      { "text": "\"일단 가서 생각하자!\" 분위기를 띄우며 긍정회로를 돌린다.", "type": "I" },
+      { "text": "친구들의 의견을 다 들어주고 대세에 따른다.", "type": "S" },
+      { "text": "구글 시트를 켜서 항공권 가격과 동선을 비교 정리해 공유한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1019,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "lifestyle_consumption",
+    "question": "월급날, 평소 갖고 싶던 명품 가방이 눈에 들어온다.",
+    "options": [
+      { "text": "내가 번 돈인데 뭐 어때? 쿨하게 일시불로 긁는다.", "type": "D" },
+      { "text": "친구들에게 \"이거 어때? 예쁘지?\" 묻고 반응 좋으면 산다.", "type": "I" },
+      { "text": "너무 비싼 것 같아서 비슷한 디자인의 저렴한 가방을 찾는다.", "type": "S" },
+      { "text": "이번 달 카드값과 저축액을 계산해 보고 할부 계획을 세운다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1020,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "work_life",
+    "question": "팀장님이 퇴근 10분 전에 급한 업무를 시켰다.",
+    "options": [
+      { "text": "\"오늘 약속 있어서 내일 아침까지 해도 될까요?\" 확실하게 말한다.", "type": "D" },
+      { "text": "속으로는 울지만 겉으로는 \"넵!\" 하고 최대한 빨리 끝내고 간다.", "type": "I" },
+      { "text": "거절 못 하고 야근하며 묵묵히 일을 처리한다.", "type": "S" },
+      { "text": "업무의 중요도와 소요 시간을 파악해서 우선순위를 정한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1021,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "dating_romance",
+    "question": "남자친구와 싸우고 연락이 두절되었다.",
+    "options": [
+      { "text": "받을 때까지 전화하거나 \"당장 받아\"라고 카톡을 남긴다.", "type": "D" },
+      { "text": "답답해서 친구들을 불러내 술 마시며 하소연한다.", "type": "I" },
+      { "text": "연락 올 때까지 불안해하며 휴대폰만 쳐다본다.", "type": "S" },
+      { "text": "우리가 왜 싸웠는지 카톡 내용을 다시 읽어보며 분석한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1022,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "self_development",
+    "question": "자기계발을 위해 새로운 것을 배우려 한다.",
+    "options": [
+      { "text": "단기간에 자격증을 따거나 성과가 나오는 주식/경매 강의.", "type": "D" },
+      { "text": "사람들과 어울릴 수 있는 영어 회화 스터디나 댄스 동호회.", "type": "I" },
+      { "text": "마음의 안정을 주는 요가나 필라테스, 꽃꽂이.", "type": "S" },
+      { "text": "업무 스킬을 높여주는 코딩이나 데이터 분석 강의.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1023,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "lifestyle_social_media",
+    "question": "인스타그램에 올릴 카페 사진을 찍을 때?",
+    "options": [
+      { "text": "내 얼굴이 제일 잘 나오고 힙한 느낌이 나야 한다.", "type": "D" },
+      { "text": "친구들과 다 같이 웃고 떠드는 자연스러운 모습을 올린다.", "type": "I" },
+      { "text": "사람들 안 나온 조용한 배경이나 음료 사진만 올린다.", "type": "S" },
+      { "text": "수평 수직 딱 맞춰서 구도가 완벽한 감성샷을 찍는다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1024,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "friendship_social",
+    "question": "친구가 \"나 우울해서 빵 샀어\"라고 카톡을 보냈다.",
+    "options": [
+      { "text": "\"무슨 빵 샀어? 나도 먹고 싶다.\" 본론으로 직진한다.", "type": "D" },
+      { "text": "\"헐 ㅠㅠ 무슨 일이야? 오늘 만나서 풀자!\" 바로 약속 잡는다.", "type": "I" },
+      { "text": "\"많이 힘들었구나... 맛있는 거 먹고 기운 내.\" 따뜻하게 위로한다.", "type": "S" },
+      { "text": "\"우울한데 왜 빵을 샀어?\" 인과관계를 묻는다 (T 성향).", "type": "C" }
+    ]
+  },
+  {
+    "id": 1025,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "work_life",
+    "question": "회사 점심시간, 메뉴를 정해야 한다.",
+    "options": [
+      { "text": "\"오늘은 중식 먹죠.\" 내가 먹고 싶은 걸로 리드한다.", "type": "D" },
+      { "text": "\"새로 생긴 파스타집 핫하대요!\" 유행하는 곳을 추천한다.", "type": "I" },
+      { "text": "\"다들 뭐 드시고 싶으세요?\" 대세에 따른다.", "type": "S" },
+      { "text": "가성비 좋고 웨이팅 없는 식당 리스트를 제안한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1026,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "dating_romance",
+    "question": "연인의 생일 선물을 고를 때?",
+    "options": [
+      { "text": "최신형 전자기기나 명품 등 확실하고 임팩트 있는 것.", "type": "D" },
+      { "text": "서프라이즈 파티와 함께 감동적인 이벤트를 준비한다.", "type": "I" },
+      { "text": "평소 연인이 필요하다고 스치듯 말했던 것을 기억해 둔다.", "type": "S" },
+      { "text": "예산 범위 내에서 실용성과 디자인을 모두 갖춘 제품.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1027,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "independent_living",
+    "question": "자취방(또는 내 방) 인테리어를 바꾼다면?",
+    "options": [
+      { "text": "심플하고 모던하게, 불필요한 건 다 버린다.", "type": "D" },
+      { "text": "친구들을 초대해서 파티할 수 있는 홈바(Home bar) 스타일.", "type": "I" },
+      { "text": "따뜻한 조명과 식물이 있는 아늑하고 편안한 느낌.", "type": "S" },
+      { "text": "수납공간을 효율적으로 배치해 동선을 최적화한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1028,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "career_entry",
+    "question": "면접 질문으로 '본인의 단점'을 물어봤다.",
+    "options": [
+      { "text": "단점도 장점처럼 들리게 포장해서 자신 있게 말한다.", "type": "D" },
+      { "text": "솔직하고 유머러스하게 말해서 면접관을 웃게 만든다.", "type": "I" },
+      { "text": "치명적이지 않은 소소한 단점을 말하고 노력 중이라 답한다.", "type": "S" },
+      { "text": "단점을 극복하기 위해 어떤 시스템을 사용하는지 구체적으로 말한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1029,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "friendship_social",
+    "question": "친구와 약속했는데 당일 파토(취소)가 났다.",
+    "options": [
+      { "text": "화가 나서 \"장난해?\"라고 따지고 당분간 안 만난다.", "type": "D" },
+      { "text": "\"아쉽다 ㅠㅠ 그럼 나 다른 친구 불러야지!\" 바로 대안을 찾는다.", "type": "I" },
+      { "text": "\"무슨 일 있어? 괜찮아?\" 친구 사정을 먼저 걱정한다.", "type": "S" },
+      { "text": "이미 예약한 식당 취소 수수료가 있는지 확인한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1030,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "lifestyle_beauty",
+    "question": "유튜브에서 '여신 머리' 스타일링 영상을 봤다.",
+    "options": [
+      { "text": "당장 미용실 예약해서 \"이거랑 똑같이 해주세요\"라고 한다.", "type": "D" },
+      { "text": "집에서 따라 해보다가 망하면 웃긴 사진 찍어 올린다.", "type": "I" },
+      { "text": "예쁘긴 한데 나한테 안 어울릴 것 같아 구경만 한다.", "type": "S" },
+      { "text": "내 얼굴형과 모질에 맞는지 후기와 정보를 검색한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1031,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "career_entry",
+    "question": "회의 시간에 내 아이디어가 반려당했다.",
+    "options": [
+      { "text": "\"왜요? 어떤 점이 부족한가요?\" 즉각적으로 반론한다.", "type": "D" },
+      { "text": "무안해서 농담으로 넘기지만 속으로는 꽁해 있는다.", "type": "I" },
+      { "text": "상처받아서 하루 종일 기분이 다운되고 말수가 적어진다.", "type": "S" },
+      { "text": "피드백을 기록해 두고 다음 기획안에 반영한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1032,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "dating_romance",
+    "question": "썸 타는 상대가 답장이 너무 느리다.",
+    "options": [
+      { "text": "\"밀당해?\" 답답해서 전화해 버리거나 정리한다.", "type": "D" },
+      { "text": "나한테 관심 없나? 친구들 단톡방에 캡처해서 물어본다.", "type": "I" },
+      { "text": "바쁜가 보다... 하면서 하염없이 기다린다.", "type": "S" },
+      { "text": "평균 답장 시간을 계산해 보고 가망 없으면 맘 접는다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1033,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "lifestyle_travel",
+    "question": "호캉스(호텔 바캉스)를 가기로 했다. 가장 중요한 것은?",
+    "options": [
+      { "text": "5성급 스위트룸! 최고급 서비스와 뷰.", "type": "D" },
+      { "text": "인생샷 건질 수 있는 인피니티 풀과 라운지 파티.", "type": "I" },
+      { "text": "푹 쉴 수 있는 편안한 침구와 조용한 분위기.", "type": "S" },
+      { "text": "가격 대비 패키지 구성(조식 포함 여부, 체크아웃 시간).", "type": "C" }
+    ]
+  },
+  {
+    "id": 1034,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "work_life",
+    "question": "회식 자리에서 건배사를 시켰다.",
+    "options": [
+      { "text": "\"저희 팀의 대박을 위하여!\" 짧고 굵게 외친다.", "type": "D" },
+      { "text": "유행하는 인싸 건배사로 분위기를 확 띄운다.", "type": "I" },
+      { "text": "얼굴이 빨개져서 \"건강하세요...\" 하고 조용히 앉는다.", "type": "S" },
+      { "text": "무난하고 예의 바른 멘트를 미리 준비해 둔다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1035,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "friendship_social",
+    "question": "친구가 다단계나 사이비 종교에 빠진 것 같다.",
+    "options": [
+      { "text": "\"너 그거 사기야. 당장 나와.\" 팩폭 날리고 끌고 나온다.", "type": "D" },
+      { "text": "주변 친구들에게 알리고 어떻게 구할지 작전을 짠다.", "type": "I" },
+      { "text": "말하면 상처받을까 봐 걱정만 하고 지켜본다.", "type": "S" },
+      { "text": "해당 단체의 피해 사례와 증거 자료를 모아서 보여준다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1036,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "independent_living",
+    "question": "배달 음식을 시켰는데 머리카락이 나왔다.",
+    "options": [
+      { "text": "당장 가게에 전화해서 환불해 달라고 따진다.", "type": "D" },
+      { "text": "리뷰 별점 1개 남기고 사진 찍어서 커뮤니티에 올린다.", "type": "I" },
+      { "text": "찜찜하지만 그냥 건져내고 먹거나 버린다.", "type": "S" },
+      { "text": "식약처 신고 대상인지 확인하고 고객센터에 접수한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1037,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "career_entry",
+    "question": "이직을 고민 중이다. 가장 큰 이유는?",
+    "options": [
+      { "text": "승진이 너무 느리고 내가 주도적으로 일할 수 없어서.", "type": "D" },
+      { "text": "회사 분위기가 너무 삭막하고 사람이 재미없어서.", "type": "I" },
+      { "text": "업무 강도가 너무 세서 워라밸이 무너져서.", "type": "S" },
+      { "text": "회사의 비전이 안 보이고 체계가 없어서.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1038,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "dating_romance",
+    "question": "남자친구가 기념일을 까먹었다.",
+    "options": [
+      { "text": "\"어떻게 이럴 수 있어?\" 바로 화내고 보상을 요구한다.", "type": "D" },
+      { "text": "서운해서 하루 종일 툴툴대거나 삐진 티를 낸다.", "type": "I" },
+      { "text": "바빠서 그렇겠지... 하며 혼자 섭섭해한다.", "type": "S" },
+      { "text": "언제 알게 되나 지켜보다가 차분하게 이야기한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1039,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "lifestyle_fitness",
+    "question": "다이어트를 위해 운동을 시작하려 한다.",
+    "options": [
+      { "text": "1:1 PT를 끊어서 단기간에 몸을 만든다.", "type": "D" },
+      { "text": "러닝 크루나 댄스 학원 등 여럿이 하는 운동을 등록한다.", "type": "I" },
+      { "text": "유튜브 홈트를 보며 집에서 혼자 조용히 한다.", "type": "S" },
+      { "text": "내 체형에 맞는 운동법과 식단을 먼저 공부한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1040,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "friendship_social",
+    "question": "오랜만에 만난 동창이 보험이나 다단계를 권유한다.",
+    "options": [
+      { "text": "\"안 해. 연락하지 마.\" 딱 잘라 거절한다.", "type": "D" },
+      { "text": "화제를 돌리며 \"야, 우리 딴 얘기 하자~\" 하고 피한다.", "type": "I" },
+      { "text": "거절하기 미안해서 설명은 들어준다.", "type": "S" },
+      { "text": "수익 구조가 어떻게 되는지 논리적으로 반박한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1041,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "career_entry",
+    "question": "재택근무 중인데 업무 메신저 알림이 계속 울린다.",
+    "options": [
+      { "text": "급한 건만 처리하고 \"지금 집중 근무 시간입니다\" 상태로 바꾼다.", "type": "D" },
+      { "text": "동료들과 수다 떠는 느낌으로 바로바로 답장한다.", "type": "I" },
+      { "text": "혹시 나를 찾나 싶어서 화장실 갈 때도 폰을 들고 간다.", "type": "S" },
+      { "text": "업무 시간과 휴식 시간을 정확히 구분해서 확인한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1042,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "lifestyle_consumption",
+    "question": "친구들과 더치페이(N빵)를 할 때?",
+    "options": [
+      { "text": "\"내가 먼저 긁을게! 나중에 보내줘.\" 귀찮은 건 딱 질색.", "type": "D" },
+      { "text": "\"아 몰라~ 오늘은 내가 쏜다!\" 기분파.", "type": "I" },
+      { "text": "총무 친구가 정산해 줄 때까지 기다린다.", "type": "S" },
+      { "text": "1원 단위까지 계산해서 카카오페이 정산하기를 보낸다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1043,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "dating_romance",
+    "question": "소개팅 주선자가 이상형을 물어본다.",
+    "options": [
+      { "text": "능력 있고 자기 관리 잘하는 사람.", "type": "D" },
+      { "text": "티키타카 잘 되고 재밌는 사람.", "type": "I" },
+      { "text": "다정하고 나만 바라봐 주는 사람.", "type": "S" },
+      { "text": "배울 점이 있고 대화가 통하는 스마트한 사람.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1044,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "work_life",
+    "question": "회사에서 워크숍(MT)을 간다고 한다.",
+    "options": [
+      { "text": "장기자랑 1등 상품이 뭔지부터 확인한다.", "type": "D" },
+      { "text": "밤새 술 마시고 놀 생각에 신난다.", "type": "I" },
+      { "text": "가기 싫지만 빠지면 눈치 보일까 봐 간다.", "type": "S" },
+      { "text": "일정표를 확인하고 개인 시간을 확보할 수 있는지 본다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1045,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "friendship_social",
+    "question": "친한 친구가 내 뒷담화를 했다는 걸 알게 됐다.",
+    "options": [
+      { "text": "바로 전화해서 \"너 내 욕하고 다닌다며?\" 따진다.", "type": "D" },
+      { "text": "배신감에 SNS 저격글을 올리거나 차단한다.", "type": "I" },
+      { "text": "너무 충격받아서 혼자 방에서 운다.", "type": "S" },
+      { "text": "누구한테 무슨 말을 했는지 증거를 수집한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1046,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "self_development",
+    "question": "주말에 아무 약속이 없다면?",
+    "options": [
+      { "text": "집에 있기 좀이 쑤셔서 혼자라도 나간다.", "type": "D" },
+      { "text": "심심해서 친구들에게 \"뭐해?\" 카톡을 돌린다.", "type": "I" },
+      { "text": "밀린 잠을 자거나 넷플릭스 보면서 힐링한다.", "type": "S" },
+      { "text": "밀린 집안일을 하거나 다음 주 계획을 세운다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1047,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "lifestyle_beauty",
+    "question": "중요한 약속 전날, 피부가 뒤집어졌다.",
+    "options": [
+      { "text": "피부과 가서 염증 주사를 맞는다. 빠른 해결이 필요해.", "type": "D" },
+      { "text": "화장으로 최대한 가리고 어플(필터)로 사진 찍는다.", "type": "I" },
+      { "text": "마스크 쓰고 나가거나 약속을 미루고 싶어 한다.", "type": "S" },
+      { "text": "진정 팩을 하고 일찍 잠자리에 든다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1048,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "career_entry",
+    "question": "업무 실수를 해서 상사에게 깨졌다(혼났다).",
+    "options": [
+      { "text": "\"다음엔 절대 실수 안 해!\" 이를 갈며 더 열심히 한다.", "type": "D" },
+      { "text": "동기들 데리고 술 마시러 가서 상사 욕을 한다.", "type": "I" },
+      { "text": "주눅 들어서 하루 종일 눈치 보고 기 죽어 있는다.", "type": "S" },
+      { "text": "왜 실수했는지 원인을 분석하고 체크리스트를 만든다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1049,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "dating_romance",
+    "question": "남자친구와 여행 스타일이 너무 다르다.",
+    "options": [
+      { "text": "\"이번엔 내 방식대로 하자.\" 리드한다.", "type": "D" },
+      { "text": "그때그때 기분 내키는 대로 다니자고 설득한다.", "type": "I" },
+      { "text": "남자친구가 하고 싶은 대로 맞춰준다.", "type": "S" },
+      { "text": "서로 가고 싶은 곳을 엑셀로 정리해서 절충안을 짠다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1050,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "lifestyle_consumption",
+    "question": "유튜브에서 본 '삶의 질 상승템'을 사고 싶다.",
+    "options": [
+      { "text": "고민은 배송만 늦출 뿐. 바로 결제.", "type": "D" },
+      { "text": "친구들에게 링크 보내주며 \"이거 어때?\" 물어본다.", "type": "I" },
+      { "text": "장바구니에 담아두고 며칠 동안 고민한다.", "type": "S" },
+      { "text": "최저가 비교 사이트와 '내돈내산' 후기를 검색한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1051,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "friendship_social",
+    "question": "친구가 늦어서 약속 시간에 30분째 기다리는 중이다.",
+    "options": [
+      { "text": "\"지금 어딘데? 도착 시간 딱 말해.\" 독촉한다.", "type": "D" },
+      { "text": "혼자 올리브영 구경하거나 셀카 찍으며 기다린다.", "type": "I" },
+      { "text": "무슨 사고라도 났나 걱정돼서 전화해 본다.", "type": "S" },
+      { "text": "늦은 시간만큼 다음 약속 때는 네가 사라고 계산해 둔다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1052,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "career_entry",
+    "question": "퇴근 후 자기계발을 하려고 한다. 무엇을 할까?",
+    "options": [
+      { "text": "창업이나 부업을 위한 스마트스토어 강의.", "type": "D" },
+      { "text": "와인 클래스나 소셜 살롱 모임.", "type": "I" },
+      { "text": "집에서 조용히 독서하거나 미드 보기.", "type": "S" },
+      { "text": "업무 관련 자격증 공부나 외국어 학원.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1053,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "work_life",
+    "question": "회사 엘리베이터에서 어색한 상사와 단둘이 탔다.",
+    "options": [
+      { "text": "\"식사는 하셨습니까?\" 먼저 안부 묻고 대화를 주도한다.", "type": "D" },
+      { "text": "\"오늘 날씨 진짜 좋죠!\" 스몰토크를 시도한다.", "type": "I" },
+      { "text": "어색하게 웃으며 층수 버튼만 쳐다본다.", "type": "S" },
+      { "text": "핸드폰을 보며 급한 업무 연락이 온 척한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1054,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "dating_romance",
+    "question": "소개팅 애프터 신청을 받았는데 별로 마음에 안 든다.",
+    "options": [
+      { "text": "\"죄송하지만 제 스타일이 아니네요.\" 솔직하게 거절한다.", "type": "D" },
+      { "text": "주선자 입장이 있으니 한 번만 더 만나볼까 고민한다.", "type": "I" },
+      { "text": "거절을 못 해서 애매하게 답장을 미룬다.", "type": "S" },
+      { "text": "거절 멘트를 정중하고 예의 바르게 작성해서 보낸다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1055,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "lifestyle_social_media",
+    "question": "SNS에 올린 게시물에 '좋아요'가 적게 달렸다.",
+    "options": [
+      { "text": "별로 신경 안 쓴다. 내 만족이니까.", "type": "D" },
+      { "text": "사진이 별론가? 지우고 다시 올릴까 고민한다.", "type": "I" },
+      { "text": "친구들이 안 봤나 싶어서 내심 서운하다.", "type": "S" },
+      { "text": "업로드 시간대가 안 좋았나? 알고리즘을 분석한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1056,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "independent_living",
+    "question": "이사 갈 집을 구하러 부동산에 갔다.",
+    "options": [
+      { "text": "들어가자마자 \"채광 좋고 넓은 집 보여주세요\" 요구한다.", "type": "D" },
+      { "text": "중개사님과 친해져서 좋은 매물을 얻어내려 한다.", "type": "I" },
+      { "text": "보여주는 집들을 조용히 따라다니며 본다.", "type": "S" },
+      { "text": "수압, 곰팡이, 관리비를 체크리스트에 적어가며 확인한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1057,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "friendship_social",
+    "question": "친구가 내 옷 스타일이 별로라고 지적했다.",
+    "options": [
+      { "text": "\"너나 잘 입으세요.\" 바로 받아친다.", "type": "D" },
+      { "text": "\"진짜? 이상해?\" 거울 보며 다른 친구들한테도 물어본다.", "type": "I" },
+      { "text": "상처받아서 하루 종일 신경 쓰이고 위축된다.", "type": "S" },
+      { "text": "내 체형이나 TPO에 안 맞는지 객관적으로 생각해 본다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1058,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "career_entry",
+    "question": "연봉 협상 시즌이 다가왔다.",
+    "options": [
+      { "text": "내 성과를 수치화해서 당당하게 인상을 요구한다.", "type": "D" },
+      { "text": "팀장님 기분 좋은 타이밍을 봐서 넌지시 던져본다.", "type": "I" },
+      { "text": "주는 대로 받아야지... 동결만 아니길 바란다.", "type": "S" },
+      { "text": "동종 업계 평균 연봉과 내 성과 데이터를 준비해 간다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1059,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "dating_romance",
+    "question": "남자친구와 헤어졌다. 이별 극복 방법은?",
+    "options": [
+      { "text": "운동이나 일에 미친 듯이 몰입해서 잊는다.", "type": "D" },
+      { "text": "친구들과 밤새 술 마시고 놀면서 잊는다.", "type": "I" },
+      { "text": "슬픈 노래 들으면서 방에서 혼자 운다.", "type": "S" },
+      { "text": "헤어진 원인을 생각하고 다음 연애를 위한 교훈으로 삼는다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1060,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "lifestyle_travel",
+    "question": "공항에 도착했는데 여권을 안 가져왔다.",
+    "options": [
+      { "text": "긴급 여권 발급처로 뛴다. 어떻게든 해결한다.", "type": "D" },
+      { "text": "\"망했다!\" 인스타 스토리에 올리고 멘붕 온다.", "type": "I" },
+      { "text": "패닉 상태가 되어 울먹거리거나 가족에게 전화한다.", "type": "S" },
+      { "text": "비행기 시간 변경 가능 여부와 퀵서비스 소요 시간을 계산한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1061,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "friendship_social",
+    "question": "결혼하는 친구가 축가를 부탁했다.",
+    "options": [
+      { "text": "\"내가 해줄게!\" 자신 있게 수락하고 무대를 장악한다.", "type": "D" },
+      { "text": "이벤트 업체를 섭외해서 깜짝 댄스를 준비한다.", "type": "I" },
+      { "text": "떨려서 못 할 것 같다고 정중히 거절한다.", "type": "S" },
+      { "text": "곡 리스트를 뽑아보고 내 음역대와 맞는지 확인한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1062,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "work_life",
+    "question": "동기가 나보다 먼저 승진했다.",
+    "options": [
+      { "text": "승부욕이 불타오른다. 다음엔 내가 무조건 한다.", "type": "D" },
+      { "text": "\"축하해! 한턱 쏴!\" 겉으로는 웃으며 축하해 준다.", "type": "I" },
+      { "text": "내가 부족한가 싶어서 우울해진다.", "type": "S" },
+      { "text": "동기와 나의 성과 차이가 무엇인지 분석한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1063,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "independent_living",
+    "question": "주말 대청소를 하기로 했다.",
+    "options": [
+      { "text": "눈에 보이는 큰 쓰레기부터 빠르게 치운다.", "type": "D" },
+      { "text": "노동요(신나는 노래) 틀어놓고 춤추면서 치운다.", "type": "I" },
+      { "text": "힘드니까 오늘은 침대 주변만 치우자고 타협한다.", "type": "S" },
+      { "text": "창틀 먼지부터 옷장 정리까지 구역별로 완벽하게 한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1064,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "lifestyle_consumption",
+    "question": "친구 생일 파티 장소를 예약해야 한다.",
+    "options": [
+      { "text": "내가 가보고 싶었던 힙한 라운지 바를 예약한다.", "type": "D" },
+      { "text": "사진 잘 나오는 인스타 감성 카페나 파티룸.", "type": "I" },
+      { "text": "모두의 집에서 중간 지점인 조용한 식당.", "type": "S" },
+      { "text": "별점 4.5 이상이고 주차 가능하며 리뷰 좋은 곳.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1065,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "self_development",
+    "question": "새해 목표(New Year's Resolution)를 세울 때?",
+    "options": [
+      { "text": "'연봉 1억', '바디 프로필' 같은 큰 목표를 잡는다.", "type": "D" },
+      { "text": "작심삼일이 되더라도 일단 거창하게 세우고 공유한다.", "type": "I" },
+      { "text": "지킬 수 있는 소소한 행복 위주로 적는다.", "type": "S" },
+      { "text": "만다라트 계획표를 작성해 세부 실행 안을 짠다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1066,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "work_life",
+    "question": "회사에서 새로운 프로젝트 리더를 맡게 되었다.",
+    "options": [
+      { "text": "\"제가 맡겠습니다!\" 자신 있게 나서서 팀을 이끈다.", "type": "D" },
+      { "text": "\"우리 잘해봐요! 파이팅!\" 팀 분위기를 띄우며 독려한다.", "type": "I" },
+      { "text": "부담스럽지만 팀원들을 믿고 차근차근 진행한다.", "type": "S" },
+      { "text": "프로젝트의 목표와 일정을 세부적으로 계획한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1067,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "dating_romance",
+    "question": "소개팅 앱에서 매칭된 상대에게 첫 메시지를 보낼 때?",
+    "options": [
+      { "text": "\"안녕하세요, 언제 시간 되세요?\" 바로 만날 약속을 잡는다.", "type": "D" },
+      { "text": "\"사진 분위기가 너무 좋네요!\" 칭찬으로 대화를 시작한다.", "type": "I" },
+      { "text": "상대방 프로필을 꼼꼼히 읽고 공통점을 찾아 조심스럽게 묻는다.", "type": "S" },
+      { "text": "상대방의 직업이나 관심사가 나와 맞는지 신중하게 탐색한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1068,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "lifestyle_social_media",
+    "question": "SNS에 '감성 카페' 사진을 올릴 때 가장 신경 쓰는 것은?",
+    "options": [
+      { "text": "남들이 안 가본 핫플레이스라는 것을 강조한다.", "type": "D" },
+      { "text": "댓글과 좋아요가 많이 달릴만한 힙한 포즈와 표정.", "type": "I" },
+      { "text": "카페의 편안하고 아늑한 분위기가 잘 담겼는지.", "type": "S" },
+      { "text": "사진의 수직 수평과 색감 보정이 완벽한지.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1069,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "friendship_social",
+    "question": "친구가 룸메이트와의 갈등으로 고민 상담을 해올 때?",
+    "options": [
+      { "text": "\"당장 나가라고 해!\" 해결책을 제시하며 강하게 말한다.", "type": "D" },
+      { "text": "\"헐, 진짜? 룸메이트 완전 이상하다!\" 같이 욕해주며 공감한다.", "type": "I" },
+      { "text": "\"많이 힘들었겠다...\" 묵묵히 들어주며 위로한다.", "type": "S" },
+      { "text": "갈등의 원인이 무엇인지 객관적으로 상황을 분석한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1070,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "work_life",
+    "question": "상사가 업무 지시를 불명확하게 내렸다.",
+    "options": [
+      { "text": "\"정확히 원하시는 게 뭔가요?\" 바로 되물어 확인한다.", "type": "D" },
+      { "text": "눈치껏 알아들은 척하고 동료들에게 물어본다.", "type": "I" },
+      { "text": "다시 물어보기 죄송해서 혼자 끙끙 앓으며 유추한다.", "type": "S" },
+      { "text": "메일로 업무 내용을 정리해서 보내달라고 요청한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1071,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "lifestyle_consumption",
+    "question": "넷플릭스에서 볼 영화를 고를 때?",
+    "options": [
+      { "text": "인기 순위 1위나 액션/스릴러 장르를 바로 재생한다.", "type": "D" },
+      { "text": "친구들이 재밌다고 추천한 작품이나 로맨틱 코미디를 본다.", "type": "I" },
+      { "text": "봤던 영화를 또 보거나 마음이 편해지는 힐링물을 고른다.", "type": "S" },
+      { "text": "평점과 리뷰, 줄거리를 꼼꼼히 읽어보고 결정한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1072,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "dating_romance",
+    "question": "연인과 데이트 비용 문제로 예민해졌다.",
+    "options": [
+      { "text": "\"우리 데이트 통장 만들자.\" 바로 해결책을 제안한다.", "type": "D" },
+      { "text": "애교 섞인 말투로 \"자기가 맛있는 거 사줘~\"라고 넘긴다.", "type": "I" },
+      { "text": "상대방이 부담스러워할까 봐 내가 더 많이 낸다.", "type": "S" },
+      { "text": "최근 지출 내역을 확인하고 합리적인 분담 비율을 생각한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1073,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "independent_living",
+    "question": "자취방에 벌레가 나타났다.",
+    "options": [
+      { "text": "슬리퍼나 책으로 단숨에 때려잡는다.", "type": "D" },
+      { "text": "소리를 지르며 도망가거나 친구에게 전화해서 와달라고 한다.", "type": "I" },
+      { "text": "무섭지만 꾹 참고 휴지로 조심스럽게 잡는다.", "type": "S" },
+      { "text": "벌레 퇴치약 성분을 검색하고 유입 경로를 차단한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1074,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "work_life",
+    "question": "점심시간, 동료들이 내가 싫어하는 메뉴를 먹자고 한다.",
+    "options": [
+      { "text": "\"전 그거 별로예요. 다른 거 먹죠.\" 솔직하게 말한다.", "type": "D" },
+      { "text": "\"오! 그것도 좋고 저기도 맛있대요!\" 자연스럽게 유도한다.", "type": "I" },
+      { "text": "다들 좋아하니까 그냥 군말 없이 따라간다.", "type": "S" },
+      { "text": "그 식당의 메뉴판을 미리 검색해 보고 먹을 만한 게 있는지 본다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1075,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "friendship_social",
+    "question": "친한 친구가 약속 시간에 매번 늦는다.",
+    "options": [
+      { "text": "\"또 늦었어? 다음엔 기다리지 않고 간다.\" 경고한다.", "type": "D" },
+      { "text": "\"늦는 김에 커피 사와!\" 장난스럽게 벌칙을 준다.", "type": "I" },
+      { "text": "화가 나지만 얼굴 보면 마음이 약해져서 봐준다.", "type": "S" },
+      { "text": "약속 시간을 30분 앞당겨서 알려준다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1076,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "lifestyle_beauty",
+    "question": "퍼스널 컬러 진단을 받았는데 평소 스타일과 정반대가 나왔다.",
+    "options": [
+      { "text": "내 스타일은 내가 정해. 결과는 참고만 한다.", "type": "D" },
+      { "text": "\"어머, 진짜?\" 바로 올리브영 가서 추천템을 산다.", "type": "I" },
+      { "text": "익숙하지 않아서 어색하지만 조금씩 바꿔보려 노력한다.", "type": "S" },
+      { "text": "진단 결과 리포트를 꼼꼼히 읽고 옷장을 정리한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1077,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "career_entry",
+    "question": "연봉 협상 테이블에 앉았다.",
+    "options": [
+      { "text": "원하는 금액을 당당하게 제시하고 협상한다.", "type": "D" },
+      { "text": "회사에 대한 애정을 표현하며 부드럽게 인상을 요청한다.", "type": "I" },
+      { "text": "회사의 제안을 수용하거나 소심하게 희망 사항을 말한다.", "type": "S" },
+      { "text": "업계 평균 연봉 데이터와 내 성과 지표를 들이민다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1078,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "dating_romance",
+    "question": "연인이 내 카톡을 읽씹(읽고 답장 안 함)했다.",
+    "options": [
+      { "text": "바로 전화해서 \"왜 답장 안 해?\" 따진다.", "type": "D" },
+      { "text": "이모티콘을 보내거나 다른 재밌는 얘기를 꺼낸다.", "type": "I" },
+      { "text": "바쁜 일이 있겠지... 하며 연락 올 때까지 기다린다.", "type": "S" },
+      { "text": "마지막 대화 내용을 다시 보며 기분 나쁜 게 있었나 분석한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1079,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "social_event",
+    "question": "친구의 결혼식 축사를 부탁받았다.",
+    "options": [
+      { "text": "짧고 굵게! 임팩트 있는 축사를 준비한다.", "type": "D" },
+      { "text": "하객들을 웃기고 울리는 감동적인 퍼포먼스를 준비한다.", "type": "I" },
+      { "text": "떨려서 거절하고 싶지만 친구를 위해 꼼꼼히 준비한다.", "type": "S" },
+      { "text": "미리 대본을 작성하고 여러 번 연습해서 완벽하게 읽는다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1080,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "lifestyle_fitness",
+    "question": "새해 목표로 운동을 결심했다.",
+    "options": [
+      { "text": "가장 빡센 PT 선생님을 찾아가 등록한다.", "type": "D" },
+      { "text": "친구랑 같이 필라테스나 요가 학원을 끊는다.", "type": "I" },
+      { "text": "유튜브 홈트 영상을 보며 집에서 꾸준히 한다.", "type": "S" },
+      { "text": "내 체형에 맞는 운동 루틴과 식단을 엑셀로 짠다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1081,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "work_life",
+    "question": "퇴근 10분 전, 급한 업무가 떨어졌다.",
+    "options": [
+      { "text": "\"오늘 약속이 있어서 내일 아침까지 처리하겠습니다.\" 거절한다.", "type": "D" },
+      { "text": "속으로는 싫지만 겉으로는 웃으며 빠르게 처리한다.", "type": "I" },
+      { "text": "거절하지 못하고 야근하며 묵묵히 일을 끝낸다.", "type": "S" },
+      { "text": "업무의 우선순위를 파악하고 소요 시간을 계산한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1082,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "dating_romance",
+    "question": "연인과 싸우고 화해하고 싶을 때?",
+    "options": [
+      { "text": "깔끔하게 \"미안해, 내가 잘못했어. 풀자.\"라고 말한다.", "type": "D" },
+      { "text": "애교를 부리거나 선물을 주며 기분을 풀어준다.", "type": "I" },
+      { "text": "진심을 담은 장문의 편지나 카톡을 보낸다.", "type": "S" },
+      { "text": "갈등의 원인과 해결 방안에 대해 진지하게 대화를 요청한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1083,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "lifestyle_travel",
+    "question": "해외여행 중 길을 잃어버렸다.",
+    "options": [
+      { "text": "지나가던 현지인을 붙잡고 바디랭귀지로 길을 묻는다.", "type": "D" },
+      { "text": "\"이것도 추억이지!\" 하며 주변 풍경 사진을 찍는다.", "type": "I" },
+      { "text": "당황해서 같이 간 친구 뒤만 졸졸 따라다닌다.", "type": "S" },
+      { "text": "구글 맵을 켜고 현재 위치와 목적지를 침착하게 확인한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1084,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "friendship_social",
+    "question": "오랜만에 연락 온 동창이 결혼식에 초대했다.",
+    "options": [
+      { "text": "별로 안 친하면 안 가고 축의금도 안 낸다.", "type": "D" },
+      { "text": "\"축하해! 꼭 갈게!\" 반갑게 인사하고 참석한다.", "type": "I" },
+      { "text": "가기 애매하지만 거절하기 미안해서 고민한다.", "type": "S" },
+      { "text": "그 친구와의 관계와 나의 스케줄을 따져보고 결정한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1085,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "work_life",
+    "question": "회의 시간에 내 의견이 묵살당했다.",
+    "options": [
+      { "text": "\"왜 안 되는지 이유를 설명해 주세요.\" 반박한다.", "type": "D" },
+      { "text": "무안해서 농담으로 넘기지만 속으로는 상처받는다.", "type": "I" },
+      { "text": "내 의견이 별로였나 보다 하고 조용히 있는다.", "type": "S" },
+      { "text": "반려된 이유를 분석해서 더 완벽한 기획안을 만든다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1086,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "lifestyle_consumption",
+    "question": "명품 가방을 사고 싶은데 가격이 비싸다.",
+    "options": [
+      { "text": "사고 싶으면 사야지! 할부로 긁는다.", "type": "D" },
+      { "text": "친구들에게 \"이거 어때?\" 물어보고 예쁘다고 하면 산다.", "type": "I" },
+      { "text": "비슷한 디자인의 저렴한 브랜드를 찾아본다.", "type": "S" },
+      { "text": "몇 달 동안 돈을 모아서 계획적으로 구매한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1087,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "dating_romance",
+    "question": "연인의 이성 친구(여사친/남사친) 문제로 다퉜다.",
+    "options": [
+      { "text": "\"연락하지 마. 둘 중 하나 선택해.\" 강하게 나간다.", "type": "D" },
+      { "text": "질투심 유발 작전으로 나도 이성 친구를 만난다.", "type": "I" },
+      { "text": "속상하지만 쿨한 척하며 참는다.", "type": "S" },
+      { "text": "어디까지가 허용 가능한 범위인지 기준을 정하자고 한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1088,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "independent_living",
+    "question": "주말에 집에서 혼자 보내는 시간, 나는?",
+    "options": [
+      { "text": "밀린 집안일을 후다닥 해치우고 생산적으로 보낸다.", "type": "D" },
+      { "text": "심심해서 친구들에게 영상 통화를 건다.", "type": "I" },
+      { "text": "침대와 한 몸이 되어 뒹굴뒹굴 쉰다.", "type": "S" },
+      { "text": "읽고 싶었던 책을 읽거나 자기계발을 한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1089,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "work_life",
+    "question": "회사 워크숍 장기자랑에 나가야 한다.",
+    "options": [
+      { "text": "1등 상금을 노리고 적극적으로 참여한다.", "type": "D" },
+      { "text": "분위기 메이커를 자처하며 신나게 즐긴다.", "type": "I" },
+      { "text": "눈에 띄지 않게 뒤에서 박수만 친다.", "type": "S" },
+      { "text": "무대 동선과 준비물을 꼼꼼히 챙긴다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1090,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "friendship_social",
+    "question": "친구가 돈을 빌려달라고 부탁했다.",
+    "options": [
+      { "text": "\"안 돼. 돈 거래는 안 해.\" 단호하게 거절한다.", "type": "D" },
+      { "text": "친한 친구니까 믿고 빌려준다.", "type": "I" },
+      { "text": "거절하기 미안해서 여유가 없다고 돌려 말한다.", "type": "S" },
+      { "text": "언제 갚을 수 있는지 정확한 날짜를 확인하고 차용증을 쓴다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1091,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "lifestyle_beauty",
+    "question": "미용실에서 머리를 망쳤다.",
+    "options": [
+      { "text": "\"이거 제가 원한 스타일 아니에요.\" 환불이나 AS를 요구한다.", "type": "D" },
+      { "text": "속상해서 친구들에게 사진 보내고 하소연한다.", "type": "I" },
+      { "text": "디자이너가 민망할까 봐 \"괜찮아요\" 하고 나온다.", "type": "S" },
+      { "text": "집에 와서 머리를 수습할 방법을 유튜브로 검색한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1092,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "career_entry",
+    "question": "이직 면접에서 '본인의 단점'을 물어봤다.",
+    "options": [
+      { "text": "단점도 장점처럼 들리게 포장해서 자신 있게 말한다.", "type": "D" },
+      { "text": "솔직하고 유머러스하게 말해서 분위기를 좋게 만든다.", "type": "I" },
+      { "text": "치명적이지 않은 소소한 단점을 말하고 노력 중이라 답한다.", "type": "S" },
+      { "text": "단점을 극복하기 위해 어떤 노력을 하고 있는지 구체적으로 말한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1093,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "dating_romance",
+    "question": "연인의 부모님을 처음 뵙는 자리.",
+    "options": [
+      { "text": "긴장하지 않고 당당하고 예의 바르게 행동한다.", "type": "D" },
+      { "text": "밝은 미소와 리액션으로 분위기를 화기애애하게 만든다.", "type": "I" },
+      { "text": "조심스럽게 행동하며 어른들의 말씀을 경청한다.", "type": "S" },
+      { "text": "미리 어른들의 취향을 파악해서 선물을 준비해 간다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1094,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "lifestyle_social_media",
+    "question": "인스타 스토리에 올린 질문에 아무도 대답을 안 했다.",
+    "options": [
+      { "text": "쿨하게 삭제해 버린다. 신경 안 쓴다.", "type": "D" },
+      { "text": "\"왜 아무도 안 놀아줘 ㅠㅠ\" 관종 멘트를 추가한다.", "type": "I" },
+      { "text": "내가 친구가 없나... 하며 시무룩해진다.", "type": "S" },
+      { "text": "올린 시간대가 안 좋았나? 인사이트를 분석한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1095,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "friendship_social",
+    "question": "단톡방에서 친구들이 싸우기 시작했다.",
+    "options": [
+      { "text": "\"그만 좀 해라. 시끄럽다.\" 딱 잘라 중재한다.", "type": "D" },
+      { "text": "\"우리 맛있는 거 먹으러 갈까?\" 다른 주제로 돌린다.", "type": "I" },
+      { "text": "불안해서 아무 말도 못 하고 지켜만 본다.", "type": "S" },
+      { "text": "누구의 잘못인지 대화 내용을 다시 읽어본다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1096,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "work_life",
+    "question": "회식 자리에서 건배사를 시켰다.",
+    "options": [
+      { "text": "\"위하여!\" 짧고 굵게 외치고 앉는다.", "type": "D" },
+      { "text": "유행하는 인싸 건배사로 분위기를 띄운다.", "type": "I" },
+      { "text": "얼굴이 빨개져서 \"건강하세요...\" 하고 조용히 말한다.", "type": "S" },
+      { "text": "무난하고 예의 바른 멘트를 미리 준비해 둔다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1097,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "dating_romance",
+    "question": "권태기가 온 것 같다.",
+    "options": [
+      { "text": "\"우리 시간 좀 갖자.\" 솔직하게 말한다.", "type": "D" },
+      { "text": "새로운 데이트 코스나 여행을 제안하며 변화를 준다.", "type": "I" },
+      { "text": "헤어지는 게 두려워서 모른 척 지나가길 바란다.", "type": "S" },
+      { "text": "왜 권태기가 왔는지 관계를 점검해 본다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1098,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "lifestyle_consumption",
+    "question": "친구들과 호캉스 파티룸을 예약해야 한다.",
+    "options": [
+      { "text": "내가 가고 싶었던 제일 좋은 곳으로 예약한다.", "type": "D" },
+      { "text": "사진 잘 나오는 인스타 감성 숙소를 찾는다.", "type": "I" },
+      { "text": "친구들의 의견을 물어보고 다수결로 정한다.", "type": "S" },
+      { "text": "가격, 위치, 후기, 주차 여부를 꼼꼼히 비교한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1099,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "independent_living",
+    "question": "배달 음식을 시켰는데 머리카락이 나왔다.",
+    "options": [
+      { "text": "당장 전화해서 환불해 달라고 따진다.", "type": "D" },
+      { "text": "사진 찍어서 리뷰에 올리고 별점 테러를 한다.", "type": "I" },
+      { "text": "찜찜하지만 그냥 건져내고 먹거나 버린다.", "type": "S" },
+      { "text": "고객센터에 사진을 첨부하여 정식으로 컴플레인을 건다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1100,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "career_entry",
+    "question": "입사 동기가 나보다 먼저 승진했다.",
+    "options": [
+      { "text": "승부욕이 불타오른다. 다음엔 내가 무조건 한다.", "type": "D" },
+      { "text": "\"축하해! 한턱 쏴!\" 겉으로는 웃으며 축하해 준다.", "type": "I" },
+      { "text": "내가 부족한가 싶어서 우울해진다.", "type": "S" },
+      { "text": "동기와 나의 성과 차이가 무엇인지 분석한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1101,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "dating_romance",
+    "question": "연인이 기념일을 까먹었다.",
+    "options": [
+      { "text": "\"어떻게 이럴 수 있어?\" 바로 화내고 보상을 요구한다.", "type": "D" },
+      { "text": "서운해서 하루 종일 툴툴대거나 삐진 티를 낸다.", "type": "I" },
+      { "text": "바빠서 그렇겠지... 하며 혼자 섭섭해한다.", "type": "S" },
+      { "text": "언제 알게 되나 지켜보다가 차분하게 이야기한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1102,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "friendship_social",
+    "question": "친한 친구가 내 뒷담화를 했다는 걸 알게 됐다.",
+    "options": [
+      { "text": "바로 전화해서 \"너 내 욕하고 다닌다며?\" 따진다.", "type": "D" },
+      { "text": "배신감에 SNS 저격글을 올리거나 차단한다.", "type": "I" },
+      { "text": "너무 충격받아서 혼자 방에서 운다.", "type": "S" },
+      { "text": "누구한테 무슨 말을 했는지 증거를 수집한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1103,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "work_life",
+    "question": "재택근무 중인데 업무 메신저 알림이 계속 울린다.",
+    "options": [
+      { "text": "급한 건만 처리하고 방해 금지 모드로 설정한다.", "type": "D" },
+      { "text": "동료들과 수다 떠는 느낌으로 바로바로 답장한다.", "type": "I" },
+      { "text": "혹시 나를 찾나 싶어서 화장실 갈 때도 폰을 들고 간다.", "type": "S" },
+      { "text": "업무 시간과 휴식 시간을 정확히 구분해서 확인한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1104,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "lifestyle_beauty",
+    "question": "중요한 약속 전날, 피부가 뒤집어졌다.",
+    "options": [
+      { "text": "피부과 가서 염증 주사를 맞는다. 빠른 해결이 필요해.", "type": "D" },
+      { "text": "화장으로 최대한 가리고 어플(필터)로 사진 찍는다.", "type": "I" },
+      { "text": "마스크 쓰고 나가거나 약속을 미루고 싶어 한다.", "type": "S" },
+      { "text": "진정 팩을 하고 일찍 잠자리에 든다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1105,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "dating_romance",
+    "question": "썸 타는 상대가 답장이 너무 느리다.",
+    "options": [
+      { "text": "\"밀당해?\" 답답해서 전화해 버리거나 정리한다.", "type": "D" },
+      { "text": "나한테 관심 없나? 친구들 단톡방에 캡처해서 물어본다.", "type": "I" },
+      { "text": "바쁜가 보다... 하면서 하염없이 기다린다.", "type": "S" },
+      { "text": "평균 답장 시간을 계산해 보고 가망 없으면 맘 접는다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1106,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "independent_living",
+    "question": "이사 갈 집을 구하러 부동산에 갔다.",
+    "options": [
+      { "text": "들어가자마자 \"채광 좋고 넓은 집 보여주세요\" 요구한다.", "type": "D" },
+      { "text": "중개사님과 친해져서 좋은 매물을 얻어내려 한다.", "type": "I" },
+      { "text": "보여주는 집들을 조용히 따라다니며 본다.", "type": "S" },
+      { "text": "수압, 곰팡이, 관리비를 체크리스트에 적어가며 확인한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1107,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "career_entry",
+    "question": "퇴근 후 자기계발을 하려고 한다. 무엇을 할까?",
+    "options": [
+      { "text": "창업이나 부업을 위한 스마트스토어 강의.", "type": "D" },
+      { "text": "와인 클래스나 소셜 살롱 모임.", "type": "I" },
+      { "text": "집에서 조용히 독서하거나 미드 보기.", "type": "S" },
+      { "text": "업무 관련 자격증 공부나 외국어 학원.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1108,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "lifestyle_travel",
+    "question": "공항에 도착했는데 여권을 안 가져왔다.",
+    "options": [
+      { "text": "긴급 여권 발급처로 뛴다. 어떻게든 해결한다.", "type": "D" },
+      { "text": "\"망했다!\" 인스타 스토리에 올리고 멘붕 온다.", "type": "I" },
+      { "text": "패닉 상태가 되어 울먹거리거나 가족에게 전화한다.", "type": "S" },
+      { "text": "비행기 시간 변경 가능 여부와 퀵서비스 소요 시간을 계산한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1109,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "friendship_social",
+    "question": "친구가 내 옷 스타일이 별로라고 지적했다.",
+    "options": [
+      { "text": "\"너나 잘 입으세요.\" 바로 받아친다.", "type": "D" },
+      { "text": "\"진짜? 이상해?\" 거울 보며 다른 친구들한테도 물어본다.", "type": "I" },
+      { "text": "상처받아서 하루 종일 신경 쓰이고 위축된다.", "type": "S" },
+      { "text": "내 체형이나 TPO에 안 맞는지 객관적으로 생각해 본다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1110,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "work_life",
+    "question": "회사 엘리베이터에서 어색한 상사와 단둘이 탔다.",
+    "options": [
+      { "text": "\"식사는 하셨습니까?\" 먼저 안부 묻고 대화를 주도한다.", "type": "D" },
+      { "text": "\"오늘 날씨 진짜 좋죠!\" 스몰토크를 시도한다.", "type": "I" },
+      { "text": "어색하게 웃으며 층수 버튼만 쳐다본다.", "type": "S" },
+      { "text": "핸드폰을 보며 급한 업무 연락이 온 척한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1111,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "dating_romance",
+    "question": "소개팅 애프터 신청을 받았는데 별로 마음에 안 든다.",
+    "options": [
+      { "text": "\"죄송하지만 제 스타일이 아니네요.\" 솔직하게 거절한다.", "type": "D" },
+      { "text": "주선자 입장이 있으니 한 번만 더 만나볼까 고민한다.", "type": "I" },
+      { "text": "거절을 못 해서 애매하게 답장을 미룬다.", "type": "S" },
+      { "text": "거절 멘트를 정중하고 예의 바르게 작성해서 보낸다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1112,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "lifestyle_consumption",
+    "question": "유튜브에서 본 '삶의 질 상승템'을 사고 싶다.",
+    "options": [
+      { "text": "고민은 배송만 늦출 뿐. 바로 결제.", "type": "D" },
+      { "text": "친구들에게 링크 보내주며 \"이거 어때?\" 물어본다.", "type": "I" },
+      { "text": "장바구니에 담아두고 며칠 동안 고민한다.", "type": "S" },
+      { "text": "최저가 비교 사이트와 '내돈내산' 후기를 검색한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1113,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "friendship_social",
+    "question": "친구가 늦어서 약속 시간에 30분째 기다리는 중이다.",
+    "options": [
+      { "text": "\"지금 어딘데? 도착 시간 딱 말해.\" 독촉한다.", "type": "D" },
+      { "text": "혼자 올리브영 구경하거나 셀카 찍으며 기다린다.", "type": "I" },
+      { "text": "무슨 사고라도 났나 걱정돼서 전화해 본다.", "type": "S" },
+      { "text": "늦은 시간만큼 다음 약속 때는 네가 사라고 계산해 둔다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1114,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "work_life",
+    "question": "업무 실수를 해서 상사에게 깨졌다(혼났다).",
+    "options": [
+      { "text": "\"다음엔 절대 실수 안 해!\" 이를 갈며 더 열심히 한다.", "type": "D" },
+      { "text": "동기들 데리고 술 마시러 가서 상사 욕을 한다.", "type": "I" },
+      { "text": "주눅 들어서 하루 종일 눈치 보고 기 죽어 있는다.", "type": "S" },
+      { "text": "왜 실수했는지 원인을 분석하고 체크리스트를 만든다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1115,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "self_development",
+    "question": "주말에 아무 약속이 없다면?",
+    "options": [
+      { "text": "집에 있기 좀이 쑤셔서 혼자라도 나간다.", "type": "D" },
+      { "text": "심심해서 친구들에게 \"뭐해?\" 카톡을 돌린다.", "type": "I" },
+      { "text": "밀린 잠을 자거나 넷플릭스 보면서 힐링한다.", "type": "S" },
+      { "text": "밀린 집안일을 하거나 다음 주 계획을 세운다.", "type": "C" }
+    ]
+  },
+    {
+    "id": 1116,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "career_entry",
+    "question": "회사에서 '번아웃'이 온 것 같다. 나의 대처법은?",
+    "options": [
+      { "text": "이직 준비나 창업 등 새로운 돌파구를 찾는다.", "type": "D" },
+      { "text": "휴가를 내고 여행을 가거나 친구들을 만나 힐링한다.", "type": "I" },
+      { "text": "일단 버티면서 안정을 찾으려고 노력한다.", "type": "S" },
+      { "text": "왜 번아웃이 왔는지 업무량과 스트레스 원인을 분석한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1117,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "dating_romance",
+    "question": "소개팅 상대가 마음에 들지 않을 때 거절 방법은?",
+    "options": [
+      { "text": "\"인연이 아닌 것 같아요.\" 주선자 거치지 않고 직접 말한다.", "type": "D" },
+      { "text": "주선자에게 \"좋은 분인데 나랑은 좀 안 맞네~\"라고 돌려 말한다.", "type": "I" },
+      { "text": "상처받을까 봐 차일피일 미루거나 서서히 연락을 줄인다.", "type": "S" },
+      { "text": "정중하고 예의 바르게 거절 의사를 텍스트로 보낸다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1118,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "lifestyle_finance",
+    "question": "첫 월급으로 재테크를 시작하려 한다.",
+    "options": [
+      { "text": "수익률 높은 주식이나 코인에 공격적으로 투자한다.", "type": "D" },
+      { "text": "유행하는 재테크 유튜브를 구독하고 따라 해본다.", "type": "I" },
+      { "text": "안전한 적금이나 예금에 차곡차곡 넣는다.", "type": "S" },
+      { "text": "자산 배분 포트폴리오를 짜고 공부부터 한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1119,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "friendship_social",
+    "question": "친구들과 브라이덜 샤워(Bridal Shower)를 준비한다.",
+    "options": [
+      { "text": "파티룸 예약부터 총괄 진행까지 내가 주도한다.", "type": "D" },
+      { "text": "분위기 띄우고 사진 찍어주는 담당을 자처한다.", "type": "I" },
+      { "text": "풍선 불기나 음식 세팅 등 묵묵히 서포트한다.", "type": "S" },
+      { "text": "회비를 걷고 예산에 맞춰 소품을 주문한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1120,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "work_life",
+    "question": "상사가 부당한 업무 지시를 내렸을 때?",
+    "options": [
+      { "text": "\"이건 제 업무가 아닌 것 같습니다.\" 당당하게 말한다.", "type": "D" },
+      { "text": "동료들에게 \"진짜 너무한 거 아니야?\"라고 하소연한다.", "type": "I" },
+      { "text": "찍힐까 봐 무서워서 억지로라도 한다.", "type": "S" },
+      { "text": "업무 분장표나 규정을 찾아보고 대응 논리를 만든다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1121,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "lifestyle_beauty",
+    "question": "운동복(레깅스/요가복)을 사러 갔다.",
+    "options": [
+      { "text": "몸매가 돋보이고 기능성이 확실한 전문가용을 산다.", "type": "D" },
+      { "text": "색감이 쨍하고 디자인이 예쁜 신상을 고른다.", "type": "I" },
+      { "text": "무난한 검은색이나 네이비색 기본템을 산다.", "type": "S" },
+      { "text": "원단 소재와 세탁 방법을 확인하고 산다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1122,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "career_entry",
+    "question": "입사 동기가 나보다 일을 못하는데 정치를 잘해서 칭찬받는다.",
+    "options": [
+      { "text": "실력으로 눌러주겠다고 다짐하며 일에 더 몰두한다.", "type": "D" },
+      { "text": "얄미워서 다른 동기들과 그 친구 험담을 한다.", "type": "I" },
+      { "text": "속상하지만 내 할 일만 열심히 하면 알아주겠지 생각한다.", "type": "S" },
+      { "text": "그 친구의 어떤 행동이 상사에게 통했는지 분석한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1123,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "dating_romance",
+    "question": "연인이 데이트 약속을 당일에 취소했다.",
+    "options": [
+      { "text": "\"장난해? 이유가 뭔데?\" 따지고 사과를 요구한다.", "type": "D" },
+      { "text": "기분 상해서 친구들 불러내 술 마시러 간다.", "type": "I" },
+      { "text": "피치 못할 사정이 있겠지... 하고 이해해 준다.", "type": "S" },
+      { "text": "타당한 이유인지 들어보고 납득이 가면 넘어간다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1124,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "independent_living",
+    "question": "자취방 월세 계약 만료가 다가온다.",
+    "options": [
+      { "text": "집주인에게 보증금 반환 날짜를 확실히 못 박는다.", "type": "D" },
+      { "text": "이사 갈 생각에 설레서 인테리어 사진부터 찾아본다.", "type": "I" },
+      { "text": "이사 다니기 귀찮아서 재계약하고 싶다.", "type": "S" },
+      { "text": "주변 시세를 확인하고 등기부등본을 다시 떼본다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1125,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "social_event",
+    "question": "친구 결혼식 하객룩을 고를 때?",
+    "options": [
+      { "text": "나도 돋보일 수 있는 세련되고 시크한 정장.", "type": "D" },
+      { "text": "화사하고 사진 잘 받는 밝은 원피스.", "type": "I" },
+      { "text": "신부보다 튀지 않는 단정한 네이비/베이지 톤.", "type": "S" },
+      { "text": "TPO(시간, 장소, 상황)에 완벽하게 맞는 격식 있는 옷.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1126,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "self_development",
+    "question": "영어 회화 실력을 늘리고 싶다.",
+    "options": [
+      { "text": "단기간 속성 학원에 등록해 빡세게 공부한다.", "type": "D" },
+      { "text": "외국인 친구를 사귀거나 언어 교환 모임에 나간다.", "type": "I" },
+      { "text": "미드를 보거나 쉐도잉(따라하기)을 꾸준히 한다.", "type": "S" },
+      { "text": "문법과 어휘 책을 사서 체계적으로 독학한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1127,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "work_life",
+    "question": "팀 프로젝트 중 무임승차(Free rider)하는 동료가 있다.",
+    "options": [
+      { "text": "\"이 부분 맡으신 거 언제까지 주실래요?\" 대놓고 압박한다.", "type": "D" },
+      { "text": "웃으면서 \"00님도 같이 해요~\"라고 눈치 준다.", "type": "I" },
+      { "text": "싫은 소리 하기 힘들어서 내가 그 사람 몫까지 한다.", "type": "S" },
+      { "text": "그 사람의 기여도가 없음을 업무 일지에 기록한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1128,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "dating_romance",
+    "question": "연인과 결혼 얘기가 나왔다. 나의 태도는?",
+    "options": [
+      { "text": "결혼 시기와 계획을 주도적으로 정한다.", "type": "D" },
+      { "text": "드레스, 신혼여행 등 로맨틱한 상상에 빠진다.", "type": "I" },
+      { "text": "연인이 하자는 대로 따르며 안정적인 가정을 꿈꾼다.", "type": "S" },
+      { "text": "결혼 자금과 현실적인 조건을 꼼꼼히 따져본다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1129,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "lifestyle_consumption",
+    "question": "백화점 직원이 부담스럽게 따라다니며 권유한다.",
+    "options": [
+      { "text": "\"혼자 볼게요.\" 단호하게 말한다.", "type": "D" },
+      { "text": "직원과 수다 떨다가 영업당해서 사버린다.", "type": "I" },
+      { "text": "거절 못 하고 계속 설명 듣고 있는다.", "type": "S" },
+      { "text": "필요 없다고 생각하면 정중히 거절하고 자리를 뜬다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1130,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "friendship_social",
+    "question": "친구가 SNS에 우울한 글(감성글)을 올렸다.",
+    "options": [
+      { "text": "별 반응 안 하거나 \"무슨 일이야?\"라고 짧게 묻는다.", "type": "D" },
+      { "text": "바로 전화하거나 \"ㅠㅠ 힘내\" 댓글을 단다.", "type": "I" },
+      { "text": "걱정돼서 개인 톡으로 조심스럽게 안부를 묻는다.", "type": "S" },
+      { "text": "무슨 일이 있는지 상황을 파악하기 전까진 지켜본다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1131,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "career_entry",
+    "question": "이직 면접에서 '우리 회사는 야근이 많다'고 한다.",
+    "options": [
+      { "text": "\"야근 수당은 확실한가요?\" 보상을 확인한다.", "type": "D" },
+      { "text": "\"사람들이 좋으면 괜찮아요!\" 긍정적으로 답한다.", "type": "I" },
+      { "text": "걱정되지만 입사하고 싶어서 괜찮다고 한다.", "type": "S" },
+      { "text": "야근의 빈도와 사유가 합리적인지 물어본다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1132,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "lifestyle_beauty",
+    "question": "피부과 시술이나 성형을 고민 중이다.",
+    "options": [
+      { "text": "효과가 확실하고 즉각적인 시술을 선택한다.", "type": "D" },
+      { "text": "친구가 해서 예뻐진 거랑 똑같은 걸로 한다.", "type": "I" },
+      { "text": "부작용이 적고 자연스러운 관리를 선호한다.", "type": "S" },
+      { "text": "병원 후기와 의사 경력을 며칠 동안 검색한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1133,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "work_life",
+    "question": "회식 2차로 노래방을 가자고 한다.",
+    "options": [
+      { "text": "\"저는 먼저 가보겠습니다.\" 피곤하면 빠진다.", "type": "D" },
+      { "text": "가장 먼저 마이크 잡고 분위기를 주도한다.", "type": "I" },
+      { "text": "가기 싫지만 눈치 보여서 따라가서 박수 친다.", "type": "S" },
+      { "text": "내일 업무에 지장이 없는지 시간을 체크한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1134,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "dating_romance",
+    "question": "연인이 내 패션 스타일을 바꾸려 한다.",
+    "options": [
+      { "text": "\"난 내 스타일이 좋아. 강요하지 마.\" 거부한다.", "type": "D" },
+      { "text": "\"자기가 사주면 입을게~\" 애교로 받아친다.", "type": "I" },
+      { "text": "연인이 좋아하는 스타일로 맞춰 입어준다.", "type": "S" },
+      { "text": "왜 그 스타일이 나에게 더 나은지 설명을 요구한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1135,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "independent_living",
+    "question": "집에서 배달 음식을 먹고 난 후 뒤처리는?",
+    "options": [
+      { "text": "먹자마자 바로 치우고 쓰레기 버린다.", "type": "D" },
+      { "text": "재밌는 영상 보면서 천천히 치운다.", "type": "I" },
+      { "text": "나중에 치워야지 하고 한쪽에 모아둔다.", "type": "S" },
+      { "text": "용기를 깨끗이 씻고 분리수거 규정에 맞게 버린다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1136,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "friendship_social",
+    "question": "친구에게 빌려준 돈을 돌려받아야 한다.",
+    "options": [
+      { "text": "\"야, 돈 언제 줘?\" 계좌번호를 찍어 보낸다.", "type": "D" },
+      { "text": "\"나 카드값 내야 돼서 ㅠㅠ\" 사정하며 말한다.", "type": "I" },
+      { "text": "말하기 미안해서 친구가 기억할 때까지 기다린다.", "type": "S" },
+      { "text": "빌려간 날짜와 금액을 정확히 알려준다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1137,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "career_entry",
+    "question": "회사에서 멘토를 정할 수 있다면 어떤 사람?",
+    "options": [
+      { "text": "능력 있고 승진이 빠르며 나를 끌어줄 수 있는 사람.", "type": "D" },
+      { "text": "성격 좋고 밥 잘 사주며 고민 상담 잘해주는 사람.", "type": "I" },
+      { "text": "나를 재촉하지 않고 차근차근 가르쳐주는 사람.", "type": "S" },
+      { "text": "업무 지식이 해박하고 배울 점이 많은 전문가.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1138,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "lifestyle_social_media",
+    "question": "인플루언서가 광고하는 공구(공동구매) 제품을 봤다.",
+    "options": [
+      { "text": "필요하면 바로 산다. 고민은 시간 낭비.", "type": "D" },
+      { "text": "사람들 후기가 좋고 유행하는 거면 따라 산다.", "type": "I" },
+      { "text": "상술 같아서 잘 안 믿거나 구경만 한다.", "type": "S" },
+      { "text": "성분과 인터넷 최저가를 비교해 보고 결정한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1139,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "work_life",
+    "question": "업무 중 실수를 발견했다. 어떻게 할까?",
+    "options": [
+      { "text": "빠르게 수습하고 상사에게 보고한다.", "type": "D" },
+      { "text": "동료에게 도움을 요청해서 같이 해결한다.", "type": "I" },
+      { "text": "혼날까 봐 걱정하며 몰래 고친다.", "type": "S" },
+      { "text": "왜 실수가 났는지 원인을 파악하고 재발 방지책을 세운다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1140,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "dating_romance",
+    "question": "연인이 전 애인(Ex) 이야기를 꺼냈다.",
+    "options": [
+      { "text": "\"그래서? 지금은 나 만나잖아.\" 쿨하게 넘기거나 화제를 자른다.", "type": "D" },
+      { "text": "\"어떤 사람이었어?\" 호기심을 보이며 꼬치꼬치 묻는다.", "type": "I" },
+      { "text": "기분 나쁘지만 겉으로는 내색하지 않는다.", "type": "S" },
+      { "text": "과거 연애에서 무엇이 문제였는지 분석한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1141,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "self_development",
+    "question": "유튜브 채널을 시작한다면 어떤 콘텐츠?",
+    "options": [
+      { "text": "내 주장을 강하게 말하는 토크나 논평.", "type": "D" },
+      { "text": "일상 브이로그, 먹방, 뷰티 등 소통 방송.", "type": "I" },
+      { "text": "얼굴 안 나오는 ASMR이나 힐링 영상.", "type": "S" },
+      { "text": "정보 전달, 리뷰, IT 기기 분석 영상.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1142,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "friendship_social",
+    "question": "친구들과 여행 계획을 짜는데 아무도 안 움직인다.",
+    "options": [
+      { "text": "답답해서 내가 숙소, 교통편 다 예약해 버린다.", "type": "D" },
+      { "text": "\"우리 빨리 정하자!\" 말만 하고 실행은 안 한다.", "type": "I" },
+      { "text": "누군가 총대 멜 때까지 조용히 기다린다.", "type": "S" },
+      { "text": "각자 알아볼 역할을 분담하고 데드라인을 정한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1143,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "career_entry",
+    "question": "회사 워크숍에서 장기자랑 1등 상품이 아이패드다.",
+    "options": [
+      { "text": "무조건 1등은 내 거. 승부욕을 불태운다.", "type": "D" },
+      { "text": "무대 체질이라 나가서 끼를 발산한다.", "type": "I" },
+      { "text": "상품은 탐나지만 나가는 건 창피하다.", "type": "S" },
+      { "text": "나갈 만한 경쟁자가 누구인지 파악한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1144,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "lifestyle_consumption",
+    "question": "인스타 맛집(핫플레이스)에 갔다.",
+    "options": [
+      { "text": "웨이팅이 너무 길면 바로 다른 식당으로 간다.", "type": "D" },
+      { "text": "음식 사진과 셀카를 백 장 찍고 업로드한다.", "type": "I" },
+      { "text": "기다리는 동안 친구와 이야기하며 참는다.", "type": "S" },
+      { "text": "리뷰와 별점이 진짜인지 광고인지 확인한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1145,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "dating_romance",
+    "question": "소개팅 앱 프로필을 작성할 때?",
+    "options": [
+      { "text": "가장 잘 나온 인생샷 한 장과 짧고 강렬한 소개.", "type": "D" },
+      { "text": "취미, 좋아하는 것 등 나를 어필하는 내용을 가득 채운다.", "type": "I" },
+      { "text": "너무 튀지 않게 무난하고 참한 사진을 고른다.", "type": "S" },
+      { "text": "맞춤법을 지키고 솔직하고 담백하게 적는다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1146,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "work_life",
+    "question": "동료가 내 뒷담화를 한 것을 알게 되었다.",
+    "options": [
+      { "text": "동료에게 가서 \"할 말 있으면 앞에서 하세요\"라고 따진다.", "type": "D" },
+      { "text": "다른 동료들에게 그 사람의 실체를 알린다.", "type": "I" },
+      { "text": "모르는 척하고 거리를 둔다.", "type": "S" },
+      { "text": "증거를 확보하고 인사팀이나 상사에게 보고할지 고민한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1147,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "independent_living",
+    "question": "혼자 사는 집에 낯선 사람이 벨을 누른다.",
+    "options": [
+      { "text": "\"누구세요?\" 큰 소리로 묻고 문을 열어주지 않는다.", "type": "D" },
+      { "text": "무서워서 친구나 가족에게 전화를 건다.", "type": "I" },
+      { "text": "없는 척하고 숨죽이고 있는다.", "type": "S" },
+      { "text": "인터폰 화면으로 누구인지 확인하고 용건을 묻는다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1148,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "lifestyle_fitness",
+    "question": "다이어트 중인데 친구가 야식을 먹자고 한다.",
+    "options": [
+      { "text": "\"안 먹어.\" 단호하게 거절하고 내 할 일 한다.", "type": "D" },
+      { "text": "\"오늘만 치팅데이!\" 유혹에 넘어가서 같이 먹는다.", "type": "I" },
+      { "text": "거절하기 미안해서 옆에서 조금 거든다.", "type": "S" },
+      { "text": "칼로리가 낮은 메뉴로 타협하거나 제로 음료만 마신다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1149,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "career_entry",
+    "question": "회사에서 PPT 발표를 맡게 되었다.",
+    "options": [
+      { "text": "핵심만 간결하고 임팩트 있게 전달한다.", "type": "D" },
+      { "text": "유머와 제스처를 섞어가며 청중을 사로잡는다.", "type": "I" },
+      { "text": "떨리지만 대본을 열심히 외워서 발표한다.", "type": "S" },
+      { "text": "완벽한 자료 조사와 논리적인 근거로 설득한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1150,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "dating_romance",
+    "question": "연인과 가치관 차이로 싸웠다.",
+    "options": [
+      { "text": "내 생각이 맞다고 끝까지 설득하거나 헤어짐을 고려한다.", "type": "D" },
+      { "text": "싸우는 게 싫어서 애교로 분위기를 풀려고 한다.", "type": "I" },
+      { "text": "연인의 의견을 존중하며 맞춰주려고 노력한다.", "type": "S" },
+      { "text": "서로의 다름을 인정하고 합의점을 찾으려 대화한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1151,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "lifestyle_travel",
+    "question": "혼자 해외여행을 떠난다. 나의 스타일은?",
+    "options": [
+      { "text": "가고 싶은 곳만 찍고 즉흥적으로 다니는 모험가.", "type": "D" },
+      { "text": "게스트하우스 파티에 참여하고 새로운 친구를 사귄다.", "type": "I" },
+      { "text": "안전하고 평점 좋은 숙소에서 호캉스를 즐긴다.", "type": "S" },
+      { "text": "분 단위 계획표대로 움직이며 박물관/미술관을 간다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1152,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "work_life",
+    "question": "상사가 내 성과를 가로챘다.",
+    "options": [
+      { "text": "상사에게 직접 따지거나 더 윗선에 보고한다.", "type": "D" },
+      { "text": "억울해서 동료들에게 하소연하고 술 마신다.", "type": "I" },
+      { "text": "참고 있다가 이직을 준비한다.", "type": "S" },
+      { "text": "내가 한 업무 기록과 증거를 모아둔다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1153,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "friendship_social",
+    "question": "친구가 다단계 화장품을 강매하려 한다.",
+    "options": [
+      { "text": "\"나 이런 거 안 써. 연락하지 마.\" 손절한다.", "type": "D" },
+      { "text": "\"미안해~ 나 피부가 예민해서 ㅠㅠ\" 핑계를 댄다.", "type": "I" },
+      { "text": "거절 못 하고 제일 싼 거 하나 사준다.", "type": "S" },
+      { "text": "성분이 검증된 건지 묻고 논리적으로 거절한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1154,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "self_development",
+    "question": "취미 생활(원데이 클래스)을 고를 때?",
+    "options": [
+      { "text": "결과물이 확실하고 성취감이 있는 것 (예: 클라이밍, 목공).", "type": "D" },
+      { "text": "사람들과 어울리며 대화할 수 있는 것 (예: 독서 모임, 와인).", "type": "I" },
+      { "text": "혼자 조용히 힐링할 수 있는 것 (예: 향수 만들기, 그림).", "type": "S" },
+      { "text": "배워서 자격증을 딸 수 있거나 실용적인 것 (예: 코딩, 베이킹).", "type": "C" }
+    ]
+  },
+  {
+    "id": 1155,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "career_entry",
+    "question": "회사에서 '워라밸'이 지켜지지 않는다.",
+    "options": [
+      { "text": "업무 효율을 높여서 칼퇴근하려고 노력한다.", "type": "D" },
+      { "text": "동료들과 야근하며 야식을 시켜 먹는 재미로 버틴다.", "type": "I" },
+      { "text": "남들도 다 하니까... 체념하고 다닌다.", "type": "S" },
+      { "text": "초과 근무 수당이 제대로 나오는지 계산해 본다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1156,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "dating_romance",
+    "question": "연인과 헤어지고 SNS 흔적 정리는?",
+    "options": [
+      { "text": "헤어지자마자 사진 다 지우고 차단한다.", "type": "D" },
+      { "text": "보란 듯이 잘 사는 사진을 올린다.", "type": "I" },
+      { "text": "지우기 마음 아파서 비공개로 돌려놓는다.", "type": "S" },
+      { "text": "정리할 시기를 고민하다가 차분하게 하나씩 지운다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1157,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "independent_living",
+    "question": "자취방 인테리어를 하려고 한다.",
+    "options": [
+      { "text": "불필요한 가구 다 버리고 미니멀하게 산다.", "type": "D" },
+      { "text": "홈파티 할 수 있게 큰 식탁과 조명을 둔다.", "type": "I" },
+      { "text": "포근한 러그와 쿠션으로 아늑하게 꾸민다.", "type": "S" },
+      { "text": "수납함을 활용해 물건이 안 보이게 정리한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1158,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "lifestyle_consumption",
+    "question": "친구 생일 선물 고르기가 귀찮을 때?",
+    "options": [
+      { "text": "카카오톡 선물하기에서 랭킹 1위 제품을 보낸다.", "type": "D" },
+      { "text": "\"뭐 갖고 싶어?\" 물어보고 사준다.", "type": "I" },
+      { "text": "그래도 성의가 있지... 고민하다가 무난한 걸 산다.", "type": "S" },
+      { "text": "상품권이나 현금을 보낸다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1159,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "work_life",
+    "question": "재택근무 중 화상 회의(Zoom)를 해야 한다.",
+    "options": [
+      { "text": "상의만 갈아입고 빠르게 접속한다.", "type": "D" },
+      { "text": "조명 세팅하고 배경 화면을 예쁜 걸로 바꾼다.", "type": "I" },
+      { "text": "카메라 켜는 게 부담스러워 마스크를 쓴다.", "type": "S" },
+      { "text": "마이크와 카메라 작동 여부를 미리 테스트한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1160,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "career_entry",
+    "question": "회사에서 '사내 정치' 라인을 타야 할 것 같다.",
+    "options": [
+      { "text": "실세가 누구인지 파악하고 그쪽 라인에 선다.", "type": "D" },
+      { "text": "모든 사람과 친하게 지내며 중립을 지킨다.", "type": "I" },
+      { "text": "정치질에 휘말리기 싫어서 조용히 일만 한다.", "type": "S" },
+      { "text": "업무 능력으로 인정받는 것이 진짜라고 믿는다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1161,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "dating_romance",
+    "question": "썸남(썸녀)이 '가스라이팅'을 하는 것 같다.",
+    "options": [
+      { "text": "\"너 지금 뭐 하는 거야?\" 정색하고 관계를 끊는다.", "type": "D" },
+      { "text": "친구들에게 대화 내용을 보여주며 상담한다.", "type": "I" },
+      { "text": "내가 예민한 건가? 자책하며 혼란스러워한다.", "type": "S" },
+      { "text": "가스라이팅의 징후를 검색해 보고 맞는지 확인한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1162,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "lifestyle_fitness",
+    "question": "바디 프로필을 찍기로 결심했다.",
+    "options": [
+      { "text": "기간을 짧게 잡고 극한으로 식단 조절을 한다.", "type": "D" },
+      { "text": "예쁜 운동복을 사고 운동하는 과정을 SNS에 올린다.", "type": "I" },
+      { "text": "트레이너 선생님이 시키는 대로 성실하게 한다.", "type": "S" },
+      { "text": "인바디 수치 변화를 매일 기록하며 체계적으로 준비한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1163,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "friendship_social",
+    "question": "친구가 약속 당일에 '잠수(연락 두절)'를 탔다.",
+    "options": [
+      { "text": "손절한다. 시간 낭비하게 만든 건 용서 못 해.", "type": "D" },
+      { "text": "SNS에 저격 글을 올리거나 다른 친구랑 논다.", "type": "I" },
+      { "text": "무슨 사고가 났나 걱정돼서 계속 연락해 본다.", "type": "S" },
+      { "text": "왜 그랬는지 나중에 해명을 들어보고 판단한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1164,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "career_entry",
+    "question": "이직을 준비하면서 가장 중요하게 보는 것은?",
+    "options": [
+      { "text": "높은 연봉과 성과급.", "type": "D" },
+      { "text": "자유롭고 수평적인 사내 분위기.", "type": "I" },
+      { "text": "안정적이고 정년이 보장되는 직장.", "type": "S" },
+      { "text": "체계적인 업무 시스템과 배울 점.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1165,
+    "target_age_min": 20,
+    "target_age_max": 29,
+    "category": "self_development",
+    "question": "나의 퍼스널 브랜딩(Personal Branding) 전략은?",
+    "options": [
+      { "text": "남들과 다른 독보적인 능력과 성과를 강조한다.", "type": "D" },
+      { "text": "친근하고 매력적인 이미지를 어필한다.", "type": "I" },
+      { "text": "진정성 있고 꾸준한 모습을 보여준다.", "type": "S" },
+      { "text": "전문성과 신뢰감을 주는 데이터를 제시한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1166,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "career_growth",
+    "question": "회사에서 중요한 프로젝트 리더 제안을 받았다. 승진 기회지만 업무 강도가 높다.",
+    "options": [
+      { "text": "\"제가 하겠습니다!\" 커리어 점프를 위해 무조건 도전한다.", "type": "D" },
+      { "text": "\"팀원들은 누구죠?\" 함께할 사람들과의 시너지를 먼저 생각한다.", "type": "I" },
+      { "text": "현재 업무와 병행 가능한지, 워라밸이 깨지지 않을지 걱정한다.", "type": "S" },
+      { "text": "프로젝트의 성공 가능성과 리스크를 꼼꼼히 분석한 뒤 결정한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1167,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "lifestyle_marriage",
+    "question": "결혼 준비 중, 시댁(또는 배우자)과 혼수/예단 문제로 의견 차이가 생겼다.",
+    "options": [
+      { "text": "\"이건 제 결혼이에요.\" 내 의견을 확실히 전달하고 관철시킨다.", "type": "D" },
+      { "text": "분위기가 어색해지지 않게 웃으며 좋게 좋게 넘어가려 애쓴다.", "type": "I" },
+      { "text": "갈등이 커지는 게 두려워 웬만하면 상대방 의견에 맞춘다.", "type": "S" },
+      { "text": "예산 리스트를 펼쳐놓고 합리적인 근거를 들어 설득한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1168,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "parenting_dilemma",
+    "question": "아이가 공공장소에서 크게 떼를 쓰며 울고 있다.",
+    "options": [
+      { "text": "\"안 돼. 그쳐.\" 단호한 표정과 목소리로 즉시 제압한다.", "type": "D" },
+      { "text": "주변 사람들 시선이 너무 신경 쓰여서 당황하고 얼굴이 빨개진다.", "type": "I" },
+      { "text": "아이를 안아주며 진정될 때까지 차분하게 달래준다.", "type": "S" },
+      { "text": "아이가 왜 우는지 원인(배고픔, 졸림 등)을 파악하고 해결한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1169,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "finance_investment",
+    "question": "본격적으로 재테크를 시작하려 한다. 나의 투자 성향은?",
+    "options": [
+      { "text": "하이 리스크 하이 리턴! 수익률 높은 주식이나 코인에 공격 투자.", "type": "D" },
+      { "text": "주변에서 돈 벌었다고 하는 핫한 투자처를 따라 한다.", "type": "I" },
+      { "text": "원금 보장이 제일 중요해. 예적금이나 안전한 채권 위주.", "type": "S" },
+      { "text": "재무제표와 차트를 분석하고 분산 투자 포트폴리오를 짠다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1170,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "friendship_adult",
+    "question": "오랜 친구가 매번 만나서 시댁/남편 욕(하소연)만 한다.",
+    "options": [
+      { "text": "\"그래서 결론이 뭐야? 해결할 거야, 말 거야?\" 팩트를 짚어준다.", "type": "D" },
+      { "text": "\"어머 진짜? 너무했다!\" 감정적으로 맞장구치며 같이 욕해준다.", "type": "I" },
+      { "text": "듣기 힘들어도 친구가 풀릴 때까지 묵묵히 들어준다.", "type": "S" },
+      { "text": "감정 소모가 너무 심하다고 느끼며 서서히 만남을 줄인다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1171,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "career_culture",
+    "question": "회의 중 남자 상사가 내 말을 자꾸 끊고 가로챌 때 (맨스플레인).",
+    "options": [
+      { "text": "\"잠시만요, 제 말씀 아직 안 끝났습니다.\" 정색하고 발언권을 챙긴다.", "type": "D" },
+      { "text": "농담처럼 \"제 말 좀 들어주세요~\" 하며 유연하게 넘긴다.", "type": "I" },
+      { "text": "기분 나쁘지만 분위기 깰까 봐 그냥 듣고 있는다.", "type": "S" },
+      { "text": "회의록에 내 의견임을 명확히 남기거나 추후 메일로 정리해 보낸다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1172,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "lifestyle_home",
+    "question": "집안일(가사 노동) 분담 문제로 배우자와 갈등이 생겼다.",
+    "options": [
+      { "text": "\"당신은 이거, 나는 이거.\" 업무 지시하듯 역할을 딱 정해준다.", "type": "D" },
+      { "text": "\"자기가 도와주면 내가 너무 행복할 것 같아~\" 칭찬으로 조종한다.", "type": "I" },
+      { "text": "싸우기 싫어서 답답한 내가 그냥 다 해버린다.", "type": "S" },
+      { "text": "각자의 근무 시간과 가사 소요 시간을 계산해 엑셀로 표를 만든다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1173,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "self_care",
+    "question": "피부 탄력이 예전 같지 않다. 고가의 피부과 시술을 고민 중이다.",
+    "options": [
+      { "text": "효과만 확실하다면 비싸도 당장 결제한다.", "type": "D" },
+      { "text": "친구가 해서 예뻐진 시술을 똑같이 따라 한다.", "type": "I" },
+      { "text": "부작용이 걱정되어 홈케어나 순한 관리부터 시작한다.", "type": "S" },
+      { "text": "성분, 기계 종류, 병원 후기를 며칠 밤새워 검색한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1174,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "social_pressure",
+    "question": "명절이나 가족 모임에서 \"아이는 언제 낳니?\"라는 질문을 들었다.",
+    "options": [
+      { "text": "\"저희가 알아서 계획할게요.\" 단호하게 선을 긋는다.", "type": "D" },
+      { "text": "\"하하, 때 되면 생기겠죠~\" 너스레를 떨며 화제를 돌린다.", "type": "I" },
+      { "text": "겉으로는 웃지만 속으로는 스트레스받고 위축된다.", "type": "S" },
+      { "text": "딩크(DINK)의 경제적 장점이나 현재 상황을 논리적으로 설명한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1175,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "career_change",
+    "question": "경력 단절 후 재취업(또는 이직)을 준비할 때 가장 중요한 조건은?",
+    "options": [
+      { "text": "연봉과 승진 기회. 내 능력을 인정받는 것.", "type": "D" },
+      { "text": "좋은 동료와 즐거운 사내 분위기.", "type": "I" },
+      { "text": "고용 안정성과 육아 병행이 가능한 유연한 근무 환경.", "type": "S" },
+      { "text": "체계적인 업무 시스템과 명확한 R&R(역할과 책임).", "type": "C" }
+    ]
+  },
+  {
+    "id": 1176,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "lifestyle_luxury",
+    "question": "나를 위한 선물로 명품 가방을 사려고 한다.",
+    "options": [
+      { "text": "내가 번 돈 내가 쓰는데 뭐! 가장 화려하고 존재감 있는 것.", "type": "D" },
+      { "text": "요즘 유행하는 '잇백'이나 인스타에서 핫한 디자인.", "type": "I" },
+      { "text": "유행 타지 않고 오래 들 수 있는 무난한 클래식 라인.", "type": "S" },
+      { "text": "나중에 중고로 팔 때 감가상각이 적은 브랜드와 모델.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1177,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "friendship_trip",
+    "question": "30대 여자 친구들과 우정 여행을 가기로 했다. 나의 역할은?",
+    "options": [
+      { "text": "\"여기 가자!\" 목적지와 숙소를 결정하는 리더.", "type": "D" },
+      { "text": "인생샷 스팟을 찾고 분위기를 띄우는 엔터테이너.", "type": "I" },
+      { "text": "친구들의 의견을 조율하고 총무 역할을 맡는 서포터.", "type": "S" },
+      { "text": "동선과 맛집 브레이크 타임까지 체크하는 계획녀.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1178,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "work_life",
+    "question": "퇴근 후 또는 주말, 나만의 힐링 시간은?",
+    "options": [
+      { "text": "고강도 운동이나 새로운 취미를 배우며 성취감을 느낀다.", "type": "D" },
+      { "text": "친구들을 만나 맛집을 가고 수다를 떨며 스트레스를 푼다.", "type": "I" },
+      { "text": "집에서 넷플릭스 보며 뒹굴뒹굴 쉰다.", "type": "S" },
+      { "text": "밀린 집안일을 정리하거나 독서, 자기계발을 한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1179,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "relationship_conflict",
+    "question": "남편(또는 연인)이 상의도 없이 큰 돈을 썼다.",
+    "options": [
+      { "text": "\"당장 환불해 와.\" 불같이 화를 낸다.", "type": "D" },
+      { "text": "\"어떻게 나한테 말도 안 하고 그럴 수 있어?\" 서운함을 토로한다.", "type": "I" },
+      { "text": "속은 부글부글 끓지만 싸우기 싫어 참는다.", "type": "S" },
+      { "text": "가계부 상황을 보여주며 이 지출이 미칠 영향을 설명한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1180,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "career_leadership",
+    "question": "후배 직원이 실수를 해서 수습해야 한다.",
+    "options": [
+      { "text": "내가 빠르게 처리하고 후배에게 따끔하게 주의를 준다.", "type": "D" },
+      { "text": "\"괜찮아, 그럴 수 있어.\" 후배를 위로하며 같이 해결한다.", "type": "I" },
+      { "text": "후배가 무안할까 봐 조용히 내가 대신 처리한다.", "type": "S" },
+      { "text": "왜 실수가 발생했는지 원인을 분석해 매뉴얼을 수정한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1181,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "lifestyle_health",
+    "question": "건강검진 결과 관리가 필요하다고 나왔다.",
+    "options": [
+      { "text": "당장 PT를 끊고 독하게 식단 조절에 들어간다.", "type": "D" },
+      { "text": "친구랑 같이 운동 등록하고 SNS에 '오운완' 인증한다.", "type": "I" },
+      { "text": "무리가 가지 않는 선에서 영양제를 챙겨 먹는다.", "type": "S" },
+      { "text": "수치를 정상화하기 위한 의학적 지식을 공부하고 기록한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1182,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "social_event",
+    "question": "결혼식 청첩장 모임을 주최하게 되었다.",
+    "options": [
+      { "text": "내가 주인공인 날! 가장 돋보일 수 있는 장소를 예약한다.", "type": "D" },
+      { "text": "오랜만에 다 같이 모여 시끌벅적하게 노는 파티 분위기.", "type": "I" },
+      { "text": "참석자들이 오기 편한 위치와 호불호 없는 메뉴를 고른다.", "type": "S" },
+      { "text": "예산 범위 내에서 식사와 답례품까지 꼼꼼히 준비한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1183,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "parenting_education",
+    "question": "자녀(또는 조카)의 교육 기관(어린이집/유치원)을 고를 때?",
+    "options": [
+      { "text": "가장 평판이 좋고 아웃풋이 확실한 유명 영유.", "type": "D" },
+      { "text": "다양한 체험 활동과 행사가 많은 즐거운 곳.", "type": "I" },
+      { "text": "선생님이 따뜻하고 아이가 정서적으로 안정될 수 있는 곳.", "type": "S" },
+      { "text": "CCTV 설치 여부, 급식 식자재, 교사 비율 등을 체크한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1184,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "career_communication",
+    "question": "업무 메일을 보낼 때 나의 스타일은?",
+    "options": [
+      { "text": "용건만 간단히. 핵심 내용은 굵게 표시한다.", "type": "D" },
+      { "text": "날씨 인사와 이모티콘을 섞어 부드럽게 쓴다.", "type": "I" },
+      { "text": "상대방이 기분 상하지 않게 매우 정중한 표현을 쓴다.", "type": "S" },
+      { "text": "오타와 첨부 파일을 세 번 확인하고 논리정연하게 쓴다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1185,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "lifestyle_realestate",
+    "question": "내 집 마련(이사)을 위해 집을 보러 갔다.",
+    "options": [
+      { "text": "\"채광 좋고 뷰 좋은 로얄동 주세요.\" 좋은 매물을 요구한다.", "type": "D" },
+      { "text": "주변에 핫한 카페나 인프라가 있는지 본다.", "type": "I" },
+      { "text": "이웃들이 조용한지, 치안은 안전한지 살핀다.", "type": "S" },
+      { "text": "관리비, 누수 여부, 향후 집값 전망을 분석한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1186,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "friendship_conflict",
+    "question": "결혼 후 싱글인 친구와 대화 주제가 안 맞아 소원해졌다.",
+    "options": [
+      { "text": "안 맞는 인연은 쿨하게 정리하고 내 생활에 집중한다.", "type": "D" },
+      { "text": "섭섭하다고 솔직하게 말하고 관계를 회복하려 노력한다.", "type": "I" },
+      { "text": "연락이 올 때까지 기다리며 혼자 서운해한다.", "type": "S" },
+      { "text": "상황이 다르니 어쩔 수 없다고 이성적으로 받아들인다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1187,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "career_negotiation",
+    "question": "연봉 협상 자리에서 회사 제시액이 마음에 안 든다.",
+    "options": [
+      { "text": "\"이 금액으로는 계약 못 합니다.\" 원하는 액수를 던진다.", "type": "D" },
+      { "text": "웃으면서 \"대표님, 저 진짜 열심히 했잖아요~\" 넉살 좋게 요구한다.", "type": "I" },
+      { "text": "마음은 상하지만 \"알겠습니다...\" 하고 사인한다.", "type": "S" },
+      { "text": "동종 업계 평균과 내 성과 데이터를 제시하며 반박한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1188,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "household_management",
+    "question": "집안일의 '멘탈 로드'(기억하고 챙겨야 하는 정신적 노동)가 버겁다.",
+    "options": [
+      { "text": "가족들에게 각자 할 일을 명확히 배분하고 통보한다.", "type": "D" },
+      { "text": "힘들다고 가족들에게 징징대거나 가사 도우미를 쓴다.", "type": "I" },
+      { "text": "잔소리하느니 그냥 내가 희생해서 다 챙긴다.", "type": "S" },
+      { "text": "정기 배송, 자동 이체 등을 설정해 시스템화한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1189,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "work_life_balance",
+    "question": "육아 휴직 후 복직을 앞두고 있다. 가장 큰 걱정은?",
+    "options": [
+      { "text": "내 자리가 없어졌거나 승진에서 밀렸을까 봐.", "type": "D" },
+      { "text": "회사 사람들과 다시 잘 어울릴 수 있을까?", "type": "I" },
+      { "text": "아이를 맡기고 출근해서 잘 적응할 수 있을까?", "type": "S" },
+      { "text": "변경된 업무 프로세스를 빨리 익힐 수 있을까?", "type": "C" }
+    ]
+  },
+  {
+    "id": 1190,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "social_gathering",
+    "question": "불편한 사람(직장 상사, 시댁 식구 등)과 식사 자리를 가질 때.",
+    "options": [
+      { "text": "대화를 내가 주도해서 빨리 밥만 먹고 일어난다.", "type": "D" },
+      { "text": "어색한 침묵을 못 견뎌 계속 아무 말이나 한다.", "type": "I" },
+      { "text": "눈치 보며 상대방 비위를 맞추고 리액션만 한다.", "type": "S" },
+      { "text": "필요한 질문에만 대답하며 예의 바르게 거리를 둔다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1191,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "self_development",
+    "question": "30대가 되어 새로 배우고 싶은 취미는?",
+    "options": [
+      { "text": "골프나 테니스처럼 경쟁하고 성취감 있는 운동.", "type": "D" },
+      { "text": "와인 클래스나 살사 댄스처럼 사교적인 활동.", "type": "I" },
+      { "text": "마음이 차분해지는 꽃꽂이나 요가.", "type": "S" },
+      { "text": "재테크 강의나 외국어 공부 등 실용적인 것.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1192,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "personality_perception",
+    "question": "주변에서 나를 \"기가 세다\"고 평가할 때.",
+    "options": [
+      { "text": "\"내가 좀 카리스마가 있지.\" 칭찬으로 듣는다.", "type": "D" },
+      { "text": "\"나 원래 여린데!\" 억울해하며 해명하고 다닌다.", "type": "I" },
+      { "text": "내가 너무 드세 보였나? 싶어서 행동을 조심한다.", "type": "S" },
+      { "text": "어떤 행동 때문에 그렇게 보였는지 분석해 본다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1193,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "lifestyle_fashion",
+    "question": "중요한 모임에 입고 갈 옷을 고를 때.",
+    "options": [
+      { "text": "도시적이고 세련된 커리어 우먼 스타일.", "type": "D" },
+      { "text": "화사하고 눈에 띄는 패턴이나 컬러풀한 원피스.", "type": "I" },
+      { "text": "단정하고 편안해 보이는 니트나 슬랙스.", "type": "S" },
+      { "text": "TPO(시간, 장소, 상황)에 완벽하게 맞는 옷.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1194,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "relationship_single",
+    "question": "소개팅 앱이나 결정사(결혼정보회사) 가입을 고민 중이다.",
+    "options": [
+      { "text": "조건 확실한 사람을 만나기 위해 비싼 가입비도 낸다.", "type": "D" },
+      { "text": "새로운 사람 만나는 건 재밌으니까 가볍게 해본다.", "type": "I" },
+      { "text": "인위적인 만남은 거부감이 들어서 망설인다.", "type": "S" },
+      { "text": "매칭 시스템과 성공 확률, 후기를 꼼꼼히 따진다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1195,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "career_burnout",
+    "question": "퇴사를 결심하게 되는 결정적인 이유는?",
+    "options": [
+      { "text": "비전이 없고 내 성장을 막는 상사 때문에.", "type": "D" },
+      { "text": "사람들이 너무 차갑고 삭막해서.", "type": "I" },
+      { "text": "업무량이 너무 많아 내 삶이 없어져서.", "type": "S" },
+      { "text": "회사의 주먹구구식 운영 방식이 답답해서.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1196,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "parenting_social",
+    "question": "학부모 모임(또는 조리원 동기 모임)에 나갔다.",
+    "options": [
+      { "text": "모임의 장을 맡거나 대화의 중심이 된다.", "type": "D" },
+      { "text": "금방 언니 동생 하며 친해지고 정보를 공유한다.", "type": "I" },
+      { "text": "튀지 않게 적당히 어울리며 묻어간다.", "type": "S" },
+      { "text": "내 아이에게 도움이 될 정보만 선별해서 듣는다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1197,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "finance_spending",
+    "question": "스트레스를 받아서 충동구매(시발비용)를 했다.",
+    "options": [
+      { "text": "이미 샀으니 후회는 없다. 나를 위한 보상이다.", "type": "D" },
+      { "text": "택배 뜯으면서 기분 풀고 친구들한테 자랑한다.", "type": "I" },
+      { "text": "카드값 청구서를 걱정하며 반품할까 고민한다.", "type": "S" },
+      { "text": "다음 달 예산에서 삭감하여 지출 균형을 맞춘다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1198,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "work_relationship",
+    "question": "여초(여성이 많은) 직장에서 파벌 싸움이 일어났다.",
+    "options": [
+      { "text": "내가 옳다고 생각하는 쪽에 서서 확실히 목소리를 낸다.", "type": "D" },
+      { "text": "양쪽을 오가며 중재하거나 분위기를 풀려고 한다.", "type": "I" },
+      { "text": "어느 쪽에도 끼지 않고 조용히 내 할 일만 한다.", "type": "S" },
+      { "text": "싸움의 원인과 득실을 따져보고 거리를 둔다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1199,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "lifestyle_weekend",
+    "question": "주말에 남편(또는 동거인)은 쉬고 싶어 하고 나는 나가고 싶다.",
+    "options": [
+      { "text": "\"나갈 거야, 말 거야?\" 안 나가면 나 혼자라도 나간다.", "type": "D" },
+      { "text": "\"자기야~ 나가서 맛있는 거 먹자!\" 애교로 꼬신다.", "type": "I" },
+      { "text": "상대방이 피곤해 보이니 집에서 같이 쉰다.", "type": "S" },
+      { "text": "오전에 쉬고 오후에 잠깐 나가는 절충안을 제시한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1200,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "career_skills",
+    "question": "업무 스킬 향상을 위해 강의를 듣는다면?",
+    "options": [
+      { "text": "단기간에 핵심만 짚어주는 고액 과외나 특강.", "type": "D" },
+      { "text": "사람들과 네트워킹도 할 수 있는 오프라인 워크숍.", "type": "I" },
+      { "text": "혼자서 꾸준히 들을 수 있는 온라인 강의.", "type": "S" },
+      { "text": "커리큘럼이 체계적이고 자격증이 나오는 과정.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1201,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "self_reflection",
+    "question": "30대가 되어 체감하는 가장 큰 변화는?",
+    "options": [
+      { "text": "일 욕심과 성공에 대한 갈망이 더 커졌다.", "type": "D" },
+      { "text": "체력은 떨어졌지만 노는 건 여전히 좋다.", "type": "I" },
+      { "text": "변화보다는 안정이 제일 중요해졌다.", "type": "S" },
+      { "text": "감정 기복이 줄고 이성적으로 판단하게 되었다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1202,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "relationship_marriage",
+    "question": "배우자(또는 연인)가 내 말에 공감 안 해주고 해결책만 줄 때.",
+    "options": [
+      { "text": "\"누가 해결해 달래? 내 편 들어달라고!\" 화낸다.", "type": "D" },
+      { "text": "서운해서 입을 삐죽거리거나 삐진 티를 팍팍 낸다.", "type": "I" },
+      { "text": "말해봤자 소용없구나 싶어서 입을 다문다.", "type": "S" },
+      { "text": "내가 원하는 건 위로라고 정확하게 요구사항을 말한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1203,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "lifestyle_diet",
+    "question": "다이어트를 결심했다. 이번엔 꼭 성공해야 한다.",
+    "options": [
+      { "text": "가장 독하게 시키는 PT 쌤을 찾아가 등록한다.", "type": "D" },
+      { "text": "다이어트 보조제를 사고 친구들과 내기를 한다.", "type": "I" },
+      { "text": "저녁을 조금 줄이는 등 무리하지 않는 선에서 한다.", "type": "S" },
+      { "text": "식단 기록 어플을 설치하고 칼로리를 철저히 계산한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1204,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "work_delegation",
+    "question": "후배에게 업무를 위임했는데 마음에 안 든다.",
+    "options": [
+      { "text": "답답해서 그냥 뺏어서 내가 다시 한다.", "type": "D" },
+      { "text": "\"조금만 더 이렇게 해볼까?\" 좋게 돌려 말한다.", "type": "I" },
+      { "text": "다시 해달라고 하기 미안해서 내가 몰래 수정한다.", "type": "S" },
+      { "text": "어떤 부분이 틀렸는지 빨간 펜으로 체크해서 피드백한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1205,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "social_network",
+    "question": "SNS(인스타그램 등)를 하는 주된 목적은?",
+    "options": [
+      { "text": "나의 커리어나 멋진 라이프스타일을 브랜딩하기 위해.", "type": "D" },
+      { "text": "사람들과 소통하고 '좋아요' 받는 재미로.", "type": "I" },
+      { "text": "지인들의 근황을 확인하고 소소한 일상을 기록하려고.", "type": "S" },
+      { "text": "정보 수집(맛집, 육아템, 재테크 등)을 위해 눈팅용으로.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1206,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "finance_planning",
+    "question": "노후 준비(연금, 저축)에 대한 나의 생각은?",
+    "options": [
+      { "text": "사업이나 투자 대박으로 한방에 해결한다.", "type": "D" },
+      { "text": "아직 멀었잖아. 현재를 즐기는 게 더 중요하다.", "type": "I" },
+      { "text": "국민연금과 개인연금 정도는 꼬박꼬박 붓고 있다.", "type": "S" },
+      { "text": "은퇴 시점과 필요 자금을 계산해 체계적으로 모은다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1207,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "relationship_family",
+    "question": "친정 엄마(또는 가족)가 육아/살림 방식에 간섭할 때.",
+    "options": [
+      { "text": "\"제 방식대로 할게요.\" 엄마에게 강하게 말한다.", "type": "D" },
+      { "text": "\"알았어~\" 대답만 하고 내 맘대로 한다.", "type": "I" },
+      { "text": "도와주시는 게 감사해서 웬만하면 따른다.", "type": "S" },
+      { "text": "요즘 육아 트렌드나 전문가 의견을 들어 설명한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1208,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "work_meeting",
+    "question": "회의 시간이 길어지고 결론이 안 난다.",
+    "options": [
+      { "text": "\"그래서 결론이 뭡니까? 정리합시다.\" 나선다.", "type": "D" },
+      { "text": "지루해져서 옆 사람과 딴청을 피우거나 폰을 본다.", "type": "I" },
+      { "text": "누군가 정리해 주길 기다리며 묵묵히 앉아 있는다.", "type": "S" },
+      { "text": "지금까지 나온 내용을 요약해서 정리해 준다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1209,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "lifestyle_travel",
+    "question": "휴가 계획을 짤 때 가장 우선순위는?",
+    "options": [
+      { "text": "남들이 못 가본 럭셔리하거나 특별한 여행지.", "type": "D" },
+      { "text": "쇼핑, 맛집, 유흥을 즐길 수 있는 번화가.", "type": "I" },
+      { "text": "조용히 쉬다 올 수 있는 휴양지 리조트.", "type": "S" },
+      { "text": "가성비 좋고 치안이 안전하며 동선이 효율적인 곳.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1210,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "friendship_gift",
+    "question": "친한 친구의 출산(또는 결혼) 선물을 고를 때.",
+    "options": [
+      { "text": "현금이 최고! 쿨하게 봉투로 준다.", "type": "D" },
+      { "text": "사진 찍기 좋은 예쁜 아기 옷이나 커플 아이템.", "type": "I" },
+      { "text": "친구가 평소에 필요하다고 했던 것을 기억해 뒀다 산다.", "type": "S" },
+      { "text": "육아 국민템이나 실용적인 가전제품.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1211,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "career_promotion",
+    "question": "승진 심사에서 누락되었다.",
+    "options": [
+      { "text": "인사팀이나 상사에게 찾아가 이유를 따진다.", "type": "D" },
+      { "text": "술 마시며 회사를 안주 삼아 씹는다.", "type": "I" },
+      { "text": "내가 부족했나 보다... 자책하며 우울해한다.", "type": "S" },
+      { "text": "다음 승진을 위해 부족한 점수나 고과를 분석한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1212,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "lifestyle_interior",
+    "question": "집 인테리어를 바꾼다면 어떤 스타일?",
+    "options": [
+      { "text": "호텔처럼 고급스럽고 모던한 스타일.", "type": "D" },
+      { "text": "유행하는 소품과 컬러로 톡톡 튀는 스타일.", "type": "I" },
+      { "text": "따뜻하고 아늑한 우드 앤 화이트 톤.", "type": "S" },
+      { "text": "수납공간이 많고 청소하기 쉬운 미니멀리즘.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1213,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "relationship_divorce",
+    "question": "이혼(또는 이별)을 고민하게 되는 결정적 사유는?",
+    "options": [
+      { "text": "상대방이 나를 무시하거나 통제하려 들 때.", "type": "D" },
+      { "text": "대화가 안 통하고 같이 있어도 재미없을 때.", "type": "I" },
+      { "text": "상대방의 외도나 신뢰가 깨지는 행동.", "type": "S" },
+      { "text": "도박, 빚 등 경제적인 문제나 무능력.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1214,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "career_remote",
+    "question": "재택근무를 할 때 나의 업무 스타일은?",
+    "options": [
+      { "text": "짧고 굵게 집중해서 끝내고 내 시간을 갖는다.", "type": "D" },
+      { "text": "메신저로 동료들과 수다 떨며 일한다.", "type": "I" },
+      { "text": "혹시 연락 안 될까 봐 화장실 갈 때도 폰을 챙긴다.", "type": "S" },
+      { "text": "업무 시간과 휴식 시간을 철저히 지키며 일한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1215,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "self_identity",
+    "question": "30대인 나에게 가장 중요한 키워드는?",
+    "options": [
+      { "text": "성공, 능력, 영향력.", "type": "D" },
+      { "text": "인기, 매력, 즐거움.", "type": "I" },
+      { "text": "평화, 안정, 사랑.", "type": "S" },
+      { "text": "지혜, 성장, 완벽.", "type": "C" }
+    ]
+  },
+
+  {
+    "id": 1216,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "lifestyle_health",
+    "question": "피로가 누적되어 운동을 시작하려고 한다. 나의 선택은?",
+    "options": [
+      { "text": "단기간에 효과를 보는 고강도 크로스핏이나 PT.", "type": "D" },
+      { "text": "친구들과 함께 즐겁게 할 수 있는 줌바 댄스나 테니스.", "type": "I" },
+      { "text": "몸과 마음을 차분하게 이완시키는 요가나 명상.", "type": "S" },
+      { "text": "내 몸 상태를 정밀하게 분석하고 체계적으로 관리하는 필라테스.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1217,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "career_communication",
+    "question": "팀장으로서 팀원에게 싫은 소리(피드백)를 해야 할 때?",
+    "options": [
+      { "text": "빙빙 돌리지 않고 핵심만 명확하게 지적한다.", "type": "D" },
+      { "text": "칭찬을 먼저 하고 기분 상하지 않게 부드럽게 이야기한다.", "type": "I" },
+      { "text": "혹시 상처받을까 봐 고민하다가 최대한 조심스럽게 말한다.", "type": "S" },
+      { "text": "구체적인 근거와 데이터를 제시하며 논리적으로 설명한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1218,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "social_gathering",
+    "question": "주말 브런치 모임, 메뉴를 정하지 못하고 있다.",
+    "options": [
+      { "text": "\"여기 파스타가 제일 유명해. 이거 먹자.\" 내가 결정한다.", "type": "D" },
+      { "text": "\"이것도 맛있겠고 저것도 맛있겠다! 다 시켜서 나눠 먹자!\"", "type": "I" },
+      { "text": "\"너희 먹고 싶은 거 먹자.\" 대세를 따른다.", "type": "S" },
+      { "text": "참석자들의 알레르기 유무와 예산을 고려해 최적의 메뉴를 추천한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1219,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "finance_spending",
+    "question": "고가의 가전제품(식기세척기, 건조기 등)을 구매하려 한다.",
+    "options": [
+      { "text": "성능이 제일 좋고 신상인 최고급 모델을 바로 산다.", "type": "D" },
+      { "text": "디자인이 예쁘고 인테리어와 잘 어울리는 것을 고른다.", "type": "I" },
+      { "text": "주변 맘카페나 지인들에게 물어보고 검증된 제품을 산다.", "type": "S" },
+      { "text": "에너지 효율 등급, AS 기간, 스펙을 꼼꼼히 비교한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1220,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "parenting_discipline",
+    "question": "아이가 숙제를 안 하고 게임만 하고 있다.",
+    "options": [
+      { "text": "\"지금 당장 꺼. 약속 안 지키면 게임기 압수야.\"", "type": "D" },
+      { "text": "\"엄마랑 이거 다 하고 맛있는 거 먹을까?\" 달래서 시킨다.", "type": "I" },
+      { "text": "스스로 할 때까지 믿고 기다려주거나 조용히 옆에 앉는다.", "type": "S" },
+      { "text": "하루 게임 시간과 숙제 시간을 정해서 규칙을 만든다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1221,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "career_promotion",
+    "question": "나보다 늦게 입사한 후배가 먼저 승진했다.",
+    "options": [
+      { "text": "인정할 수 없다. 성과를 정리해서 상사와 면담을 요청한다.", "type": "D" },
+      { "text": "겉으로는 축하해주지만 속으로는 자존심이 상해 술을 마신다.", "type": "I" },
+      { "text": "내가 부족한 점이 있었겠지... 하며 조용히 삭인다.", "type": "S" },
+      { "text": "승진 평가 기준을 분석하고 다음 평가를 전략적으로 준비한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1222,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "relationship_inlaws",
+    "question": "시댁(또는 처가) 식구들과의 모임이 부담스럽다.",
+    "options": [
+      { "text": "할 말은 하고 산다. 부당한 요구는 그 자리에서 거절한다.", "type": "D" },
+      { "text": "분위기 메이커 역할을 하며 즐겁게 넘기려 노력한다.", "type": "I" },
+      { "text": "불편해도 꾹 참고 며느리/사위 도리를 다한다.", "type": "S" },
+      { "text": "방문 횟수와 체류 시간을 정해놓고 감정 소모를 최소화한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1223,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "self_development",
+    "question": "주말에 자기계발 강의를 듣는다면?",
+    "options": [
+      { "text": "부동산 경매나 주식 투자 실전반 등 수익 창출 강의.", "type": "D" },
+      { "text": "와인 테이스팅이나 플라워 클래스 등 사교 모임.", "type": "I" },
+      { "text": "심리 상담이나 힐링을 위한 마음 챙김 워크숍.", "type": "S" },
+      { "text": "외국어 자격증이나 코딩 등 업무 스킬 향상 과정.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1224,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "friendship_conflict",
+    "question": "친한 친구가 내 험담을 하고 다닌다는 걸 알게 됐다.",
+    "options": [
+      { "text": "당장 전화를 걸어 사실인지 확인하고 따진다.", "type": "D" },
+      { "text": "배신감에 다른 친구들에게 하소연하고 관계를 끊는다.", "type": "I" },
+      { "text": "너무 충격받아서 혼자 끙끙 앓으며 거리를 둔다.", "type": "S" },
+      { "text": "누구에게 무슨 말을 했는지 증거를 확보하고 대처한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1225,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "lifestyle_fashion",
+    "question": "출근룩(OOTD)을 고르는 기준은?",
+    "options": [
+      { "text": "커리어 우먼처럼 보이고 힘이 느껴지는 정장 스타일.", "type": "D" },
+      { "text": "유행하는 아이템이나 화사하고 눈에 띄는 스타일.", "type": "I" },
+      { "text": "튀지 않고 편안하며 무난한 스타일.", "type": "S" },
+      { "text": "소재가 좋고 오래 입을 수 있는 클래식한 스타일.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1226,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "work_life_balance",
+    "question": "야근이 계속되어 개인 시간이 전혀 없다.",
+    "options": [
+      { "text": "업무 효율을 높여서 어떻게든 칼퇴근을 사수한다.", "type": "D" },
+      { "text": "동료들과 야식 시켜 먹으며 으쌰으쌰 버틴다.", "type": "I" },
+      { "text": "힘들지만 책임감 때문에 묵묵히 일을 다 한다.", "type": "S" },
+      { "text": "업무량 조정을 요청하거나 이직을 진지하게 고려한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1227,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "relationship_marriage",
+    "question": "배우자가 집안일을 도와주지 않을 때?",
+    "options": [
+      { "text": "\"이거 안 치워?\" 강력하게 지시하고 시킨다.", "type": "D" },
+      { "text": "\"자기가 해주면 너무 고마울 것 같아~\" 애교 작전.", "type": "I" },
+      { "text": "잔소리해서 싸우느니 그냥 내가 치운다.", "type": "S" },
+      { "text": "가사 분담표를 만들어서 냉장고에 붙여둔다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1228,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "finance_investment",
+    "question": "주식 시장이 폭락하고 있다. 나의 대처는?",
+    "options": [
+      { "text": "위기는 기회다! 과감하게 추가 매수(물타기)한다.", "type": "D" },
+      { "text": "불안해서 뉴스나 유튜브를 계속 찾아보고 지인과 얘기한다.", "type": "I" },
+      { "text": "더 떨어질까 봐 무섭지만 일단 존버(버티기)한다.", "type": "S" },
+      { "text": "기업 가치를 다시 분석하고 손절매 라인을 지킨다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1229,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "social_network",
+    "question": "SNS에 올릴 사진을 고를 때?",
+    "options": [
+      { "text": "내가 제일 잘 나오고 능력 있어 보이는 사진.", "type": "D" },
+      { "text": "사람들이 '좋아요'를 많이 누를 만한 핫한 사진.", "type": "I" },
+      { "text": "일상의 소소한 행복이 담긴 자연스러운 사진.", "type": "S" },
+      { "text": "구도와 색감이 완벽하게 보정된 퀄리티 높은 사진.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1230,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "lifestyle_home",
+    "question": "갑자기 손님이 집에 온다고 연락이 왔다.",
+    "options": [
+      { "text": "눈에 보이는 큰 짐들만 안방에 몰아넣고 치운다.", "type": "D" },
+      { "text": "청소는 대충 하고 맛있는 배달 음식을 주문한다.", "type": "I" },
+      { "text": "당황스럽지만 거절 못 하고 급하게 청소한다.", "type": "S" },
+      { "text": "지금은 곤란하다고 정중하게 거절하거나 시간을 미룬다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1231,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "career_change",
+    "question": "지금 하는 일이 적성에 맞지 않는 것 같다.",
+    "options": [
+      { "text": "내 사업을 하거나 완전히 새로운 분야로 이직한다.", "type": "D" },
+      { "text": "인맥을 활용해 다른 회사나 직무를 알아본다.", "type": "I" },
+      { "text": "월급은 중요하니까 일단 다니면서 취미로 해소한다.", "type": "S" },
+      { "text": "적성 검사를 다시 해보고 커리어 로드맵을 수정한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1232,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "relationship_single",
+    "question": "소개팅 앱을 사용해 볼까 고민 중이다.",
+    "options": [
+      { "text": "조건 좋은 사람을 만나기 위해 유료 멤버십도 결제한다.", "type": "D" },
+      { "text": "새로운 사람 만나는 건 재밌으니까 가볍게 시작한다.", "type": "I" },
+      { "text": "이상한 사람 만날까 봐 무서워서 망설인다.", "type": "S" },
+      { "text": "앱의 신뢰도와 후기를 꼼꼼히 검색해 보고 결정한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1233,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "lifestyle_travel",
+    "question": "해외여행 중 짐을 잃어버렸다.",
+    "options": [
+      { "text": "항공사 카운터에 가서 강력하게 항의하고 보상을 요구한다.", "type": "D" },
+      { "text": "SNS에 '망했다'고 올리고 현지에서 쇼핑할 생각에 신난다.", "type": "I" },
+      { "text": "당황해서 울먹거리거나 동행자에게 의지한다.", "type": "S" },
+      { "text": "여행자 보험 약관을 확인하고 분실 신고서를 작성한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1234,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "parenting_education",
+    "question": "자녀의 영어 유치원(또는 학원)을 선택할 때?",
+    "options": [
+      { "text": "아웃풋이 확실하고 명문대 진학률이 높은 곳.", "type": "D" },
+      { "text": "아이가 즐겁게 놀면서 배우고 체험 활동이 많은 곳.", "type": "I" },
+      { "text": "선생님이 따뜻하게 케어해주고 아이가 스트레스 안 받는 곳.", "type": "S" },
+      { "text": "커리큘럼이 체계적이고 교사 자격이 검증된 곳.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1235,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "work_meeting",
+    "question": "회의 중에 상사가 말도 안 되는 주장을 한다.",
+    "options": [
+      { "text": "\"그건 현실적으로 불가능합니다.\" 반박한다.", "type": "D" },
+      { "text": "분위기 싸해질까 봐 적당히 맞장구치며 넘어간다.", "type": "I" },
+      { "text": "속으로는 아니라고 생각하지만 조용히 듣고 있는다.", "type": "S" },
+      { "text": "그 주장의 오류를 증명할 자료를 찾아 나중에 보고한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1236,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "friendship_gift",
+    "question": "친구 결혼식 축의금, 얼마를 낼까?",
+    "options": [
+      { "text": "친하면 많이, 안 친하면 적게. 내 기준대로 낸다.", "type": "D" },
+      { "text": "다른 친구들은 얼마 내는지 물어보고 비슷하게 낸다.", "type": "I" },
+      { "text": "밥값보다는 더 내야지... 하며 넉넉하게 준비한다.", "type": "S" },
+      { "text": "받은 만큼 낸다. 장부를 확인하고 정확하게 계산한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1237,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "career_leadership",
+    "question": "새로운 프로젝트를 맡아 팀을 꾸려야 한다.",
+    "options": [
+      { "text": "일 잘하고 성과 잘 내는 '어벤져스' 팀을 만든다.", "type": "D" },
+      { "text": "성격 좋고 분위기 잘 띄우는 사람들을 모은다.", "type": "I" },
+      { "text": "마음 잘 맞고 트러블 없는 순둥한 사람들을 뽑는다.", "type": "S" },
+      { "text": "각 분야의 전문성을 갖춘 실무자 위주로 구성한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1238,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "self_identity",
+    "question": "30대가 되어 가장 듣기 싫은 말은?",
+    "options": [
+      { "text": "\"일처리가 왜 이래?\" 무능하다는 말.", "type": "D" },
+      { "text": "\"재미없다.\" 매력 없다는 말.", "type": "I" },
+      { "text": "\"너 때문에 불편해.\" 이기적이라는 말.", "type": "S" },
+      { "text": "\"제대로 알아보고 한 거 맞아?\" 허술하다는 말.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1239,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "lifestyle_interior",
+    "question": "이사 갈 집 인테리어 컨셉을 정한다면?",
+    "options": [
+      { "text": "고급 자재를 사용한 럭셔리 호텔 스타일.", "type": "D" },
+      { "text": "지인들을 초대해 홈파티 하기 좋은 카페 스타일.", "type": "I" },
+      { "text": "포근하고 아늑해서 쉴 수 있는 내추럴 스타일.", "type": "S" },
+      { "text": "수납이 완벽하고 동선이 효율적인 미니멀 스타일.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1240,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "relationship_conflict",
+    "question": "배우자와 싸우고 냉전 중이다.",
+    "options": [
+      { "text": "누가 이기나 해보자. 먼저 사과할 때까지 말 안 건다.", "type": "D" },
+      { "text": "답답해서 내가 먼저 말을 걸고 푼다.", "type": "I" },
+      { "text": "눈치 보며 상대방 기분이 풀리길 기다린다.", "type": "S" },
+      { "text": "싸운 원인을 생각해 보고 대화로 풀 타이밍을 본다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1241,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "career_remote",
+    "question": "재택근무 중, 메신저 알람이 울리지 않아도...",
+    "options": [
+      { "text": "할 일만 다 하면 터치하지 말아야 한다고 생각한다.", "type": "D" },
+      { "text": "동료들과 수시로 대화하며 생존 신고를 한다.", "type": "I" },
+      { "text": "혹시 급한 연락일까 봐 화장실 갈 때도 폰을 챙긴다.", "type": "S" },
+      { "text": "업무 시작과 종료 보고를 철저히 한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1242,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "finance_planning",
+    "question": "연말정산 시즌이 다가왔다.",
+    "options": [
+      { "text": "세무사나 전문가에게 맡겨서 최대한 환급받는다.", "type": "D" },
+      { "text": "대충 하고 남들이 얼마나 받는지 물어본다.", "type": "I" },
+      { "text": "회사에서 하라는 대로 서류만 챙겨서 낸다.", "type": "S" },
+      { "text": "공제 항목을 꼼꼼히 챙겨서 직접 계산해 본다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1243,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "social_pressure",
+    "question": "결혼식장에서 \"너는 언제 갈래?\"라는 질문을 받았다.",
+    "options": [
+      { "text": "\"알아서 할게요.\" 정색하며 대화를 끊는다.", "type": "D" },
+      { "text": "\"좋은 사람 있으면 소개 좀 시켜주세요!\" 웃어넘긴다.", "type": "I" },
+      { "text": "멋쩍게 웃으며 자리를 피한다.", "type": "S" },
+      { "text": "비혼의 장점이 무엇인지 논리적으로 설명하고 싶다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1244,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "lifestyle_diet",
+    "question": "다이어트 식단을 짤 때?",
+    "options": [
+      { "text": "원푸드 다이어트나 단식 등 효과 빠른 방법을 쓴다.", "type": "D" },
+      { "text": "맛있는 샐러드 맛집을 찾아다니며 즐겁게 한다.", "type": "I" },
+      { "text": "엄마가 해주시는 건강식 위주로 먹는다.", "type": "S" },
+      { "text": "탄단지(탄수화물, 단백질, 지방) 비율을 계산해 도시락을 싼다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1245,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "work_relationship",
+    "question": "회사 후배가 업무 고민 상담을 요청했다.",
+    "options": [
+      { "text": "\"이렇게 하면 돼.\" 명확한 해결책을 제시한다.", "type": "D" },
+      { "text": "술 한잔 사주며 \"힘들지? 나도 그랬어.\" 공감해 준다.", "type": "I" },
+      { "text": "끝까지 들어주고 \"잘할 수 있을 거야\" 격려한다.", "type": "S" },
+      { "text": "문제의 원인이 무엇인지 객관적으로 분석해 준다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1246,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "parenting_social",
+    "question": "아이 친구 엄마들과의 모임, 나의 포지션은?",
+    "options": [
+      { "text": "모임 장소와 시간을 정하고 회비를 걷는 총무.", "type": "D" },
+      { "text": "단톡방에서 가장 말을 많이 하고 분위기를 띄우는 멤버.", "type": "I" },
+      { "text": "주로 듣는 편이고 리액션을 잘해주는 멤버.", "type": "S" },
+      { "text": "교육 정보나 학원 정보를 공유해 주는 정보통.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1247,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "career_burnout",
+    "question": "번아웃 증후군이 온 것 같다.",
+    "options": [
+      { "text": "이참에 퇴사하고 새로운 도전을 준비한다.", "type": "D" },
+      { "text": "연차 내고 여행을 떠나 리프레시한다.", "type": "I" },
+      { "text": "주말에 집에서 아무것도 안 하고 푹 쉰다.", "type": "S" },
+      { "text": "업무 우선순위를 재조정하고 효율적인 방법을 찾는다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1248,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "friendship_trip",
+    "question": "친구들과 여행 가서 트러블이 생겼다.",
+    "options": [
+      { "text": "\"불만 있으면 지금 말해.\" 직설적으로 푼다.", "type": "D" },
+      { "text": "농담으로 분위기를 풀고 화해를 유도한다.", "type": "I" },
+      { "text": "내가 조금 손해 보더라도 참는 게 낫다고 생각한다.", "type": "S" },
+      { "text": "각자 원하는 여행 스타일이 달랐음을 인정하고 따로 다닌다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1249,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "lifestyle_luxury",
+    "question": "백화점에서 마음에 드는 구두를 발견했다.",
+    "options": [
+      { "text": "사이즈 있으면 바로 결제. 나를 위한 선물이다.", "type": "D" },
+      { "text": "직원 언니 말에 넘어가서 어울리는 옷까지 같이 산다.", "type": "I" },
+      { "text": "너무 비싼 것 같아서 비슷한 디자인을 인터넷으로 찾는다.", "type": "S" },
+      { "text": "집에 있는 옷들과 매치할 수 있는지 생각해 보고 산다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1250,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "relationship_inlaws",
+    "question": "명절에 시댁(처가)에 내려가지 않고 여행을 가고 싶다.",
+    "options": [
+      { "text": "\"이번엔 여행 갈게요.\" 통보한다.", "type": "D" },
+      { "text": "\"어머니~ 저희 이번에만 봐주세요~\" 애교로 설득한다.", "type": "I" },
+      { "text": "말도 못 꺼내고 눈치만 보다가 결국 내려간다.", "type": "S" },
+      { "text": "합리적인 이유(회사 일정 등)를 만들어 설명한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1251,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "career_skills",
+    "question": "회사에서 엑셀(Excel) 능력이 부족해 애를 먹고 있다.",
+    "options": [
+      { "text": "잘하는 사람에게 돈을 주고라도 배우거나 맡긴다.", "type": "D" },
+      { "text": "동료에게 커피 사주면서 가르쳐 달라고 부탁한다.", "type": "I" },
+      { "text": "남아서 혼자 끙끙대며 어떻게든 해낸다.", "type": "S" },
+      { "text": "인터넷 강의나 책을 보며 함수부터 차근차근 공부한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1252,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "self_reflection",
+    "question": "30대인 내 인생, 잘 살고 있는 걸까?",
+    "options": [
+      { "text": "남들보다 앞서나가고 있다면 잘 사는 것이다.", "type": "D" },
+      { "text": "즐겁고 행복하면 그만이다.", "type": "I" },
+      { "text": "큰 사고 없이 평온하면 다행이다.", "type": "S" },
+      { "text": "계획대로 목표를 달성하고 있는지 점검해 본다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1253,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "finance_spending",
+    "question": "월급 날이다. 가장 먼저 하는 일은?",
+    "options": [
+      { "text": "사고 싶었던 물건을 지르거나 맛있는 걸 사 먹는다.", "type": "D" },
+      { "text": "친구들에게 한턱 쏘겠다고 연락한다.", "type": "I" },
+      { "text": "부모님께 용돈을 드리거나 생활비를 이체한다.", "type": "S" },
+      { "text": "카드값과 고정 지출을 정리하고 저축액을 확인한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1254,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "work_delegation",
+    "question": "내가 해야 할 일이 너무 많아 야근이 불가피하다.",
+    "options": [
+      { "text": "팀원들에게 일을 분배하고 지시한다.", "type": "D" },
+      { "text": "\"나 좀 도와줘 ㅠㅠ\" 동료들에게 도움을 요청한다.", "type": "I" },
+      { "text": "민폐 끼치기 싫어서 혼자 다 한다.", "type": "S" },
+      { "text": "중요도에 따라 순서를 정하고 스케줄을 조정한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1255,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "lifestyle_weekend",
+    "question": "황금 연휴가 생겼다. 무엇을 할까?",
+    "options": [
+      { "text": "해외여행이나 평소 못 해본 액티비티를 즐긴다.", "type": "D" },
+      { "text": "친구들과 파티를 하거나 핫플 투어를 간다.", "type": "I" },
+      { "text": "밀린 잠을 자고 집에서 푹 쉰다.", "type": "S" },
+      { "text": "밀린 집안일이나 독서, 공부 등 생산적인 일을 한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1256,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "parenting_discipline",
+    "question": "아이가 공공장소에서 떼를 쓰며 운다.",
+    "options": [
+      { "text": "\"뚝!\" 단호한 표정으로 제압하고 데리고 나온다.", "type": "D" },
+      { "text": "주변 시선 때문에 당황해서 어쩔 줄 몰라 한다.", "type": "I" },
+      { "text": "아이를 안아주며 진정될 때까지 달래준다.", "type": "S" },
+      { "text": "왜 우는지 원인을 파악하고 설명해 준다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1257,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "career_communication",
+    "question": "중요한 프레젠테이션을 앞두고 있다.",
+    "options": [
+      { "text": "자신감 있게 청중을 압도하겠다는 마음으로 임한다.", "type": "D" },
+      { "text": "유머와 제스처를 섞어가며 재미있게 발표한다.", "type": "I" },
+      { "text": "떨리지만 대본을 열심히 외워서 차분하게 말한다.", "type": "S" },
+      { "text": "예상 질문까지 준비하여 완벽한 자료를 만든다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1258,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "relationship_single",
+    "question": "결혼정보회사(결정사) 가입을 권유받았다.",
+    "options": [
+      { "text": "조건 확실한 사람을 만나고 싶어 가입한다.", "type": "D" },
+      { "text": "새로운 만남은 언제나 환영! 가볍게 생각한다.", "type": "I" },
+      { "text": "인위적인 만남은 싫어서 거절한다.", "type": "S" },
+      { "text": "성혼율과 가입비, 매칭 시스템을 따져본다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1259,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "career_promotion",
+    "question": "연봉 협상 시, 내가 생각한 금액보다 적게 제안받았다.",
+    "options": [
+      { "text": "\"이 금액 이하는 어렵습니다.\" 단호하게 말한다.", "type": "D" },
+      { "text": "\"조금만 더 올려주시면 더 열심히 할게요!\" 넉살 좋게 말한다.", "type": "I" },
+      { "text": "실망스럽지만 알겠다고 하고 사인한다.", "type": "S" },
+      { "text": "내 성과와 업계 평균 데이터를 제시하며 재협상한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1260,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "friendship_conflict",
+    "question": "친구가 약속 시간에 1시간이나 늦었다.",
+    "options": [
+      { "text": "\"시간 낭비했네. 간다.\" 화내고 집에 간다.", "type": "D" },
+      { "text": "\"늦은 만큼 네가 밥 사!\" 하고 푼다.", "type": "I" },
+      { "text": "무슨 일 있었냐고 걱정하며 기다린다.", "type": "S" },
+      { "text": "다음부터는 늦지 말라고 약속 시간을 재확인한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1261,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "lifestyle_health",
+    "question": "건강을 위해 영양제를 챙겨 먹으려 한다.",
+    "options": [
+      { "text": "남들이 좋다는 거 종류별로 다 사서 한 번에 먹는다.", "type": "D" },
+      { "text": "맛있는 젤리 형태나 유행하는 제품을 산다.", "type": "I" },
+      { "text": "약사님이 추천해 주는 대로 산다.", "type": "S" },
+      { "text": "성분 함량과 섭취 방법을 꼼꼼히 읽어보고 산다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1262,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "career_burnout",
+    "question": "회사 생활에 회의감이 든다.",
+    "options": [
+      { "text": "당장 그만두고 싶다고 사직서를 쓴다.", "type": "D" },
+      { "text": "동료들과 수다 떨며 스트레스를 푼다.", "type": "I" },
+      { "text": "시간이 지나면 괜찮아지겠지 하며 참는다.", "type": "S" },
+      { "text": "이직 준비를 위해 자격증 공부를 시작한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1263,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "social_gathering",
+    "question": "모임에서 어색한 사람과 단둘이 남았다.",
+    "options": [
+      { "text": "대화를 주도하거나 폰을 보며 할 일을 한다.", "type": "D" },
+      { "text": "어색함을 못 견뎌 아무 말이나 계속한다.", "type": "I" },
+      { "text": "상대방이 말 걸어줄 때까지 가만히 있는다.", "type": "S" },
+      { "text": "질문을 던지며 공통 관심사를 탐색한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1264,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "lifestyle_home",
+    "question": "집안일 도우미(가사 도우미)를 쓰려고 한다.",
+    "options": [
+      { "text": "알아서 잘 해주는 베테랑을 원한다.", "type": "D" },
+      { "text": "성격 좋고 말동무가 되어줄 수 있는 분.", "type": "I" },
+      { "text": "조용하고 성실하게 일해주시는 분.", "type": "S" },
+      { "text": "청소 구역과 방법을 매뉴얼로 정리해 전달한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1265,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "self_identity",
+    "question": "나에게 '성공'이란?",
+    "options": [
+      { "text": "경제적 자유와 사회적 지위.", "type": "D" },
+      { "text": "좋은 사람들과 행복하게 사는 것.", "type": "I" },
+      { "text": "걱정 없이 평온한 일상.", "type": "S" },
+      { "text": "계획한 목표를 하나씩 달성해가는 과정.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1266,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "work_life_balance",
+    "question": "중요한 미팅이 있는 아침, 아이가 갑자기 열이 나고 아프다.",
+    "options": [
+      { "text": "친정엄마나 시터에게 바로 연락해 해결하고 출근한다.", "type": "D" },
+      { "text": "상사에게 상황을 설명하고 양해를 구하며 발을 동동 구른다.", "type": "I" },
+      { "text": "아픈 아이가 눈에 밟혀서 연차를 내고 내가 돌본다.", "type": "S" },
+      { "text": "병원 오픈 시간을 확인하고 남편과 시간 단위로 케어 일정을 짠다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1267,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "career_growth",
+    "question": "연말 인사 평가에서 내가 생각한 것보다 낮은 고과를 받았다.",
+    "options": [
+      { "text": "평가 근거가 무엇인지 상사에게 면담을 요청해 따진다.", "type": "D" },
+      { "text": "속상한 마음에 동기들을 불러 술 마시며 회사를 욕한다.", "type": "I" },
+      { "text": "억울하지만 다음엔 더 잘해야지 생각하며 삭힌다.", "type": "S" },
+      { "text": "평가 항목별 점수를 분석하고 이의 신청 절차를 확인한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1268,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "lifestyle_finance",
+    "question": "여유 자금이 생겨 투자를 하려고 한다.",
+    "options": [
+      { "text": "수익률이 높은 급등주나 가상화폐에 과감하게 넣는다.", "type": "D" },
+      { "text": "요즘 뜨는 핫한 주식이나 친구가 추천해 준 종목을 산다.", "type": "I" },
+      { "text": "원금 손실 없는 예금이나 적금에 안전하게 묶어둔다.", "type": "S" },
+      { "text": "기업 재무제표와 시장 동향을 분석해 분산 투자한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1269,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "relationship_marriage",
+    "question": "남편(배우자)이 약속한 집안일을 자꾸 미룬다.",
+    "options": [
+      { "text": "\"지금 당장 해.\" 화를 내며 강하게 지시한다.", "type": "D" },
+      { "text": "\"자기가 해주면 집이 반짝반짝할 텐데~\" 칭찬으로 구슬린다.", "type": "I" },
+      { "text": "잔소리해서 싸우느니 답답한 내가 그냥 해버린다.", "type": "S" },
+      { "text": "왜 안 하는지 이유를 묻고 규칙과 벌칙을 정한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1270,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "friendship_social",
+    "question": "오랜만에 만난 친구가 계속 자기자랑만 늘어놓는다.",
+    "options": [
+      { "text": "듣다 지쳐서 \"그래서 하고 싶은 말이 뭐야?\" 말을 자른다.", "type": "D" },
+      { "text": "\"우와 정말? 좋겠다!\" 영혼 없이 리액션해주며 맞장구친다.", "type": "I" },
+      { "text": "기분 나쁘지만 관계가 깨질까 봐 끝까지 웃으며 들어준다.", "type": "S" },
+      { "text": "저 친구가 자존감이 낮은가 보다... 속으로 분석한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1271,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "work_life",
+    "question": "회사에 새로운 업무 시스템이 도입되었다.",
+    "options": [
+      { "text": "일단 이것저것 눌러보며 빠르게 적응하려 한다.", "type": "D" },
+      { "text": "옆 자리 동료에게 \"이거 어떻게 하는 거야?\" 물어본다.", "type": "I" },
+      { "text": "익숙한 예전 방식이 편한데... 하며 변화를 힘들어한다.", "type": "S" },
+      { "text": "매뉴얼을 정독하고 기능 하나하나를 완벽히 숙지한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1272,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "parenting_social",
+    "question": "아이 친구 엄마 모임(조리원 동기 등)에 나갔다.",
+    "options": [
+      { "text": "모임 장소를 정하고 대화를 주도하는 리더 역할을 한다.", "type": "D" },
+      { "text": "수다를 떨며 분위기를 띄우고 정보를 공유한다.", "type": "I" },
+      { "text": "주로 듣는 편이며 튀지 않게 조용히 있는다.", "type": "S" },
+      { "text": "우리 아이에게 필요한 교육 정보만 선별해서 듣는다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1273,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "self_care",
+    "question": "육아와 일에 지쳐 번아웃이 온 것 같다. 해소 방법은?",
+    "options": [
+      { "text": "쇼핑을 하거나 맛있는 걸 먹으며 즉각적인 보상을 준다.", "type": "D" },
+      { "text": "친구들을 만나 수다를 떨며 스트레스를 푼다.", "type": "I" },
+      { "text": "혼자 조용히 잠을 자거나 멍하니 있는다.", "type": "S" },
+      { "text": "내 상태를 체크하고 심리 상담이나 관련 서적을 읽는다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1274,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "relationship_family",
+    "question": "시댁(또는 친정) 식구들이 예고 없이 방문하겠다고 한다.",
+    "options": [
+      { "text": "\"오늘은 곤란해요.\" 확실하게 거절 의사를 밝힌다.", "type": "D" },
+      { "text": "당황스럽지만 오시면 즐겁게 맞이하려고 노력한다.", "type": "I" },
+      { "text": "거절 못 하고 부랴부랴 청소하고 음식을 준비한다.", "type": "S" },
+      { "text": "방문 목적과 머무는 시간을 정확히 확인한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1275,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "work_relationship",
+    "question": "직장 후배가 업무 실수를 반복한다.",
+    "options": [
+      { "text": "\"정신 안 차려?\" 따끔하게 혼내고 경고한다.", "type": "D" },
+      { "text": "\"무슨 일 있어?\" 개인적인 사정이 있는지 걱정해 준다.", "type": "I" },
+      { "text": "싫은 소리 하기 힘들어서 내가 몰래 수습해 준다.", "type": "S" },
+      { "text": "실수 패턴을 분석해서 체크리스트를 만들어 준다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1276,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "career_negotiation",
+    "question": "이직 면접에서 연봉 협상을 하게 되었다.",
+    "options": [
+      { "text": "내가 원하는 금액을 당당하게 제시하고 밀어붙인다.", "type": "D" },
+      { "text": "웃으면서 \"잘 부탁드립니다~\" 하며 분위기를 좋게 만든다.", "type": "I" },
+      { "text": "회사 내규에 따르겠다고 소극적으로 답한다.", "type": "S" },
+      { "text": "업계 평균과 내 성과 데이터를 근거로 제시한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1277,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "lifestyle_home",
+    "question": "주말 아침, 집안일이 산더미처럼 쌓여있다.",
+    "options": [
+      { "text": "가족들에게 각자 할 일을 배분하고 감독한다.", "type": "D" },
+      { "text": "노래 크게 틀어놓고 춤추면서 후다닥 해치운다.", "type": "I" },
+      { "text": "힘드니까 조금만 하고 쉬엄쉬엄 한다.", "type": "S" },
+      { "text": "세탁기 돌리는 동안 설거지하기 등 효율적인 동선을 짠다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1278,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "work_style",
+    "question": "동료가 업무 처리가 너무 느려서 답답하다.",
+    "options": [
+      { "text": "\"언제까지 됩니까?\" 계속 재촉하고 압박한다.", "type": "D" },
+      { "text": "농담을 섞어가며 \"우리 빨리 끝내고 커피 마셔요!\" 독려한다.", "type": "I" },
+      { "text": "재촉하면 부담 가질까 봐 기다려준다.", "type": "S" },
+      { "text": "어느 부분에서 막히는지 확인하고 효율적인 방법을 알려준다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1279,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "lifestyle_consumption",
+    "question": "새 차(또는 가전제품)를 사려고 매장에 갔다.",
+    "options": [
+      { "text": "가장 성능 좋고 최신 모델로 바로 결정한다.", "type": "D" },
+      { "text": "디자인이 예쁘고 색상이 마음에 드는 걸 고른다.", "type": "I" },
+      { "text": "딜러나 직원이 추천해 주는 무난한 모델을 산다.", "type": "S" },
+      { "text": "연비, AS 조건, 가격 대비 성능을 꼼꼼히 따진다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1280,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "relationship_conflict",
+    "question": "남편(연인)과 말다툼을 하고 냉전 중이다.",
+    "options": [
+      { "text": "내가 이겨야 한다. 먼저 사과할 때까지 절대 말 안 건다.", "type": "D" },
+      { "text": "답답하고 어색해서 내가 먼저 말을 걸고 푼다.", "type": "I" },
+      { "text": "상대방 눈치를 보며 기분이 풀리길 기다린다.", "type": "S" },
+      { "text": "감정이 가라앉은 후 대화로 잘잘못을 따져본다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1281,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "self_identity",
+    "question": "누군가 나에게 \"동안이시네요\"라고 칭찬했다.",
+    "options": [
+      { "text": "\"제가 관리를 좀 하죠.\" 당당하게 인정한다.", "type": "D" },
+      { "text": "\"어머 정말요? 감사해요!\" 활짝 웃으며 좋아한다.", "type": "I" },
+      { "text": "\"아니에요~ 화장발이에요.\" 부끄러워하며 손사래 친다.", "type": "S" },
+      { "text": "빈말인 걸 알지만 예의상 감사합니다라고 한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1282,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "social_network",
+    "question": "단체 카톡방(학부모, 회사 동기 등)에서의 나는?",
+    "options": [
+      { "text": "필요한 용건만 간단히 말하고 읽씹한다.", "type": "D" },
+      { "text": "이모티콘을 남발하며 대화를 주도하고 리액션한다.", "type": "I" },
+      { "text": "다른 사람들 말에 호응해주고 대세를 따른다.", "type": "S" },
+      { "text": "알림을 꺼두고 나중에 몰아서 내용을 확인한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1283,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "self_development",
+    "question": "자기계발을 위해 학원을 등록한다면?",
+    "options": [
+      { "text": "단기간에 자격증을 따거나 승진에 도움 되는 과정.", "type": "D" },
+      { "text": "사람들과 어울려 배우는 댄스나 와인 클래스.", "type": "I" },
+      { "text": "심신의 안정을 주는 요가나 명상 클래스.", "type": "S" },
+      { "text": "체계적인 커리큘럼이 있는 외국어 회화나 코딩.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1284,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "career_resilience",
+    "question": "상사에게 공개적으로 지적을 받았다.",
+    "options": [
+      { "text": "기분 나쁘지만 \"시정하겠습니다\" 하고 바로 업무에 복귀한다.", "type": "D" },
+      { "text": "얼굴이 빨개지고 창피해서 하루 종일 의기소침하다.", "type": "I" },
+      { "text": "상사가 나를 싫어하나 싶어서 걱정한다.", "type": "S" },
+      { "text": "지적받은 내용이 타당한지 객관적으로 분석한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1285,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "lifestyle_weekend",
+    "question": "주말에 혼자만의 시간이 생겼다.",
+    "options": [
+      { "text": "평소 미뤄뒀던 대청소를 하거나 생산적인 일을 한다.", "type": "D" },
+      { "text": "친구에게 전화해서 나오라고 한다.", "type": "I" },
+      { "text": "집에서 넷플릭스 보며 뒹굴뒹굴 쉰다.", "type": "S" },
+      { "text": "카페에 가서 책을 읽거나 다이어리를 정리한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1286,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "relationship_family",
+    "question": "부모님(또는 시부모님)이 내 육아 방식에 간섭하신다.",
+    "options": [
+      { "text": "\"제 방식대로 할게요.\" 단호하게 선을 긋는다.", "type": "D" },
+      { "text": "\"네네~\" 대답만 하고 내 맘대로 한다.", "type": "I" },
+      { "text": "도와주시는 게 감사해서 웬만하면 따른다.", "type": "S" },
+      { "text": "요즘 육아 전문가들의 의견을 근거로 설명드린다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1287,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "career_leadership",
+    "question": "내가 팀장이 되어 팀을 이끈다면?",
+    "options": [
+      { "text": "성과 중심! 목표 달성을 위해 팀원들을 독려한다.", "type": "D" },
+      { "text": "분위기 중심! 회식도 하고 즐겁게 일하는 팀을 만든다.", "type": "I" },
+      { "text": "화합 중심! 갈등 없이 서로 돕는 팀을 만든다.", "type": "S" },
+      { "text": "효율 중심! 명확한 업무 분장과 시스템을 만든다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1288,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "finance_spending",
+    "question": "생각지 못한 보너스를 받았다.",
+    "options": [
+      { "text": "평소 갖고 싶었던 명품백이나 고가 가전을 지른다.", "type": "D" },
+      { "text": "가족이나 친구들에게 \"내가 쏜다!\" 하며 맛있는 걸 산다.", "type": "I" },
+      { "text": "비상금 통장에 고스란히 넣어둔다.", "type": "S" },
+      { "text": "대출금을 상환하거나 투자 통장으로 이체한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1289,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "lifestyle_diet",
+    "question": "결혼식(또는 중요한 행사)을 앞두고 다이어트를 결심했다.",
+    "options": [
+      { "text": "단기간에 뺄 수 있는 굶기나 1일 1식을 한다.", "type": "D" },
+      { "text": "친구랑 내기를 하거나 운동 인증샷을 올리며 한다.", "type": "I" },
+      { "text": "저녁만 조금 줄이는 정도로 무리하지 않는다.", "type": "S" },
+      { "text": "칼로리를 계산하고 식단 앱을 기록하며 체계적으로 한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1290,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "career_skills",
+    "question": "많은 사람들 앞에서 발표(프레젠테이션)를 해야 한다.",
+    "options": [
+      { "text": "자신감 있는 태도로 핵심만 강렬하게 전달한다.", "type": "D" },
+      { "text": "유머를 섞어가며 청중을 웃게 만든다.", "type": "I" },
+      { "text": "너무 떨려서 청심환을 먹고 대본을 읽는다.", "type": "S" },
+      { "text": "완벽한 자료와 예상 질문 답변까지 준비한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1291,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "lifestyle_home",
+    "question": "옷장 정리를 하기로 마음먹었다.",
+    "options": [
+      { "text": "안 입는 옷은 싹 다 갖다 버린다.", "type": "D" },
+      { "text": "추억이 담긴 옷들을 보느라 정리는 뒷전이다.", "type": "I" },
+      { "text": "언젠가 입을 것 같아서 다시 넣어둔다.", "type": "S" },
+      { "text": "계절별, 색깔별로 분류하고 라벨링을 한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1292,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "lifestyle_consumption",
+    "question": "식당에서 주문한 음식에 머리카락이 나왔다.",
+    "options": [
+      { "text": "직원을 불러 바로 컴플레인하고 다시 해달라고 한다.", "type": "D" },
+      { "text": "\"여기 머리카락 나왔어요 ㅠㅠ\" 속상함을 표현한다.", "type": "I" },
+      { "text": "직원이 미안해할까 봐 그냥 건져내고 먹는다.", "type": "S" },
+      { "text": "사진을 찍어두고 환불 규정을 생각한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1293,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "friendship_social",
+    "question": "친구가 연인과 헤어지고 울면서 전화했다.",
+    "options": [
+      { "text": "\"똥차가고 벤츠 온다. 그만 울어.\" 현실 조언을 한다.", "type": "D" },
+      { "text": "\"어떡해 ㅠㅠ 그 자식 진짜 나쁘다!\" 같이 울어준다.", "type": "I" },
+      { "text": "아무 말 없이 묵묵히 들어주고 위로해 준다.", "type": "S" },
+      { "text": "헤어진 이유를 들어보고 상황을 판단한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1294,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "lifestyle_driving",
+    "question": "운전 중(또는 대중교통) 앞에 차가 끼어들었다.",
+    "options": [
+      { "text": "클락션을 빵! 울리고 화를 낸다.", "type": "D" },
+      { "text": "\"아 깜짝이야!\" 혼잣말로 놀란 가슴을 쓸어내린다.", "type": "I" },
+      { "text": "비켜주고 안전거리를 확보한다.", "type": "S" },
+      { "text": "저 차가 법규 위반인지 블랙박스를 확인한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1295,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "work_culture",
+    "question": "회사 워크숍에서 팀 빌딩 활동을 해야 한다.",
+    "options": [
+      { "text": "승부욕을 발휘해서 우리 팀을 1등으로 만든다.", "type": "D" },
+      { "text": "레크리에이션 강사보다 더 신나게 춤추고 논다.", "type": "I" },
+      { "text": "튀지 않게 뒤에서 박수 치며 호응한다.", "type": "S" },
+      { "text": "게임 규칙을 분석하고 전략을 짠다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1296,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "lifestyle_fashion",
+    "question": "나를 위한 옷을 쇼핑할 때 가장 중요하게 보는 것은?",
+    "options": [
+      { "text": "나를 돋보이게 하는 화려하고 세련된 디자인.", "type": "D" },
+      { "text": "유행하는 스타일이나 색감이 예쁜 옷.", "type": "I" },
+      { "text": "편안하게 입을 수 있는 소재와 핏.", "type": "S" },
+      { "text": "가격 대비 품질(가성비)과 마감 처리.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1297,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "work_style",
+    "question": "갑자기 새로운 프로젝트를 맡게 되었다.",
+    "options": [
+      { "text": "\"도전해 보자!\" 의욕적으로 추진한다.", "type": "D" },
+      { "text": "\"이거 하면 승진할까?\" 즐거운 상상을 한다.", "type": "I" },
+      { "text": "\"기존 업무도 많은데...\" 부담스럽고 걱정된다.", "type": "S" },
+      { "text": "프로젝트의 성공 가능성과 리스크를 먼저 따져본다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1298,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "relationship_friendship",
+    "question": "감정 기복이 심한 친구를 대할 때 나는?",
+    "options": [
+      { "text": "\"그래서 결론이 뭐야?\" 핵심만 말하라고 한다.", "type": "D" },
+      { "text": "그 친구 기분에 맞춰주느라 내 에너지를 다 쓴다.", "type": "I" },
+      { "text": "힘들어도 참고 다 받아준다.", "type": "S" },
+      { "text": "감정 쓰레기통이 되기 싫어서 서서히 멀리한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1299,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "finance_planning",
+    "question": "노후 준비에 대한 나의 생각은?",
+    "options": [
+      { "text": "사업 대박이나 투자 성공으로 한방에 해결한다.", "type": "D" },
+      { "text": "아직 멀었잖아. 현재를 즐기는 게 더 중요하다.", "type": "I" },
+      { "text": "국민연금과 개인연금 정도는 꼬박꼬박 붓고 있다.", "type": "S" },
+      { "text": "은퇴 필요 자금을 계산하고 저축 계획을 세운다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1300,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "lifestyle_service",
+    "question": "인테리어 업체(또는 서비스 기사)와 문제가 생겼다.",
+    "options": [
+      { "text": "\"당장 오셔서 해결해 주세요.\" 강력하게 요구한다.", "type": "D" },
+      { "text": "좋게 좋게 말해서 해결하려고 노력한다.", "type": "I" },
+      { "text": "싫은 소리 못 해서 그냥 내가 참고 쓴다.", "type": "S" },
+      { "text": "계약서를 확인하고 하자 보수 기간을 체크한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1301,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "parenting_education",
+    "question": "학부모 상담 기간, 선생님께 궁금한 것은?",
+    "options": [
+      { "text": "우리 아이가 반에서 몇 등인지, 영재성이 있는지.", "type": "D" },
+      { "text": "친구들과 잘 어울리는지, 인기 있는지.", "type": "I" },
+      { "text": "학교 생활에 잘 적응하고 힘든 건 없는지.", "type": "S" },
+      { "text": "학습 태도와 과제 수행 능력.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1302,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "lifestyle_habit",
+    "question": "약속 시간에 늦을 것 같다.",
+    "options": [
+      { "text": "택시를 타고 기사님께 빨리 가달라고 재촉한다.", "type": "D" },
+      { "text": "친구에게 전화해서 \"미안 ㅠㅠ 맛있는 거 살게!\" 한다.", "type": "I" },
+      { "text": "너무 미안해서 가는 내내 안절부절못한다.", "type": "S" },
+      { "text": "도착 예정 시간을 계산해서 정확히 알려준다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1303,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "lifestyle_consumption",
+    "question": "카페에서 주문을 할 때 나는?",
+    "options": [
+      { "text": "\"아아(아이스 아메리카노)요.\" 빠르게 주문한다.", "type": "D" },
+      { "text": "직원에게 \"여기 시그니처가 뭐예요?\" 물어보고 추천받는다.", "type": "I" },
+      { "text": "뒤에 사람 기다릴까 봐 메뉴를 빨리 고른다.", "type": "S" },
+      { "text": "원두 종류와 디카페인 변경 옵션을 꼼꼼히 확인한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1304,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "work_life",
+    "question": "재택근무 중, 아이가 놀아달라고 조른다.",
+    "options": [
+      { "text": "\"엄마 일해야 돼. 나가 있어.\" 방문을 잠근다.", "type": "D" },
+      { "text": "잠깐 놀아주고 다시 일하려고 하지만 계속 논다.", "type": "I" },
+      { "text": "일도 해야 하고 아이도 봐야 하고... 멘붕이 온다.", "type": "S" },
+      { "text": "점심시간과 쉬는 시간을 정확히 알려주고 기다리게 한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1305,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "lifestyle_travel",
+    "question": "휴가 항공권을 예매하려고 한다.",
+    "options": [
+      { "text": "시간대 제일 좋은 국적기로 바로 결제한다.", "type": "D" },
+      { "text": "여행 갈 생각에 설레서 친구랑 통화부터 한다.", "type": "I" },
+      { "text": "남편이나 같이 가는 사람 의견을 먼저 물어본다.", "type": "S" },
+      { "text": "스카이스캐너로 최저가를 비교하고 마일리지 적립을 확인한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1306,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "work_relationship",
+    "question": "마이크로매니징(세세한 간섭)하는 상사를 대할 때?",
+    "options": [
+      { "text": "\"결과만 보시면 되잖아요.\" 불만을 표출한다.", "type": "D" },
+      { "text": "앞에서는 네네 하고 뒤에서는 한 귀로 흘린다.", "type": "I" },
+      { "text": "스트레스받지만 시키는 대로 꼼꼼히 보고한다.", "type": "S" },
+      { "text": "상사가 안심할 수 있게 중간 보고를 선제적으로 한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1307,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "friendship_gift",
+    "question": "지인의 결혼/출산 선물을 고를 때.",
+    "options": [
+      { "text": "현금이 최고! 깔끔하게 봉투로 준다.", "type": "D" },
+      { "text": "사진 찍기 좋고 예쁜 아기 옷이나 커플템.", "type": "I" },
+      { "text": "평소에 필요하다고 했던 걸 기억해 뒀다가 선물한다.", "type": "S" },
+      { "text": "육아 국민템이나 실용적인 소형 가전.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1308,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "career_leadership",
+    "question": "팀 내 갈등이 생겨 분위기가 험악하다.",
+    "options": [
+      { "text": "당사자들을 불러서 담판을 짓게 한다.", "type": "D" },
+      { "text": "회식을 주도해서 술 한잔하며 풀게 한다.", "type": "I" },
+      { "text": "어색해서 눈치만 보며 조용히 일한다.", "type": "S" },
+      { "text": "갈등 원인을 파악하고 업무 분장을 다시 조정한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1309,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "social_network",
+    "question": "SNS(인스타그램)를 하는 이유는?",
+    "options": [
+      { "text": "나의 커리어와 성공적인 삶을 브랜딩하기 위해.", "type": "D" },
+      { "text": "사람들과 소통하고 '좋아요' 받는 재미로.", "type": "I" },
+      { "text": "지인들의 근황을 보고 소소한 일상을 기록하려고.", "type": "S" },
+      { "text": "맛집, 육아, 재테크 정보를 얻기 위한 눈팅용.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1310,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "lifestyle_hobby",
+    "question": "책을 읽는다면 어떤 종류를 선호하나?",
+    "options": [
+      { "text": "성공한 사람들의 자서전이나 자기계발서.", "type": "D" },
+      { "text": "베스트셀러 소설이나 감성 에세이.", "type": "I" },
+      { "text": "마음을 편안하게 해주는 힐링 도서.", "type": "S" },
+      { "text": "전문 지식을 쌓을 수 있는 경제/과학/역사 서적.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1311,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "work_style",
+    "question": "업무 중 치명적인 실수를 발견했다.",
+    "options": [
+      { "text": "바로 상사에게 보고하고 수습책을 제안한다.", "type": "D" },
+      { "text": "동료에게 \"어떡해 ㅠㅠ\" 하며 도움을 요청한다.", "type": "I" },
+      { "text": "심장이 철렁 내려앉아 혼자 몰래 고치려 한다.", "type": "S" },
+      { "text": "실수 원인을 파악하고 재발 방지 대책을 세운다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1312,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "lifestyle_values",
+    "question": "규칙이나 매뉴얼에 대한 나의 생각은?",
+    "options": [
+      { "text": "상황에 따라 융통성 있게 바꾸면 된다.", "type": "D" },
+      { "text": "너무 빡빡한 건 싫다. 적당히 지키면 된다.", "type": "I" },
+      { "text": "남들도 다 지키니까 나도 지킨다.", "type": "S" },
+      { "text": "반드시 지켜야 하며 예외는 없어야 한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1313,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "self_energy",
+    "question": "나에게 에너지를 주는 것은?",
+    "options": [
+      { "text": "성취감, 목표 달성, 인정받는 것.", "type": "D" },
+      { "text": "사람들과의 만남, 즐거운 대화, 파티.", "type": "I" },
+      { "text": "가족과의 평온한 시간, 휴식.", "type": "S" },
+      { "text": "새로운 지식 습득, 완벽한 계획 실현.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1314,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "decision_making",
+    "question": "중요한 결정을 내릴 때 나는?",
+    "options": [
+      { "text": "내 직감을 믿고 빠르게 결정한다.", "type": "D" },
+      { "text": "주변 사람들에게 물어보고 조언을 구한다.", "type": "I" },
+      { "text": "결정을 미루고 고민하다가 안전한 쪽을 택한다.", "type": "S" },
+      { "text": "장단점을 리스트로 만들어 분석하고 결정한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1315,
+    "target_age_min": 30,
+    "target_age_max": 39,
+    "category": "self_identity",
+    "question": "30대인 내 삶의 모토는?",
+    "options": [
+      { "text": "Just do it. (일단 저질러라, 성취하라)", "type": "D" },
+      { "text": "YOLO (인생은 한 번뿐, 즐겨라)", "type": "I" },
+      { "text": "Hakuna Matata (걱정 마, 다 잘 될 거야)", "type": "S" },
+      { "text": "Knowledge is Power (아는 것이 힘이다)", "type": "C" }
+    ]
+  },
+  {
+    "id": 1316,
+    "target_age_min": 40,
+    "target_age_max": 49,
+    "category": "career_leadership",
+    "question": "팀장(또는 관리자)으로서 MZ세대 직원들과 소통할 때 가장 답답한 점은?",
+    "options": [
+      { "text": "업무 지시를 하면 '왜요?'라고 따지거나 자기 권리만 찾을 때.", "type": "D" },
+      { "text": "회식이나 티타임 참여를 꺼리고 개인주의적으로 행동할 때.", "type": "I" },
+      { "text": "조금만 힘든 일을 시키면 바로 그만둘까 봐 눈치 보게 될 때.", "type": "S" },
+      { "text": "업무 매뉴얼이나 보고서 형식을 제대로 지키지 않을 때.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1317,
+    "target_age_min": 40,
+    "target_age_max": 49,
+    "category": "lifestyle_health",
+    "question": "건강검진 결과 경고등이 켜졌다. 나의 대처 방식은?",
+    "options": [
+      { "text": "당장 고액의 PT를 끊거나 효과 빠른 시술/약을 찾는다.", "type": "D" },
+      { "text": "골프나 등산 모임에 가입해서 사람들과 어울리며 운동한다.", "type": "I" },
+      { "text": "가족력을 걱정하며 영양제를 챙겨 먹고 안정을 취한다.", "type": "S" },
+      { "text": "수치 변화를 엑셀로 기록하고 의학 논문이나 전문 서적을 탐독한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1318,
+    "target_age_min": 40,
+    "target_age_max": 49,
+    "category": "parenting_teenager",
+    "question": "사춘기 자녀가 방문을 걸어 잠그고 대화를 거부한다.",
+    "options": [
+      { "text": "\"문 열어!\" 당장 마스터키를 가져와서 문을 따고 들어간다.", "type": "D" },
+      { "text": "\"엄마가 뭐 잘못했어? 우리 얘기 좀 하자~\" 문 밖에서 계속 말을 건다.", "type": "I" },
+      { "text": "아이가 나올 때까지 묵묵히 기다리며 맛있는 간식을 챙겨둔다.", "type": "S" },
+      { "text": "왜 저러는지 사춘기 심리 관련 서적이나 전문가 칼럼을 찾아본다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1319,
+    "target_age_min": 40,
+    "target_age_max": 49,
+    "category": "finance_investment",
+    "question": "노후 준비를 위해 목돈을 투자해야 한다. 선호하는 방식은?",
+    "options": [
+      { "text": "수익률이 가장 높은 부동산 경매나 급등주에 과감히 투자한다.", "type": "D" },
+      { "text": "지인이 추천해 준 '요즘 뜨는' 투자처에 귀가 솔깃한다.", "type": "I" },
+      { "text": "원금 보장이 최우선! 안전한 예금이나 국채 위주로 굴린다.", "type": "S" },
+      { "text": "재무제표와 시장 분석 리포트를 꼼꼼히 읽고 포트폴리오를 짠다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1320,
+    "target_age_min": 40,
+    "target_age_max": 49,
+    "category": "social_gathering",
+    "question": "학부모 총회나 동창회 모임 장소를 정해야 한다.",
+    "options": [
+      { "text": "내가 아는 제일 괜찮은 곳으로 예약하고 통보한다.", "type": "D" },
+      { "text": "분위기 좋고 수다 떨기 좋은 핫플레이스를 검색한다.", "type": "I" },
+      { "text": "모두가 오기 편한 위치와 호불호 없는 메뉴를 고른다.", "type": "S" },
+      { "text": "주차 가능 여부, 룸 완비, 가격대를 비교해 리스트를 공유한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1321,
+    "target_age_min": 40,
+    "target_age_max": 49,
+    "category": "lifestyle_home",
+    "question": "집 인테리어 리모델링을 계획 중이다.",
+    "options": [
+      { "text": "최신 유행하는 럭셔리 호텔 스타일로 싹 뜯어고친다.", "type": "D" },
+      { "text": "지인들을 초대해 홈파티 하기 좋은 화려한 다이닝 공간을 만든다.", "type": "I" },
+      { "text": "질리지 않고 편안한 우드&화이트 톤으로 따뜻하게 꾸민다.", "type": "S" },
+      { "text": "수납 효율성을 극대화하고 청소가 쉬운 자재를 선택한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1322,
+    "target_age_min": 40,
+    "target_age_max": 49,
+    "category": "work_relationship",
+    "question": "직장에서 무능한데 정치만 잘하는 동료(또는 상사)를 볼 때.",
+    "options": [
+      { "text": "대놓고 무시하거나 실력으로 눌러버리려 한다.", "type": "D" },
+      { "text": "뒤에서 다른 동료들과 흉을 보며 스트레스를 푼다.", "type": "I" },
+      { "text": "엮이기 싫어서 최대한 피하고 내 할 일만 한다.", "type": "S" },
+      { "text": "저 사람의 업무 성과와 문제점을 기록해 둔다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1323,
+    "target_age_min": 40,
+    "target_age_max": 49,
+    "category": "relationship_marriage",
+    "question": "남편과 대화가 통하지 않을 때 주로 하는 생각은?",
+    "options": [
+      { "text": "\"내가 결정하고 통보하는 게 빠르겠다.\" 포기하고 독단적으로 처리한다.", "type": "D" },
+      { "text": "\"어떻게 내 마음을 이렇게 몰라주지?\" 서운해서 눈물이 난다.", "type": "I" },
+      { "text": "\"싸우면 뭐하나... 그냥 내가 참자.\" 평화를 위해 참는다.", "type": "S" },
+      { "text": "\"논리적으로 따져서 잘잘못을 가려야겠다.\" 팩트를 정리한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1324,
+    "target_age_min": 40,
+    "target_age_max": 49,
+    "category": "self_development",
+    "question": "제2의 인생을 위해 자격증을 딴다면?",
+    "options": [
+      { "text": "공인중개사나 창업 관련 등 돈이 되는 실전 자격증.", "type": "D" },
+      { "text": "꽃꽂이, 베이킹 등 사람들과 나누고 즐길 수 있는 취미 자격증.", "type": "I" },
+      { "text": "사회복지사나 상담심리사 등 남을 도울 수 있는 자격증.", "type": "S" },
+      { "text": "번역이나 데이터 분석 등 혼자서 전문성을 발휘하는 자격증.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1325,
+    "target_age_min": 40,
+    "target_age_max": 49,
+    "category": "lifestyle_fashion",
+    "question": "40대가 되니 옷 고르는 기준이 바뀌었다.",
+    "options": [
+      { "text": "어디서든 기죽지 않는 명품이나 브랜드 로고가 보이는 옷.", "type": "D" },
+      { "text": "나보다 젊어 보이는 화사하고 트렌디한 스타일.", "type": "I" },
+      { "text": "체형 커버가 잘 되고 활동하기 편한 옷.", "type": "S" },
+      { "text": "소재(원단)가 고급스럽고 마감이 꼼꼼한 클래식한 옷.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1326,
+    "target_age_min": 40,
+    "target_age_max": 49,
+    "category": "family_care",
+    "question": "친정(또는 시댁) 부모님의 건강이 악화되어 돌봄이 필요하다.",
+    "options": [
+      { "text": "형제들을 소집해 간병비 분담과 역할을 딱 정한다.", "type": "D" },
+      { "text": "주변에 하소연하며 정서적 위로를 받으려 한다.", "type": "I" },
+      { "text": "내가 조금 더 희생하더라도 직접 챙기려 한다.", "type": "S" },
+      { "text": "장기요양등급 신청 절차와 요양병원 등급을 알아본다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1327,
+    "target_age_min": 40,
+    "target_age_max": 49,
+    "category": "work_life",
+    "question": "회사에서 중요한 프로젝트를 맡았는데 야근이 필수다.",
+    "options": [
+      { "text": "가족들에게 \"당분간 엄마 찾지 마\"라고 선포하고 일에 몰입한다.", "type": "D" },
+      { "text": "동료들과 야식을 시켜 먹으며 으쌰으쌰 버틴다.", "type": "I" },
+      { "text": "집안일과 업무 사이에서 갈등하며 묵묵히 버틴다.", "type": "S" },
+      { "text": "업무 스케줄을 분 단위로 쪼개 효율성을 극대화한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1328,
+    "target_age_min": 40,
+    "target_age_max": 49,
+    "category": "friendship_social",
+    "question": "오랜만에 만난 친구가 계속 자기 자식/남편 자랑만 한다.",
+    "options": [
+      { "text": "\"그래서 결론이 뭐야?\" 말을 자르거나 화제를 돌린다.", "type": "D" },
+      { "text": "\"어머, 진짜? 너무 좋겠다!\" 영혼을 담아 리액션해준다.", "type": "I" },
+      { "text": "듣기 싫어도 친구 기분 상할까 봐 끝까지 들어준다.", "type": "S" },
+      { "text": "'자존감이 낮은가 보네' 속으로 분석하며 거리를 둔다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1329,
+    "target_age_min": 40,
+    "target_age_max": 49,
+    "category": "lifestyle_consumption",
+    "question": "백화점에서 마음에 드는 고가의 가전제품을 봤다.",
+    "options": [
+      { "text": "\"이거 주세요.\" 성능이 확실하면 고민 없이 일시불.", "type": "D" },
+      { "text": "디자인이 예쁘고 요즘 유행하는 컬러면 산다.", "type": "I" },
+      { "text": "남편과 상의해 보고 결정하겠다며 돌아선다.", "type": "S" },
+      { "text": "모델명을 찍어와서 인터넷 최저가와 스펙을 비교한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1330,
+    "target_age_min": 40,
+    "target_age_max": 49,
+    "category": "career_change",
+    "question": "경력 단절 후 재취업을 하려는데 두려움이 앞선다.",
+    "options": [
+      { "text": "\"일단 부딪혀 보자!\" 창업이나 프리랜서 등 주도적인 일을 찾는다.", "type": "D" },
+      { "text": "지인들에게 \"나 일자리 좀 알아봐 줘\"라고 소문낸다.", "type": "I" },
+      { "text": "익숙했던 예전 업무와 비슷한 안정적인 곳을 찾는다.", "type": "S" },
+      { "text": "필요한 자격증과 교육 과정을 이수하며 철저히 준비한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1331,
+    "target_age_min": 40,
+    "target_age_max": 49,
+    "category": "parenting_education",
+    "question": "자녀의 학원(또는 진로)을 선택할 때 가장 중요한 기준은?",
+    "options": [
+      { "text": "명문대 합격률이 높고 관리가 빡빡한 대형 학원.", "type": "D" },
+      { "text": "아이가 친구들과 즐겁게 다닐 수 있는 곳.", "type": "I" },
+      { "text": "선생님이 꼼꼼하게 챙겨주고 정서적으로 안정된 곳.", "type": "S" },
+      { "text": "커리큘럼이 체계적이고 강사 스펙이 검증된 곳.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1332,
+    "target_age_min": 40,
+    "target_age_max": 49,
+    "category": "lifestyle_weekend",
+    "question": "주말에 남편은 쉬고 싶어 하고 나는 나가고 싶다.",
+    "options": [
+      { "text": "\"나 혼자라도 다녀올게.\" 차 키 들고 나간다.", "type": "D" },
+      { "text": "\"자기야~ 맛있는 거 사줄게 가자~\" 애교로 꼬신다.", "type": "I" },
+      { "text": "남편이 피곤해 보이니 집에서 같이 쉰다.", "type": "S" },
+      { "text": "오전에 쉬고 오후 3시에 나가는 것으로 합의한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1333,
+    "target_age_min": 40,
+    "target_age_max": 49,
+    "category": "self_identity",
+    "question": "40대가 된 나에게 가장 필요한 것은?",
+    "options": [
+      { "text": "경제적 자유와 사회적 성공.", "type": "D" },
+      { "text": "여전한 젊음과 활기찬 인간관계.", "type": "I" },
+      { "text": "가족의 건강과 마음의 평화.", "type": "S" },
+      { "text": "나만의 시간과 지적 성장.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1334,
+    "target_age_min": 40,
+    "target_age_max": 49,
+    "category": "work_leadership",
+    "question": "회의 시간이 길어지고 결론 없이 늘어질 때.",
+    "options": [
+      { "text": "\"그래서 결론이 뭡니까? 정리를 하시죠.\" 나서서 끊는다.", "type": "D" },
+      { "text": "지루함을 못 참고 옆 사람과 딴청을 피우거나 농담을 던진다.", "type": "I" },
+      { "text": "누군가 정리해 주길 기다리며 조용히 앉아 있는다.", "type": "S" },
+      { "text": "지금까지 나온 내용을 요약하고 향후 일정을 제안한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1335,
+    "target_age_min": 40,
+    "target_age_max": 49,
+    "category": "social_conflict",
+    "question": "서비스 기사(또는 매장 직원)가 불친절하게 대할 때.",
+    "options": [
+      { "text": "매니저 나오라고 해서 강하게 항의한다.", "type": "D" },
+      { "text": "기분 나쁘다고 주변 사람들에게 큰 소리로 하소연한다.", "type": "I" },
+      { "text": "똥이 무서워서 피하나... 그냥 참고 넘어간다.", "type": "S" },
+      { "text": "고객센터에 육하원칙에 의거한 컴플레인 글을 남긴다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1336,
+    "target_age_min": 40,
+    "target_age_max": 49,
+    "category": "lifestyle_diet",
+    "question": "나잇살이 쪄서 다이어트를 결심했다.",
+    "options": [
+      { "text": "단식원에 들어가거나 독한 약을 먹어서라도 뺀다.", "type": "D" },
+      { "text": "다이어트 댄스나 에어로빅 등 신나는 운동을 등록한다.", "type": "I" },
+      { "text": "저녁 양을 줄이고 꾸준히 걷기 운동을 한다.", "type": "S" },
+      { "text": "기초대사량과 칼로리를 계산해 식단을 짠다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1337,
+    "target_age_min": 40,
+    "target_age_max": 49,
+    "category": "family_finance",
+    "question": "남편이 상의 없이 주식(또는 코인)으로 큰 돈을 잃었다.",
+    "options": [
+      { "text": "\"당신 제정신이야?\" 불같이 화를 내고 경제권을 가져온다.", "type": "D" },
+      { "text": "\"어떡해... 우리 이제 어떡해...\" 충격받아 드러눕는다.", "type": "I" },
+      { "text": "속은 끓지만 이미 벌어진 일, 남편을 위로해 준다.", "type": "S" },
+      { "text": "손실액을 정확히 파악하고 복구 계획을 세운다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1338,
+    "target_age_min": 40,
+    "target_age_max": 49,
+    "category": "career_promotion",
+    "question": "승진 누락 소식을 들었을 때.",
+    "options": [
+      { "text": "인사팀이나 임원실로 찾아가 납득할 만한 이유를 묻는다.", "type": "D" },
+      { "text": "술자리에서 회사를 안주 삼아 실컷 씹는다.", "type": "I" },
+      { "text": "\"내가 부족해서지...\" 자책하며 우울해한다.", "type": "S" },
+      { "text": "고과 점수와 평가 항목을 분석해 다음을 준비한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1339,
+    "target_age_min": 40,
+    "target_age_max": 49,
+    "category": "social_network",
+    "question": "단체 카톡방(학부모, 동창 등) 알림이 계속 울린다.",
+    "options": [
+      { "text": "시끄러워서 알림을 끄거나 방을 나가버린다.", "type": "D" },
+      { "text": "이모티콘을 보내며 대화에 적극 참여한다.", "type": "I" },
+      { "text": "대화에 끼지는 않지만 내용은 다 읽어본다.", "type": "S" },
+      { "text": "필요한 정보만 확인하고 나중에 몰아서 본다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1340,
+    "target_age_min": 40,
+    "target_age_max": 49,
+    "category": "lifestyle_travel",
+    "question": "가족 여행 계획을 짤 때 나의 역할은?",
+    "options": [
+      { "text": "목적지와 숙소를 결정하고 \"따라와\"라고 리드한다.", "type": "D" },
+      { "text": "여행지에서 입을 옷과 사진 스팟을 검색하며 설레한다.", "type": "I" },
+      { "text": "가족들 의견을 다 물어보고 조율하느라 머리 아프다.", "type": "S" },
+      { "text": "동선, 맛집 휴무일, 입장료 등을 엑셀로 정리한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1341,
+    "target_age_min": 40,
+    "target_age_max": 49,
+    "category": "parenting_exam",
+    "question": "자녀가 시험을 망치고 성적표를 가져왔다.",
+    "options": [
+      { "text": "\"정신 안 차릴래? 휴대폰 압수야.\" 강하게 제재한다.", "type": "D" },
+      { "text": "\"괜찮아, 다음에 잘하면 되지!\" 긍정적으로 격려한다.", "type": "I" },
+      { "text": "아이가 기죽을까 봐 아무 말 안 하고 맛있는 밥을 해준다.", "type": "S" },
+      { "text": "틀린 문제를 분석하고 취약 과목 학원을 알아본다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1342,
+    "target_age_min": 40,
+    "target_age_max": 49,
+    "category": "career_delegation",
+    "question": "부하 직원에게 일을 맡겼는데 결과물이 시원찮다.",
+    "options": [
+      { "text": "답답해서 뺏어다가 내가 다시 해버린다.", "type": "D" },
+      { "text": "\"조금만 더 신경 써주지~\" 좋게 돌려 말한다.", "type": "I" },
+      { "text": "다시 해오라고 하기 미안해서 내가 몰래 수정한다.", "type": "S" },
+      { "text": "어디가 틀렸는지 빨간 펜으로 체크해서 피드백한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1343,
+    "target_age_min": 40,
+    "target_age_max": 49,
+    "category": "social_gathering",
+    "question": "모임에서 어색한 사람과 단둘이 남았다.",
+    "options": [
+      { "text": "할 말 없으면 폰을 보거나 먼저 일어난다.", "type": "D" },
+      { "text": "침묵을 못 견뎌 날씨 얘기라도 계속 꺼낸다.", "type": "I" },
+      { "text": "상대방이 말 걸어줄 때까지 가만히 미소 짓고 있는다.", "type": "S" },
+      { "text": "상대방에 대해 관찰하거나 질문을 던져 공통점을 찾는다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1344,
+    "target_age_min": 40,
+    "target_age_max": 49,
+    "category": "family_relationship",
+    "question": "명절에 시댁에 안 가고 여행을 가고 싶다.",
+    "options": [
+      { "text": "\"이번엔 여행 갑니다.\" 남편에게 통보하라고 시킨다.", "type": "D" },
+      { "text": "\"어머니~ 저희 이번만 봐주세요~\" 애교로 무마한다.", "type": "I" },
+      { "text": "말도 못 꺼내고 속만 끓이다가 결국 시댁에 간다.", "type": "S" },
+      { "text": "회사 일정이나 아이 학업 등 타당한 불참 사유를 만든다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1345,
+    "target_age_min": 40,
+    "target_age_max": 49,
+    "category": "lifestyle_home",
+    "question": "도우미 이모님(가사 도우미)을 구할 때 중요하게 보는 것.",
+    "options": [
+      { "text": "손 빠르고 알아서 척척 해주시는 베테랑.", "type": "D" },
+      { "text": "인상 좋고 말동무도 되어줄 수 있는 분.", "type": "I" },
+      { "text": "성실하고 조용하게 일만 해주시는 분.", "type": "S" },
+      { "text": "청소 구역과 순서를 정해주면 그대로 따르는 분.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1346,
+    "target_age_min": 40,
+    "target_age_max": 49,
+    "category": "career_burnout",
+    "question": "회사 생활에 회의감(번아웃)이 든다.",
+    "options": [
+      { "text": "사표를 던지거나 창업을 알아본다.", "type": "D" },
+      { "text": "동료들과 수다 떨거나 쇼핑으로 스트레스를 푼다.", "type": "I" },
+      { "text": "\"이 나이에 어디 가...\" 하며 꾹 참고 다닌다.", "type": "S" },
+      { "text": "은퇴 자금과 이직 가능성을 계산해 본다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1347,
+    "target_age_min": 40,
+    "target_age_max": 49,
+    "category": "friendship_gift",
+    "question": "지인의 자녀 결혼식 축의금을 낼 때.",
+    "options": [
+      { "text": "친하면 많이, 안 친하면 기본. 내 기준대로 낸다.", "type": "D" },
+      { "text": "다른 친구들은 얼마 내는지 물어보고 맞춘다.", "type": "I" },
+      { "text": "밥값보다는 더 내야 욕 안 먹지... 하며 넉넉히 넣는다.", "type": "S" },
+      { "text": "받은 장부를 확인하고 받은 만큼 정확히 낸다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1348,
+    "target_age_min": 40,
+    "target_age_max": 49,
+    "category": "self_care",
+    "question": "갱년기 증상이 느껴져 우울하다.",
+    "options": [
+      { "text": "호르몬 치료나 운동으로 적극적으로 극복한다.", "type": "D" },
+      { "text": "친구들을 만나 \"나 열 올라!\" 하며 수다로 푼다.", "type": "I" },
+      { "text": "가족들에게 짜증 내기 싫어서 혼자 삭인다.", "type": "S" },
+      { "text": "갱년기에 좋은 음식과 영양제를 공부해서 챙겨 먹는다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1349,
+    "target_age_min": 40,
+    "target_age_max": 49,
+    "category": "social_conflict",
+    "question": "식당에서 음식이 잘못 나왔다.",
+    "options": [
+      { "text": "\"여기요, 이거 안 시켰는데요.\" 바로 정정을 요구한다.", "type": "D" },
+      { "text": "\"어머, 이것도 맛있겠다 그냥 먹자!\" 웃으며 넘긴다.", "type": "I" },
+      { "text": "직원이 바빠 보이니 그냥 조용히 먹는다.", "type": "S" },
+      { "text": "주문서와 영수증을 확인하고 가격 차이를 계산한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1350,
+    "target_age_min": 40,
+    "target_age_max": 49,
+    "category": "lifestyle_car",
+    "question": "운전 중에 앞차가 얌체처럼 끼어들었다.",
+    "options": [
+      { "text": "경적을 빵! 울리고 쫓아가서 노려본다.", "type": "D" },
+      { "text": "\"아 깜짝이야!\" 놀란 가슴을 쓸어내리며 혼잣말한다.", "type": "I" },
+      { "text": "사고 날라... 비켜주고 안전거리를 확보한다.", "type": "S" },
+      { "text": "블랙박스 녹화 여부를 확인하고 신고를 고민한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1351,
+    "target_age_min": 40,
+    "target_age_max": 49,
+    "category": "career_mentoring",
+    "question": "후배에게 멘토링을 해줄 때 나의 스타일은?",
+    "options": [
+      { "text": "성공하는 법, 살아남는 법 등 핵심 노하우를 전수한다.", "type": "D" },
+      { "text": "밥 사주고 술 사주며 고민을 들어주는 언니/누나.", "type": "I" },
+      { "text": "힘든 점은 없는지 세심하게 살피고 다독여준다.", "type": "S" },
+      { "text": "업무 스킬과 지식을 체계적으로 가르쳐준다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1352,
+    "target_age_min": 40,
+    "target_age_max": 49,
+    "category": "family_care",
+    "question": "남편이 은퇴 후 전원생활을 하고 싶다고 한다.",
+    "options": [
+      { "text": "\"난 싫어. 갈 거면 혼자 가.\" 내 의사를 분명히 한다.", "type": "D" },
+      { "text": "전원주택 파티나 정원 가꾸기를 상상하며 좋아한다.", "type": "I" },
+      { "text": "남편이 원하니까... 내심 싫어도 따라간다.", "type": "S" },
+      { "text": "병원 접근성, 생활비, 집값 변동성을 따져본다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1353,
+    "target_age_min": 40,
+    "target_age_max": 49,
+    "category": "social_gathering",
+    "question": "모임 회비를 걷어야 하는데 안 내는 사람이 있다.",
+    "options": [
+      { "text": "단톡방에 \"@@님 입금 부탁드립니다\" 대놓고 말한다.", "type": "D" },
+      { "text": "만났을 때 \"우리 회비 걷어야지~\" 농담처럼 말한다.", "type": "I" },
+      { "text": "까먹었겠지... 하며 내 돈으로 먼저 메꾼다.", "type": "S" },
+      { "text": "회비 미납자 명단과 계좌번호를 개인 톡으로 보낸다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1354,
+    "target_age_min": 40,
+    "target_age_max": 49,
+    "category": "lifestyle_hobby",
+    "question": "책을 읽는다면 어떤 책을 고를까?",
+    "options": [
+      { "text": "성공한 CEO의 자서전이나 자기계발 베스트셀러.", "type": "D" },
+      { "text": "화제가 되는 소설이나 감성 에세이.", "type": "I" },
+      { "text": "마음을 편안하게 해주는 심리학이나 힐링 도서.", "type": "S" },
+      { "text": "재테크, 역사, 인문학 등 지식을 쌓는 전문 서적.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1355,
+    "target_age_min": 40,
+    "target_age_max": 49,
+    "category": "work_style",
+    "question": "상사가 비효율적인 업무 방식을 강요한다.",
+    "options": [
+      { "text": "\"이건 시간 낭비입니다.\" 직설적으로 반대 의견을 낸다.", "type": "D" },
+      { "text": "앞에서는 알겠다고 하고 뒤에서는 내 방식대로 한다.", "type": "I" },
+      { "text": "시키는 대로 해야지 뭐... 하며 묵묵히 한다.", "type": "S" },
+      { "text": "더 효율적인 프로세스를 제안하는 기획안을 만든다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1356,
+    "target_age_min": 40,
+    "target_age_max": 49,
+    "category": "self_energy",
+    "question": "스트레스로 지친 나를 충전해 주는 것은?",
+    "options": [
+      { "text": "쇼핑, 마사지 등 나를 위한 확실한 보상.", "type": "D" },
+      { "text": "친구들과의 시끌벅적한 수다와 맛있는 음식.", "type": "I" },
+      { "text": "집에서 아무것도 안 하고 뒹굴거리는 휴식.", "type": "S" },
+      { "text": "혼자 조용히 즐기는 독서나 사색의 시간.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1357,
+    "target_age_min": 40,
+    "target_age_max": 49,
+    "category": "relationship_conflict",
+    "question": "친구가 약속 시간에 1시간 늦게 나타났다.",
+    "options": [
+      { "text": "\"시간 개념이 없니?\" 화내고 집에 가버린다.", "type": "D" },
+      { "text": "\"늦은 만큼 네가 밥 사!\" 하고 푼다.", "type": "I" },
+      { "text": "무슨 사고라도 난 줄 알고 걱정했다며 안도한다.", "type": "S" },
+      { "text": "다음부터는 늦지 말라고 약속 시간을 재확인한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1358,
+    "target_age_min": 40,
+    "target_age_max": 49,
+    "category": "finance_planning",
+    "question": "연말정산 시즌이 다가왔다.",
+    "options": [
+      { "text": "세무사나 전문가에게 맡겨서 최대한 환급받는다.", "type": "D" },
+      { "text": "대충 하고 남들이 얼마나 받는지 물어본다.", "type": "I" },
+      { "text": "회사에서 하라는 대로 서류만 챙겨서 낸다.", "type": "S" },
+      { "text": "공제 항목을 꼼꼼히 챙겨서 직접 계산해 본다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1359,
+    "target_age_min": 40,
+    "target_age_max": 49,
+    "category": "social_pressure",
+    "question": "결혼식장에서 \"자녀는 어느 대학 갔어?\"라는 질문을 받았다.",
+    "options": [
+      { "text": "\"알아서 잘 갔어요.\" 대답하기 싫으면 자른다.", "type": "D" },
+      { "text": "\"우리 애가 좀 늦되잖아요~ 호호\" 웃어넘긴다.", "type": "I" },
+      { "text": "멋쩍게 웃으며 자리를 피하거나 화제를 돌린다.", "type": "S" },
+      { "text": "아이의 전공과 비전에 대해 사실대로 설명한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1360,
+    "target_age_min": 40,
+    "target_age_max": 49,
+    "category": "lifestyle_diet",
+    "question": "나잇살 때문에 다이어트를 해야겠다.",
+    "options": [
+      { "text": "독하게 마음먹고 단식이나 1일 1식을 감행한다.", "type": "D" },
+      { "text": "친구랑 내기를 하거나 운동 인증샷을 올리며 한다.", "type": "I" },
+      { "text": "저녁만 조금 줄이는 정도로 무리하지 않는다.", "type": "S" },
+      { "text": "칼로리를 계산하고 식단 앱을 기록하며 체계적으로 한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1361,
+    "target_age_min": 40,
+    "target_age_max": 49,
+    "category": "career_skills",
+    "question": "많은 사람들 앞에서 발표(프레젠테이션)를 해야 한다.",
+    "options": [
+      { "text": "자신감 있는 태도로 청중을 압도한다.", "type": "D" },
+      { "text": "유머와 제스처를 섞어가며 재미있게 발표한다.", "type": "I" },
+      { "text": "너무 떨려서 청심환을 먹고 대본을 읽는다.", "type": "S" },
+      { "text": "완벽한 자료와 예상 질문 답변까지 준비한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1362,
+    "target_age_min": 40,
+    "target_age_max": 49,
+    "category": "lifestyle_home",
+    "question": "옷장 정리를 하기로 마음먹었다.",
+    "options": [
+      { "text": "안 입는 옷은 과감하게 싹 다 갖다 버린다.", "type": "D" },
+      { "text": "옛날 옷들을 입어보고 추억에 잠기느라 정리는 뒷전이다.", "type": "I" },
+      { "text": "살 빼면 입을 수 있을 것 같아서 다시 넣어둔다.", "type": "S" },
+      { "text": "계절별, 색깔별로 분류하고 라벨링을 한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1363,
+    "target_age_min": 40,
+    "target_age_max": 49,
+    "category": "family_relationship",
+    "question": "남편이 은퇴 후 귀농(시골 생활)을 하자고 한다.",
+    "options": [
+      { "text": "\"난 도시가 좋아. 갈 거면 혼자 가.\" 반대한다.", "type": "D" },
+      { "text": "전원주택에서 바비큐 파티할 생각을 하니 설렌다.", "type": "I" },
+      { "text": "가기 싫지만 남편이 원하니까 따라간다.", "type": "S" },
+      { "text": "병원, 마트 접근성과 생활비를 꼼꼼히 따져본다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1364,
+    "target_age_min": 40,
+    "target_age_max": 49,
+    "category": "work_culture",
+    "question": "회사 워크숍에서 장기자랑을 시킨다.",
+    "options": [
+      { "text": "빼지 않고 나가서 1등 상금을 노린다.", "type": "D" },
+      { "text": "가발 쓰고 춤추며 분위기를 주도한다.", "type": "I" },
+      { "text": "제발 나만 안 시키길 바라며 숨어 있는다.", "type": "S" },
+      { "text": "사회자나 진행 스태프를 맡아 뒤에서 돕는다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1365,
+    "target_age_min": 40,
+    "target_age_max": 49,
+    "category": "self_identity",
+    "question": "40대인 나에게 '성공'이란?",
+    "options": [
+      { "text": "경제적 자유와 사회적 지위.", "type": "D" },
+      { "text": "좋은 사람들과 즐겁게 사는 것.", "type": "I" },
+      { "text": "가족의 건강과 평온한 일상.", "type": "S" },
+      { "text": "계획한 목표를 하나씩 달성해가는 성취감.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1366,
+    "target_age_min": 40,
+    "target_age_max": 49,
+    "category": "career_leadership",
+    "question": "팀의 성과가 부진할 때, 리더로서 나는?",
+    "options": [
+      { "text": "부진한 원인을 제공한 사람을 찾아내고 책임을 묻는다.", "type": "D" },
+      { "text": "\"할 수 있어!\" 긍정적인 에너지를 불어넣으며 사기를 북돋운다.", "type": "I" },
+      { "text": "팀원들이 지치지 않도록 격려하고 고충을 들어준다.", "type": "S" },
+      { "text": "성과 데이터를 분석하여 문제점을 파악하고 프로세스를 개선한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1367,
+    "target_age_min": 40,
+    "target_age_max": 49,
+    "category": "lifestyle_health",
+    "question": "갑작스러운 건강 이상 신호(체력 저하, 호르몬 변화 등)를 느꼈을 때?",
+    "options": [
+      { "text": "즉시 병원에 가서 의사와 상담하고 적극적으로 치료한다.", "type": "D" },
+      { "text": "주변 친구들에게 증상을 이야기하며 공감과 정보를 얻는다.", "type": "I" },
+      { "text": "나이가 들어서 그렇겠지... 하며 무리하지 않고 쉰다.", "type": "S" },
+      { "text": "증상과 관련된 의학 정보를 검색하고 생활 습관을 체계적으로 바꾼다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1368,
+    "target_age_min": 40,
+    "target_age_max": 49,
+    "category": "family_parenting",
+    "question": "자녀가 진로 문제로 방황하고 있다.",
+    "options": [
+      { "text": "\"이 길로 가.\" 내가 생각하는 최선의 로드맵을 제시한다.", "type": "D" },
+      { "text": "\"네가 하고 싶은 게 뭐야?\" 대화를 통해 꿈을 찾도록 돕는다.", "type": "I" },
+      { "text": "아이가 스스로 결정할 때까지 묵묵히 기다려주고 지지한다.", "type": "S" },
+      { "text": "적성 검사나 전문가 상담을 통해 객관적인 데이터를 확보한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1369,
+    "target_age_min": 40,
+    "target_age_max": 49,
+    "category": "finance_investment",
+    "question": "은퇴 후를 대비해 부동산 투자를 고려 중이다.",
+    "options": [
+      { "text": "개발 호재가 확실한 지역에 과감하게 투자한다.", "type": "D" },
+      { "text": "친구나 지인이 추천하는 핫한 지역을 따라 산다.", "type": "I" },
+      { "text": "수익률은 낮아도 안전한 월세 수익형 부동산을 찾는다.", "type": "S" },
+      { "text": "입지 분석, 세금, 대출 이자 등을 꼼꼼히 따져보고 결정한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1370,
+    "target_age_min": 40,
+    "target_age_max": 49,
+    "category": "social_relationship",
+    "question": "동창회 모임에서 회장직을 제안받았다.",
+    "options": [
+      { "text": "\"내가 맡을게.\" 흔쾌히 수락하고 모임을 이끈다.", "type": "D" },
+      { "text": "\"재밌겠다! 같이 하자!\" 분위기를 띄우며 수락한다.", "type": "I" },
+      { "text": "부담스러워서 다른 사람에게 양보하거나 거절한다.", "type": "S" },
+      { "text": "회장의 역할과 책임 범위를 명확히 확인한 후 결정한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1371,
+    "target_age_min": 40,
+    "target_age_max": 49,
+    "category": "lifestyle_hobby",
+    "question": "새로운 취미를 시작하려고 한다. 무엇을 선택할까?",
+    "options": [
+      { "text": "골프나 테니스처럼 승부욕을 자극하는 운동.", "type": "D" },
+      { "text": "사교 댄스나 합창단처럼 사람들과 어울리는 활동.", "type": "I" },
+      { "text": "도예나 꽃꽂이처럼 정적이고 마음이 편해지는 활동.", "type": "S" },
+      { "text": "외국어 공부나 자격증 취득처럼 자기계발에 도움 되는 것.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1372,
+    "target_age_min": 40,
+    "target_age_max": 49,
+    "category": "work_conflict",
+    "question": "직장 내 파벌 싸움에 휘말릴 위기다.",
+    "options": [
+      { "text": "내 입장을 분명히 하고 주도권을 잡으려 한다.", "type": "D" },
+      { "text": "양쪽을 오가며 중재하거나 원만한 관계를 유지하려 한다.", "type": "I" },
+      { "text": "어느 쪽에도 서지 않고 조용히 상황을 관망한다.", "type": "S" },
+      { "text": "각 파벌의 주장과 이해관계를 분석하여 실익을 따진다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1373,
+    "target_age_min": 40,
+    "target_age_max": 49,
+    "category": "family_care",
+    "question": "연로하신 부모님의 부양 문제로 형제들과 의논해야 한다.",
+    "options": [
+      { "text": "\"이렇게 하자.\" 구체적인 방안을 제시하고 결정을 주도한다.", "type": "D" },
+      { "text": "형제들의 감정을 살피며 분위기를 부드럽게 만든다.", "type": "I" },
+      { "text": "다른 형제들의 의견을 따르며 갈등을 피한다.", "type": "S" },
+      { "text": "비용 분담과 간병 일정을 엑셀로 정리하여 제시한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1374,
+    "target_age_min": 40,
+    "target_age_max": 49,
+    "category": "self_reflection",
+    "question": "40대 중반, 인생의 반환점을 돌면서 드는 생각은?",
+    "options": [
+      { "text": "아직 이룰 것이 많다. 더 높은 목표를 향해 달린다.", "type": "D" },
+      { "text": "지금 이 순간을 즐기자. 행복이 최고다.", "type": "I" },
+      { "text": "평온하고 안정적인 삶이 가장 중요하다.", "type": "S" },
+      { "text": "지난 삶을 돌아보고 앞으로의 계획을 재정비한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1375,
+    "target_age_min": 40,
+    "target_age_max": 49,
+    "category": "lifestyle_fashion",
+    "question": "중요한 모임에 입고 갈 옷을 고를 때?",
+    "options": [
+      { "text": "카리스마 있고 세련된 정장 스타일로 나를 돋보이게 한다.", "type": "D" },
+      { "text": "화사한 색상이나 액세서리로 포인트를 주어 시선을 끈다.", "type": "I" },
+      { "text": "튀지 않고 단정하며 편안한 스타일을 선호한다.", "type": "S" },
+      { "text": "모임의 성격과 장소(TPO)에 완벽하게 맞는 옷을 고른다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1376,
+    "target_age_min": 40,
+    "target_age_max": 49,
+    "category": "career_change",
+    "question": "이직 제안을 받았는데 연봉은 높지만 업무 강도가 세다.",
+    "options": [
+      { "text": "도전해 볼 만한 가치가 있다면 과감하게 옮긴다.", "type": "D" },
+      { "text": "새로운 사람들과 환경이 기대되지만 걱정도 된다.", "type": "I" },
+      { "text": "지금 익숙한 곳이 편하고 좋다며 거절한다.", "type": "S" },
+      { "text": "연봉 인상분과 업무량, 워라밸을 철저히 비교 분석한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1377,
+    "target_age_min": 40,
+    "target_age_max": 49,
+    "category": "friendship_social",
+    "question": "친한 친구가 다단계 판매를 권유한다.",
+    "options": [
+      { "text": "\"난 안 해. 너도 그만둬.\" 단호하게 거절하고 충고한다.", "type": "D" },
+      { "text": "\"미안해, 남편이 싫어해서...\" 핑계를 대며 돌려 거절한다.", "type": "I" },
+      { "text": "거절하기 미안해서 싼 물건 하나 사준다.", "type": "S" },
+      { "text": "다단계 구조의 문제점과 수익성을 논리적으로 따져 묻는다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1378,
+    "target_age_min": 40,
+    "target_age_max": 49,
+    "category": "lifestyle_home",
+    "question": "집안 대청소를 하려고 마음먹었다.",
+    "options": [
+      { "text": "가족들에게 업무를 분담시키고 지휘한다.", "type": "D" },
+      { "text": "음악을 크게 틀고 신나게 청소한다.", "type": "I" },
+      { "text": "힘드니까 무리하지 않고 보이는 곳만 대충 한다.", "type": "S" },
+      { "text": "방별로 순서를 정하고 효율적인 동선으로 청소한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1379,
+    "target_age_min": 40,
+    "target_age_max": 49,
+    "category": "relationship_marriage",
+    "question": "배우자가 퇴직 후 사업을 하겠다고 한다.",
+    "options": [
+      { "text": "사업 아이템의 성공 가능성을 냉철하게 판단하고 조언한다.", "type": "D" },
+      { "text": "\"당신이라면 잘할 거야!\" 무조건적인 응원을 보낸다.", "type": "I" },
+      { "text": "실패하면 어쩌나 걱정되어 말리고 싶다.", "type": "S" },
+      { "text": "사업 계획서와 자금 조달 계획을 꼼꼼히 검토한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1380,
+    "target_age_min": 40,
+    "target_age_max": 49,
+    "category": "work_presentation",
+    "question": "중요한 프레젠테이션 발표를 앞두고 있다.",
+    "options": [
+      { "text": "핵심 내용을 강렬하게 전달하여 청중을 압도한다.", "type": "D" },
+      { "text": "재치 있는 입담과 스토리텔링으로 청중을 사로잡는다.", "type": "I" },
+      { "text": "떨리지만 준비한 내용을 차분하게 전달하려 노력한다.", "type": "S" },
+      { "text": "완벽한 자료와 예상 질문 답변까지 철저히 준비한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1381,
+    "target_age_min": 40,
+    "target_age_max": 49,
+    "category": "social_network",
+    "question": "SNS에 올리는 게시물 스타일은?",
+    "options": [
+      { "text": "성공한 커리어 우먼의 모습이나 성취를 과시하는 사진.", "type": "D" },
+      { "text": "좋은 사람들과 함께한 즐거운 모임 사진.", "type": "I" },
+      { "text": "가족과 함께하는 평온한 일상 사진.", "type": "S" },
+      { "text": "책 리뷰나 정보성 글 등 유익한 콘텐츠.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1382,
+    "target_age_min": 40,
+    "target_age_max": 49,
+    "category": "lifestyle_travel",
+    "question": "혼자 여행을 떠난다면?",
+    "options": [
+      { "text": "평소 가보고 싶었던 오지나 모험적인 곳으로 떠난다.", "type": "D" },
+      { "text": "사람들이 많이 가는 관광지에서 새로운 인연을 기대한다.", "type": "I" },
+      { "text": "조용하고 한적한 휴양지에서 푹 쉰다.", "type": "S" },
+      { "text": "박물관이나 미술관 등 지적 호기심을 채울 수 있는 곳.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1383,
+    "target_age_min": 40,
+    "target_age_max": 49,
+    "category": "work_mentoring",
+    "question": "후배 직원이 업무상 실수를 했을 때?",
+    "options": [
+      { "text": "따끔하게 지적하고 재발 방지를 요구한다.", "type": "D" },
+      { "text": "\"누구나 실수할 수 있어.\" 위로하며 기운을 북돋운다.", "type": "I" },
+      { "text": "내가 대신 수습해주며 조용히 넘어간다.", "type": "S" },
+      { "text": "실수의 원인을 분석하고 매뉴얼을 점검하게 한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1384,
+    "target_age_min": 40,
+    "target_age_max": 49,
+    "category": "family_communication",
+    "question": "가족들이 내 말을 듣지 않을 때?",
+    "options": [
+      { "text": "목소리를 높여 강하게 이야기한다.", "type": "D" },
+      { "text": "서운함을 토로하며 감정에 호소한다.", "type": "I" },
+      { "text": "언젠가는 알아주겠지 하며 참고 기다린다.", "type": "S" },
+      { "text": "가족 회의를 소집하여 규칙을 정한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1385,
+    "target_age_min": 40,
+    "target_age_max": 49,
+    "category": "lifestyle_shopping",
+    "question": "고가의 가전제품을 구매할 때?",
+    "options": [
+      { "text": "최신 기능이 탑재된 최고사양 모델을 즉시 구매한다.", "type": "D" },
+      { "text": "디자인이 예쁘고 주변 평판이 좋은 모델을 고른다.", "type": "I" },
+      { "text": "가성비가 좋고 고장이 잘 안 나는 모델을 선호한다.", "type": "S" },
+      { "text": "제품 사양, 리뷰, 가격 비교 사이트를 꼼꼼히 검색한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1386,
+    "target_age_min": 40,
+    "target_age_max": 49,
+    "category": "career_growth",
+    "question": "자기계발을 위해 대학원 진학을 고민 중이다.",
+    "options": [
+      { "text": "학위 취득이 내 커리어에 도움이 된다면 바로 등록한다.", "type": "D" },
+      { "text": "새로운 사람들과 네트워크를 쌓을 수 있어 기대된다.", "type": "I" },
+      { "text": "일과 학업을 병행할 수 있을지 걱정되어 망설인다.", "type": "S" },
+      { "text": "커리큘럼, 교수진, 학비 등을 철저히 분석한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1387,
+    "target_age_min": 40,
+    "target_age_max": 49,
+    "category": "social_conflict",
+    "question": "식당 종업원이 불친절하게 대할 때?",
+    "options": [
+      { "text": "매니저를 불러 강력하게 항의하고 사과를 받는다.", "type": "D" },
+      { "text": "\"기분 나쁘네.\" 주변 사람들에게 하소연한다.", "type": "I" },
+      { "text": "그냥 참고 빨리 먹고 나간다.", "type": "S" },
+      { "text": "해당 식당 홈페이지나 리뷰 사이트에 객관적인 사실을 남긴다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1388,
+    "target_age_min": 40,
+    "target_age_max": 49,
+    "category": "lifestyle_diet",
+    "question": "다이어트를 결심했다.",
+    "options": [
+      { "text": "단기간에 효과를 볼 수 있는 고강도 운동과 식단을 선택한다.", "type": "D" },
+      { "text": "친구와 함께 헬스장에 등록하거나 내기를 한다.", "type": "I" },
+      { "text": "무리하지 않고 저녁 식사량을 줄이는 등 생활 습관을 개선한다.", "type": "S" },
+      { "text": "칼로리 계산과 영양 성분을 따져가며 체계적으로 식단 관리한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1389,
+    "target_age_min": 40,
+    "target_age_max": 49,
+    "category": "work_overtime",
+    "question": "야근이 계속되어 체력적으로 힘들다.",
+    "options": [
+      { "text": "업무 효율을 높여 칼퇴근을 하거나 상사에게 조정 요청한다.", "type": "D" },
+      { "text": "동료들과 수다를 떨며 스트레스를 푼다.", "type": "I" },
+      { "text": "힘들어도 맡은 일은 책임감 있게 끝까지 해낸다.", "type": "S" },
+      { "text": "업무 프로세스의 문제점을 파악하고 개선안을 건의한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1390,
+    "target_age_min": 40,
+    "target_age_max": 49,
+    "category": "family_finance",
+    "question": "자녀의 사교육비 지출이 너무 많다.",
+    "options": [
+      { "text": "효과 없는 학원은 과감하게 끊는다.", "type": "D" },
+      { "text": "아이가 원하면 웬만하면 다 시켜준다.", "type": "I" },
+      { "text": "다른 집들도 다 그렇게 하니까... 하며 유지한다.", "type": "S" },
+      { "text": "월 수입 대비 지출 비율을 계산하고 예산을 조정한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1391,
+    "target_age_min": 40,
+    "target_age_max": 49,
+    "category": "self_esteem",
+    "question": "나보다 잘나가는 친구를 보면?",
+    "options": [
+      { "text": "질투심이 생기고 나도 더 성공해야겠다는 의욕이 생긴다.", "type": "D" },
+      { "text": "\"축하해!\" 진심으로 축하해주며 긍정적인 에너지를 받는다.", "type": "I" },
+      { "text": "나는 왜 이럴까... 자책하며 위축된다.", "type": "S" },
+      { "text": "친구가 성공한 비결이 무엇인지 분석하고 배울 점을 찾는다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1392,
+    "target_age_min": 40,
+    "target_age_max": 49,
+    "category": "lifestyle_driving",
+    "question": "운전 중 끼어들기를 당했다.",
+    "options": [
+      { "text": "경적을 울리거나 쫓아가서 항의한다.", "type": "D" },
+      { "text": "\"아 깜짝이야!\" 놀란 가슴을 쓸어내린다.", "type": "I" },
+      { "text": "사고 안 나서 다행이다 생각하며 비켜준다.", "type": "S" },
+      { "text": "블랙박스 영상을 확인하고 신고 여부를 검토한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1393,
+    "target_age_min": 40,
+    "target_age_max": 49,
+    "category": "work_culture",
+    "question": "회식 자리에서 건배사를 제의받았다.",
+    "options": [
+      { "text": "짧고 굵게 임팩트 있는 건배사를 한다.", "type": "D" },
+      { "text": "유행어 활용이나 재치 있는 멘트로 분위기를 띄운다.", "type": "I" },
+      { "text": "수줍게 \"건강하세요\" 등 무난한 멘트를 한다.", "type": "S" },
+      { "text": "미리 준비해 둔 품격 있는 명언을 인용한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1394,
+    "target_age_min": 40,
+    "target_age_max": 49,
+    "category": "family_vacation",
+    "question": "가족 여행 계획을 짤 때?",
+    "options": [
+      { "text": "내가 가고 싶은 곳으로 정하고 통보한다.", "type": "D" },
+      { "text": "가족 모두가 즐길 수 있는 재미있는 곳을 찾는다.", "type": "I" },
+      { "text": "가족들의 의견을 최대한 수렴하여 결정한다.", "type": "S" },
+      { "text": "일정, 예산, 동선 등을 엑셀로 정리하여 계획한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1395,
+    "target_age_min": 40,
+    "target_age_max": 49,
+    "category": "career_networking",
+    "question": "업무 관련 네트워킹 파티에 참석했다.",
+    "options": [
+      { "text": "핵심 인물에게 먼저 다가가 명함을 건넨다.", "type": "D" },
+      { "text": "여러 사람들과 어울리며 즐겁게 대화한다.", "type": "I" },
+      { "text": "아는 사람 옆에 있거나 구석에서 조용히 있는다.", "type": "S" },
+      { "text": "필요한 정보를 얻을 수 있는 사람을 선별하여 대화한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1396,
+    "target_age_min": 40,
+    "target_age_max": 49,
+    "category": "lifestyle_reading",
+    "question": "서점에서 책을 고른다면?",
+    "options": [
+      { "text": "성공한 CEO의 자서전이나 경영/경제 서적.", "type": "D" },
+      { "text": "베스트셀러 소설이나 감동적인 에세이.", "type": "I" },
+      { "text": "마음을 치유하는 심리학이나 명상 서적.", "type": "S" },
+      { "text": "전문 지식을 넓힐 수 있는 인문학이나 과학 서적.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1397,
+    "target_age_min": 40,
+    "target_age_max": 49,
+    "category": "work_delegation",
+    "question": "부하 직원에게 중요한 업무를 위임했다.",
+    "options": [
+      { "text": "결과물만 확인하고 과정은 일임한다.", "type": "D" },
+      { "text": "잘하고 있는지 수시로 물어보고 격려한다.", "type": "I" },
+      { "text": "직원이 부담스러워할까 봐 간섭하지 않고 기다린다.", "type": "S" },
+      { "text": "중간 보고 일정을 정하고 진행 상황을 꼼꼼히 체크한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1398,
+    "target_age_min": 40,
+    "target_age_max": 49,
+    "category": "friendship_conflict",
+    "question": "친구와 오해가 생겨 서먹해졌다.",
+    "options": [
+      { "text": "직접 만나서 솔직하게 대화로 푼다.", "type": "D" },
+      { "text": "다른 친구를 통해 내 마음을 전하거나 분위기를 푼다.", "type": "I" },
+      { "text": "시간이 해결해주겠지 하며 기다린다.", "type": "S" },
+      { "text": "오해의 원인이 무엇인지 차분하게 생각해 본다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1399,
+    "target_age_min": 40,
+    "target_age_max": 49,
+    "category": "lifestyle_volunteer",
+    "question": "봉사 활동에 참여하게 되었다.",
+    "options": [
+      { "text": "봉사 단체를 조직하거나 리더 역할을 맡는다.", "type": "D" },
+      { "text": "사람들과 어울리며 즐겁게 활동한다.", "type": "I" },
+      { "text": "묵묵히 궂은일을 도맡아 한다.", "type": "S" },
+      { "text": "회계나 행정 등 체계적인 지원 업무를 맡는다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1400,
+    "target_age_min": 40,
+    "target_age_max": 49,
+    "category": "self_development",
+    "question": "나의 강점을 하나만 꼽는다면?",
+    "options": [
+      { "text": "추진력과 리더십.", "type": "D" },
+      { "text": "사교성과 긍정적인 마인드.", "type": "I" },
+      { "text": "성실함과 배려심.", "type": "S" },
+      { "text": "분석력과 꼼꼼함.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1401,
+    "target_age_min": 40,
+    "target_age_max": 49,
+    "category": "career_burnout",
+    "question": "회사 일에 지쳐 번아웃이 왔다.",
+    "options": [
+      { "text": "새로운 프로젝트나 도전으로 돌파구를 찾는다.", "type": "D" },
+      { "text": "휴가를 내고 여행을 떠나 리프레시한다.", "type": "I" },
+      { "text": "집에서 푹 쉬면서 에너지를 충전한다.", "type": "S" },
+      { "text": "업무 우선순위를 재조정하고 효율성을 높인다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1402,
+    "target_age_min": 40,
+    "target_age_max": 49,
+    "category": "family_husband",
+    "question": "남편이 집안일을 도와주지 않는다.",
+    "options": [
+      { "text": "\"이거 해!\" 명확하게 지시하고 시킨다.", "type": "D" },
+      { "text": "\"자기가 해주면 정말 좋겠다~\" 칭찬으로 유도한다.", "type": "I" },
+      { "text": "잔소리하기 싫어서 그냥 내가 한다.", "type": "S" },
+      { "text": "가사 분담표를 만들어 규칙을 정한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1403,
+    "target_age_min": 40,
+    "target_age_max": 49,
+    "category": "social_gathering",
+    "question": "모임 장소를 예약해야 하는데 의견이 갈린다.",
+    "options": [
+      { "text": "다수결로 정하거나 내가 결정한다.", "type": "D" },
+      { "text": "모두가 만족할 만한 절충안을 찾으려 노력한다.", "type": "I" },
+      { "text": "대세를 따르며 불만을 표하지 않는다.", "type": "S" },
+      { "text": "각 장소의 장단점을 비교하여 합리적인 곳을 추천한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1404,
+    "target_age_min": 40,
+    "target_age_max": 49,
+    "category": "lifestyle_retirement",
+    "question": "은퇴 후의 삶을 상상해 본다면?",
+    "options": [
+      { "text": "사업이나 재테크로 경제적 자유를 누리며 산다.", "type": "D" },
+      { "text": "친구들과 여행 다니며 즐겁게 산다.", "type": "I" },
+      { "text": "가족들과 전원주택에서 평화롭게 산다.", "type": "S" },
+      { "text": "독서와 공부를 하며 지적 호기심을 채운다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1405,
+    "target_age_min": 40,
+    "target_age_max": 49,
+    "category": "work_evaluation",
+    "question": "인사 평가 시즌, 나 자신을 어필해야 한다.",
+    "options": [
+      { "text": "성과를 수치화하여 당당하게 제시한다.", "type": "D" },
+      { "text": "동료들과의 원만한 관계와 팀워크 기여도를 강조한다.", "type": "I" },
+      { "text": "성실하게 업무를 수행했음을 은근히 내비친다.", "type": "S" },
+      { "text": "업무 목표 달성률과 구체적인 데이터를 근거로 제출한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1406,
+    "target_age_min": 40,
+    "target_age_max": 49,
+    "category": "family_children",
+    "question": "자녀가 학교에서 문제를 일으켰다.",
+    "options": [
+      { "text": "학교에 찾아가 자초지종을 따지고 해결한다.", "type": "D" },
+      { "text": "아이의 이야기를 들어주고 공감해 준다.", "type": "I" },
+      { "text": "선생님께 죄송하다고 사과하고 아이를 타이른다.", "type": "S" },
+      { "text": "사건의 경위를 파악하고 객관적인 사실관계를 확인한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1407,
+    "target_age_min": 40,
+    "target_age_max": 49,
+    "category": "lifestyle_interior",
+    "question": "거실 인테리어를 바꾼다면?",
+    "options": [
+      { "text": "화려하고 고급스러운 가구로 포인트를 준다.", "type": "D" },
+      { "text": "가족사진이나 추억이 담긴 소품으로 장식한다.", "type": "I" },
+      { "text": "편안하고 아늑한 소파와 조명을 둔다.", "type": "S" },
+      { "text": "수납공간을 늘려 깔끔하게 정리 정돈한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1408,
+    "target_age_min": 40,
+    "target_age_max": 49,
+    "category": "work_communication",
+    "question": "회의 중 내 의견에 반대하는 사람이 있다.",
+    "options": [
+      { "text": "내 의견의 타당성을 강력하게 주장한다.", "type": "D" },
+      { "text": "상대방의 의견도 존중하며 합의점을 찾는다.", "type": "I" },
+      { "text": "갈등을 피하기 위해 내 의견을 굽힌다.", "type": "S" },
+      { "text": "반대 의견의 근거가 무엇인지 논리적으로 반박한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1409,
+    "target_age_min": 40,
+    "target_age_max": 49,
+    "category": "self_challenge",
+    "question": "새로운 분야에 도전할 기회가 생겼다.",
+    "options": [
+      { "text": "망설이지 않고 도전한다. 실패를 두려워하지 않는다.", "type": "D" },
+      { "text": "재미있을 것 같으면 도전한다.", "type": "I" },
+      { "text": "익숙하지 않은 일이라 주저하게 된다.", "type": "S" },
+      { "text": "성공 가능성과 리스크를 철저히 분석한 후 결정한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1410,
+    "target_age_min": 40,
+    "target_age_max": 49,
+    "category": "friendship_meeting",
+    "question": "오랜만에 친구들을 만나는 날이다.",
+    "options": [
+      { "text": "모임을 주도하고 분위기를 이끈다.", "type": "D" },
+      { "text": "친구들과 수다 떨 생각에 설렌다.", "type": "I" },
+      { "text": "친구들의 이야기를 들어주는 편이다.", "type": "S" },
+      { "text": "약속 장소와 시간을 꼼꼼히 챙긴다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1411,
+    "target_age_min": 40,
+    "target_age_max": 49,
+    "category": "lifestyle_culture",
+    "question": "문화생활을 즐긴다면?",
+    "options": [
+      { "text": "뮤지컬이나 콘서트처럼 화려하고 웅장한 공연.", "type": "D" },
+      { "text": "영화나 연극처럼 감성을 자극하는 작품.", "type": "I" },
+      { "text": "미술관이나 박물관처럼 조용하고 차분한 전시.", "type": "S" },
+      { "text": "클래식 음악회나 인문학 강연.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1412,
+    "target_age_min": 40,
+    "target_age_max": 49,
+    "category": "work_stress",
+    "question": "업무 스트레스가 극에 달했을 때?",
+    "options": [
+      { "text": "운동이나 취미 활동으로 에너지를 발산한다.", "type": "D" },
+      { "text": "술자리나 수다로 푼다.", "type": "I" },
+      { "text": "집에서 조용히 쉰다.", "type": "S" },
+      { "text": "스트레스 원인을 분석하고 해결책을 찾는다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1413,
+    "target_age_min": 40,
+    "target_age_max": 49,
+    "category": "family_celebration",
+    "question": "남편의 생일이나 기념일을 챙길 때?",
+    "options": [
+      { "text": "고급 레스토랑을 예약하고 깜짝 이벤트를 준비한다.", "type": "D" },
+      { "text": "정성스러운 선물과 편지를 준비한다.", "type": "I" },
+      { "text": "집에서 맛있는 음식을 차려주고 축하해준다.", "type": "S" },
+      { "text": "남편이 평소 갖고 싶어 했던 실용적인 물건을 사준다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1414,
+    "target_age_min": 40,
+    "target_age_max": 49,
+    "category": "social_responsibility",
+    "question": "아파트 동대표나 학부모회 임원을 맡게 되었다.",
+    "options": [
+      { "text": "적극적으로 의견을 개진하고 리더십을 발휘한다.", "type": "D" },
+      { "text": "주민들과 소통하며 원만한 관계를 형성한다.", "type": "I" },
+      { "text": "맡은 바 임무를 성실히 수행한다.", "type": "S" },
+      { "text": "규정을 준수하고 투명하게 운영한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1415,
+    "target_age_min": 40,
+    "target_age_max": 49,
+    "category": "self_future",
+    "question": "앞으로 10년 후 나의 모습은?",
+    "options": [
+      { "text": "사회적으로 성공하고 영향력 있는 리더.", "type": "D" },
+      { "text": "주변 사람들에게 사랑받고 행복한 사람.", "type": "I" },
+      { "text": "가정과 일의 균형을 이루며 평온하게 사는 사람.", "type": "S" },
+      { "text": "전문 분야에서 인정받는 전문가.", "type": "C" }
+    ]
+  },
+
+  {
+    "id": 1416,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "career_glass_ceiling",
+    "question": "임원 승진에서 남자 동기에게 밀렸다. 능력은 내가 더 낫다고 확신한다.",
+    "options": [
+      { "text": "인사권자에게 찾아가 명확한 탈락 사유와 근거를 따져 묻는다.", "type": "D" },
+      { "text": "내 편인 사람들을 모아 여론을 형성하고 억울함을 토로한다.", "type": "I" },
+      { "text": "속은 문드러지지만 조직의 결정을 받아들이고 체념한다.", "type": "S" },
+      { "text": "내 성과 지표와 경쟁자의 지표를 비교 분석해 차별의 증거를 찾는다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1417,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "family_sandwich",
+    "question": "편찮으신 친정(시댁) 부모님 간병 문제로 형제들과 회의를 한다.",
+    "options": [
+      { "text": "\"비용은 N분의 1, 간병인은 이렇게 쓰자.\" 내가 주도해서 결론 낸다.", "type": "D" },
+      { "text": "형제들의 감정을 살피며 \"우리 조금만 더 힘내자\"고 독려한다.", "type": "I" },
+      { "text": "불만은 있지만 싸우기 싫어서 내가 더 희생하고 만다.", "type": "S" },
+      { "text": "요양 등급 신청 절차와 병원비 내역을 엑셀로 정리해 제시한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1418,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "social_menopause",
+    "question": "갱년기 증상으로 감정 기복이 심하고 몸이 힘들다.",
+    "options": [
+      { "text": "호르몬 치료나 운동 등 적극적인 해결책을 찾아 빠르게 대처한다.", "type": "D" },
+      { "text": "친구들을 만나 \"나 열 올라 죽겠어!\" 하소연하며 수다로 푼다.", "type": "I" },
+      { "text": "가족들에게 짜증 내기 미안해서 혼자 끙끙 앓으며 참는다.", "type": "S" },
+      { "text": "갱년기에 좋은 성분과 내 증상을 비교하며 영양제를 공부한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1419,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "family_empty_nest",
+    "question": "자녀들이 모두 독립하고 집이 텅 빈 것 같다(빈 둥지 증후군).",
+    "options": [
+      { "text": "이제 내 세상이다! 그동안 미뤘던 사업이나 공부를 시작한다.", "type": "D" },
+      { "text": "외로움을 달래기 위해 각종 모임에 나가고 친구들을 집에 초대한다.", "type": "I" },
+      { "text": "아이들 방을 치우지 못하고 예전 사진을 보며 그리워한다.", "type": "S" },
+      { "text": "줄어든 생활비와 노후 자금을 계산하며 가계를 재정비한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1420,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "work_younger_generation",
+    "question": "MZ세대 후배가 \"그건 꼰대 같은 생각인데요\"라고 지적했다.",
+    "options": [
+      { "text": "\"뭐라고? 다시 말해봐.\" 그 자리에서 예의 없음을 지적한다.", "type": "D" },
+      { "text": "\"하하, 내가 그랬니? 미안~\" 웃으며 분위기를 유하게 넘긴다.", "type": "I" },
+      { "text": "겉으론 웃지만 속으로 큰 상처를 받고 위축된다.", "type": "S" },
+      { "text": "내 발언의 어떤 부분이 구시대적이었는지 객관적으로 복기해 본다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1421,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "lifestyle_retirement",
+    "question": "남편이 준비 없이 은퇴하고 삼식이(집에서 세 끼 먹는 사람)가 되었다.",
+    "options": [
+      { "text": "\"당신 점심은 알아서 챙겨 먹어.\" 내 시간을 확실히 사수한다.", "type": "D" },
+      { "text": "남편 데리고 맛집 투어 다니며 같이 놀러 다닌다.", "type": "I" },
+      { "text": "귀찮고 힘들어도 꼬박꼬박 밥상을 차려준다.", "type": "S" },
+      { "text": "생활비 지출 내역을 보여주며 용돈을 줄이자고 설득한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1422,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "social_gathering",
+    "question": "동창회 모임에 나갔는데 친구가 명품 가방 자랑을 계속한다.",
+    "options": [
+      { "text": "\"가방이 밥 먹여주냐? 딴 얘기 하자.\" 화제를 끊어버린다.", "type": "D" },
+      { "text": "\"어머, 너무 예쁘다! 어디서 샀어?\" 영혼을 담아 칭찬해 준다.", "type": "I" },
+      { "text": "듣기 싫어도 맞장구쳐주며 속으로만 삭인다.", "type": "S" },
+      { "text": "저 친구가 자존감이 낮아서 저러나 보다... 속으로 분석한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1423,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "finance_investment",
+    "question": "노후 자금을 투자하려 한다. 나의 스타일은?",
+    "options": [
+      { "text": "아직 늦지 않았다. 수익률 높은 부동산이나 주식에 공격 투자.", "type": "D" },
+      { "text": "친구나 지인이 좋다고 추천하는 곳에 귀가 솔깃한다.", "type": "I" },
+      { "text": "원금 절대 지켜. 안전한 예금이나 연금 위주로 묶는다.", "type": "S" },
+      { "text": "증여세와 절세 혜택을 꼼꼼히 따져보고 포트폴리오를 짠다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1424,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "work_culture",
+    "question": "회의 중에 남성 상사가 내 말을 자꾸 자르고 무시한다(맨스플레인).",
+    "options": [
+      { "text": "\"제 말 아직 안 끝났습니다. 들으세요.\" 강하게 제지한다.", "type": "D" },
+      { "text": "농담 반 진담 반으로 \"어우, 성격도 급하셔라~\" 하고 받아친다.", "type": "I" },
+      { "text": "분란 만들기 싫어서 그냥 입을 다물고 만다.", "type": "S" },
+      { "text": "회의록에 내 발언이 묵살되었음을 기록하거나 메일로 근거를 남긴다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1425,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "self_appearance",
+    "question": "거울을 보는데 주름과 흰머리가 부쩍 늘었다.",
+    "options": [
+      { "text": "당장 피부과 시술과 염색 예약. 늙는 건 용납 못 해.", "type": "D" },
+      { "text": "화려한 옷이나 액세서리로 시선을 분산시킨다.", "type": "I" },
+      { "text": "자연스러운 현상이지... 받아들이며 곱게 늙자고 생각한다.", "type": "S" },
+      { "text": "안티에이징 제품 성분을 검색하고 기능성 화장품으로 바꾼다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1426,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "family_children_marriage",
+    "question": "자녀가 결혼할 배우자를 데려왔는데 마음에 들지 않는다.",
+    "options": [
+      { "text": "\"난 이 결혼 반대다.\" 대놓고 싫은 티를 내거나 반대한다.", "type": "D" },
+      { "text": "겉으로는 웃으며 반겨주지만 나중에 자녀를 설득하려 한다.", "type": "I" },
+      { "text": "자식이 좋다는데 어쩌겠나... 속앓이하며 허락한다.", "type": "S" },
+      { "text": "현실적인 조건(경제력, 집안 등)을 조목조목 따져본다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1427,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "lifestyle_hobby",
+    "question": "50대가 되어 새로 배우고 싶은 것은?",
+    "options": [
+      { "text": "부동산 경매나 창업 과정 등 실질적 이득이 되는 것.", "type": "D" },
+      { "text": "노래 교실, 댄스 등 사람들과 어울려 신나게 노는 것.", "type": "I" },
+      { "text": "마음의 평화를 주는 명상이나 정원 가꾸기.", "type": "S" },
+      { "text": "인문학, 역사, 외국어 등 지적 호기심을 채우는 공부.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1428,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "work_leadership",
+    "question": "내가 리더로서 팀을 이끌 때 가장 중요하게 여기는 것은?",
+    "options": [
+      { "text": "확실한 성과와 목표 달성. 결과가 중요하다.", "type": "D" },
+      { "text": "즐거운 분위기와 팀원 간의 소통.", "type": "I" },
+      { "text": "서로 배려하고 돕는 안정적인 관계.", "type": "S" },
+      { "text": "공정한 시스템과 명확한 업무 분장.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1429,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "friendship_loss",
+    "question": "지인이나 친구의 부고 소식을 들었을 때.",
+    "options": [
+      { "text": "인생무상을 느끼며 남은 삶을 더 치열하게 살기로 다짐한다.", "type": "D" },
+      { "text": "친구들에게 연락해 다 같이 모여 슬픔을 나눈다.", "type": "I" },
+      { "text": "우울감에 빠져 한동안 멍하니 지낸다.", "type": "S" },
+      { "text": "내 장례 절차나 유언장 등을 미리 정리해 둬야겠다고 생각한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1430,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "social_gender_gap",
+    "question": "모임에서 남자들은 정치 얘기, 여자들은 자식/남편 얘기만 할 때.",
+    "options": [
+      { "text": "지루함을 못 참고 남자들 대화에 끼어 내 주장을 펼친다.", "type": "D" },
+      { "text": "양쪽을 오가며 분위기 메이커 역할을 한다.", "type": "I" },
+      { "text": "여자들끼리의 대화에 조용히 맞장구치며 듣는다.", "type": "S" },
+      { "text": "흥미 없는 주제라 스마트폰을 보거나 조용히 관찰한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1431,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "career_change",
+    "question": "은퇴 후 제2의 직업을 갖는다면?",
+    "options": [
+      { "text": "내가 사장이 되어 주도적으로 할 수 있는 사업.", "type": "D" },
+      { "text": "사람들을 많이 만나고 에너지를 주는 강사나 상담가.", "type": "I" },
+      { "text": "소일거리 삼아 할 수 있는 부담 없는 봉사나 알바.", "type": "S" },
+      { "text": "전문 지식을 활용할 수 있는 자문 위원이나 프리랜서.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1432,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "family_relationship",
+    "question": "남편이 \"나이 드니 당신 성격이 더 드세졌다\"고 한다.",
+    "options": [
+      { "text": "\"당신이 그렇게 만든 거야!\" 강하게 받아친다.", "type": "D" },
+      { "text": "\"내가? 호호, 원래 여자는 나이 들면 장군이 된대~\" 웃어넘긴다.", "type": "I" },
+      { "text": "내가 너무 심했나... 싶어서 속상하고 위축된다.", "type": "S" },
+      { "text": "어떤 행동 때문에 그렇게 느꼈는지 구체적인 사례를 묻는다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1433,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "lifestyle_health",
+    "question": "건강을 위해 운동을 시작하려고 한다.",
+    "options": [
+      { "text": "짧은 시간에 효과를 보는 PT나 골프 레슨을 등록한다.", "type": "D" },
+      { "text": "에어로빅이나 줌바 댄스처럼 여럿이 신나게 하는 운동.", "type": "I" },
+      { "text": "무리 가지 않는 걷기나 요가를 꾸준히 한다.", "type": "S" },
+      { "text": "내 몸 상태에 맞는 운동 처방을 받고 규칙적으로 헬스장을 간다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1434,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "finance_spending",
+    "question": "자녀가 결혼 자금 지원을 요청했다. 내 노후 자금도 빠듯한데...",
+    "options": [
+      { "text": "\"지원해 줄 수 있는 건 여기까지다.\" 한도를 명확히 긋는다.", "type": "D" },
+      { "text": "어떻게든 마련해서 기죽지 않게 보내주려고 애쓴다.", "type": "I" },
+      { "text": "거절하기 미안해서 내 노후 자금을 헐어서라도 준다.", "type": "S" },
+      { "text": "자녀와 차용증을 쓰거나 증여세 문제를 고려해 결정한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1435,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "social_network",
+    "question": "카톡 프로필 사진을 바꾼다면?",
+    "options": [
+      { "text": "내가 골프 치거나 여행 가서 멋지게 나온 독사진.", "type": "D" },
+      { "text": "친구들과 왁자지껄하게 찍은 모임 사진.", "type": "I" },
+      { "text": "손주 사진이나 꽃, 풍경 사진.", "type": "S" },
+      { "text": "아무것도 설정 안 하거나 의미 있는 문구/책 표지.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1436,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "work_technology",
+    "question": "회사에서 새로운 디지털 툴(AI, 메타버스 등)을 도입한다고 한다.",
+    "options": [
+      { "text": "뒤처지기 싫어서 누구보다 먼저 배우고 마스터한다.", "type": "D" },
+      { "text": "젊은 직원들에게 \"이것 좀 가르쳐줘~\" 하며 배운다.", "type": "I" },
+      { "text": "익숙한 게 편한데... 변화가 두렵고 스트레스 받는다.", "type": "S" },
+      { "text": "매뉴얼을 정독하고 기능 하나하나를 꼼꼼히 익힌다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1437,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "self_identity",
+    "question": "50대 여성으로서 가장 듣기 싫은 말은?",
+    "options": [
+      { "text": "\"이제 쉴 때 되셨잖아요.\" (능력 무시)", "type": "D" },
+      { "text": "\"아줌마.\" (여성성 무시)", "type": "I" },
+      { "text": "\"드세다.\" (성격 비난)", "type": "S" },
+      { "text": "\"감 떨어졌다.\" (전문성 무시)", "type": "C" }
+    ]
+  },
+  {
+    "id": 1438,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "lifestyle_fashion",
+    "question": "옷을 살 때 가장 중요하게 생각하는 것은?",
+    "options": [
+      { "text": "어디서든 기죽지 않는 명품 로고나 고급스러움.", "type": "D" },
+      { "text": "나보다 10년은 젊어 보이는 화사한 디자인.", "type": "I" },
+      { "text": "체형을 가려주고 입었을 때 편안한 옷.", "type": "S" },
+      { "text": "원단(소재)의 퀄리티와 마감 상태.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1439,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "family_husband",
+    "question": "남편이 퇴직 후 귀농(시골 생활)을 하자고 한다.",
+    "options": [
+      { "text": "\"난 도시가 좋아. 갈 거면 당신 혼자 가.\" 단호하게 거절.", "type": "D" },
+      { "text": "전원주택에서 바비큐 파티할 상상을 하며 설렌다.", "type": "I" },
+      { "text": "가기 싫지만 남편이 원하니 따라가야지... 생각한다.", "type": "S" },
+      { "text": "병원 접근성, 마트, 생활비 등을 꼼꼼히 따져본다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1440,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "social_conflict",
+    "question": "식당 종업원이 나를 '어머니'라고 부르며 불친절하게 대한다.",
+    "options": [
+      { "text": "매니저를 불러 \"교육 똑바로 시키세요\"라고 항의한다.", "type": "D" },
+      { "text": "\"저기요, 저 아직 어머니 소리 들을 나이 아닌데~\" 농담으로 뼈 때린다.", "type": "I" },
+      { "text": "기분 나쁘지만 꾹 참고 빨리 먹고 나간다.", "type": "S" },
+      { "text": "해당 식당 리뷰에 서비스 불만족 사실을 건조하게 남긴다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1441,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "lifestyle_travel",
+    "question": "친구들과 우정 여행을 간다면?",
+    "options": [
+      { "text": "내가 가고 싶은 곳으로 일정 다 짜고 \"따라와\" 한다.", "type": "D" },
+      { "text": "관광지에서 사진 찍고 맛집 다니며 시끌벅적하게 논다.", "type": "I" },
+      { "text": "친구들이 가자는 대로 따르며 총무 역할을 맡는다.", "type": "S" },
+      { "text": "박물관이나 역사 유적지 등을 해설사와 함께 둘러본다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1442,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "career_mentoring",
+    "question": "후배 여직원이 커리어 상담을 요청했다.",
+    "options": [
+      { "text": "\"여자라고 기죽지 마. 실력으로 보여줘.\" 강한 마인드를 심어준다.", "type": "D" },
+      { "text": "밥 사주며 내 경험담(라떼는 말이야)을 재밌게 풀어준다.", "type": "I" },
+      { "text": "힘든 점을 묵묵히 들어주고 공감하며 위로해 준다.", "type": "S" },
+      { "text": "구체적인 로드맵과 필요한 자격증 등을 조언해 준다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1443,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "family_inlaws",
+    "question": "며느리(또는 사위)가 명절에 못 온다고 통보했다.",
+    "options": [
+      { "text": "\"어디 어른한테 통보야?\" 전화를 걸어 따끔하게 말한다.", "type": "D" },
+      { "text": "서운하지만 주변 사람들에게 \"요즘 애들은 다 그래~\" 하며 푼다.", "type": "I" },
+      { "text": "\"그래, 바쁘면 어쩔 수 없지.\" 이해하는 척하지만 속상하다.", "type": "S" },
+      { "text": "못 오는 합당한 이유가 있는지 확인하고 다음 일정을 조율한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1444,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "self_energy",
+    "question": "나에게 에너지를 주는 것은?",
+    "options": [
+      { "text": "돈, 성공, 남들이 인정해 주는 사회적 지위.", "type": "D" },
+      { "text": "친구들과의 수다, 여행, 왁자지껄한 모임.", "type": "I" },
+      { "text": "가족들의 건강과 평온한 집안 분위기.", "type": "S" },
+      { "text": "혼자만의 시간, 독서, 배움의 기쁨.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1445,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "work_retirement",
+    "question": "퇴직 후 어떤 사람으로 기억되고 싶은가?",
+    "options": [
+      { "text": "카리스마 있고 일 잘했던 '전설적인' 선배.", "type": "D" },
+      { "text": "함께 있으면 즐겁고 인간미 넘쳤던 선배.", "type": "I" },
+      { "text": "따뜻하고 배려심 깊었던 엄마 같은 선배.", "type": "S" },
+      { "text": "업무 지식이 해박하고 배울 점이 많았던 멘토.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1446,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "social_gossip",
+    "question": "모임에서 누군가 없는 사람 뒷담화를 시작했다.",
+    "options": [
+      { "text": "\"없는 사람 얘기 그만합시다.\" 화제를 돌리거나 제지한다.", "type": "D" },
+      { "text": "\"어머, 진짜? 걔가 그랬어?\" 흥미진진하게 맞장구친다.", "type": "I" },
+      { "text": "불편하지만 분위기 깰까 봐 가만히 듣고 있는다.", "type": "S" },
+      { "text": "사실인지 아닌지 중립을 지키며 판단을 유보한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1447,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "lifestyle_home",
+    "question": "집안 인테리어를 바꾼다면?",
+    "options": [
+      { "text": "남들이 와서 보고 감탄할 만큼 럭셔리하고 화려하게.", "type": "D" },
+      { "text": "손주들이나 친구들이 와서 놀기 좋게 개방적으로.", "type": "I" },
+      { "text": "유행 타지 않고 질리지 않는 편안하고 아늑한 스타일.", "type": "S" },
+      { "text": "청소하기 쉽고 수납이 완벽한 미니멀리즘.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1448,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "finance_risk",
+    "question": "지인이 고수익을 보장한다며 돈을 빌려달라고 한다.",
+    "options": [
+      { "text": "\"그런 건 없어. 정신 차려.\" 단칼에 거절하고 혼낸다.", "type": "D" },
+      { "text": "친한 사이라 거절하기 어려워 고민하다가 남편 핑계를 댄다.", "type": "I" },
+      { "text": "사정 들어보니 딱해서 없어도 되는 셈 치고 조금 빌려준다.", "type": "S" },
+      { "text": "차용증, 담보 여부, 수익 구조 등을 꼼꼼히 확인한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1449,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "work_stress",
+    "question": "직장에서 억울한 누명을 썼다.",
+    "options": [
+      { "text": "반드시 범인을 잡고 내 결백을 밝혀내 명예를 회복한다.", "type": "D" },
+      { "text": "동료들에게 하소연하며 내 편을 만든다.", "type": "I" },
+      { "text": "진실은 언젠가 밝혀지겠지... 하며 묵묵히 견딘다.", "type": "S" },
+      { "text": "사건의 전말과 증거 자료를 수집해 보고서로 제출한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1450,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "family_husband",
+    "question": "남편과 대화가 안 통하고 벽보고 얘기하는 것 같다.",
+    "options": [
+      { "text": "\"당신이랑은 끝이야. 각자 살자.\" 별거를 선언하거나 무시한다.", "type": "D" },
+      { "text": "\"어떻게 나한테 이럴 수 있어?\" 울면서 감정을 토로한다.", "type": "I" },
+      { "text": "싸우면 나만 손해지... 그냥 내가 참고 맞춰준다.", "type": "S" },
+      { "text": "대화 방식의 문제점을 분석하고 상담 센터를 알아본다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1451,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "self_challenge",
+    "question": "유튜브 크리에이터에 도전해 볼까?",
+    "options": [
+      { "text": "일단 채널 개설부터 하고 본다. 하면 된다!", "type": "D" },
+      { "text": "내 일상을 찍어서 올리면 사람들이 좋아할 것 같아 설렌다.", "type": "I" },
+      { "text": "나이 먹고 주책이라는 소리 들을까 봐 망설인다.", "type": "S" },
+      { "text": "촬영 장비, 편집 프로그램, 수익 창출 조건을 먼저 공부한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1452,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "social_volunteering",
+    "question": "봉사 활동을 하러 갔다. 나의 역할은?",
+    "options": [
+      { "text": "봉사단을 조직하고 업무를 지시하는 팀장.", "type": "D" },
+      { "text": "사람들을 웃게 만들고 분위기를 띄우는 역할.", "type": "I" },
+      { "text": "남들이 하기 싫어하는 설거지나 청소를 묵묵히 한다.", "type": "S" },
+      { "text": "회비를 관리하고 물품 재고를 파악하는 총무.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1453,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "family_adult_children",
+    "question": "다 큰 자녀가 계속 용돈을 달라고 손을 벌린다(캥거루족).",
+    "options": [
+      { "text": "\"이번이 마지막이다. 나가 살아.\" 독립을 강요한다.", "type": "D" },
+      { "text": "자식 이기는 부모 없다고... 잔소리하면서도 준다.", "type": "I" },
+      { "text": "오죽하면 달라고 할까... 안쓰러워서 몰래 챙겨준다.", "type": "S" },
+      { "text": "언제까지 얼마를 지원할지 계약서를 쓰고 지키게 한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1454,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "career_expertise",
+    "question": "업무 관련 자격증 시험을 준비한다.",
+    "options": [
+      { "text": "단기간 속성으로 합격하는 요령을 파악해 승부를 본다.", "type": "D" },
+      { "text": "스터디 그룹을 만들어 사람들과 정보 공유하며 공부한다.", "type": "I" },
+      { "text": "꾸준히 매일 정해진 분량을 성실하게 공부한다.", "type": "S" },
+      { "text": "기출 문제를 분석하고 오답 노트를 만들며 완벽을 기한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1455,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "lifestyle_driving",
+    "question": "운전 중 난폭 운전자가 끼어들었다.",
+    "options": [
+      { "text": "경적을 길게 울리고 창문 내리고 한마디 한다.", "type": "D" },
+      { "text": "\"어머 깜짝이야! 미쳤나 봐!\" 혼잣말로 놀란 가슴 쓸어내린다.", "type": "I" },
+      { "text": "사고 안 나서 다행이다 생각하며 비켜준다.", "type": "S" },
+      { "text": "블랙박스 영상을 저장하고 신고 여부를 검토한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1456,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "social_reunion",
+    "question": "수십 년 만에 초등학교 동창회에 나갔다.",
+    "options": [
+      { "text": "성공한 내 모습을 보여주며 모임의 중심이 된다.", "type": "D" },
+      { "text": "옛날이야기하며 춤추고 노래하고 제일 신나게 논다.", "type": "I" },
+      { "text": "조용히 앉아서 친구들 사는 이야기를 듣는다.", "type": "S" },
+      { "text": "친구들의 연락처를 정리하고 회비 장부를 맡는다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1457,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "family_inheritance",
+    "question": "부모님 유산 문제로 형제간에 의견이 다르다.",
+    "options": [
+      { "text": "법대로 하자거나 내 몫을 강력하게 주장한다.", "type": "D" },
+      { "text": "\"우리가 돈 때문에 의 상해서야 되겠니?\" 감정에 호소한다.", "type": "I" },
+      { "text": "싸우기 싫어서 내가 좀 손해 보고 양보한다.", "type": "S" },
+      { "text": "기여분과 법정 상속분을 계산해 합리적인 안을 낸다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1458,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "work_networking",
+    "question": "비즈니스 모임에서 명함을 교환할 때.",
+    "options": [
+      { "text": "가장 영향력 있는 사람에게 먼저 다가가 내 소개를 한다.", "type": "D" },
+      { "text": "웃으며 여러 사람과 두루두루 인사를 나눈다.", "type": "I" },
+      { "text": "상대방이 먼저 다가오길 기다리거나 구석에 있는다.", "type": "S" },
+      { "text": "나에게 필요한 사람인지 파악하고 신중하게 접근한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1459,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "self_future",
+    "question": "앞으로 남은 인생, 어떻게 살고 싶은가?",
+    "options": [
+      { "text": "죽을 때까지 현역으로 일하며 영향력 있는 사람으로 남고 싶다.", "type": "D" },
+      { "text": "좋은 사람들과 어울려 여행 다니며 즐겁게 살고 싶다.", "type": "I" },
+      { "text": "자식들 걱정 안 시키고 건강하고 평온하게 살고 싶다.", "type": "S" },
+      { "text": "계획한 대로 여유로운 노후를 보내며 지적으로 성장하고 싶다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1460,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "lifestyle_diet",
+    "question": "나잇살이 안 빠져서 고민이다.",
+    "options": [
+      { "text": "독하게 맘먹고 단식원에 들어가거나 1일 1식을 감행한다.", "type": "D" },
+      { "text": "친구랑 내기하거나 운동 인증샷을 올리며 동기 부여한다.", "type": "I" },
+      { "text": "천천히 걷기 운동하며 저녁만 조금 줄인다.", "type": "S" },
+      { "text": "기초 대사량을 체크하고 식단을 칼로리별로 짠다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1461,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "career_complaint",
+    "question": "고객이 말도 안 되는 억지 컴플레인을 건다(갑질).",
+    "options": [
+      { "text": "\"규정상 안 됩니다.\" 단호하게 자르고 내 할 말 한다.", "type": "D" },
+      { "text": "유연하게 대처하며 말로 잘 구슬려 보낸다.", "type": "I" },
+      { "text": "죄송하다고 계속 사과하며 빨리 상황을 끝내려 한다.", "type": "S" },
+      { "text": "녹취를 하거나 매뉴얼대로 대응하며 증거를 남긴다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1462,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "family_husband",
+    "question": "은퇴한 남편이 집안일에 사사건건 잔소리한다.",
+    "options": [
+      { "text": "\"당신이 해!\" 앞치마를 던져주고 나가버린다.", "type": "D" },
+      { "text": "\"아유~ 우리 남편 꼼꼼하기도 하지~\" 비꼬며 넘긴다.", "type": "I" },
+      { "text": "듣기 싫지만 싸우기 싫어서 네네 하고 만다.", "type": "S" },
+      { "text": "가사 노동의 효율성에 대해 논리적으로 반박한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1463,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "social_respect",
+    "question": "어린 사람이 나를 무시하는 듯한 태도를 보인다.",
+    "options": [
+      { "text": "\"어디서 눈을 그렇게 떠?\" 기선 제압한다.", "type": "D" },
+      { "text": "기분 나쁘지만 \"젊은 친구가 패기가 있네\" 하고 웃는다.", "type": "I" },
+      { "text": "집에 와서 계속 생각나고 속상해한다.", "type": "S" },
+      { "text": "내가 무시당할 만한 행동을 했는지 되돌아본다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1464,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "lifestyle_culture",
+    "question": "주말에 문화생활을 즐긴다면?",
+    "options": [
+      { "text": "스케일이 크고 웅장한 대형 뮤지컬이나 콘서트.", "type": "D" },
+      { "text": "감성을 자극하는 연극이나 영화.", "type": "I" },
+      { "text": "조용한 미술관 관람이나 숲 산책.", "type": "S" },
+      { "text": "역사 탐방이나 박물관 도슨트 투어.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1465,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "self_development",
+    "question": "50대, 나의 자존감을 높이는 방법은?",
+    "options": [
+      { "text": "경제적 능력과 사회적 성취를 계속 확인한다.", "type": "D" },
+      { "text": "주변 사람들에게 인정받고 사랑받는 것.", "type": "I" },
+      { "text": "가족의 화목과 안정적인 생활.", "type": "S" },
+      { "text": "내면의 성장과 지적인 성숙.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1466,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "work_leadership",
+    "question": "나보다 훨씬 어린 '낙하산' 상사가 부임했다. 나의 태도는?",
+    "options": [
+      { "text": "업무 능력을 검증하기 위해 공개적인 자리에서 날카로운 질문을 던진다.", "type": "D" },
+      { "text": "일단 친해지기 위해 점심 식사를 제안하며 분위기를 푼다.", "type": "I" },
+      { "text": "조직의 결정이니 불만은 있어도 겉으로는 티 내지 않고 협조한다.", "type": "S" },
+      { "text": "저 사람의 이력과 배경을 조사하고 나의 대처 방안을 세운다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1467,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "family_inlaws",
+    "question": "며느리(혹은 사위)의 육아 방식이 내 마음에 들지 않는다.",
+    "options": [
+      { "text": "\"애는 그렇게 키우는 거 아니야.\" 직설적으로 훈수한다.", "type": "D" },
+      { "text": "\"요즘은 그런 게 유행이니? 신기하다~\" 돌려서 말하거나 농담한다.", "type": "I" },
+      { "text": "말하고 싶어 입이 근질거려도 꾹 참고 지켜본다.", "type": "S" },
+      { "text": "육아 서적이나 전문가 칼럼을 찾아보고 객관적인 정보를 전해준다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1468,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "lifestyle_health",
+    "question": "건강 검진을 앞두고 몸 관리를 해야 한다.",
+    "options": [
+      { "text": "목표 체중을 정해놓고 독하게 굶거나 운동한다.", "type": "D" },
+      { "text": "친구들과 등산 모임을 만들어 수다 떨며 운동한다.", "type": "I" },
+      { "text": "평소대로 무리하지 않고 영양제만 잘 챙겨 먹는다.", "type": "S" },
+      { "text": "혈압, 혈당 수치를 매일 기록하고 식단을 철저히 분석한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1469,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "career_retirement",
+    "question": "은퇴 후 창업을 제안받았다. 나의 반응은?",
+    "options": [
+      { "text": "내가 주도권을 쥘 수 있고 수익성이 확실하다면 도전한다.", "type": "D" },
+      { "text": "사람들을 많이 만나는 업종이라면 재미있을 것 같다.", "type": "I" },
+      { "text": "나이 들어서 모험하기 싫다. 안정적인 게 최고다.", "type": "S" },
+      { "text": "사업 계획서, 리스크, 예상 수익률을 꼼꼼히 검토한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1470,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "social_gathering",
+    "question": "모임 총무를 맡았는데 회비를 늦게 내는 회원이 있다.",
+    "options": [
+      { "text": "단톡방에 실명을 거론하며 \"입금하세요\"라고 공지한다.", "type": "D" },
+      { "text": "개인 톡으로 \"언니~ 까먹었지?\" 하며 좋게 이야기한다.", "type": "I" },
+      { "text": "사정이 있겠지 하며 내 돈으로 먼저 메꿔놓는다.", "type": "S" },
+      { "text": "미납 내역과 회칙을 캡처해서 증거와 함께 보낸다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1471,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "family_care",
+    "question": "치매나 중병을 앓는 부모님을 요양원에 모셔야 할 상황이다.",
+    "options": [
+      { "text": "형제들을 소집해 요양원 선정과 비용 분담을 내가 결정한다.", "type": "D" },
+      { "text": "부모님께 죄송한 마음에 눈물을 보이며 형제들에게 하소연한다.", "type": "I" },
+      { "text": "다른 형제들의 의견에 따르며 묵묵히 수발을 든다.", "type": "S" },
+      { "text": "시설 등급, 비용, 위치, 의료진 현황을 엑셀로 비교 분석한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1472,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "self_appearance",
+    "question": "노화 방지를 위한 시술(보톡스, 리프팅 등)을 고민 중이다.",
+    "options": [
+      { "text": "효과가 확실하고 즉각적이라면 비용 상관없이 바로 한다.", "type": "D" },
+      { "text": "친구가 해서 예뻐진 걸 보고 따라 하거나 같이 가서 한다.", "type": "I" },
+      { "text": "부작용이 무서워서 그냥 좋은 화장품 쓰는 걸로 만족한다.", "type": "S" },
+      { "text": "성분, 의사 경력, 병원 후기를 며칠간 검색해 보고 결정한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1473,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "lifestyle_hobby",
+    "question": "나만의 공간(서재, 작업실 등)을 꾸민다면?",
+    "options": [
+      { "text": "나의 성취를 보여주는 상패나 트로피, 고급 가구로 채운다.", "type": "D" },
+      { "text": "친구들을 초대해 차 마시기 좋은 화사한 응접실처럼 꾸민다.", "type": "I" },
+      { "text": "가족 사진과 편안한 소파가 있는 아늑한 쉼터로 만든다.", "type": "S" },
+      { "text": "책과 자료가 완벽하게 정리된 도서관 같은 공간으로 만든다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1474,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "finance_investment",
+    "question": "지인이 \"이거 대박이야\"라며 투자를 권유한다.",
+    "options": [
+      { "text": "수익 구조를 묻고 확신이 안 서면 단칼에 거절한다.", "type": "D" },
+      { "text": "친한 사이라 거절하기 어려워 남편 핑계를 대며 미룬다.", "type": "I" },
+      { "text": "사정이 딱해 보여서 없어도 되는 돈이라 생각하고 조금 해준다.", "type": "S" },
+      { "text": "관련 서류와 법적 보호 장치를 꼼꼼히 요구하고 확인한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1475,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "family_husband",
+    "question": "남편이 은퇴 후 집안 살림에 간섭하기 시작했다.",
+    "options": [
+      { "text": "\"당신은 손대지 마!\" 영역을 확실히 지키라고 경고한다.", "type": "D" },
+      { "text": "\"어머, 우리 남편 살림꾼 다 됐네~\" 비꼬며 웃어넘긴다.", "type": "I" },
+      { "text": "잔소리 듣기 싫어서 남편이 원하는 대로 맞춰준다.", "type": "S" },
+      { "text": "가사 분담표를 작성해 각자의 역할을 명확히 규정한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1476,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "work_technology",
+    "question": "키오스크(무인 단말기) 사용이 복잡해서 뒤에 줄이 길어졌다.",
+    "options": [
+      { "text": "직원을 큰 소리로 불러서 직접 주문받으라고 요구한다.", "type": "D" },
+      { "text": "뒤에 있는 젊은 사람에게 \"이것 좀 도와줘요~\" 하고 부탁한다.", "type": "I" },
+      { "text": "식은땀을 흘리며 당황하다가 주문을 포기하고 나온다.", "type": "S" },
+      { "text": "화면의 안내 문구를 차근차근 읽어보며 끝까지 시도한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1477,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "social_respect",
+    "question": "대중교통에서 젊은이가 예의 없이 군다.",
+    "options": [
+      { "text": "\"학생, 태도가 그게 뭐야?\" 그 자리에서 호통친다.", "type": "D" },
+      { "text": "주변 사람들에게 들으라는 듯이 \"요즘 애들은 참...\" 하며 혀를 찬다.", "type": "I" },
+      { "text": "무서워서 눈을 피하거나 자리를 옮긴다.", "type": "S" },
+      { "text": "상황을 관찰하다가 신고가 필요한지 판단한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1478,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "lifestyle_travel",
+    "question": "50대 기념으로 해외여행을 간다면?",
+    "options": [
+      { "text": "남들이 못 가본 오지 탐험이나 럭셔리 크루즈 여행.", "type": "D" },
+      { "text": "패키지여행으로 가서 새로운 사람들과 어울려 노는 여행.", "type": "I" },
+      { "text": "가족이나 친한 친구 소수와 함께하는 휴양지 힐링 여행.", "type": "S" },
+      { "text": "유적지 답사나 박물관 투어 등 테마가 있는 학습 여행.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1479,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "career_glass_ceiling",
+    "question": "직장에서 성별 때문에 부당한 대우를 받았다고 느낄 때.",
+    "options": [
+      { "text": "즉시 이의를 제기하고 시정을 요구한다.", "type": "D" },
+      { "text": "동료들과 술 한잔하며 상사 욕을 실컷 한다.", "type": "I" },
+      { "text": "원래 사회가 그런 거지... 하며 속으로 삭인다.", "type": "S" },
+      { "text": "차별의 구체적인 사례와 증거를 수집해 둔다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1480,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "family_children",
+    "question": "다 큰 자녀가 독립하지 않고 얹혀산다(캥거루족).",
+    "options": [
+      { "text": "생활비를 내거나 나갈 날짜를 정하라고 통보한다.", "type": "D" },
+      { "text": "자식 데리고 사는 재미도 있지 하며 긍정적으로 생각한다.", "type": "I" },
+      { "text": "자식이 밖에서 고생할까 봐 안쓰러워 다 받아준다.", "type": "S" },
+      { "text": "경제적 독립을 위한 구체적인 계획표를 제출하게 한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1481,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "self_development",
+    "question": "새로운 것을 배우러 문화센터에 등록했다.",
+    "options": [
+      { "text": "반장이나 총무를 맡아 모임을 주도한다.", "type": "D" },
+      { "text": "수업보다는 끝나고 뒤풀이하는 시간이 더 즐겁다.", "type": "I" },
+      { "text": "뒷자리에 조용히 앉아 수업만 듣고 간다.", "type": "S" },
+      { "text": "강의 내용을 녹음하거나 필기하며 열심히 공부한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1482,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "social_network",
+    "question": "동창 밴드(SNS) 활동을 할 때 나의 모습은?",
+    "options": [
+      { "text": "내 사업이나 성취를 알리는 글을 주로 올린다.", "type": "D" },
+      { "text": "댓글을 제일 많이 달고 분위기를 띄운다.", "type": "I" },
+      { "text": "글은 안 올리고 남들 소식에 '좋아요'만 누른다.", "type": "S" },
+      { "text": "유용한 정보나 건강 상식 등을 공유한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1483,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "lifestyle_fashion",
+    "question": "동창회에 입고 갈 옷을 고른다면?",
+    "options": [
+      { "text": "가장 비싼 명품이나 보석으로 성공했음을 과시한다.", "type": "D" },
+      { "text": "나보다 10년은 젊어 보이는 화려한 원색 옷.", "type": "I" },
+      { "text": "튀지 않고 우아하며 단정한 옷.", "type": "S" },
+      { "text": "소재가 고급스럽고 격식에 맞는 정장.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1484,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "family_relationship",
+    "question": "남편과 사소한 일로 다퉜다.",
+    "options": [
+      { "text": "내가 이길 때까지 논쟁하거나 각방을 쓴다.", "type": "D" },
+      { "text": "화가 나도 금방 풀고 아무 일 없던 듯 말 건다.", "type": "I" },
+      { "text": "집안 분위기 망치기 싫어 내가 먼저 사과한다.", "type": "S" },
+      { "text": "다툼의 원인을 생각하고 대화로 풀 타이밍을 본다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1485,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "work_stress",
+    "question": "업무 중 실수를 저질렀을 때.",
+    "options": [
+      { "text": "빠르게 수습하고 책임질 부분은 책임진다.", "type": "D" },
+      { "text": "동료들에게 \"나 어떡해\" 하며 도움을 요청한다.", "type": "I" },
+      { "text": "자책하며 하루 종일 우울해한다.", "type": "S" },
+      { "text": "실수 원인을 분석하고 재발 방지 대책을 마련한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1486,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "lifestyle_diet",
+    "question": "갱년기 뱃살이 빠지지 않아 고민이다.",
+    "options": [
+      { "text": "비만 클리닉 시술이나 약 처방 등 확실한 방법을 찾는다.", "type": "D" },
+      { "text": "친구들과 에어로빅이나 댄스 교실을 등록한다.", "type": "I" },
+      { "text": "저녁을 소식하고 꾸준히 걷기 운동을 한다.", "type": "S" },
+      { "text": "호르몬 영향과 기초대사량을 공부하고 식단을 짠다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1487,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "career_mentoring",
+    "question": "젊은 여직원이 롤모델이라며 조언을 구한다.",
+    "options": [
+      { "text": "\"야망을 가져. 남자들한테 지지 마.\" 성공 비결을 전수한다.", "type": "D" },
+      { "text": "맛있는 밥 사주며 내 실패담까지 재밌게 들려준다.", "type": "I" },
+      { "text": "힘든 점을 들어주고 따뜻하게 위로해 준다.", "type": "S" },
+      { "text": "커리어 로드맵과 필요한 역량을 체계적으로 알려준다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1488,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "social_gossip",
+    "question": "모임에서 친한 친구의 험담이 나온다.",
+    "options": [
+      { "text": "\"그런 얘기 하지 맙시다.\" 딱 잘라 말한다.", "type": "D" },
+      { "text": "\"어머 진짜? 걔가 그랬어?\" 흥미진진하게 듣는다.", "type": "I" },
+      { "text": "불편하지만 분위기 깰까 봐 가만히 있는다.", "type": "S" },
+      { "text": "사실 여부가 확인되지 않은 말이니 판단을 유보한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1489,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "family_empty_nest",
+    "question": "자녀들이 모두 떠나고 집이 조용하다.",
+    "options": [
+      { "text": "이제야 내 세상이다! 미뤄둔 사업이나 취미를 시작한다.", "type": "D" },
+      { "text": "심심해서 친구들을 집으로 초대해 파티를 연다.", "type": "I" },
+      { "text": "아이들 방을 정리하지 못하고 허전해한다.", "type": "S" },
+      { "text": "줄어든 생활비와 부부만의 생활 패턴을 계획한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1490,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "self_future",
+    "question": "앞으로의 10년, 가장 중요하게 생각하는 가치는?",
+    "options": [
+      { "text": "영향력. 사회 활동을 계속하며 존재감을 드러내는 것.", "type": "D" },
+      { "text": "즐거움. 좋은 사람들과 여행 다니며 웃고 사는 것.", "type": "I" },
+      { "text": "평안. 가족 건강과 걱정 없는 안정적인 삶.", "type": "S" },
+      { "text": "지혜. 독서와 공부를 통해 내면이 성숙해지는 것.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1491,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "work_retirement",
+    "question": "은퇴식을 앞두고 있다. 어떤 사람으로 기억되고 싶나?",
+    "options": [
+      { "text": "추진력 있고 일 잘했던 '전설적인' 선배.", "type": "D" },
+      { "text": "유쾌하고 인간미 넘쳤던 인기 많은 선배.", "type": "I" },
+      { "text": "따뜻하고 배려심 깊었던 엄마 같은 선배.", "type": "S" },
+      { "text": "업무 지식이 해박하고 배울 점이 많았던 멘토.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1492,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "social_conflict",
+    "question": "식당 직원이 나를 '어머니'라고 부르며 불친절하다.",
+    "options": [
+      { "text": "매니저를 불러 서비스 태도를 지적한다.", "type": "D" },
+      { "text": "\"저기요, 저 아직 어머니 소리 들을 나이 아닌데~\" 농담한다.", "type": "I" },
+      { "text": "기분 나쁘지만 참고 빨리 먹고 나간다.", "type": "S" },
+      { "text": "식당 리뷰에 서비스 불만족 내용을 건조하게 남긴다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1493,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "family_inheritance",
+    "question": "부모님 유산 상속 문제로 형제간 의견이 다르다.",
+    "options": [
+      { "text": "법적으로 내 몫을 확실히 주장하고 관철한다.", "type": "D" },
+      { "text": "\"돈 때문에 의 상하지 말자\"며 감정에 호소한다.", "type": "I" },
+      { "text": "다투기 싫어서 내가 좀 손해 보고 만다.", "type": "S" },
+      { "text": "기여분과 법정 상속분을 계산해 합리적 안을 낸다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1494,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "lifestyle_car",
+    "question": "새 차를 구매하려 한다. 우선순위는?",
+    "options": [
+      { "text": "성공한 내 위치를 보여주는 대형 세단이나 외제차.", "type": "D" },
+      { "text": "디자인이 예쁘고 색상이 눈에 띄는 차.", "type": "I" },
+      { "text": "승차감이 편안하고 안전한 차.", "type": "S" },
+      { "text": "연비, 유지비, 감가상각을 고려한 가성비 차.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1495,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "career_change",
+    "question": "재취업 면접에서 나이 질문을 받았다.",
+    "options": [
+      { "text": "\"나이는 숫자일 뿐입니다. 성과로 보여드리죠.\" 자신감 있게 답한다.", "type": "D" },
+      { "text": "\"경험이 많아서 오히려 좋아요!\" 밝게 웃으며 답한다.", "type": "I" },
+      { "text": "나이가 많아 죄송한 마음이 들어 위축된다.", "type": "S" },
+      { "text": "내 경력이 업무에 어떻게 도움 되는지 논리적으로 설명한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1496,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "social_volunteering",
+    "question": "봉사 활동에 참여했다. 나의 역할은?",
+    "options": [
+      { "text": "봉사단을 조직하고 지시하는 팀장.", "type": "D" },
+      { "text": "사람들을 웃게 만들고 분위기를 띄우는 역할.", "type": "I" },
+      { "text": "설거지나 청소 등 남들이 싫어하는 일을 묵묵히 한다.", "type": "S" },
+      { "text": "회비를 관리하고 물품 재고를 파악하는 총무.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1497,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "family_children_marriage",
+    "question": "자녀의 결혼 준비 과정에서 사돈과 의견 차이가 있다.",
+    "options": [
+      { "text": "내 자식 기죽지 않게 할 말은 확실히 한다.", "type": "D" },
+      { "text": "좋은 게 좋은 거라고 웃으며 맞춘다.", "type": "I" },
+      { "text": "자식 입장이 곤란해질까 봐 무조건 양보한다.", "type": "S" },
+      { "text": "예단, 예물 리스트를 정리해 합리적으로 조율한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1498,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "self_energy",
+    "question": "우울감이 밀려올 때 나를 회복시키는 것은?",
+    "options": [
+      { "text": "쇼핑이나 성취감을 느낄 수 있는 활동.", "type": "D" },
+      { "text": "친구들과 만나 수다 떨고 맛있는 거 먹기.", "type": "I" },
+      { "text": "집에서 푹 자거나 따뜻한 목욕.", "type": "S" },
+      { "text": "혼자 조용히 책을 읽거나 명상하기.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1499,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "lifestyle_culture",
+    "question": "주말에 문화생활을 한다면?",
+    "options": [
+      { "text": "스케일이 크고 화려한 대형 뮤지컬.", "type": "D" },
+      { "text": "감성을 자극하고 눈물 쏙 빼는 연극.", "type": "I" },
+      { "text": "조용한 미술관 관람이나 숲 산책.", "type": "S" },
+      { "text": "역사 탐방이나 박물관 도슨트 투어.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1500,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "work_communication",
+    "question": "회의 시간이 길어지고 결론이 안 난다.",
+    "options": [
+      { "text": "\"자, 정리합시다. 결론이 뭡니까?\" 나서서 끊는다.", "type": "D" },
+      { "text": "지루함을 못 참고 옆 사람과 딴청을 피운다.", "type": "I" },
+      { "text": "누군가 정리해 주길 기다리며 조용히 있는다.", "type": "S" },
+      { "text": "지금까지 나온 내용을 요약하고 향후 일정을 제안한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1501,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "family_care",
+    "question": "손주를 봐달라는 자녀의 부탁을 받았다.",
+    "options": [
+      { "text": "\"내 인생도 중요해.\" 거절하거나 보육비를 요구한다.", "type": "D" },
+      { "text": "손주 볼 생각에 기쁘지만 체력이 걱정된다.", "type": "I" },
+      { "text": "자식이 힘들까 봐 내 몸 힘든 건 참고 봐준다.", "type": "S" },
+      { "text": "육아 시간과 규칙을 정하고 지킬 것을 약속받는다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1502,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "friendship_loss",
+    "question": "친한 친구의 부고 소식을 들었다.",
+    "options": [
+      { "text": "남은 인생 더 치열하고 멋지게 살자고 다짐한다.", "type": "D" },
+      { "text": "친구들을 불러 모아 슬픔을 나누고 서로 위로한다.", "type": "I" },
+      { "text": "인생무상을 느끼며 한동안 우울감에 빠진다.", "type": "S" },
+      { "text": "내 장례 절차나 유언장을 미리 정리해야겠다고 생각한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1503,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "lifestyle_shopping",
+    "question": "백화점에서 마음에 드는 코트를 발견했다.",
+    "options": [
+      { "text": "\"이거 주세요.\" 가격표 안 보고 바로 산다.", "type": "D" },
+      { "text": "직원이 \"사모님 너무 잘 어울려요\" 하면 기분 좋아 산다.", "type": "I" },
+      { "text": "비싼 것 같아 망설이다가 남편에게 물어본다.", "type": "S" },
+      { "text": "소재 혼용률과 세탁 방법을 확인하고 인터넷 가격을 비교한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1504,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "career_expertise",
+    "question": "업무 관련 자격증 시험을 준비한다.",
+    "options": [
+      { "text": "단기간 속성으로 합격하는 요령을 파악해 승부를 본다.", "type": "D" },
+      { "text": "스터디 그룹을 만들어 사람들과 교류하며 공부한다.", "type": "I" },
+      { "text": "매일 정해진 분량을 꾸준히 성실하게 공부한다.", "type": "S" },
+      { "text": "기출 문제를 분석하고 오답 노트를 만들며 완벽을 기한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1505,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "lifestyle_interior",
+    "question": "거실 분위기를 바꾼다면?",
+    "options": [
+      { "text": "손님들이 감탄할 만한 화려하고 고급스러운 가구.", "type": "D" },
+      { "text": "가족 사진이나 추억이 담긴 소품으로 장식.", "type": "I" },
+      { "text": "편안하고 아늑한 소파와 따뜻한 조명.", "type": "S" },
+      { "text": "먼지 안 타고 청소하기 쉬운 심플한 인테리어.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1506,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "social_reunion",
+    "question": "수십 년 만에 초등학교 동창회에 나갔다.",
+    "options": [
+      { "text": "성공한 내 모습을 보여주며 모임의 중심이 된다.", "type": "D" },
+      { "text": "옛날이야기하며 춤추고 노래하고 제일 신나게 논다.", "type": "I" },
+      { "text": "조용히 앉아서 친구들 사는 이야기를 듣는다.", "type": "S" },
+      { "text": "친구들의 연락처를 정리하고 회비 장부를 맡는다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1507,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "family_husband",
+    "question": "남편과 대화가 안 통하고 벽보고 얘기하는 것 같다.",
+    "options": [
+      { "text": "\"각자 살자.\" 별거를 선언하거나 무시해 버린다.", "type": "D" },
+      { "text": "\"어떻게 나한테 이럴 수 있어?\" 울면서 감정을 토로한다.", "type": "I" },
+      { "text": "싸우면 나만 손해지... 그냥 내가 참고 맞춰준다.", "type": "S" },
+      { "text": "대화 방식의 문제점을 분석하고 상담 센터를 알아본다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1508,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "self_challenge",
+    "question": "유튜브 크리에이터에 도전해 볼까?",
+    "options": [
+      { "text": "일단 채널 개설부터 하고 본다. 하면 된다!", "type": "D" },
+      { "text": "내 일상을 찍어서 올리면 사람들이 좋아할 것 같아 설렌다.", "type": "I" },
+      { "text": "나이 먹고 주책이라는 소리 들을까 봐 망설인다.", "type": "S" },
+      { "text": "촬영 장비, 편집 프로그램, 수익 창출 조건을 먼저 공부한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1509,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "career_complaint",
+    "question": "고객이 말도 안 되는 억지 컴플레인을 건다(갑질).",
+    "options": [
+      { "text": "\"규정상 안 됩니다.\" 단호하게 자르고 내 할 말 한다.", "type": "D" },
+      { "text": "유연하게 대처하며 말로 잘 구슬려 보낸다.", "type": "I" },
+      { "text": "죄송하다고 계속 사과하며 빨리 상황을 끝내려 한다.", "type": "S" },
+      { "text": "녹취를 하거나 매뉴얼대로 대응하며 증거를 남긴다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1510,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "lifestyle_driving",
+    "question": "운전 중 난폭 운전자가 끼어들었다.",
+    "options": [
+      { "text": "경적을 길게 울리고 창문 내리고 한마디 한다.", "type": "D" },
+      { "text": "\"어머 깜짝이야! 미쳤나 봐!\" 혼잣말로 놀란 가슴 쓸어내린다.", "type": "I" },
+      { "text": "사고 안 나서 다행이다 생각하며 비켜준다.", "type": "S" },
+      { "text": "블랙박스 영상을 저장하고 신고 여부를 검토한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1511,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "work_networking",
+    "question": "비즈니스 모임에서 명함을 교환할 때.",
+    "options": [
+      { "text": "가장 영향력 있는 사람에게 먼저 다가가 내 소개를 한다.", "type": "D" },
+      { "text": "웃으며 여러 사람과 두루두루 인사를 나눈다.", "type": "I" },
+      { "text": "상대방이 먼저 다가오길 기다리거나 구석에 있는다.", "type": "S" },
+      { "text": "나에게 필요한 사람인지 파악하고 신중하게 접근한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1512,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "family_celebration",
+    "question": "남편의 환갑이나 생일을 챙길 때?",
+    "options": [
+      { "text": "고급 레스토랑을 예약하고 화려한 이벤트를 준비한다.", "type": "D" },
+      { "text": "지인들을 초대해 왁자지껄한 파티를 연다.", "type": "I" },
+      { "text": "집에서 정성스럽게 음식을 차려 조용히 축하한다.", "type": "S" },
+      { "text": "남편이 평소 갖고 싶어 했던 실용적인 물건을 사준다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1513,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "self_identity",
+    "question": "50대인 나, 가장 듣기 싫은 말은?",
+    "options": [
+      { "text": "\"이제 쉴 때 되셨잖아요.\" (능력 무시)", "type": "D" },
+      { "text": "\"아줌마.\" (여성성 무시)", "type": "I" },
+      { "text": "\"기가 세다/드세다.\" (성격 비난)", "type": "S" },
+      { "text": "\"감 떨어졌다.\" (전문성 무시)", "type": "C" }
+    ]
+  },
+  {
+    "id": 1514,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "lifestyle_retirement",
+    "question": "이상적인 노후 생활은?",
+    "options": [
+      { "text": "경제적 자유를 누리며 사회적 영향력을 유지하는 삶.", "type": "D" },
+      { "text": "좋은 친구들과 여행 다니며 즐겁게 사는 삶.", "type": "I" },
+      { "text": "가족 건강하고 걱정 없이 평온한 삶.", "type": "S" },
+      { "text": "독서와 배움을 통해 지적으로 성장하는 삶.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1515,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "social_volunteering",
+    "question": "봉사 단체에서 리더 역할을 맡게 되었다.",
+    "options": [
+      { "text": "강력한 추진력으로 단체를 이끌고 성과를 낸다.", "type": "D" },
+      { "text": "분위기 메이커로서 즐거운 봉사 문화를 만든다.", "type": "I" },
+      { "text": "회원들을 살뜰히 챙기며 화합을 도모한다.", "type": "S" },
+      { "text": "회계와 행정을 투명하고 체계적으로 관리한다.", "type": "C" }
+    ]
+  },
+
+  {
+    "id": 1516,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "lifestyle_technology",
+    "question": "최신 스마트폰이나 키오스크 사용이 낯설고 어려울 때.",
+    "options": [
+      { "text": "직원을 호출하거나 자녀에게 전화해 당장 해결법을 묻는다.", "type": "D" },
+      { "text": "주변 젊은 사람에게 \"이것 좀 도와줘요~\" 하고 붙임성 있게 부탁한다.", "type": "I" },
+      { "text": "뒷사람에게 방해될까 봐 사용을 포기하거나 뒤로 물러난다.", "type": "S" },
+      { "text": "사용법을 천천히 읽어보거나 인터넷으로 매뉴얼을 찾아 공부한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1517,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "family_grandchildren",
+    "question": "손주가 떼를 쓰고 말을 안 들을 때 나의 반응은?",
+    "options": [
+      { "text": "\"안 돼!\" 엄격한 표정과 말투로 단호하게 훈육한다.", "type": "D" },
+      { "text": "\"우리 강아지 왜 그럴까?\" 장난감이나 간식으로 달래며 관심을 돌린다.", "type": "I" },
+      { "text": "아이가 울면 마음이 약해져서 원하는 대로 해준다.", "type": "S" },
+      { "text": "왜 안 되는지 이유를 차근차근 설명하고 규칙을 상기시킨다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1518,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "social_network",
+    "question": "지인의 자녀 결혼식 청첩장을 받았는데 별로 친하지 않다.",
+    "options": [
+      { "text": "갈 필요 없다고 판단되면 축의금도 안 보내고 무시한다.", "type": "D" },
+      { "text": "축하 문자를 화려하게 보내고 축의금은 기본만 한다.", "type": "I" },
+      { "text": "안 가면 서운해할까 봐 고민하다가 결국 참석하거나 돈을 보낸다.", "type": "S" },
+      { "text": "지난번 내 경조사에 그 사람이 어떻게 했는지 장부를 확인한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1519,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "career_crisis",
+    "question": "회사에서 명예퇴직 신청을 받고 있다. 나의 생각은?",
+    "options": [
+      { "text": "퇴직금 챙겨서 내 사업을 시작할 기회라고 생각한다.", "type": "D" },
+      { "text": "동료들과 헤어지는 게 아쉽고, 퇴직 후의 심심함이 걱정된다.", "type": "I" },
+      { "text": "최대한 버틸 수 있을 때까지 조용히 다니고 싶다.", "type": "S" },
+      { "text": "퇴직 조건과 향후 연금 수령액을 계산기를 두드려 비교한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1520,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "lifestyle_aging",
+    "question": "흰머리 염색을 그만두고 '그레이 헤어'를 할까 고민 중이다.",
+    "options": [
+      { "text": "남들이 뭐라 하든 내가 편하고 멋있으면 바로 실행한다.", "type": "D" },
+      { "text": "늙어 보일까 봐 걱정되고 주변 친구들의 반응을 먼저 살핀다.", "type": "I" },
+      { "text": "남편이나 자녀들이 싫어하면 그냥 계속 염색한다.", "type": "S" },
+      { "text": "염색약의 유해성과 자연스러운 노화의 장단점을 따져본다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1521,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "family_husband",
+    "question": "남편이 친구들과 여행을 가겠다며 며칠 집을 비운다고 한다.",
+    "options": [
+      { "text": "\"가서 사고 치지 말고 잘 다녀와.\" 쿨하게 보내준다.", "type": "D" },
+      { "text": "\"앗싸! 나도 친구들 불러서 파티해야지!\" 해방감을 만끽한다.", "type": "I" },
+      { "text": "밥은 잘 챙겨 먹을지, 약은 챙겼는지 걱정부터 앞선다.", "type": "S" },
+      { "text": "누구랑 가는지, 숙소는 어딘지 비상 연락망을 확보한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1522,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "self_reflection",
+    "question": "인생을 되돌아볼 때 가장 후회되는 것은?",
+    "options": [
+      { "text": "더 과감하게 도전하고 성취하지 못한 것.", "type": "D" },
+      { "text": "더 많이 놀러 다니고 사람들과 즐기지 못한 것.", "type": "I" },
+      { "text": "가족들에게 더 잘해주지 못한 것.", "type": "S" },
+      { "text": "체계적으로 공부하거나 전문 지식을 쌓지 못한 것.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1523,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "finance_inheritance",
+    "question": "자녀들에게 재산 증여(상속)를 미리 할 생각인가?",
+    "options": [
+      { "text": "내 노후가 우선이다. 내가 죽고 나면 알아서 하라고 한다.", "type": "D" },
+      { "text": "자식들이 기뻐할 모습을 생각하며 미리 좀 나눠주고 싶다.", "type": "I" },
+      { "text": "자식들이 힘들다고 하면 마음이 약해져서 미리 주게 된다.", "type": "S" },
+      { "text": "세무사와 상담하여 절세 효과가 가장 큰 시기를 계산한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1524,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "social_conflict",
+    "question": "아파트 층간 소음 문제로 윗집과 갈등이 생겼다.",
+    "options": [
+      { "text": "당장 올라가서 벨을 누르고 강력하게 항의한다.", "type": "D" },
+      { "text": "관리실에 이야기하거나 엘리베이터에서 만나면 좋게 돌려 말한다.", "type": "I" },
+      { "text": "싸우기 싫어서 그냥 내가 귀마개를 하고 참는다.", "type": "S" },
+      { "text": "소음 발생 시간과 빈도를 기록하고 법적 기준을 찾아본다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1525,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "lifestyle_leisure",
+    "question": "혼자서 카페나 식당에 가야 할 때(혼밥/혼카페).",
+    "options": [
+      { "text": "전혀 신경 안 쓴다. 당당하게 들어가서 제일 좋은 자리에 앉는다.", "type": "D" },
+      { "text": "심심해서 친구에게 전화하거나 SNS를 하며 먹는다.", "type": "I" },
+      { "text": "남들 시선이 신경 쓰여서 구석 자리에 앉거나 포장해 온다.", "type": "S" },
+      { "text": "가져온 책을 읽거나 스마트폰으로 뉴스를 보며 시간을 보낸다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1526,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "work_mentoring",
+    "question": "직장 후배가 업무 처리를 못 해서 답답하다.",
+    "options": [
+      { "text": "\"비켜봐, 내가 할게.\" 답답해서 내가 처리해 버린다.", "type": "D" },
+      { "text": "\"괜찮아, 처음엔 다 그래~\" 격려하며 기운을 북돋워 준다.", "type": "I" },
+      { "text": "상처 받을까 봐 싫은 소리 못 하고 내가 몰래 도와준다.", "type": "S" },
+      { "text": "어느 부분이 부족한지 체크리스트를 만들어 피드백한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1527,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "family_loss",
+    "question": "배우자와 사별하거나 이혼하여 혼자가 된다면?",
+    "options": [
+      { "text": "내 인생을 주도적으로 살 수 있는 새로운 기회로 삼는다.", "type": "D" },
+      { "text": "외로움을 못 견뎌 친구들을 만나거나 재혼을 생각한다.", "type": "I" },
+      { "text": "자식들에게 의지하거나 익숙한 집에서 조용히 지낸다.", "type": "S" },
+      { "text": "1인 가구에 맞는 재정 계획과 생활 패턴을 재설계한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1528,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "social_gathering",
+    "question": "동창회에서 노래방을 갔는데 노래를 시킨다.",
+    "options": [
+      { "text": "마이크를 잡고 무대를 장악하며 분위기를 주도한다.", "type": "D" },
+      { "text": "탬버린을 흔들며 춤추고 신나게 논다.", "type": "I" },
+      { "text": "박수만 치며 호응하다가 억지로 시키면 한 곡 부른다.", "type": "S" },
+      { "text": "내가 아는 노래 번호를 미리 예약해두고 차례를 기다린다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1529,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "self_development",
+    "question": "은퇴 후를 대비해 자격증을 딴다면?",
+    "options": [
+      { "text": "공인중개사나 주택관리사처럼 바로 수익 창출이 가능한 것.", "type": "D" },
+      { "text": "문화 해설사나 동화 구연가처럼 사람들과 소통하는 것.", "type": "I" },
+      { "text": "요양 보호사나 사회복지사처럼 남을 돕는 것.", "type": "S" },
+      { "text": "번역이나 한자 급수처럼 혼자 깊이 있게 공부하는 것.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1530,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "health_menopause",
+    "question": "갱년기로 불면증이 심해 잠이 안 온다.",
+    "options": [
+      { "text": "수면제 처방을 받거나 운동을 격하게 해서 곯아떨어지게 한다.", "type": "D" },
+      { "text": "밤늦게까지 친구와 통화하거나 TV를 보며 시간을 보낸다.", "type": "I" },
+      { "text": "가족들 깰까 봐 조용히 누워서 뒤척인다.", "type": "S" },
+      { "text": "수면에 좋은 차, 온도, 습도 등 수면 환경을 최적화한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1531,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "family_conflict",
+    "question": "명절 음식 준비 문제로 며느리(또는 동서)와 의견이 다르다.",
+    "options": [
+      { "text": "\"내 방식대로 해.\" 시어머니(또는 윗사람)로서 권위를 내세운다.", "type": "D" },
+      { "text": "\"요즘 애들은 다 사 먹는다더라~\" 하며 편하게 가자고 설득한다.", "type": "I" },
+      { "text": "불편한 소리 하기 싫어서 내가 몸 써서 다 해버린다.", "type": "S" },
+      { "text": "음식 종류와 양, 역할 분담을 표로 정리해서 보여준다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1532,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "lifestyle_shopping",
+    "question": "홈쇼핑을 보다가 충동구매 욕구가 생길 때.",
+    "options": [
+      { "text": "\"매진 임박\" 소리에 바로 주문 전화를 건다.", "type": "D" },
+      { "text": "쇼호스트의 말솜씨에 넘어가 \"어머 저건 사야 돼!\" 한다.", "type": "I" },
+      { "text": "살까 말까 고민하다가 방송이 끝나버린다.", "type": "S" },
+      { "text": "인터넷 최저가와 상품평을 검색해 보고 결정한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1533,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "career_communication",
+    "question": "회의 중에 내 의견이 무시당했을 때.",
+    "options": [
+      { "text": "다시 발언권을 얻어 내 주장을 강력하게 피력한다.", "type": "D" },
+      { "text": "기분 나쁘지만 농담으로 넘기며 분위기를 띄운다.", "type": "I" },
+      { "text": "상처받아서 입을 다물고 회의 내내 조용히 있는다.", "type": "S" },
+      { "text": "회의가 끝난 후 내 의견을 정리해 이메일로 보낸다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1534,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "lifestyle_housing",
+    "question": "자녀 출가 후 넓은 집을 줄여서 이사를 간다면?",
+    "options": [
+      { "text": "교통 편하고 관리 편한 도심의 최신 주상복합.", "type": "D" },
+      { "text": "주변에 친구들이 많이 살고 커뮤니티 시설이 좋은 곳.", "type": "I" },
+      { "text": "익숙한 동네를 떠나기 싫어 근처의 작은 평수로 간다.", "type": "S" },
+      { "text": "관리비, 세금, 병원 접근성을 따져 실속 있는 곳으로 간다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1535,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "friendship_relationship",
+    "question": "오래된 친구가 돈을 빌려달라고 한다.",
+    "options": [
+      { "text": "\"돈 거래는 안 해.\" 딱 잘라 거절한다.", "type": "D" },
+      { "text": "거절하기 미안해서 남편 핑계를 대거나 조금 빌려준다.", "type": "I" },
+      { "text": "사정이 딱해서 내가 힘들어도 빌려준다.", "type": "S" },
+      { "text": "차용증을 쓰거나 갚을 계획을 구체적으로 묻는다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1536,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "self_esteem",
+    "question": "나이 들었다고 느낄 때 자존감을 지키는 방법은?",
+    "options": [
+      { "text": "경제력이나 사회적 지위를 통해 내 능력을 확인한다.", "type": "D" },
+      { "text": "젊은 사람들과 어울리며 유행을 따라간다.", "type": "I" },
+      { "text": "봉사 활동이나 종교 생활을 통해 내면의 평화를 찾는다.", "type": "S" },
+      { "text": "독서나 배움을 통해 지혜를 쌓는다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1537,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "work_change",
+    "question": "회사에서 부서 이동이나 보직 변경을 제안받았다.",
+    "options": [
+      { "text": "승진 기회가 있다면 낯선 업무라도 도전한다.", "type": "D" },
+      { "text": "새로운 사람들과 일하는 것이 기대된다.", "type": "I" },
+      { "text": "익숙한 업무와 동료들을 떠나기 싫어 거절하고 싶다.", "type": "S" },
+      { "text": "새로운 업무의 내용과 비전을 꼼꼼히 검토한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1538,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "family_vacation",
+    "question": "환갑 기념 여행을 계획한다면?",
+    "options": [
+      { "text": "유럽이나 미국 등 멀고 화려한 곳으로 떠난다.", "type": "D" },
+      { "text": "가족, 친척, 친구들 다 불러서 왁자지껄하게 다녀온다.", "type": "I" },
+      { "text": "가족끼리 조용하고 편안한 휴양지에서 쉰다.", "type": "S" },
+      { "text": "여행지의 역사와 문화를 깊이 있게 탐방하는 코스를 짠다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1539,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "lifestyle_driving",
+    "question": "운전 중 길을 잘못 들어 헤맬 때.",
+    "options": [
+      { "text": "직감을 믿고 일단 계속 가본다.", "type": "D" },
+      { "text": "창문을 내리고 지나가는 사람에게 길을 물어본다.", "type": "I" },
+      { "text": "당황해서 어쩔 줄 모르고 식은땀을 흘린다.", "type": "S" },
+      { "text": "갓길에 차를 세우고 내비게이션을 재설정한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1540,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "social_manners",
+    "question": "공공장소에서 시끄럽게 떠드는 사람들을 볼 때.",
+    "options": [
+      { "text": "\"조용히 좀 하세요!\" 가서 직접 따진다.", "type": "D" },
+      { "text": "\"어머, 저 사람들 봐. 너무한다.\" 옆 사람에게 흉본다.", "type": "I" },
+      { "text": "눈이 마주치면 무서우니 못 본 척 피한다.", "type": "S" },
+      { "text": "직원을 호출하거나 신고 문자를 보낸다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1541,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "family_pets",
+    "question": "반려동물을 키우자는 제안을 받았다.",
+    "options": [
+      { "text": "훈련 시키고 통제할 수 있다면 찬성한다.", "type": "D" },
+      { "text": "강아지와 산책하고 노는 상상을 하며 좋아한다.", "type": "I" },
+      { "text": "끝까지 책임질 수 있을지, 내가 다 돌봐야 할까 봐 걱정된다.", "type": "S" },
+      { "text": "양육비, 털 날림, 관리 방법 등을 사전에 공부한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1542,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "career_performance",
+    "question": "업무 성과가 좋지 않아 상사에게 지적받았다.",
+    "options": [
+      { "text": "다음엔 반드시 만회하겠다고 다짐하며 오기를 품는다.", "type": "D" },
+      { "text": "기죽어서 동료들에게 위로받으러 간다.", "type": "I" },
+      { "text": "내 능력이 부족한가 싶어 자책하고 우울해진다.", "type": "S" },
+      { "text": "지적받은 내용을 분석해 개선 방안을 보고한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1543,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "lifestyle_exercise",
+    "question": "건강을 위해 헬스장에 등록했다.",
+    "options": [
+      { "text": "PT 선생님에게 강하게 트레이닝 해달라고 요구한다.", "type": "D" },
+      { "text": "헬스장 사람들과 인사하고 친목을 다진다.", "type": "I" },
+      { "text": "조용히 러닝머신만 걷다가 온다.", "type": "S" },
+      { "text": "운동 기구 사용법과 운동 루틴을 철저히 지킨다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1544,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "family_adult_child",
+    "question": "성인이 된 자녀가 연애 상담을 해올 때.",
+    "options": [
+      { "text": "\"헤어져.\" 또는 \"잡아.\" 결론부터 딱 정해준다.", "type": "D" },
+      { "text": "\"어머, 설레겠다~\" 친구처럼 맞장구치며 듣는다.", "type": "I" },
+      { "text": "자식 마음 아플까 봐 같이 걱정해주고 들어준다.", "type": "S" },
+      { "text": "상대방의 조건과 성향을 분석해 현실적인 조언을 한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1545,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "social_image",
+    "question": "남들에게 나는 어떤 사람으로 보이고 싶은가?",
+    "options": [
+      { "text": "능력 있고 카리스마 있는 '멋진 언니/누님'.", "type": "D" },
+      { "text": "센스 있고 젊게 사는 '인기쟁이'.", "type": "I" },
+      { "text": "인자하고 따뜻한 '어머니 같은 사람'.", "type": "S" },
+      { "text": "지적이고 흐트러짐 없는 '교양 있는 사람'.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1546,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "finance_risk",
+    "question": "보이스피싱 의심 전화를 받았다.",
+    "options": [
+      { "text": "\"당신 누구야!\" 호통치고 바로 끊어버린다.", "type": "D" },
+      { "text": "놀라서 \"어머 진짜요?\" 하며 당황한다.", "type": "I" },
+      { "text": "혹시 자녀에게 무슨 일이 생겼을까 봐 겁부터 난다.", "type": "S" },
+      { "text": "발신 번호를 확인하고 해당 기관에 사실 여부를 조회한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1547,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "lifestyle_culture",
+    "question": "취미로 악기를 배운다면?",
+    "options": [
+      { "text": "드럼이나 색소폰처럼 소리가 크고 화려한 악기.", "type": "D" },
+      { "text": "우쿨렐레나 기타처럼 노래 부르며 반주하기 좋은 악기.", "type": "I" },
+      { "text": "플루트나 오카리나처럼 음색이 부드러운 악기.", "type": "S" },
+      { "text": "피아노나 바이올린처럼 악보를 정확히 읽어야 하는 악기.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1548,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "work_collaboration",
+    "question": "팀 프로젝트에서 무임승차(일 안 하는) 동료가 있다.",
+    "options": [
+      { "text": "대놓고 \"일 좀 하세요\"라고 경고한다.", "type": "D" },
+      { "text": "\"우리 같이 으쌰으쌰 해요~\" 좋게 타이른다.", "type": "I" },
+      { "text": "싫은 소리 못 해서 내가 그 사람 몫까지 한다.", "type": "S" },
+      { "text": "업무 분담표와 진행 상황을 상사에게 보고한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1549,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "family_holiday",
+    "question": "명절 증후군으로 몸과 마음이 힘들 때.",
+    "options": [
+      { "text": "가족들에게 \"나도 힘들다\"고 선언하고 파업한다.", "type": "D" },
+      { "text": "친구들을 만나 시댁 욕을 하며 스트레스를 푼다.", "type": "I" },
+      { "text": "꾹 참고 일하다가 몸살이 난다.", "type": "S" },
+      { "text": "다음 명절부터는 외식하자고 논리적으로 설득한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1550,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "lifestyle_routine",
+    "question": "주말 아침 기상 시간은?",
+    "options": [
+      { "text": "평소처럼 일찍 일어나서 하루를 생산적으로 시작한다.", "type": "D" },
+      { "text": "약속 시간에 맞춰 느긋하게 일어난다.", "type": "I" },
+      { "text": "피로가 풀릴 때까지 늘어지게 늦잠을 잔다.", "type": "S" },
+      { "text": "정해진 루틴대로 알람을 맞춰놓고 일어난다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1551,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "social_gift",
+    "question": "손주나 조카의 입학 선물을 고를 때.",
+    "options": [
+      { "text": "현금이 최고! 두툼한 용돈 봉투를 준다.", "type": "D" },
+      { "text": "아이들이 좋아할 만한 최신 유행 장난감이나 옷.", "type": "I" },
+      { "text": "부모에게 뭐가 필요한지 물어보고 사준다.", "type": "S" },
+      { "text": "학업에 도움 되는 책가방, 도서상품권 등 실용적인 것.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1552,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "career_ambition",
+    "question": "50대, 직장에서 더 높이 올라가고 싶은가?",
+    "options": [
+      { "text": "당연하다. 임원까지 가봐야 직성이 풀린다.", "type": "D" },
+      { "text": "사람들과 즐겁게 일할 수 있다면 직급은 상관없다.", "type": "I" },
+      { "text": "승진 스트레스보다는 현재의 안정감이 좋다.", "type": "S" },
+      { "text": "내 전문성을 인정받는 위치라면 욕심난다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1553,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "family_communication",
+    "question": "가족 단톡방에 메시지를 보냈는데 아무도 답이 없다.",
+    "options": [
+      { "text": "\"다들 폰 안 봐?\" 전화를 걸어 확인한다.", "type": "D" },
+      { "text": "이모티콘을 계속 보내며 관심을 끈다.", "type": "I" },
+      { "text": "바쁜가 보다... 서운하지만 기다린다.", "type": "S" },
+      { "text": "급한 용건이 아니면 나중에 다시 확인한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1554,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "lifestyle_cleaning",
+    "question": "냉장고 정리를 할 때.",
+    "options": [
+      { "text": "유통기한 지난 건 가차 없이 다 버린다.", "type": "D" },
+      { "text": "정리하다 말고 옛날 음식 보며 추억에 잠긴다.", "type": "I" },
+      { "text": "아까워서 못 버리고 다시 넣어둔다.", "type": "S" },
+      { "text": "반찬통에 라벨을 붙여 종류별로 착착 정리한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1555,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "social_new_friend",
+    "question": "동호회에서 새로운 회원이 들어왔다.",
+    "options": [
+      { "text": "먼저 다가가서 호구조사하고 모임 규칙을 알려준다.", "type": "D" },
+      { "text": "환하게 웃으며 \"반가워요!\" 하고 옆자리에 앉힌다.", "type": "I" },
+      { "text": "낯을 가려 멀리서 지켜보다가 눈인사만 한다.", "type": "S" },
+      { "text": "어떤 사람인지 며칠 동안 관찰하고 파악한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1556,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "finance_planning",
+    "question": "갑자기 목돈이 필요하게 되었다.",
+    "options": [
+      { "text": "적금이나 보험을 해지해서라도 내가 해결한다.", "type": "D" },
+      { "text": "가족이나 친한 친구에게 사정을 말하고 도움을 청한다.", "type": "I" },
+      { "text": "남편에게 어떻게 하면 좋을지 상의한다.", "type": "S" },
+      { "text": "대출 금리와 예금 담보 대출 조건을 비교한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1557,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "health_diet",
+    "question": "건강 검진 결과 식단 조절이 필요하다고 한다.",
+    "options": [
+      { "text": "당장 냉장고를 비우고 닭가슴살과 채소만 먹는다.", "type": "D" },
+      { "text": "맛있는 다이어트 요리법을 검색하고 공유한다.", "type": "I" },
+      { "text": "가족들 밥 차리다 보면 내 식단 챙기기 힘들다.", "type": "S" },
+      { "text": "칼로리와 영양 성분을 따져 식단표를 짠다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1558,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "career_retirement_prep",
+    "question": "은퇴 준비 교육 프로그램에 참여했다.",
+    "options": [
+      { "text": "강사에게 적극적으로 질문하고 정보를 얻어낸다.", "type": "D" },
+      { "text": "쉬는 시간에 옆 사람들과 통성명하고 친해진다.", "type": "I" },
+      { "text": "맨 뒷자리에 앉아 조용히 경청한다.", "type": "S" },
+      { "text": "필요한 자료를 모두 챙기고 꼼꼼히 필기한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1559,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "family_stress",
+    "question": "자녀가 취업이 안 돼서 힘들어한다.",
+    "options": [
+      { "text": "\"정신 차리고 더 열심히 해!\" 강하게 채찍질한다.", "type": "D" },
+      { "text": "\"괜찮아, 다 때가 있는 거야.\" 긍정적으로 위로한다.", "type": "I" },
+      { "text": "자식 눈치 보느라 숨소리도 크게 못 낸다.", "type": "S" },
+      { "text": "자소서 첨삭이나 취업 정보를 찾아 몰래 책상에 둔다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1560,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "lifestyle_beauty",
+    "question": "미용실에서 헤어 스타일을 바꿀 때.",
+    "options": [
+      { "text": "\"짧게 쳐주세요.\" 관리 편하고 강해 보이는 숏컷.", "type": "D" },
+      { "text": "\"유행하는 펌 해주세요.\" 화려하고 볼륨 있는 스타일.", "type": "I" },
+      { "text": "\"다듬기만 해주세요.\" 변화가 두려워 기존 스타일 고수.", "type": "S" },
+      { "text": "사진을 보여주며 \"이대로 정확하게 해주세요\" 요구.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1561,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "social_promise",
+    "question": "약속 장소에 친구가 연락 없이 안 나온다.",
+    "options": [
+      { "text": "화가 나서 전화를 걸어 따지고 집에 간다.", "type": "D" },
+      { "text": "무슨 일 생겼나 걱정되어 계속 전화해 본다.", "type": "I" },
+      { "text": "올 때까지 하염없이 기다린다.", "type": "S" },
+      { "text": "10분, 20분 단위로 기다리다 정해진 시간이 지나면 간다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1562,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "work_feedback",
+    "question": "상사에게 칭찬을 들었을 때 반응은?",
+    "options": [
+      { "text": "\"감사합니다.\" 당연하다는 듯 자신감 있게 받는다.", "type": "D" },
+      { "text": "\"어머, 과장님 덕분이죠!\" 애교 있게 공을 돌린다.", "type": "I" },
+      { "text": "\"아니에요, 부끄럽습니다.\" 얼굴이 빨개지며 겸손해한다.", "type": "S" },
+      { "text": "어떤 부분이 좋았는지 구체적인 피드백을 기억한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1563,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "lifestyle_interior",
+    "question": "집에 손님이 오기로 했다. 청소 스타일은?",
+    "options": [
+      { "text": "눈에 보이는 거실만 번개같이 치운다.", "type": "D" },
+      { "text": "꽃을 꽂거나 향초를 켜서 분위기만 낸다.", "type": "I" },
+      { "text": "현관부터 화장실까지 쓸고 닦느라 몸살 난다.", "type": "S" },
+      { "text": "평소에 정리 정돈이 되어 있어 별로 치울 게 없다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1564,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "family_weekend",
+    "question": "주말에 남편은 등산 가자고 하고 나는 쉬고 싶다.",
+    "options": [
+      { "text": "\"싫어. 안 가.\" 단칼에 거절하고 내 할 일 한다.", "type": "D" },
+      { "text": "\"나 다리 아파잉~\" 애교로 상황을 모면한다.", "type": "I" },
+      { "text": "가기 싫지만 남편이 삐칠까 봐 억지로 따라간다.", "type": "S" },
+      { "text": "오늘은 쉬고 다음 주에 가자고 타협안을 제시한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1565,
+    "target_age_min": 50,
+    "target_age_max": 59,
+    "category": "self_philosophy",
+    "question": "50대가 되어 깨달은 인간관계의 진리는?",
+    "options": [
+      { "text": "결국 나 자신을 믿는 게 최고다. (주체성)", "type": "D" },
+      { "text": "사람이 재산이다. 즐겁게 살자. (사교성)", "type": "I" },
+      { "text": "둥글둥글 모나지 않게 사는 게 좋다. (화합)", "type": "S" },
+      { "text": "적당한 거리를 두는 것이 현명하다. (신중함)", "type": "C" }
+    ]
+  },
+  {
+    "id": 1566,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "family_grandparenting",
+    "question": "손주를 봐달라는 자식의 부탁을 받았을 때 나의 반응은?",
+    "options": [
+      { "text": "\"내 인생도 중요해. 봐줄 거면 월급 줘.\" 확실한 조건을 건다.", "type": "D" },
+      { "text": "\"우리 강아지들 오면 좋지!\" 힘들어도 아이들과 놀 생각에 반긴다.", "type": "I" },
+      { "text": "자식들이 힘들다는데 어쩌겠어... 내 몸 희생해서 봐준다.", "type": "S" },
+      { "text": "봐주는 시간과 규칙(육아 원칙)을 정확히 정하고 맡는다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1567,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "lifestyle_health",
+    "question": "몸이 예전 같지 않고 여기저기 아플 때.",
+    "options": [
+      { "text": "용하다는 병원이나 명의를 찾아가서 당장 고치려 한다.", "type": "D" },
+      { "text": "친구들에게 전화해서 \"나 아파 죽겠어\" 하소연하며 위로받는다.", "type": "I" },
+      { "text": "자식들 걱정할까 봐 아픈 내색 안 하고 끙끙 앓는다.", "type": "S" },
+      { "text": "증상을 메모하고 건강 프로나 의학 서적에서 원인을 찾는다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1568,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "social_gathering",
+    "question": "친구들과 모임(계모임/동창회)에서 식당을 정할 때.",
+    "options": [
+      { "text": "\"거기 맛있더라. 거기로 가자.\" 내가 주도해서 결정한다.", "type": "D" },
+      { "text": "\"분위기 좋은 데 없나?\" 수다 떨기 좋고 화려한 곳을 찾는다.", "type": "I" },
+      { "text": "남들이 가자는 대로 군말 없이 따라간다.", "type": "S" },
+      { "text": "가성비, 맛, 주차장 여부 등을 꼼꼼히 따져보고 추천한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1569,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "family_husband",
+    "question": "퇴직한 남편이 하루 종일 집에만 있어 답답하다(삼식이).",
+    "options": [
+      { "text": "\"당신도 나가서 친구 좀 만나.\" 점심은 알아서 먹으라고 내보낸다.", "type": "D" },
+      { "text": "남편 데리고 시장도 가고 산책도 가며 같이 논다.", "type": "I" },
+      { "text": "귀찮아도 삼시 세끼 꼬박꼬박 챙겨주며 시중든다.", "type": "S" },
+      { "text": "냉장고에 반찬을 소분해두고 꺼내 먹는 법을 교육시킨다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1570,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "finance_inheritance",
+    "question": "자녀들이 재산을 미리 좀 나눠달라고(증여) 눈치를 준다.",
+    "options": [
+      { "text": "\"내 눈에 흙 들어가기 전엔 안 돼.\" 내 노후 자금은 내가 지킨다.", "type": "D" },
+      { "text": "자식들이 좋아할 생각에 기분파로 미리 좀 떼어준다.", "type": "I" },
+      { "text": "애들이 살기 힘들다니 마음이 약해져서 도와준다.", "type": "S" },
+      { "text": "세무사와 상담하여 상속세와 증여세 유불리를 따져본다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1571,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "lifestyle_digital",
+    "question": "식당 키오스크(무인 주문기) 사용이 어려워 뒤에 줄이 길어졌다.",
+    "options": [
+      { "text": "\"아니, 직원은 뭐 해? 와서 주문받아!\" 큰소리로 직원을 부른다.", "type": "D" },
+      { "text": "뒤에 있는 젊은이에게 \"이것 좀 도와줘요~ 호호\" 부탁한다.", "type": "I" },
+      { "text": "식은땀이 나고 뒷사람 눈치 보여서 주문을 포기하고 나간다.", "type": "S" },
+      { "text": "화면의 글씨를 천천히 읽어보며 끝까지 혼자 시도해 본다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1572,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "family_daughter_in_law",
+    "question": "며느리(또는 사위)가 명절에 해외여행을 가겠다고 한다.",
+    "options": [
+      { "text": "\"어디 명절에 시댁을 안 와?\" 당장 전화해서 호통친다.", "type": "D" },
+      { "text": "서운하지만 친구들에게 \"요즘 애들은 다 그래~\" 하며 흉본다.", "type": "I" },
+      { "text": "\"그래, 잘 다녀와라.\" 겉으로는 웃지만 속은 섭섭하다.", "type": "S" },
+      { "text": "이번엔 여행 가고 다음 제사 때는 꼭 오라고 합의한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1573,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "self_appearance",
+    "question": "흰머리가 부쩍 늘어 염색을 할까 고민이다.",
+    "options": [
+      { "text": "늙어 보이는 건 싫다. 당장 미용실 가서 제일 젊어 보이게 해달라 한다.", "type": "D" },
+      { "text": "친구들이랑 같이 가서 수다 떨며 파마도 하고 염색도 한다.", "type": "I" },
+      { "text": "남편이나 자식이 보기 싫다 하면 염색하고 아니면 둔다.", "type": "S" },
+      { "text": "염색약 부작용과 멋진 그레이 헤어 스타일을 검색해 비교한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1574,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "lifestyle_hobby",
+    "question": "노인 복지관이나 문화센터 강좌를 등록한다면?",
+    "options": [
+      { "text": "노래 교실 반장이나 라인댄스 앞줄에 서서 리드한다.", "type": "D" },
+      { "text": "끝나고 밥 먹고 노는 게 좋은 친목 도모형 강좌.", "type": "I" },
+      { "text": "조용히 앉아서 서예나 뜨개질을 배운다.", "type": "S" },
+      { "text": "스마트폰 활용법이나 외국어 등 배움이 있는 강좌.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1575,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "family_grandchildren",
+    "question": "손주가 밥을 안 먹고 떼를 쓴다.",
+    "options": [
+      { "text": "\"안 먹으면 치워!\" 버릇 나빠진다고 엄하게 훈육한다.", "type": "D" },
+      { "text": "\"비행기 들어간다~ 슈웅!\" 온갖 재롱을 피우며 먹인다.", "type": "I" },
+      { "text": "아이가 달라는 대로 과자나 좋아하는 반찬만이라도 준다.", "type": "S" },
+      { "text": "영양 불균형을 걱정하며 정해진 식사량을 먹이려 애쓴다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1576,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "lifestyle_travel",
+    "question": "환갑(또는 칠순) 기념 여행을 간다면?",
+    "options": [
+      { "text": "내가 가고 싶은 곳(유럽, 미국 등)으로 정해서 통보한다.", "type": "D" },
+      { "text": "친구들 여럿이 가서 춤추고 노래하며 신나게 논다.", "type": "I" },
+      { "text": "가족들과 가까운 온천이나 휴양지에서 푹 쉬고 싶다.", "type": "S" },
+      { "text": "패키지여행보다는 내가 짠 일정대로 유적지를 둘러본다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1577,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "social_conflict",
+    "question": "지하철에서 젊은 사람이 자리를 양보 안 하고 앉아 있다.",
+    "options": [
+      { "text": "\"요즘 젊은 것들은...\" 들으라고 헛기침하거나 눈치를 준다.", "type": "D" },
+      { "text": "옆에 있는 다른 노인과 큰 소리로 요즘 세태를 한탄한다.", "type": "I" },
+      { "text": "다리 아파도 그냥 조용히 서서 간다.", "type": "S" },
+      { "text": "노약자석 규정이나 임산부 배지 여부를 확인한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1578,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "finance_scam",
+    "question": "보이스피싱 의심 전화를 받았다.",
+    "options": [
+      { "text": "\"너 누구야!\" 당장 호통치고 끊어버린다.", "type": "D" },
+      { "text": "\"어머 진짜요? 큰일 났네!\" 당황해서 말려든다.", "type": "I" },
+      { "text": "혹시 자식에게 무슨 일이 생긴 건 아닐까 겁부터 난다.", "type": "S" },
+      { "text": "일단 끊고 해당 기관이나 자녀에게 사실 확인 전화를 한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1579,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "family_relationship",
+    "question": "명절 음식 준비를 하는데 몸이 힘들다.",
+    "options": [
+      { "text": "\"올해부턴 다 사서 하자.\" 며느리/가족에게 선포한다.", "type": "D" },
+      { "text": "일하면서 계속 \"아이고 허리야\" 하며 생색을 낸다.", "type": "I" },
+      { "text": "1년에 몇 번 안 되는데... 하며 꾹 참고 혼자 다 한다.", "type": "S" },
+      { "text": "음식 가짓수를 줄이고 가족별 역할 분담표를 짠다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1580,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "lifestyle_home",
+    "question": "집안에 쌓인 묵은 짐들을 정리할 때.",
+    "options": [
+      { "text": "안 쓰는 건 과감하게 싹 다 갖다 버린다.", "type": "D" },
+      { "text": "옛날 물건 보며 추억에 잠기느라 정리를 못 한다.", "type": "I" },
+      { "text": "나중에 쓸 데가 있겠지 싶어서 도로 넣어둔다.", "type": "S" },
+      { "text": "종류별로 분류하고 라벨을 붙여 착착 정리한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1581,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "social_friendship",
+    "question": "친구가 돈을 빌려달라고 한다.",
+    "options": [
+      { "text": "\"돈 거래는 안 해.\" 딱 잘라 거절한다.", "type": "D" },
+      { "text": "거절하기 미안해서 남편 핑계를 대며 둘러댄다.", "type": "I" },
+      { "text": "친한 친구가 오죽하면 그럴까 싶어서 쌈짓돈을 내준다.", "type": "S" },
+      { "text": "차용증을 쓰거나 언제 갚을 수 있는지 정확히 묻는다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1582,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "lifestyle_routine",
+    "question": "아침에 일어나는 스타일은?",
+    "options": [
+      { "text": "새벽같이 일어나서 동네 한 바퀴 돌고 하루를 시작한다.", "type": "D" },
+      { "text": "일어나자마자 TV 틀거나 친구한테 카톡을 보낸다.", "type": "I" },
+      { "text": "가족들 아침밥 챙겨주려고 시간에 맞춰 일어난다.", "type": "S" },
+      { "text": "정해진 시간에 일어나서 영양제 먹고 루틴대로 움직인다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1583,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "family_loss",
+    "question": "배우자가 먼저 떠나 혼자가 된다면?",
+    "options": [
+      { "text": "내 맘대로 자유롭게 살 수 있는 제2의 인생을 시작한다.", "type": "D" },
+      { "text": "외로워서 못 산다. 친구들을 만나거나 재혼을 생각한다.", "type": "I" },
+      { "text": "자식들에게 의지하거나 살던 집에서 조용히 지낸다.", "type": "S" },
+      { "text": "혼자 살기에 적합한 실버타운이나 연금 계획을 세운다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1584,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "lifestyle_shopping",
+    "question": "홈쇼핑에서 건강보조식품을 판매한다.",
+    "options": [
+      { "text": "\"마감 임박\" 소리에 저게 나한테 필요하다 싶으면 바로 주문.", "type": "D" },
+      { "text": "쇼호스트 말솜씨에 홀려서 나도 모르게 전화기를 든다.", "type": "I" },
+      { "text": "살까 말까 고민하다가 방송이 끝나버린다.", "type": "S" },
+      { "text": "성분 함량과 인터넷 최저가를 검색해 보고 결정한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1585,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "self_identity",
+    "question": "60대가 된 나, 어떤 사람으로 늙고 싶은가?",
+    "options": [
+      { "text": "돈 있고 힘 있는, 누구도 무시 못 할 할머니.", "type": "D" },
+      { "text": "옷 잘 입고 유머 감각 있는 인기쟁이 할머니.", "type": "I" },
+      { "text": "자식들에게 짐 안 되고 마음이 따뜻한 할머니.", "type": "S" },
+      { "text": "교양 있고 지적인, 배울 점이 있는 할머니.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1586,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "family_husband",
+    "question": "남편과 다퉜을 때.",
+    "options": [
+      { "text": "\"밥 없어!\" 밥상을 안 차려주거나 각방을 쓴다.", "type": "D" },
+      { "text": "화내다가도 금방 까먹고 \"여보, 밥 먹어\" 하고 부른다.", "type": "I" },
+      { "text": "집안 시끄러운 게 싫어서 내가 먼저 사과하거나 참는다.", "type": "S" },
+      { "text": "왜 화가 났는지 조목조목 따져서 사과를 받아낸다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1587,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "lifestyle_fashion",
+    "question": "외출복을 고를 때 나의 기준은?",
+    "options": [
+      { "text": "남들 기죽이는 밍크코트나 화려한 보석.", "type": "D" },
+      { "text": "알록달록 화사하고 젊어 보이는 등산복이나 원피스.", "type": "I" },
+      { "text": "활동하기 편하고 남들 눈에 튀지 않는 무난한 옷.", "type": "S" },
+      { "text": "소재가 좋고 바느질이 꼼꼼한 브랜드 옷.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1588,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "family_grandchildren",
+    "question": "손주들 입학/졸업 선물을 줄 때.",
+    "options": [
+      { "text": "두툼한 현금 봉투를 주며 \"필요한 거 사\"라고 한다.", "type": "D" },
+      { "text": "손주랑 손잡고 백화점 가서 유행하는 옷을 사준다.", "type": "I" },
+      { "text": "며느리에게 전화해서 뭐가 필요한지 물어보고 보낸다.", "type": "S" },
+      { "text": "학업에 도움 되는 책가방이나 도서상품권을 준다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1589,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "social_manners",
+    "question": "식당에서 옆 테이블이 너무 시끄럽다.",
+    "options": [
+      { "text": "\"조용히 좀 합시다!\" 직접 가서 한마디 한다.", "type": "D" },
+      { "text": "\"어우 시끄러워, 저 사람들 봐.\" 동행에게 큰 소리로 흉본다.", "type": "I" },
+      { "text": "체할 것 같지만 무서워서 그냥 빨리 먹고 나간다.", "type": "S" },
+      { "text": "주인을 불러서 조용히 시켜달라고 요청한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1590,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "lifestyle_leisure",
+    "question": "혼자 밥을 먹어야 할 때.",
+    "options": [
+      { "text": "당당하게 식당 가서 제일 좋은 자리 잡고 사 먹는다.", "type": "D" },
+      { "text": "심심해서 친구한테 전화하거나 TV 보면서 먹는다.", "type": "I" },
+      { "text": "남들 시선이 부끄러워 대충 물에 밥 말아 먹는다.", "type": "S" },
+      { "text": "영양소를 생각해서 반찬을 골고루 챙겨 먹는다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1591,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "social_gossip",
+    "question": "모임에서 며느리/사위 흉을 보는 분위기가 됐다.",
+    "options": [
+      { "text": "\"우리 며느리는 안 그래.\" 내 식구 감싸거나 화제를 돌린다.", "type": "D" },
+      { "text": "\"어머 진짜? 우리 집도 그래!\" 신나서 같이 흉본다.", "type": "I" },
+      { "text": "가만히 듣고만 있는다.", "type": "S" },
+      { "text": "속으로 '자기 얼굴에 침 뱉기지' 생각하며 판단한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1592,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "lifestyle_exercise",
+    "question": "운동을 시작하려 한다. 어떤 운동이 좋을까?",
+    "options": [
+      { "text": "골프나 게이트볼처럼 승부를 겨루는 운동.", "type": "D" },
+      { "text": "에어로빅이나 댄스처럼 신나고 사람들과 어울리는 운동.", "type": "I" },
+      { "text": "동네 뒷산이나 공원 걷기처럼 혼자 조용히 하는 운동.", "type": "S" },
+      { "text": "요가나 필라테스처럼 자세 교정에 좋은 운동.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1593,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "family_children",
+    "question": "자녀가 결혼을 안 하겠다고 선언했다.",
+    "options": [
+      { "text": "\"호적 파가라.\" 절대 용납 못 한다고 으름장을 놓는다.", "type": "D" },
+      { "text": "\"좋은 사람 나타날 거야~\" 하고 계속 선 자리를 주선한다.", "type": "I" },
+      { "text": "자식 인생이니 어쩌겠나... 속상해도 받아들인다.", "type": "S" },
+      { "text": "노후 대책은 세워놨는지 현실적인 계획을 묻는다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1594,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "social_new_technology",
+    "question": "스마트폰으로 은행 업무를 봐야 하는데 할 줄 모른다.",
+    "options": [
+      { "text": "은행 창구로 직접 가서 처리한다. 그게 제일 확실하다.", "type": "D" },
+      { "text": "자식이나 주변 사람에게 해달라고 핸드폰을 맡긴다.", "type": "I" },
+      { "text": "귀찮게 하기 미안해서 그냥 나중에 한다.", "type": "S" },
+      { "text": "은행 직원에게 배우거나 유튜브를 보고 방법을 익힌다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1595,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "lifestyle_housing",
+    "question": "나이 들어 집을 옮긴다면 어디가 좋을까?",
+    "options": [
+      { "text": "병원 가깝고 관리 편한 도심의 최신식 아파트.", "type": "D" },
+      { "text": "친구들이 많이 살고 노인정이 잘 되어 있는 동네.", "type": "I" },
+      { "text": "살던 동네가 편하다. 굳이 이사 안 가고 고쳐 산다.", "type": "S" },
+      { "text": "관리비 적게 들고 공기 좋은 실속 있는 집.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1596,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "family_care",
+    "question": "몸이 아파 병원에 입원해야 한다.",
+    "options": [
+      { "text": "간병인 쓴다. 자식들에게 손 벌리기 싫다.", "type": "D" },
+      { "text": "자식들이 돌아가며 와주길 바란다. 심심하니까.", "type": "I" },
+      { "text": "영감(남편) 고생할까 봐 걱정부터 된다.", "type": "S" },
+      { "text": "입원비와 보험 적용 여부를 미리 계산해 본다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1597,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "social_reunion",
+    "question": "오랜만에 초등학교 동창회에 나갔다.",
+    "options": [
+      { "text": "성공한 자식 자랑, 내 자랑을 늘어놓으며 기를 세운다.", "type": "D" },
+      { "text": "노래방 가서 마이크 잡고 분위기를 주도한다.", "type": "I" },
+      { "text": "구석에 앉아서 친구들 사는 얘기 듣고 웃어준다.", "type": "S" },
+      { "text": "회비 걷고 장소 예약하는 총무 역할을 맡는다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1598,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "lifestyle_diet",
+    "question": "건강을 위해 다이어트를 하라고 의사가 권한다.",
+    "options": [
+      { "text": "당장 밥그릇 크기부터 줄이고 독하게 뺀다.", "type": "D" },
+      { "text": "친구들이랑 산에 다니며 막걸리 한잔하는 재미로 운동한다.", "type": "I" },
+      { "text": "나이 들어 살 빼면 주름 생긴다며 적당히 먹는다.", "type": "S" },
+      { "text": "당뇨식, 고혈압식 등 식단을 철저히 지킨다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1599,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "family_relationship",
+    "question": "자녀 집에 반찬을 가져다주러 갔다.",
+    "options": [
+      { "text": "비밀번호 누르고 들어가서 냉장고 검사하고 청소해준다.", "type": "D" },
+      { "text": "온 김에 손주들 보고 싶어서 올 때까지 기다린다.", "type": "I" },
+      { "text": "경비실에 맡겨두고 \"반찬 해놨다\" 문자만 남긴다.", "type": "S" },
+      { "text": "미리 전화해서 방문 시간을 약속하고 간다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1600,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "self_learning",
+    "question": "새로운 취미를 배운다면?",
+    "options": [
+      { "text": "부동산 경매나 주식 등 돈이 되는 공부.", "type": "D" },
+      { "text": "장구, 민요 등 남들 앞에서 공연할 수 있는 것.", "type": "I" },
+      { "text": "수세미 뜨기나 텃밭 가꾸기 등 소소한 것.", "type": "S" },
+      { "text": "한자 급수나 역사 공부 등 지식을 쌓는 것.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1601,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "social_communication",
+    "question": "카카오톡 단체방에서 답장할 때.",
+    "options": [
+      { "text": "용건만 간단히 보낸다. 긴 말 싫다.", "type": "D" },
+      { "text": "꽃 사진, 좋은 글귀, 이모티콘을 매일 아침 보낸다.", "type": "I" },
+      { "text": "남들이 보내는 거 읽기만 하고 답장은 잘 안 한다(눈팅).", "type": "S" },
+      { "text": "오타 없이 맞춤법을 지켜서 정확하게 쓴다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1602,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "family_pet",
+    "question": "자녀가 강아지를 키우라고 권한다.",
+    "options": [
+      { "text": "\"내가 똥 치우기 싫다.\" 딱 잘라 거절한다.", "type": "D" },
+      { "text": "강아지한테 말 걸고 데리고 다닐 생각에 좋다.", "type": "I" },
+      { "text": "끝까지 책임질 수 있을지 걱정돼서 망설인다.", "type": "S" },
+      { "text": "예방접종비, 사료값 등 유지비를 계산해 본다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1603,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "lifestyle_culture",
+    "question": "TV 채널 선택권은 누구에게?",
+    "options": [
+      { "text": "리모컨은 내 차지다. 내가 보고 싶은 트로트 프로를 본다.", "type": "D" },
+      { "text": "남편이랑 같이 보면서 계속 말을 건다.", "type": "I" },
+      { "text": "남편이 뉴스 보면 그냥 같이 본다.", "type": "S" },
+      { "text": "편성표를 보고 보고 싶은 프로 시간을 기억해둔다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1604,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "finance_spending",
+    "question": "큰돈을 쓸 일이 생겼을 때.",
+    "options": [
+      { "text": "내 돈 내가 쓰는데 뭐. 과감하게 결제한다.", "type": "D" },
+      { "text": "기분이다! 하고 쓰지만 나중에 후회하기도 한다.", "type": "I" },
+      { "text": "자식들한테 손 벌리기 싫어서 아끼고 안 쓴다.", "type": "S" },
+      { "text": "가계부를 확인하고 예산 범위 내에서 쓴다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1605,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "friendship_loss",
+    "question": "친한 친구가 세상을 떠났다.",
+    "options": [
+      { "text": "남은 인생 더 멋지게 살자고 다짐한다.", "type": "D" },
+      { "text": "다른 친구들 불러서 술 한잔하며 슬픔을 나눈다.", "type": "I" },
+      { "text": "우울해서 며칠 동안 밥도 안 넘어간다.", "type": "S" },
+      { "text": "내 장례 절차와 유언장을 미리 정리해 둔다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1606,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "family_daughter_marriage",
+    "question": "딸이 결혼해서 살림하는 게 마음에 안 든다.",
+    "options": [
+      { "text": "\"너 그렇게 하면 시댁에서 욕먹어.\" 따끔하게 혼낸다.", "type": "D" },
+      { "text": "\"엄마가 해줄게~\" 가서 다 해주고 온다.", "type": "I" },
+      { "text": "속 터져도 사위 눈치 보일까 봐 아무 말 안 한다.", "type": "S" },
+      { "text": "반찬 만드는 법, 살림 노하우를 적어서 준다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1607,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "lifestyle_sleep",
+    "question": "잠이 안 오는 밤에는?",
+    "options": [
+      { "text": "억지로라도 잔다. 내일 할 일이 있다.", "type": "D" },
+      { "text": "친구한테 전화하거나 TV를 켠다.", "type": "I" },
+      { "text": "남편 깰까 봐 조용히 눈만 감고 있는다.", "type": "S" },
+      { "text": "따뜻한 우유를 마시거나 명상을 한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1608,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "social_respect",
+    "question": "버스에서 중학생들이 시끄럽게 떠든다.",
+    "options": [
+      { "text": "\"학생들! 조용히 좀 해!\" 호통친다.", "type": "D" },
+      { "text": "\"어머, 쟤네들 좀 봐.\" 옆 사람에게 흉본다.", "type": "I" },
+      { "text": "요즘 애들 무서워서 못 본 척한다.", "type": "S" },
+      { "text": "이어폰을 꽂거나 자리를 옮긴다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1609,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "family_husband",
+    "question": "남편이 집안일(청소, 설거지)을 도와준다고 한다.",
+    "options": [
+      { "text": "\"제대로 할 거 아니면 손대지 마.\" 못미더워한다.", "type": "D" },
+      { "text": "\"어머, 웬일이야? 고마워 여보~\" 칭찬 폭격한다.", "type": "I" },
+      { "text": "남편 힘든데... 하면서 결국 내가 다시 한다.", "type": "S" },
+      { "text": "청소기 돌리는 법, 분리수거하는 법을 정확히 알려준다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1610,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "lifestyle_traffic",
+    "question": "운전(또는 대중교통 이용) 중 길을 잃었다.",
+    "options": [
+      { "text": "일단 감을 믿고 계속 가본다.", "type": "D" },
+      { "text": "지나가는 사람 붙잡고 길을 물어본다.", "type": "I" },
+      { "text": "당황해서 식은땀 흘리며 자식에게 전화한다.", "type": "S" },
+      { "text": "지도 앱을 켜거나 노선도를 다시 확인한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1611,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "social_promise",
+    "question": "약속 장소에 친구가 늦는다.",
+    "options": [
+      { "text": "전화해서 \"빨리 안 와?\" 화낸다.", "type": "D" },
+      { "text": "오는 동안 심심하니 다른 친구랑 통화한다.", "type": "I" },
+      { "text": "무슨 일 있나 걱정하며 하염없이 기다린다.", "type": "S" },
+      { "text": "10분 기다려보고 안 오면 먼저 주문하거나 간다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1612,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "lifestyle_food",
+    "question": "입맛이 없어서 밥 먹기 싫을 때.",
+    "options": [
+      { "text": "나가서 맛있는 거 사 먹는다. 내 몸은 내가 챙긴다.", "type": "D" },
+      { "text": "친구 불러서 국수라도 말아 먹는다.", "type": "I" },
+      { "text": "대충 물 말아서 김치랑 먹는다.", "type": "S" },
+      { "text": "영양죽이나 보양식을 챙겨 먹는다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1613,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "family_care",
+    "question": "자녀가 \"엄마, 우리 집에 와서 같이 살자\"고 한다.",
+    "options": [
+      { "text": "\"내 집 놔두고 왜? 난 내 식대로 살 거다.\" 거절한다.", "type": "D" },
+      { "text": "손주들도 보고 북적북적하니 좋을 것 같아 고민한다.", "type": "I" },
+      { "text": "가면 짐 될까 봐 싫다고 하지만 내심 반갑다.", "type": "S" },
+      { "text": "합가 시 생활비 문제와 내 공간 확보를 조건으로 건다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1614,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "social_envy",
+    "question": "친구가 자식 자랑(돈, 승진)을 엄청나게 한다.",
+    "options": [
+      { "text": "\"그래서 용돈은 얼마나 주는데?\" 핵심을 찌른다.", "type": "D" },
+      { "text": "\"어머 좋겠다! 한턱 쏴!\" 분위기 띄우며 얻어먹는다.", "type": "I" },
+      { "text": "부러워도 내색 않고 \"잘됐다\" 맞장구쳐준다.", "type": "S" },
+      { "text": "속으로 '자식 농사는 뚜껑 열어봐야 알지' 생각한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1615,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "lifestyle_religion",
+    "question": "종교 생활이나 기도를 할 때.",
+    "options": [
+      { "text": "가족 잘되게 해달라고 새벽마다 간절히 빈다.", "type": "D" },
+      { "text": "성당/절에 가서 사람들 만나고 봉사하는 게 즐겁다.", "type": "I" },
+      { "text": "마음의 평화를 위해 조용히 기도한다.", "type": "S" },
+      { "text": "경전을 공부하고 필사하며 마음을 수양한다.", "type": "C" }
+    ]
+  },
+
+  {
+    "id": 1616,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "lifestyle_home",
+    "question": "집안에 안 쓰는 물건들을 정리(미니멀 라이프)하려고 한다.",
+    "options": [
+      { "text": "안 쓰는 건 과감하게 싹 다 갖다 버리거나 업체 불러서 처리한다.", "type": "D" },
+      { "text": "옛날 사진이나 물건 보며 추억에 잠기느라 정리는 뒷전이다.", "type": "I" },
+      { "text": "나중에 손주들이나 자식들이 쓸까 싶어서 도로 넣어둔다.", "type": "S" },
+      { "text": "종류별, 용도별로 분류하고 라벨을 붙여 착착 정리한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1617,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "family_relationship",
+    "question": "자녀가 급하게 돈을 빌려달라고 부탁한다.",
+    "options": [
+      { "text": "\"언제 갚을 건데?\" 차용증 쓰거나 상환 계획 확실히 듣고 준다.", "type": "D" },
+      { "text": "자식 일이라면 묻지도 따지지도 않고 있는 돈 없는 돈 다 준다.", "type": "I" },
+      { "text": "자식이 오죽 힘들면 그럴까 싶어 내 노후 자금 헐어서 준다.", "type": "S" },
+      { "text": "현재 내 재정 상태와 자녀의 상황을 냉정하게 분석해보고 결정한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1618,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "social_gathering",
+    "question": "친구들과 여행 가서 길을 잃었다.",
+    "options": [
+      { "text": "\"이쪽이야, 따라와.\" 내 감을 믿고 앞장선다.", "type": "D" },
+      { "text": "지나가는 사람 붙잡고 \"여기 어디예요?\" 하고 물어본다.", "type": "I" },
+      { "text": "다리도 아픈데 어쩌나... 걱정하며 친구들 눈치만 본다.", "type": "S" },
+      { "text": "지도 앱을 켜거나 표지판을 확인하며 위치를 파악한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1619,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "lifestyle_health",
+    "question": "건강을 위해 식습관을 바꿔야 한다.",
+    "options": [
+      { "text": "오늘부터 밀가루, 설탕 끊는다! 독하게 실천한다.", "type": "D" },
+      { "text": "몸에 좋다는 귀한 음식이나 건강식품을 찾아 먹는다.", "type": "I" },
+      { "text": "가족들 식성에 맞추다 보니 내 식단은 챙기기 어렵다.", "type": "S" },
+      { "text": "영양 성분표를 꼼꼼히 따지고 칼로리를 계산해서 먹는다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1620,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "family_grandparenting",
+    "question": "손주 돌잔치 선물을 준비한다.",
+    "options": [
+      { "text": "금반지나 현금 봉투 두둑하게 준다. 돈이 최고다.", "type": "D" },
+      { "text": "예쁜 옷이나 장난감 사서 손주가 좋아할 모습 상상한다.", "type": "I" },
+      { "text": "며느리한테 전화해서 필요한 게 뭔지 물어보고 해준다.", "type": "S" },
+      { "text": "아이 미래를 위해 통장을 만들어 주거나 교육 보험을 들어준다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1621,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "leisure_hobby",
+    "question": "새로운 것을 배울 기회가 생겼다. 무엇을 선택할까?",
+    "options": [
+      { "text": "스마트폰 활용이나 재테크처럼 실생활에 바로 써먹는 것.", "type": "D" },
+      { "text": "노래 교실, 라인 댄스처럼 여럿이 어울려 노는 것.", "type": "I" },
+      { "text": "뜨개질, 서예처럼 혼자 조용히 할 수 있는 것.", "type": "S" },
+      { "text": "외국어, 역사 공부처럼 지적 호기심을 채우는 것.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1622,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "social_communication",
+    "question": "가족 단톡방에 메시지를 보냈는데 아무도 답이 없다.",
+    "options": [
+      { "text": "\"이것들이 감히 씹어?\" 바로 전화 걸어서 확인한다.", "type": "D" },
+      { "text": "이모티콘 계속 보내면서 관심 끌려고 노력한다.", "type": "I" },
+      { "text": "바쁜가 보다... 서운해도 꾹 참고 기다린다.", "type": "S" },
+      { "text": "급한 일 아니면 나중에 확인하겠지 하고 둔다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1623,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "lifestyle_retirement",
+    "question": "남편과 은퇴 후 24시간 붙어 있으려니 숨 막힌다.",
+    "options": [
+      { "text": "\"각자 취미 생활 하자.\" 생활 수칙을 정하고 내 시간을 갖는다.", "type": "D" },
+      { "text": "친구들 모임에 남편 데리고 나가서 같이 어울린다.", "type": "I" },
+      { "text": "싸우기 싫어서 남편 시중들며 묵묵히 참는다.", "type": "S" },
+      { "text": "남편의 하루 일과표를 짜주고 규칙적인 생활을 유도한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1624,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "family_daughter_in_law",
+    "question": "며느리가 시댁 행사에 빠지겠다고 한다.",
+    "options": [
+      { "text": "\"안 된다고 해.\" 단호하게 참석을 요구한다.", "type": "D" },
+      { "text": "\"그래, 이번엔 어쩔 수 없지~\" 쿨한 척하지만 동네방네 흉본다.", "type": "I" },
+      { "text": "\"알았다...\" 하고 끊지만 마음이 상해서 끙끙 앓는다.", "type": "S" },
+      { "text": "빠지는 이유가 타당한지 들어보고 다음 일정을 조율한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1625,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "self_image",
+    "question": "거울 속 늙어버린 내 모습을 볼 때.",
+    "options": [
+      { "text": "보톡스나 시술을 알아본다. 늙는 건 절대 용납 못 해.", "type": "D" },
+      { "text": "화장 더 진하게 하고 화려한 옷으로 치장한다.", "type": "I" },
+      { "text": "세월이 야속하지만 자연스러운 현상이라 받아들인다.", "type": "S" },
+      { "text": "노화 방지에 좋은 음식과 운동법을 찾아 실천한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1626,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "social_conflict",
+    "question": "식당에서 종업원이 불친절하다.",
+    "options": [
+      { "text": "주인 나오라고 해서 따끔하게 한마디 한다.", "type": "D" },
+      { "text": "\"아가씨, 오늘 기분 안 좋은 일 있어?\" 농담하며 푼다.", "type": "I" },
+      { "text": "기분 나빠도 참고 빨리 먹고 나간다.", "type": "S" },
+      { "text": "영수증 리뷰나 홈페이지에 불만 사항을 구체적으로 남긴다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1627,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "family_inheritance",
+    "question": "재산 상속에 대해 미리 고민해 본다면?",
+    "options": [
+      { "text": "내 노후가 우선이다. 내가 다 쓰고 죽을 거다.", "type": "D" },
+      { "text": "자식들 기죽지 않게 미리미리 좀 나눠준다.", "type": "I" },
+      { "text": "똑같이 안 나눠주면 형제끼리 싸울까 봐 공평하게 준다.", "type": "S" },
+      { "text": "변호사나 세무사 만나서 유언장과 절세 방안을 상담한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1628,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "lifestyle_technology",
+    "question": "스마트폰 기능이 어려워 자식에게 물어봤는데 짜증을 낸다.",
+    "options": [
+      { "text": "\"내가 너 키울 때 어땠는데!\" 소리 지르고 화낸다.", "type": "D" },
+      { "text": "\"치사해서 안 배운다!\" 하고 삐진 척한다.", "type": "I" },
+      { "text": "자식 힘들게 했나 싶어 미안해서 더 못 물어본다.", "type": "S" },
+      { "text": "노인 복지관 스마트폰 강좌를 등록해서 스스로 배운다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1629,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "social_friendship",
+    "question": "친구가 밥값을 안 내고 신발 끈만 묶는다.",
+    "options": [
+      { "text": "\"이번엔 네가 사.\" 대놓고 말한다.", "type": "D" },
+      { "text": "\"내가 쏠게!\" 기분파라 그냥 내가 계산한다.", "type": "I" },
+      { "text": "치사해서 말은 못 하고 속으로만 끙끙 앓으며 내가 낸다.", "type": "S" },
+      { "text": "지난번에 내가 샀으니 이번엔 네 차례라고 정확히 짚는다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1630,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "leisure_travel",
+    "question": "혼자 여행을 갈 기회가 생긴다면?",
+    "options": [
+      { "text": "패키지여행은 답답해서 싫고 내가 짠 일정대로 간다.", "type": "D" },
+      { "text": "말동무가 없어서 심심할까 봐 친구를 꼬셔서 같이 간다.", "type": "I" },
+      { "text": "혼자 가는 건 무섭고 걱정돼서 포기한다.", "type": "S" },
+      { "text": "치안, 교통편, 숙소를 꼼꼼히 조사해서 안전하게 다녀온다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1631,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "family_loss",
+    "question": "배우자가 먼저 떠나고 혼자 남겨진다면?",
+    "options": [
+      { "text": "이제 내 세상이다! 자유롭게 산다.", "type": "D" },
+      { "text": "외로워서 못 산다. 친구들 만나러 다니며 바쁘게 지낸다.", "type": "I" },
+      { "text": "자식들 집에 들어가거나 가까이 살면서 의지한다.", "type": "S" },
+      { "text": "실버타운 입주나 요양 계획을 세워 자식에게 짐 안 된다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1632,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "social_envy",
+    "question": "친구가 자식 자랑, 돈 자랑을 늘어놓는다.",
+    "options": [
+      { "text": "\"그래서 용돈은 얼마 받는데?\" 핵심을 찔러 기 죽인다.", "type": "D" },
+      { "text": "\"어머 좋겠다! 한턱 쏴!\" 비위 맞춰주며 얻어먹는다.", "type": "I" },
+      { "text": "부러워도 내색 안 하고 맞장구쳐준다.", "type": "S" },
+      { "text": "속으로 '부풀려서 말하는 거겠지' 하고 분석한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1633,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "lifestyle_shopping",
+    "question": "홈쇼핑에서 \"마감 임박\"을 외친다.",
+    "options": [
+      { "text": "필요하다 싶으면 고민 없이 바로 주문 버튼 누른다.", "type": "D" },
+      { "text": "쇼호스트 말솜씨에 홀려서 충동구매한다.", "type": "I" },
+      { "text": "살까 말까 고민만 하다가 방송 끝난다.", "type": "S" },
+      { "text": "인터넷 최저가와 상품평을 검색해 보고 결정한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1634,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "family_care",
+    "question": "몸이 아파 병원에 입원해야 한다.",
+    "options": [
+      { "text": "간병인 쓴다. 자식들에게 아쉬운 소리 하기 싫다.", "type": "D" },
+      { "text": "심심하니까 자식들이나 친구들이 자주 와주길 바란다.", "type": "I" },
+      { "text": "남편 밥은 챙겨 먹나, 자식들 바쁜데... 걱정부터 한다.", "type": "S" },
+      { "text": "병원비와 보험 청구 서류를 미리 챙긴다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1635,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "leisure_culture",
+    "question": "TV 리모컨 쟁탈전, 주로 무엇을 보나?",
+    "options": [
+      { "text": "뉴스나 시사 토론 프로. 세상 돌아가는 걸 알아야 한다.", "type": "D" },
+      { "text": "트로트 경연 대회나 예능 프로. 신나는 게 최고다.", "type": "I" },
+      { "text": "드라마나 가족 예능. 마음 편한 게 좋다.", "type": "S" },
+      { "text": "다큐멘터리나 건강 정보 프로. 유익한 정보를 얻는다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1636,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "lifestyle_routine",
+    "question": "주말 아침 기상 시간은?",
+    "options": [
+      { "text": "새벽같이 일어나서 등산이나 운동을 간다.", "type": "D" },
+      { "text": "눈 뜨자마자 친구한테 카톡 하거나 TV를 켠다.", "type": "I" },
+      { "text": "가족들 아침밥 챙겨주려고 평소대로 일어난다.", "type": "S" },
+      { "text": "정해진 시간에 일어나서 약 챙겨 먹고 루틴을 지킨다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1637,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "social_manners",
+    "question": "버스나 지하철에서 젊은이가 시끄럽게 떠든다.",
+    "options": [
+      { "text": "\"거 좀 조용히 합시다!\" 큰소리로 호통친다.", "type": "D" },
+      { "text": "\"어머 쟤네들 봐, 너무 시끄럽네.\" 옆 사람에게 흉본다.", "type": "I" },
+      { "text": "무서워서 못 본 척하고 고개 돌린다.", "type": "S" },
+      { "text": "이어폰을 꽂거나 조용히 다른 칸으로 이동한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1638,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "self_learning",
+    "question": "유튜브로 영상을 본다면 어떤 채널?",
+    "options": [
+      { "text": "정치 평론이나 주식/부동산 투자 채널.", "type": "D" },
+      { "text": "유명 가수의 트로트 영상이나 먹방.", "type": "I" },
+      { "text": "요리 레시피나 뜨개질 강좌.", "type": "S" },
+      { "text": "건강 상식이나 역사 강의.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1639,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "family_relationship",
+    "question": "자녀가 결혼을 안 하겠다고 선언했다.",
+    "options": [
+      { "text": "\"호적 파가라!\" 절대 용납 못 한다고 으름장 놓는다.", "type": "D" },
+      { "text": "\"좋은 사람 나타날 거야~\" 계속 선 자리를 주선한다.", "type": "I" },
+      { "text": "자식 인생이니 어쩌겠나... 속상해도 받아들인다.", "type": "S" },
+      { "text": "노후 대책은 세워놨는지 현실적인 계획을 묻는다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1640,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "social_gathering",
+    "question": "동창회 모임 장소를 정해야 한다.",
+    "options": [
+      { "text": "\"거기 맛있더라. 거기로 가자.\" 내가 주도한다.", "type": "D" },
+      { "text": "분위기 좋고 사진 잘 나오는 핫플레이스를 찾는다.", "type": "I" },
+      { "text": "다들 가자는 대로 군말 없이 따라간다.", "type": "S" },
+      { "text": "회비, 위치, 교통편을 고려해 합리적인 곳을 추천한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1641,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "lifestyle_fashion",
+    "question": "옷을 사러 갔는데 점원이 너무 비싼 옷을 권한다.",
+    "options": [
+      { "text": "\"됐어요. 다른 거 보여줘요.\" 딱 잘라 거절한다.", "type": "D" },
+      { "text": "\"어머 예쁘다~ 근데 좀 비싸네~\" 하며 입어만 본다.", "type": "I" },
+      { "text": "거절하기 미안해서 만지작거리다가 싼 거 하나 산다.", "type": "S" },
+      { "text": "가격 대비 품질이 좋은지 소재를 확인하고 안 산다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1642,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "family_grandparenting",
+    "question": "손주가 내 말을 안 듣고 떼를 쓴다.",
+    "options": [
+      { "text": "\"그만! 뚝!\" 무서운 표정으로 엄하게 혼낸다.", "type": "D" },
+      { "text": "\"아이고 우리 강아지 왜 그래~\" 과자 주며 달랜다.", "type": "I" },
+      { "text": "애 우는 거 보기 싫어서 해달라는 대로 해준다.", "type": "S" },
+      { "text": "왜 안 되는지 차근차근 설명하고 규칙을 알려준다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1643,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "social_new_friend",
+    "question": "복지관이나 모임에 새로운 회원이 왔다.",
+    "options": [
+      { "text": "이것저것 물어보며(호구조사) 기선을 제압한다.", "type": "D" },
+      { "text": "\"반가워요! 언니 동생 해요!\" 살갑게 다가간다.", "type": "I" },
+      { "text": "낯가려서 멀리서 지켜보다가 눈인사만 한다.", "type": "S" },
+      { "text": "어떤 사람인지 며칠 동안 관찰하고 파악한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1644,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "lifestyle_food",
+    "question": "입맛이 없어서 밥 먹기 싫을 때.",
+    "options": [
+      { "text": "나가서 맛있는 거 사 먹는다. 내 몸은 내가 챙긴다.", "type": "D" },
+      { "text": "친구 불러서 수제비라도 끓여 같이 먹는다.", "type": "I" },
+      { "text": "대충 물 말아서 김치랑 먹는다.", "type": "S" },
+      { "text": "건강 생각해서 영양죽이나 보양식을 챙겨 먹는다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1645,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "family_pet",
+    "question": "자녀가 강아지를 키우라고 권한다.",
+    "options": [
+      { "text": "\"내가 똥 치우기 싫다.\" 딱 잘라 거절한다.", "type": "D" },
+      { "text": "강아지 데리고 산책 다니며 자랑할 생각에 좋다.", "type": "I" },
+      { "text": "끝까지 책임질 수 있을지, 내가 힘들까 봐 걱정된다.", "type": "S" },
+      { "text": "예방접종비, 사료값 등 유지비를 계산해 본다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1646,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "social_gossip",
+    "question": "모임에서 며느리/사위 흉을 보는 분위기다.",
+    "options": [
+      { "text": "\"우리 며느리는 안 그래.\" 내 식구 감싸거나 화제를 바꾼다.", "type": "D" },
+      { "text": "\"어머 진짜? 우리 집도 그래!\" 신나서 같이 흉본다.", "type": "I" },
+      { "text": "가만히 듣고만 있는다.", "type": "S" },
+      { "text": "속으로 '자기 얼굴에 침 뱉기지' 생각하며 판단한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1647,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "lifestyle_exercise",
+    "question": "운동을 시작하려 한다. 어떤 운동이 좋을까?",
+    "options": [
+      { "text": "게이트볼이나 골프처럼 승부를 겨루는 운동.", "type": "D" },
+      { "text": "에어로빅이나 댄스처럼 신나고 사람들과 어울리는 운동.", "type": "I" },
+      { "text": "동네 뒷산이나 공원 걷기처럼 혼자 조용히 하는 운동.", "type": "S" },
+      { "text": "요가나 필라테스처럼 자세 교정에 좋은 운동.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1648,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "family_care",
+    "question": "자녀가 \"엄마, 우리 집에 와서 같이 살자\"고 한다.",
+    "options": [
+      { "text": "\"내 집 놔두고 왜? 난 내 식대로 살 거다.\" 거절한다.", "type": "D" },
+      { "text": "손주들도 보고 북적북적하니 좋을 것 같아 반긴다.", "type": "I" },
+      { "text": "가면 짐 될까 봐 싫다고 하지만 내심 반갑다.", "type": "S" },
+      { "text": "합가 시 생활비 문제와 내 공간 확보를 조건으로 건다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1649,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "social_reunion",
+    "question": "오랜만에 친구들과 노래방에 갔다.",
+    "options": [
+      { "text": "마이크 독점하고 내가 분위기 주도한다.", "type": "D" },
+      { "text": "탬버린 흔들며 춤추고 제일 신나게 논다.", "type": "I" },
+      { "text": "박수만 치며 호응하다가 시키면 한 곡 부른다.", "type": "S" },
+      { "text": "내가 아는 노래 번호 미리 찾아놓고 차례 기다린다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1650,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "lifestyle_housing",
+    "question": "나이 들어 집을 옮긴다면 어디가 좋을까?",
+    "options": [
+      { "text": "병원 가깝고 관리 편한 도심의 최신식 아파트.", "type": "D" },
+      { "text": "친구들이 많이 살고 노인정이 잘 되어 있는 동네.", "type": "I" },
+      { "text": "살던 동네가 편하다. 굳이 이사 안 가고 고쳐 산다.", "type": "S" },
+      { "text": "관리비 적게 들고 공기 좋은 실속 있는 집.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1651,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "family_husband",
+    "question": "남편이 집안일(설거지, 청소)을 도와준다고 한다.",
+    "options": [
+      { "text": "\"제대로 할 거 아니면 손대지 마.\" 못미더워한다.", "type": "D" },
+      { "text": "\"어머, 웬일이야? 고마워 여보~\" 칭찬 폭격한다.", "type": "I" },
+      { "text": "남편 힘든데... 하면서 결국 내가 다시 한다.", "type": "S" },
+      { "text": "청소기 돌리는 법, 분리수거하는 법을 정확히 알려준다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1652,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "social_communication",
+    "question": "모르는 번호로 전화가 왔다.",
+    "options": [
+      { "text": "\"누구세요?\" 당당하게 받아서 용건을 묻는다.", "type": "D" },
+      { "text": "반갑게 받았다가 광고 전화면 수다 떨듯 끊는다.", "type": "I" },
+      { "text": "무서워서 안 받거나 남편에게 넘긴다.", "type": "S" },
+      { "text": "스팸 번호인지 확인하고 안 받거나 차단한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1653,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "lifestyle_beauty",
+    "question": "미용실에서 머리 스타일을 바꿀 때.",
+    "options": [
+      { "text": "\"짧게 쳐주세요.\" 관리 편하고 강해 보이는 숏컷.", "type": "D" },
+      { "text": "\"파마 뽀글뽀글하게 해줘요.\" 볼륨 있고 화려하게.", "type": "I" },
+      { "text": "\"다듬기만 해주세요.\" 변화가 두려워 늘 하던 대로.", "type": "S" },
+      { "text": "사진을 보여주며 \"이대로 똑같이 해주세요\" 요구한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1654,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "family_holiday",
+    "question": "명절 음식 준비를 하는데 몸이 힘들다.",
+    "options": [
+      { "text": "\"올해부턴 다 사서 하자.\" 가족들에게 선포한다.", "type": "D" },
+      { "text": "일하면서 계속 \"아이고 허리야\" 하며 생색낸다.", "type": "I" },
+      { "text": "1년에 몇 번 안 되는데... 하며 꾹 참고 혼자 다 한다.", "type": "S" },
+      { "text": "음식 가짓수를 줄이고 가족별 역할 분담표를 짠다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1655,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "social_respect",
+    "question": "지하철 노약자석에 젊은 사람이 앉아 있다.",
+    "options": [
+      { "text": "\"학생, 여기 노약자석이야.\" 비키라고 말한다.", "type": "D" },
+      { "text": "들으라는 듯이 큰 기침을 하거나 눈치를 준다.", "type": "I" },
+      { "text": "아픈가 보지... 하고 그냥 서서 간다.", "type": "S" },
+      { "text": "임산부 배지나 환자일 가능성을 생각하고 관찰한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1656,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "lifestyle_driving",
+    "question": "운전(또는 대중교통 이용) 중 길을 잃었다.",
+    "options": [
+      { "text": "일단 감을 믿고 계속 가본다.", "type": "D" },
+      { "text": "지나가는 사람 붙잡고 길을 물어본다.", "type": "I" },
+      { "text": "당황해서 식은땀 흘리며 자식에게 전화한다.", "type": "S" },
+      { "text": "지도 앱을 켜거나 노선도를 다시 확인한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1657,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "family_grandchildren",
+    "question": "손주를 봐달라는 부탁을 받았다.",
+    "options": [
+      { "text": "\"내 인생도 중요해. 용돈(월급) 주면 봐줄게.\" 조건 건다.", "type": "D" },
+      { "text": "\"우리 강아지 오면 좋지!\" 힘들어도 반긴다.", "type": "I" },
+      { "text": "자식들이 힘들다는데... 내 몸 희생해서 봐준다.", "type": "S" },
+      { "text": "봐주는 시간과 규칙을 정확히 정하고 맡는다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1658,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "social_scam",
+    "question": "보이스피싱 의심 전화를 받았다.",
+    "options": [
+      { "text": "\"너 누구야!\" 당장 호통치고 끊어버린다.", "type": "D" },
+      { "text": "\"어머 진짜요? 큰일 났네!\" 당황해서 말려든다.", "type": "I" },
+      { "text": "혹시 자식에게 무슨 일이 생긴 건 아닐까 겁부터 난다.", "type": "S" },
+      { "text": "일단 끊고 해당 기관이나 자녀에게 확인 전화한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1659,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "lifestyle_friendship",
+    "question": "친한 친구가 세상을 떠났다.",
+    "options": [
+      { "text": "남은 인생 더 멋지게 살자고 다짐한다.", "type": "D" },
+      { "text": "다른 친구들 불러서 술 한잔하며 슬픔을 나눈다.", "type": "I" },
+      { "text": "우울해서 며칠 동안 밥도 안 넘어간다.", "type": "S" },
+      { "text": "내 장례 절차와 유언장을 미리 정리해 둔다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1660,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "family_husband",
+    "question": "퇴직한 남편이 하루 종일 집에만 있다(삼식이).",
+    "options": [
+      { "text": "\"당신도 나가서 친구 좀 만나.\" 점심은 나가서 먹으라 한다.", "type": "D" },
+      { "text": "남편 데리고 시장도 가고 산책도 가며 같이 논다.", "type": "I" },
+      { "text": "귀찮아도 삼시 세끼 꼬박꼬박 챙겨주며 시중든다.", "type": "S" },
+      { "text": "냉장고에 반찬을 소분해두고 꺼내 먹는 법을 교육시킨다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1661,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "self_future",
+    "question": "앞으로의 10년, 가장 중요하게 생각하는 것은?",
+    "options": [
+      { "text": "경제적 독립과 건강. 남한테 아쉬운 소리 안 하는 것.", "type": "D" },
+      { "text": "좋은 사람들과 즐겁게 사는 것.", "type": "I" },
+      { "text": "자식들 잘 살고 가정 평안한 것.", "type": "S" },
+      { "text": "마음의 평화와 죽음 준비를 잘 하는 것.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1662,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "social_promise",
+    "question": "약속 장소에 친구가 늦는다.",
+    "options": [
+      { "text": "전화해서 \"빨리 안 와?\" 화낸다.", "type": "D" },
+      { "text": "오는 동안 심심하니 다른 친구랑 통화한다.", "type": "I" },
+      { "text": "무슨 일 있나 걱정하며 하염없이 기다린다.", "type": "S" },
+      { "text": "10분 기다려보고 안 오면 먼저 주문하거나 간다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1663,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "lifestyle_religion",
+    "question": "종교 생활이나 기도를 할 때.",
+    "options": [
+      { "text": "가족 잘되게 해달라고 새벽마다 간절히 빈다.", "type": "D" },
+      { "text": "성당/절에 가서 사람들 만나고 봉사하는 게 즐겁다.", "type": "I" },
+      { "text": "마음의 평화를 위해 조용히 기도한다.", "type": "S" },
+      { "text": "경전을 공부하고 필사하며 마음을 수양한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1664,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "family_daughter_marriage",
+    "question": "딸이 시집가서 살림하는 게 마음에 안 든다.",
+    "options": [
+      { "text": "\"너 그렇게 하면 욕먹어.\" 따끔하게 혼낸다.", "type": "D" },
+      { "text": "\"엄마가 해줄게~\" 가서 다 해주고 온다.", "type": "I" },
+      { "text": "속 터져도 사위 눈치 보일까 봐 아무 말 안 한다.", "type": "S" },
+      { "text": "반찬 만드는 법, 살림 노하우를 적어서 준다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1665,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "self_identity",
+    "question": "60대가 된 나, 어떤 할머니가 되고 싶나?",
+    "options": [
+      { "text": "돈 있고 힘 있는, 누구도 무시 못 할 할머니.", "type": "D" },
+      { "text": "옷 잘 입고 유머 감각 있는 인기쟁이 할머니.", "type": "I" },
+      { "text": "자식들에게 짐 안 되고 마음이 따뜻한 할머니.", "type": "S" },
+      { "text": "교양 있고 지적인, 배울 점이 있는 할머니.", "type": "C" }
+    ]
+  },
+
+  {
+    "id": 1666,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "family_care",
+    "question": "남편이나 가족이 아파서 간병을 해야 할 상황이 왔다.",
+    "options": [
+      { "text": "효율적인 간병 시스템을 짜고 전문가(간병인)를 고용해 지휘한다.", "type": "D" },
+      { "text": "힘들어도 웃으며 간병하고, 주변에 상황을 알리며 도움을 받는다.", "type": "I" },
+      { "text": "가족을 위해 내가 직접 헌신적으로 돌보는 것이 도리라 생각한다.", "type": "S" },
+      { "text": "질병에 대한 정보를 공부하고 투약 스케줄을 완벽하게 관리한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1667,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "social_gathering",
+    "question": "친목 모임에서 총무가 돈 계산을 틀리게 했다.",
+    "options": [
+      { "text": "\"이거 틀렸잖아.\" 그 자리에서 즉시 지적하고 바로잡는다.", "type": "D" },
+      { "text": "\"어머, 총무님이 바빠서 실수했나 봐~\" 좋게 넘어간다.", "type": "I" },
+      { "text": "분위기 깰까 봐 알면서도 모른 척 넘어간다.", "type": "S" },
+      { "text": "영수증을 확인하고 차액을 정확히 계산해서 나중에 알려준다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1668,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "lifestyle_driving",
+    "question": "운전면허증을 반납할지 고민하는 시기가 온다면?",
+    "options": [
+      { "text": "내 이동권을 포기할 수 없다. 운전할 수 있을 때까지 한다.", "type": "D" },
+      { "text": "이제 기사 노릇 그만하고 남이 태워주는 차 타고 다니고 싶다.", "type": "I" },
+      { "text": "자식들이 위험하다고 하면 면허를 반납한다.", "type": "S" },
+      { "text": "인지 능력 검사를 받아보고 객관적 수치에 따라 결정한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1669,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "family_grandchildren",
+    "question": "손주에게 용돈을 줄 때 나의 방식은?",
+    "options": [
+      { "text": "\"공부 열심히 해라.\" 목표를 제시하며 두둑하게 준다.", "type": "D" },
+      { "text": "\"우리 강아지, 할머니 뽀뽀!\" 애정 표현을 요구하며 기분 좋게 준다.", "type": "I" },
+      { "text": "며느리 몰래 손주 주머니에 찔러 넣어준다.", "type": "S" },
+      { "text": "생일, 명절, 입학 등 정해진 기준과 액수에 맞춰 준다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1670,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "lifestyle_digital",
+    "question": "새로운 스마트폰 기능을 배워야 한다.",
+    "options": [
+      { "text": "자식에게 \"이거 당장 되게 해줘\"라고 해결을 맡긴다.", "type": "D" },
+      { "text": "복지관이나 문화센터에 가서 사람들과 어울리며 배운다.", "type": "I" },
+      { "text": "배우기 어렵고 귀찮아서 쓰던 기능만 쓴다.", "type": "S" },
+      { "text": "유튜브 강좌나 매뉴얼을 보며 하나씩 기능을 익힌다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1671,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "finance_investment",
+    "question": "지인이 노후 자금으로 투자를 권유한다.",
+    "options": [
+      { "text": "확실한 수익이 보장되면 과감하게 결정한다.", "type": "D" },
+      { "text": "친한 사람이 같이 하자고 하면 귀가 솔깃한다.", "type": "I" },
+      { "text": "원금 잃을까 봐 무서워서 은행 예금만 고집한다.", "type": "S" },
+      { "text": "상품 설명서와 위험성을 꼼꼼히 따져보고 결정한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1672,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "family_husband",
+    "question": "남편이 늙어서 성격이 꼬장꼬장해졌다.",
+    "options": [
+      { "text": "\"당신, 늙어서 왜 그래?\" 강하게 맞받아친다.", "type": "D" },
+      { "text": "\"영감, 곱게 늙읍시다~\" 농담으로 넘긴다.", "type": "I" },
+      { "text": "안쓰럽기도 하고 싸우기 싫어서 다 받아준다.", "type": "S" },
+      { "text": "왜 화를 내는지 원인을 분석하고 대화로 풀려 한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1673,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "lifestyle_interior",
+    "question": "집안 인테리어를 바꾼다면?",
+    "options": [
+      { "text": "고급스럽고 중후한 가구로 내 위엄을 보여준다.", "type": "D" },
+      { "text": "손주들이 와서 놀기 좋고 밝은 분위기로 꾸민다.", "type": "I" },
+      { "text": "익숙하고 편안한 옛날 가구들을 그대로 쓴다.", "type": "S" },
+      { "text": "청소하기 편하고 수납이 잘 되는 실용적인 구조로 바꾼다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1674,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "social_activity",
+    "question": "봉사 활동을 하러 갔다. 어떤 일을 하고 싶은가?",
+    "options": [
+      { "text": "봉사 단체를 이끌거나 업무를 배분하는 리더 역할.", "type": "D" },
+      { "text": "외로운 노인들에게 말벗이 되어주고 노래 불러주는 역할.", "type": "I" },
+      { "text": "설거지나 청소처럼 남들이 꺼리는 일을 묵묵히 돕는 역할.", "type": "S" },
+      { "text": "회비 관리나 출석 체크 등 행정적인 지원 역할.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1675,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "family_conflicts",
+    "question": "자녀 부부의 싸움에 개입해야 할 때.",
+    "options": [
+      { "text": "\"둘 다 앉아봐.\" 잘잘못을 따지고 호통친다.", "type": "D" },
+      { "text": "\"살다 보면 다 그래~\" 양쪽을 위로하며 화해시킨다.", "type": "I" },
+      { "text": "속상하지만 내가 나서면 더 커질까 봐 모른 척한다.", "type": "S" },
+      { "text": "객관적인 상황만 듣고 감정적인 개입은 자제한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1676,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "lifestyle_travel",
+    "question": "친구들과 여행 가서 숙소를 정할 때.",
+    "options": [
+      { "text": "내가 알아본 곳이 제일 좋아. 거기로 예약해.", "type": "D" },
+      { "text": "분위기 좋고 전망 좋은 곳이면 어디든 좋아.", "type": "I" },
+      { "text": "다들 좋다면 나는 아무 데나 상관없어.", "type": "S" },
+      { "text": "가격, 위생 상태, 이동 거리를 비교해서 추천한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1677,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "health_aging",
+    "question": "기억력이 예전 같지 않아 깜빡깜빡한다.",
+    "options": [
+      { "text": "치매 예방 약을 먹거나 두뇌 훈련을 하며 적극 방어한다.", "type": "D" },
+      { "text": "\"나 치매인가 봐~ 호호\" 친구들에게 농담하며 푼다.", "type": "I" },
+      { "text": "나이 들면 다 그렇지... 하며 자연스럽게 받아들인다.", "type": "S" },
+      { "text": "중요한 일정은 반드시 메모하고 알람을 설정한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1678,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "family_daughter_in_law",
+    "question": "며느리가 살림하는 방식이 내 마음에 안 든다.",
+    "options": [
+      { "text": "답답해서 \"비켜봐, 내가 할게\" 하고 직접 해버린다.", "type": "D" },
+      { "text": "\"요즘은 이렇게 하니? 신기하네~\" 돌려서 말한다.", "type": "I" },
+      { "text": "말하면 잔소리 될까 봐 꾹 참고 안 본다.", "type": "S" },
+      { "text": "냉장고 정리법이나 요리 팁을 적어서 알려준다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1679,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "social_relationship",
+    "question": "마음에 안 드는 사람이 모임에 나왔다.",
+    "options": [
+      { "text": "대놓고 무시하거나 싫은 티를 낸다.", "type": "D" },
+      { "text": "겉으로는 웃으며 대하지만 속으로는 욕한다.", "type": "I" },
+      { "text": "불편하지만 티 내지 않고 조용히 피한다.", "type": "S" },
+      { "text": "그 사람과는 필요한 말만 하고 거리를 둔다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1680,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "lifestyle_clothing",
+    "question": "등산복이나 운동복을 고를 때.",
+    "options": [
+      { "text": "비싸고 유명한 브랜드 로고가 크게 박힌 옷.", "type": "D" },
+      { "text": "화려한 꽃무늬나 원색의 눈에 띄는 옷.", "type": "I" },
+      { "text": "편안하고 무난한 색상의 실용적인 옷.", "type": "S" },
+      { "text": "기능성 소재인지, 세탁은 편한지 라벨을 확인한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1681,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "self_regret",
+    "question": "지난 인생을 돌아보며 후회되는 점은?",
+    "options": [
+      { "text": "더 큰 성공이나 사회적 지위를 얻지 못한 것.", "type": "D" },
+      { "text": "더 많이 놀러 다니고 즐기지 못한 것.", "type": "I" },
+      { "text": "가족들에게 더 잘해주지 못한 것.", "type": "S" },
+      { "text": "공부를 더 깊이 있게 하지 못한 것.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1682,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "family_inheritance",
+    "question": "유산을 사회에 환원하거나 기부할 생각이 있는가?",
+    "options": [
+      { "text": "내 이름으로 장학 재단을 만들거나 건물에 이름을 남긴다.", "type": "D" },
+      { "text": "좋은 일 했다고 칭찬받으면 기분 좋게 기부한다.", "type": "I" },
+      { "text": "자식들 줄 것도 부족해서 기부는 망설여진다.", "type": "S" },
+      { "text": "기부금의 사용처가 투명한 곳을 찾아 계획적으로 한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1683,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "lifestyle_food",
+    "question": "외식 메뉴를 정할 때.",
+    "options": [
+      { "text": "몸보신 되는 비싼 요리나 내가 먹고 싶은 것.", "type": "D" },
+      { "text": "분위기 좋고 뷔페처럼 다양한 음식이 있는 곳.", "type": "I" },
+      { "text": "남들이 먹자고 하는 거나 소화 잘 되는 한식.", "type": "S" },
+      { "text": "가성비 좋고 위생적인 식당.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1684,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "social_communication",
+    "question": "자녀에게 전화를 걸었는데 안 받는다.",
+    "options": [
+      { "text": "받을 때까지 계속 건다. 왜 안 받나 화가 난다.", "type": "D" },
+      { "text": "서운해서 나중에 전화 오면 삐진 척한다.", "type": "I" },
+      { "text": "바쁜가 보다 하고 연락 올 때까지 기다린다.", "type": "S" },
+      { "text": "'바쁘면 나중에 전화해라'라고 문자를 남겨둔다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1685,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "lifestyle_hobby",
+    "question": "혼자서 시간을 보내야 한다면?",
+    "options": [
+      { "text": "밀린 집안일을 하거나 운동을 하며 생산적으로 보낸다.", "type": "D" },
+      { "text": "심심해서 친구에게 전화해서 수다를 떤다.", "type": "I" },
+      { "text": "TV 보거나 라디오 들으며 조용히 쉰다.", "type": "S" },
+      { "text": "책을 읽거나 신문을 보며 지식을 쌓는다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1686,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "family_marriage",
+    "question": "황혼 이혼에 대해 어떻게 생각하는가?",
+    "options": [
+      { "text": "참고 살 필요 없다. 내 인생 찾는 게 중요하다.", "type": "D" },
+      { "text": "혼자 되면 외로워서 어떻게 사나 걱정된다.", "type": "I" },
+      { "text": "자식들 봐서라도 그냥 참고 사는 게 낫다.", "type": "S" },
+      { "text": "재산 분할과 연금 수령액을 따져보고 결정해야 한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1687,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "social_etiquette",
+    "question": "공공장소에서 예의 없는 젊은이를 봤다.",
+    "options": [
+      { "text": "\"어른 앞에서 태도가 그게 뭐야!\" 호통친다.", "type": "D" },
+      { "text": "주변 사람들에게 들으라는 듯 혀를 차며 흉본다.", "type": "I" },
+      { "text": "무서워서 못 본 척하고 자리를 피한다.", "type": "S" },
+      { "text": "직접 나서기보다 관리자에게 신고하거나 조용히 지켜본다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1688,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "lifestyle_shopping",
+    "question": "마트에서 물건을 살 때.",
+    "options": [
+      { "text": "필요한 것만 딱딱 집어서 빠르게 계산하고 나온다.", "type": "D" },
+      { "text": "시식 코너 돌면서 직원이랑 이야기하고 충동구매한다.", "type": "I" },
+      { "text": "1+1 행사 상품이나 세일하는 물건 위주로 산다.", "type": "S" },
+      { "text": "유통기한과 성분표, 가격을 꼼꼼히 비교한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1689,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "family_pets",
+    "question": "반려동물을 키우자는 제안을 받았다.",
+    "options": [
+      { "text": "훈련 시킬 자신 있으면 키운다. 똥 오줌 못 가리면 싫다.", "type": "D" },
+      { "text": "강아지랑 산책 다니며 자랑할 생각에 좋다.", "type": "I" },
+      { "text": "내가 다 돌봐야 할 것 같아서 부담스럽다.", "type": "S" },
+      { "text": "병원비, 사료값 등 유지 비용을 먼저 계산해 본다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1690,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "social_new_technology",
+    "question": "키오스크(무인 주문기) 앞에서 주문을 못해 당황스럽다.",
+    "options": [
+      { "text": "\"직원 나오라고 해!\" 큰소리로 직원을 부른다.", "type": "D" },
+      { "text": "뒤에 있는 학생에게 \"이것 좀 도와줘~\" 부탁한다.", "type": "I" },
+      { "text": "뒷사람 눈치 보여서 주문 포기하고 그냥 나온다.", "type": "S" },
+      { "text": "화면의 글씨를 천천히 읽으며 끝까지 혼자 시도한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1691,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "lifestyle_health",
+    "question": "건강검진 결과 운동 부족이라고 나왔다.",
+    "options": [
+      { "text": "비싼 헬스장 끊고 PT 받으며 독하게 운동한다.", "type": "D" },
+      { "text": "친구들과 에어로빅이나 댄스 배우러 다닌다.", "type": "I" },
+      { "text": "동네 공원이나 뒷산 산책을 꾸준히 한다.", "type": "S" },
+      { "text": "내 몸 상태에 맞는 운동법을 찾아 계획표를 짠다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1692,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "family_relationship",
+    "question": "자녀 집에 반찬을 가져다주러 갔다.",
+    "options": [
+      { "text": "비밀번호 누르고 들어가서 냉장고 검사하고 잔소리한다.", "type": "D" },
+      { "text": "온 김에 손주 얼굴 보고 가려고 올 때까지 기다린다.", "type": "I" },
+      { "text": "경비실에 맡겨두고 문자만 남기고 온다.", "type": "S" },
+      { "text": "미리 전화해서 방문 가능한 시간을 물어보고 간다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1693,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "social_friendship",
+    "question": "친구가 내 험담을 했다는 소리를 들었다.",
+    "options": [
+      { "text": "당장 전화해서 \"너 그게 사실이야?\" 따진다.", "type": "D" },
+      { "text": "배신감에 다른 친구들에게 하소연하며 운다.", "type": "I" },
+      { "text": "속상하지만 참고 그 친구와 거리를 둔다.", "type": "S" },
+      { "text": "누가, 언제, 어떤 상황에서 말했는지 사실 확인부터 한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1694,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "lifestyle_culture",
+    "question": "TV 채널 선택권은?",
+    "options": [
+      { "text": "리모컨은 내 것이다. 내가 보고 싶은 트로트 프로 본다.", "type": "D" },
+      { "text": "남편이랑 같이 보면서 계속 말을 건다.", "type": "I" },
+      { "text": "남편이 뉴스 보면 그냥 옆에서 같이 본다.", "type": "S" },
+      { "text": "편성표를 확인하고 보고 싶은 프로 시간을 챙긴다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1695,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "self_future",
+    "question": "앞으로의 10년, 가장 두려운 것은?",
+    "options": [
+      { "text": "돈 없고 힘없어서 남에게 무시당하는 것.", "type": "D" },
+      { "text": "아무도 나를 찾아오지 않는 외로움.", "type": "I" },
+      { "text": "자식들에게 짐이 되는 것.", "type": "S" },
+      { "text": "치매나 병으로 나 자신을 잃어버리는 것.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1696,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "family_husband",
+    "question": "은퇴한 남편이 집안일에 사사건건 간섭한다.",
+    "options": [
+      { "text": "\"당신이 살림해!\" 앞치마 던져주고 나가버린다.", "type": "D" },
+      { "text": "\"아유~ 꼼꼼하시네~\" 비꼬며 웃어넘긴다.", "type": "I" },
+      { "text": "듣기 싫지만 싸우기 싫어서 네네 하고 만다.", "type": "S" },
+      { "text": "살림의 원칙과 영역을 정해서 확실히 선을 긋는다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1697,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "social_scam",
+    "question": "보이스피싱 의심 전화를 받았다.",
+    "options": [
+      { "text": "\"너 누구야!\" 호통치고 바로 끊는다.", "type": "D" },
+      { "text": "\"어머, 진짜요?\" 당황해서 말려들 뻔한다.", "type": "I" },
+      { "text": "자식에게 무슨 일 생겼을까 봐 겁부터 난다.", "type": "S" },
+      { "text": "발신 번호를 확인하고 자녀에게 사실 확인 전화를 한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1698,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "lifestyle_appearance",
+    "question": "중요한 모임에 입고 갈 옷을 고를 때.",
+    "options": [
+      { "text": "비싸고 화려한 옷으로 기죽지 않게 입는다.", "type": "D" },
+      { "text": "밝고 화사한 색상으로 젊어 보이게 입는다.", "type": "I" },
+      { "text": "단정하고 점잖은 옷으로 입는다.", "type": "S" },
+      { "text": "TPO(시간, 장소, 상황)에 맞게 격식을 갖춰 입는다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1699,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "family_inheritance",
+    "question": "자녀들이 재산을 미리 달라고(증여) 눈치를 준다.",
+    "options": [
+      { "text": "\"꿈도 꾸지 마라.\" 내 노후가 우선이라고 못 박는다.", "type": "D" },
+      { "text": "자식들이 좋아할 생각에 기분파로 조금 준다.", "type": "I" },
+      { "text": "애들이 힘들다니 마음 약해져서 도와준다.", "type": "S" },
+      { "text": "증여세와 상속세를 비교해보고 유리한 쪽을 택한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1700,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "social_activity",
+    "question": "노인대학이나 복지관 프로그램에 참여한다면?",
+    "options": [
+      { "text": "반장이나 임원을 맡아서 조직을 이끈다.", "type": "D" },
+      { "text": "노래 교실이나 댄스처럼 신나는 수업을 듣는다.", "type": "I" },
+      { "text": "서예나 뜨개질처럼 조용히 앉아서 하는 수업.", "type": "S" },
+      { "text": "스마트폰 교육이나 영어 회화 등 배우는 수업.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1701,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "lifestyle_diet",
+    "question": "입맛이 없어서 밥 먹기 싫을 때.",
+    "options": [
+      { "text": "나가서 맛있는 거 사 먹는다. 내 몸은 내가 챙긴다.", "type": "D" },
+      { "text": "친구 불러서 국수라도 삶아 같이 먹는다.", "type": "I" },
+      { "text": "대충 물 말아서 김치랑 먹는다.", "type": "S" },
+      { "text": "영양죽이나 건강식을 챙겨 먹는다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1702,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "family_grandchildren",
+    "question": "손주가 떼를 쓰고 말을 안 들을 때.",
+    "options": [
+      { "text": "\"뚝 그쳐!\" 무서운 표정으로 엄하게 훈육한다.", "type": "D" },
+      { "text": "\"아이고 우리 강아지 왜 그래~\" 과자 주며 달랜다.", "type": "I" },
+      { "text": "애 우는 거 마음 아파서 해달라는 대로 해준다.", "type": "S" },
+      { "text": "안 되는 이유를 설명하고 규칙을 지키게 한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1703,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "social_friendship",
+    "question": "친한 친구가 세상을 떠났다는 소식을 들었다.",
+    "options": [
+      { "text": "인생무상을 느끼며 남은 삶을 더 치열하게 살기로 한다.", "type": "D" },
+      { "text": "친구들과 모여 옛날이야기하며 슬픔을 나눈다.", "type": "I" },
+      { "text": "우울증이 와서 한동안 집 밖을 못 나간다.", "type": "S" },
+      { "text": "내 장례 절차와 유언장을 미리 정리해 둔다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1704,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "lifestyle_home",
+    "question": "집안에 쌓인 묵은 짐을 정리할 때(미니멀 라이프).",
+    "options": [
+      { "text": "안 쓰는 건 과감하게 트럭 불러서 다 버린다.", "type": "D" },
+      { "text": "물건마다 추억이 서려 있어서 정리하다 말고 구경한다.", "type": "I" },
+      { "text": "나중에 쓸 데가 있겠지 하고 도로 넣어둔다.", "type": "S" },
+      { "text": "종류별로 분류하고 라벨을 붙여 착착 정리한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1705,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "family_care",
+    "question": "자녀가 \"엄마, 우리 집에 와서 같이 살자\"고 한다.",
+    "options": [
+      { "text": "\"내 집 놔두고 왜? 난 내 식대로 살 거다.\" 거절한다.", "type": "D" },
+      { "text": "손주들도 보고 북적북적하니 좋을 것 같아 반긴다.", "type": "I" },
+      { "text": "가면 짐 될까 봐 싫다고 하지만 내심 반갑다.", "type": "S" },
+      { "text": "생활비 문제와 내 공간 확보를 조건으로 건다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1706,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "social_communication",
+    "question": "카톡 단체방에서 아무도 내 말에 대답을 안 한다.",
+    "options": [
+      { "text": "\"왜 다들 대답이 없어?\" 전화해서 따진다.", "type": "D" },
+      { "text": "관심 끌려고 이모티콘이나 사진을 계속 보낸다.", "type": "I" },
+      { "text": "내가 괜한 말을 했나... 소심해져서 기다린다.", "type": "S" },
+      { "text": "급한 용건이 아니면 나중에 확인하겠지 생각한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1707,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "lifestyle_travel",
+    "question": "혼자 여행을 갈 기회가 생긴다면?",
+    "options": [
+      { "text": "내가 가고 싶은 곳으로 일정 짜서 자유롭게 다닌다.", "type": "D" },
+      { "text": "심심할까 봐 친구를 꼬셔서 같이 간다.", "type": "I" },
+      { "text": "혼자 가는 건 무섭고 걱정돼서 포기한다.", "type": "S" },
+      { "text": "치안, 교통, 숙소를 철저히 조사해서 안전하게 다녀온다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1708,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "family_relationship",
+    "question": "명절 음식 준비가 너무 힘들다.",
+    "options": [
+      { "text": "\"올해부턴 다 사서 하자.\" 가족들에게 통보한다.", "type": "D" },
+      { "text": "일하면서 \"아이고 허리야\" 계속 생색낸다.", "type": "I" },
+      { "text": "1년에 몇 번 안 되는데... 하며 꾹 참고 한다.", "type": "S" },
+      { "text": "음식 가짓수를 줄이고 가족별로 할 일을 나눈다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1709,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "social_envy",
+    "question": "친구가 자식 자랑을 늘어놓는다.",
+    "options": [
+      { "text": "\"그래서 용돈은 얼마 주는데?\" 핵심을 찌른다.", "type": "D" },
+      { "text": "\"좋겠다! 한턱 쏴!\" 분위기 띄우며 얻어먹는다.", "type": "I" },
+      { "text": "부러워도 내색 않고 \"잘됐다\" 맞장구쳐준다.", "type": "S" },
+      { "text": "속으로 '과장이 섞였겠지' 하며 냉정하게 듣는다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1710,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "lifestyle_shopping",
+    "question": "홈쇼핑에서 \"마감 임박\"을 외친다.",
+    "options": [
+      { "text": "필요하면 고민 없이 바로 주문 버튼 누른다.", "type": "D" },
+      { "text": "쇼호스트 말에 혹해서 나도 모르게 주문한다.", "type": "I" },
+      { "text": "살까 말까 망설이다가 방송 끝난다.", "type": "S" },
+      { "text": "인터넷 최저가와 상품평을 확인하고 결정한다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1711,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "family_pets",
+    "question": "자녀가 강아지를 키우라고 권한다.",
+    "options": [
+      { "text": "\"내가 똥 치우기 싫다.\" 딱 잘라 거절한다.", "type": "D" },
+      { "text": "강아지 데리고 산책 다니며 자랑할 생각에 좋다.", "type": "I" },
+      { "text": "끝까지 책임질 수 있을지 걱정되어 망설인다.", "type": "S" },
+      { "text": "예방접종비, 사료값 등 비용을 계산해 본다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1712,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "social_reunion",
+    "question": "오랜만에 친구들과 노래방에 갔다.",
+    "options": [
+      { "text": "마이크를 놓지 않고 분위기를 주도한다.", "type": "D" },
+      { "text": "탬버린 흔들며 춤추고 제일 신나게 논다.", "type": "I" },
+      { "text": "박수만 치며 호응하다가 시키면 한 곡 부른다.", "type": "S" },
+      { "text": "내가 아는 노래 번호를 미리 찾아놓는다.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1713,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "lifestyle_housing",
+    "question": "나이 들어 이사를 간다면?",
+    "options": [
+      { "text": "병원 가깝고 관리 편한 도심의 아파트.", "type": "D" },
+      { "text": "친구들이 많이 살고 노인정이 잘 된 동네.", "type": "I" },
+      { "text": "살던 동네가 편하다. 굳이 이사 안 간다.", "type": "S" },
+      { "text": "관리비 적게 들고 공기 좋은 실속 있는 집.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1714,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "self_learning",
+    "question": "유튜브로 영상을 본다면?",
+    "options": [
+      { "text": "정치 평론이나 주식/부동산 투자 채널.", "type": "D" },
+      { "text": "유명 가수의 트로트 영상이나 먹방.", "type": "I" },
+      { "text": "요리 레시피나 뜨개질 강좌.", "type": "S" },
+      { "text": "건강 상식이나 역사 강의.", "type": "C" }
+    ]
+  },
+  {
+    "id": 1715,
+    "target_age_min": 60,
+    "target_age_max": 69,
+    "category": "self_identity",
+    "question": "60대가 된 나, 어떤 할머니가 되고 싶나?",
+    "options": [
+      { "text": "돈 있고 힘 있는, 누구도 무시 못 할 할머니.", "type": "D" },
+      { "text": "옷 잘 입고 유머 감각 있는 인기쟁이 할머니.", "type": "I" },
+      { "text": "자식들에게 짐 안 되고 마음이 따뜻한 할머니.", "type": "S" },
+      { "text": "교양 있고 지적인, 배울 점이 있는 할머니.", "type": "C" }
     ]
   }
 ];
